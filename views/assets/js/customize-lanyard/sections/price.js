@@ -57,7 +57,7 @@ class Price {
           materials = JSON.stringify(materials.material); // Primer formato de JSON
       }
 
-      alert(material.getMaterialSelected() + JSON.stringify(materials));
+    //  alert(material.getMaterialSelected() + JSON.stringify(materials));
 
 
       let index = 0;
