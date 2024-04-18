@@ -52,12 +52,11 @@ class Price {
 
       // Verificar el formato del JSON
       if (typeof materials.material === "string") {
-          materials = materials; // Segundo formato de JSON
+          materials =  (materials); // Segundo formato de JSON
       } else if (typeof materials.material === "object") {
-          materials = JSON.stringify(materials.material); // Primer formato de JSON
+          materials = materials; // Primer formato de JSON
       }
 
-    //  alert(material.getMaterialSelected() + JSON.stringify(materials));
 
 
       let index = 0;
@@ -75,10 +74,10 @@ class Price {
 
       // Loop para encontrar el precio basado en la cantidad seleccionada
       for (let i = 0; i < materials.allAmount.length; i++) {
-          if (amountSelected >= materials.allAmount[i]["min-amount"] && amountSelected <= materials.allAmount[i]["max-amount"] &&  material.getMaterialSelected() == materials.material) {
+          if (amountSelected >= materials.allAmount[i]["min-amount"] && amountSelected <= materials.allAmount[i]["max-amount"] ) {
               price = materials.allAmount[i].price;
               priceClass.changePricePerLanyard(price);
-              priceClass.setPricePerMaterialWithAmount(price);
+          //    priceClass.setPricePerMaterialWithAmount(price);
           }
       }
 
@@ -96,9 +95,16 @@ class Price {
           index = materials.allAmount.length - 1;
           // Actualizar el precio
           priceClass.changePricePerLanyard(price);
-          priceClass.setPricePerMaterialWithAmount(price);
-
+        //  priceClass.setPricePerMaterialWithAmount(price);
       }
+
+
+      if (materialSelected == materials.material || materialSelected ==  materials.material.material) {
+        console.log(materialSelected + materials.material + materials.material.material + price + JSON.stringify(materials));
+        priceClass.changePricePerLanyard(price);
+        //alert(price + JSON.stringigy(materials));
+      }
+
 
       return price;
   }
