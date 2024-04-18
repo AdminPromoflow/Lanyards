@@ -1,0 +1,46 @@
+.price{
+  position: relative;
+
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  height: 10%;
+  margin: 10px 0;
+}
+.price h3{
+  color: white;
+  margin: 0;
+  padding: 2px 4px;
+  font-weight: 200;
+}
+.priceNumber, .priceAmount{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 5px 0px;
+}
+.priceNumber h3, .priceAmount h3{
+  color: white;
+  margin: 0;
+  padding: 2px 4px;
+  font-weight: 200;
+}
+.priceNumber h3{
+  font-weight: 500;
+  text-shadow: 1px 1px 2px black;
+}
+.priceAmount{
+  justify-content: space-between !important;
+}
+.priceAmount input[type="range"]{
+  position: relative;
+  width: calc(50%);
+}
+.priceAmount input[type="text"]{
+  position: relative;
+  width: 18%;
+  font-size: 1em;
+}

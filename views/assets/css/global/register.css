@@ -1,0 +1,126 @@
+.register{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: .7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  z-index: 13;
+}
+.containerRegister{
+  width: 300px;
+  height: 400px;
+  max-height: 90vh;
+  overflow-y: scroll;
+
+  background: rgba(30,54,81,.7);
+  background: linear-gradient(180deg, rgba(30,54,81,.98) 57%, rgba(47,67,90,.98) 100%);
+  box-shadow: 0px 0px  29px #1B2737,  -0px -0px  29px #1B2737;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  transform: perspective(600px) rotateY(-180deg);
+  backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+  transition: transform 1s linear .1s;
+}
+.headRegister{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  background: rgba(106,108,110, .1);
+  background: linear-gradient(90deg, rgba(106,108,110,.8) 0%, rgba(141,169,167,.8) 50%, rgba(106,108,110,.8) 100%);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0px 0px  5px black;
+}
+.headRegister h1{
+  position: relative;
+  margin: 0px;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  font-weight: 600;
+  color: rgba(255 , 255 , 255 , .8);
+  text-shadow: 0px 0px  5px black;
+}
+.headRegister img{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 30%;
+  cursor: pointer;
+  filter: drop-shadow(1px 1px 1px black)  brightness(.8);
+  transition: .4;
+}
+.headRegister img:hover{
+  filter: drop-shadow(1px 1px 3px black)  brightness(.9);
+}
+.headRegister img:active{
+  filter: drop-shadow(1px 1px 1px black)  brightness(.8);
+}
+
+.bodyRegister{
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  height: 210px;
+  padding-top: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bodyRegister label{
+  color: white;
+  margin-bottom: 3px;
+  font-size: 1em;
+
+}
+.bodyRegister input{
+  margin-bottom: 6px;
+  border-radius: 5px;
+  padding: 3px 10px;;
+  font-size: 1em;
+  background: rgba(255 , 255 , 255 , .8);
+}
+
+.footerRegister{
+  position: absolute;
+  top: 300px;
+  width: 100%;
+  height: 100px;
+
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.footerRegister button{
+  padding: 8px 20px;
+  z-index: 10;
+  font-size: 1.3em;
+  font-weight: 200;
+  border-radius: 5px;
+  color: black;
+  background-color: #B3C7BF;
+  cursor: pointer;
+}
+.fontWeightButtonRegister{
+  font-weight: 500;
+}
+.footerRegister h4{
+  margin: 5px;
+  color: rgba(255 , 255 , 255 , .9);
+  border-bottom: 1px solid transparent;
+
+  font-weight: 300;
+  cursor: pointer;
+  transition: .4s;
+}
+.footerRegister h4:hover{
+  color: rgba(255 , 255 , 255 , 1);
+  border-bottom: 1px solid white;
+}

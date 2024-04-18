@@ -1,0 +1,84 @@
+.one-side-25mm{
+  position: relative;
+  width: 90%;
+  height: 91%;
+  padding: 15px 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, .1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+.os25-img{
+  position: absolute;
+  top: 0px;
+  height: 72.1%;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.os25-clip{
+  position: absolute;
+  top: 68.7%;
+  background-color: rgba(0,0,0,.0);
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 13%;
+  opacity: 1;
+  z-index: -1;
+}
+.os25-img img{
+  position: absolute;
+  top: -1.5%;
+  height: 100%;
+  left: 52%;
+  transform: translateX(-50%);
+  width: auto;
+  opacity: 1;
+}
+.container-one-side-25mm{
+  position: relative;
+  width: 90%;
+  height: 100%;
+
+}
+.os25-neck{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 63%;
+  clip-path: polygon(28% 0.5%, 72% 0.5%, 87.9% 6.9%, 12.1% 6.9%);
+}
+.os25-left{
+  position: absolute;
+  top: 4.4%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 100%;
+  clip-path: polygon(13%  0%, 28% 0%,  55% 65.2%, 40% 65.2%);
+}
+.os25-right{
+  position: absolute;
+  top: 4.4%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 100%;
+  clip-path: polygon(88%  0%, 72% 0%,  40% 65.2%, 55% 65.2%);
+}
+
+
+
+
+
+/*  clip-path: polygon(0%  0%, 50% 0%,  30% 55%, 4% 55%);
+*/

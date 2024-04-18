@@ -1,0 +1,66 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background: #051527;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  background-size: cover;
+  overflow: hidden;
+}
+.background{
+  position: relative;
+  background-image: url('../../img/home/background.png');
+  position: relative;
+  height: 100vh;
+  width: auto;
+  background-size: cover;
+  filter: brightness(1.7);
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  padding: 3vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container{
+  position: relative;
+  height: 90vh;
+  width: 90vw;
+  background: rgba(3, 12, 23,1);
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+  box-shadow: 30px 30px  40px black;
+  border-radius: 10px;
+  box-shadow: 30px 30px  40px rgba(20,20,20,.5), -30px -30px  40px rgba(30,30,30,.5);
+  filter: brightness(0.7);
+  min-width: 300px;
+}
+.content{
+  position: relative;
+  height: auto;
+}
+.content img{
+  position: relative;
+  width: 100%;
+}
+.bgLanyards{
+  background-image: url("../../img/home/2-choose-create-lanyard/bg.png"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+  background-attachment: fixed;
+}
+h1{
+  position: relative;
+  text-align: center;
+  width: 70%;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  text-shadow: 3px 3px 2px black;
+  font-size: calc(1.5em + 1.5vw);
+  font-weight: 400;
+  padding-top: calc(1.1em + 1.1vw);
+}

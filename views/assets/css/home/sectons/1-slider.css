@@ -1,0 +1,149 @@
+.sliderContainer{
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  background: rgb(7,12,21);
+  background: linear-gradient(360deg, rgba(7,12,21,1) 1%, rgba(19,54,84,1) 100%);
+/*  border-bottom: 20px solid #071E36;*/
+}
+.sliderLong{
+  position: relative;
+  width: 400%;
+  height: 100%;
+  left: 0%;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  transition: left 1.5s;
+  overflow-y: hidden;
+}
+.slider{
+  position: relative;
+  width: 25%;
+  height: 100%;
+  overflow-x: hidden;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items:flex-start;
+  overflow-y: hidden;
+
+}
+.imageSlider{
+  position: relative;
+  width: 65%;
+  height: 90%;
+  overflow-y: hidden;
+
+}
+.messageSlider{
+  position: relative;
+  width: 35%;
+  height: 90%;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items:center;
+}
+
+.buttonSliderContainer{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 10%;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+
+  z-index: 0;
+}
+.buttonSlider{
+  position: relative;
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.imageSlider img{
+  position: relative;
+  height: auto;
+  width: 85%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(5px 5px 8px black);
+}
+.messageSlider h2{
+  position: relative;
+  font-size: calc(2.2vw + 0.8em);
+  font-weight: 300;
+  width: 90%;
+  color: rgba(255, 255, 255, .9);
+  text-align: center;
+}
+.messageSlider button{
+  padding: calc(0.1vw + 0.1em) calc(3.3vw + 0.3em);
+  z-index: 10;
+  max-height: 50px;
+  font-size: calc(1vw + 1em);
+  font-weight: 200;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buttonColor1{
+  background-color: #7B3378;
+  color: white;
+}
+.buttonColor2{
+  background-color: #E66503;
+  color: white;
+}
+.buttonColor3{
+  background-color: #BC9B5A;
+  color: black;
+}
+.buttonColor4{
+  background-color: #4B6E33;
+  color: white;
+}
+.width500{
+  font-weight: 500;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, .6);
+}
+.width300{
+  font-weight: 300;
+  text-shadow: 2px 2px 0px black;
+}
+@media only screen and (max-width: 800px)  and (orientation: portrait) {
+  .slider{
+    flex-direction: column;
+  }
+  .messageSlider{
+    width: 100%;
+    height: 45%;
+  }
+  .imageSlider{
+    width: 100%;
+    height: 45%;
+  }
+  .imageSlider img{
+    width: auto;
+    height: 100%;
+  }
+  .reverseSlider{
+    order: 1;
+  }
+}

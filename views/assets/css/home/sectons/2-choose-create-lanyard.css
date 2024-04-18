@@ -1,0 +1,281 @@
+.chooseCreateLanyard{
+  position: relative;
+  width: 100%;
+}
+
+.chooseCreateLanyardContainer{
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.chooseCreateLanyardDescription{
+  position: relative;
+  width: 47%;
+}
+.chooseCreateLanyardDescriptionContent{
+  position: relative;
+  top: 50%;
+  width: calc(100% - 20px);
+  transform: translateY(-50%);
+  height: 300px;
+  background-color: #091d2c;
+  border: 1px solid lightgrey;
+  box-shadow: 0 0 6px grey;
+  overflow-y: scroll;
+  transition: .4s;
+  display: none;
+}
+.chooseCreateLanyardDescriptionContent h2{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: calc(0.8em + 0.8vw);
+    width: 70%;
+    padding-top: 1.5vw;
+    margin: 1vw auto;
+    overflow-y: scroll;
+}
+.chooseCreateLanyardDescriptionContent h3{
+    position: relative;
+    text-align: left;
+    color: white;
+    font-weight: 400;
+    font-size: calc(0.6em + 0.6vw);
+    width: 80%;
+    margin: 0;
+    margin: 0vw auto;
+    overflow-y: scroll;
+}
+.chooseCreateLanyardDescriptionContent p{
+    position: relative;
+    text-align: justify;
+    color: white;
+    width: 80%;
+    font-weight: 200;
+    margin: 0;
+    margin: 0.5vw auto;
+    padding-bottom: calc(.5vw + .5em);
+}
+.chooseCreateLanyardItemsContainer{
+  position: relative;
+  width: 47%;
+}
+.chooseCreateLanyardItems{
+  position: relative;
+  width: 90%;
+  height: 90px;
+  background-color: yellow;
+  margin: 15px 0;
+  background-color: #091d2c;
+  box-shadow: 0 0 6px grey;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.chooseCreateLanyardItemsImage{
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+  background-color: grey;
+
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+.chooseCreateLanyardItemsText{
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+  transition: .4s;
+}
+/*.chooseCreateLanyardItemsText:hover{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(231,88,2,1) 100%);
+}*/
+.chooseCreateLanyardImg1{
+  background-image: url("../../../img/home/2-choose-create-lanyard/Img1.png"); /* The image used */
+}
+.chooseCreateLanyardImg2{
+  background-image: url("../../../img/home/2-choose-create-lanyard/Img2.png"); /* The image used */
+}
+.chooseCreateLanyardImg3{
+  background-image: url("../../../img/home/2-choose-create-lanyard/Img3.png"); /* The image used */
+}
+.chooseCreateLanyardItemsImageLeft{
+  position: absolute;
+  height: 100%;
+  width: 10%;
+  top: 0px;
+  left: 0px;
+
+
+  background-image: url("../../../img/home/2-choose-create-lanyard/Left.png"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.chooseCreateLanyardItemsTextImg{
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 30px;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 20px;
+
+
+
+  background-image: url("../../../img/home/2-choose-create-lanyard/A1.png"); /* The image used */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.chooseCreateLanyardItemsTextTitle{
+  position: relative;
+  float: right;
+  display: inline-block;
+  width: calc(100% - 60px);
+  height: 100%;
+}
+.chooseCreateLanyardItemsTextTitle h3{
+  position: relative;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 750px) {
+  .chooseCreateLanyardContainer{
+    flex-direction: column;
+  }
+  .chooseCreateLanyardDescription{
+    width: 100%;
+  }
+  .chooseCreateLanyardItemsContainer{
+    width: 100%;
+  }
+  .chooseCreateLanyardDescription{
+
+    height: 300px;
+
+  }
+  .chooseCreateLanyardDescriptionContent{
+
+    width: calc(100%);
+    max-width: 390px;
+    min-width: 270px;
+    margin: 0 auto;
+    height: 300px;
+
+  }
+  .chooseCreateLanyardItems{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+
+
+}
+
+
+
+  .colourBoxchooseCreateLanyard{
+    position: absolute;
+    top: 0px;
+    right: -30px;
+    height: 90px;
+    width: 30px;
+    display: none;
+  }
+  .colourGold{
+    background-color: rgba(184, 146, 76,.7);
+  }
+  .colourOrange{
+    background-color: rgba(231, 88, 2,.7);
+  }
+  .colourGreen{
+    background-color: rgba(61, 99, 36,.7);
+  }
+
+
+
+  .arrowUpChooseCreateLanyardStart{
+    position: sticky;
+    display: block;
+    width: 2vw;
+    height: 1.2vw;
+    left: calc(100% - 2.8vw - 15px);
+    top: 10px;
+    cursor: pointer;
+    filter: drop-shadow(2px 1px 1px white);
+    cursor: pointer;
+  }
+
+  .arrowUpChooseCreateLanyardStart img{
+    height: 100%;
+  }
+
+
+
+  .arrowUpChooseCreateLanyardEnd{
+    position: sticky;
+    display: block;
+    width: 2vw;
+    height: 1.5vw;
+    left: calc(100% - 2.8vw - 15px);
+    bottom: 10px;
+    transform: rotateZ(180deg);
+    cursor: pointer;
+    filter: drop-shadow(2px 1px 1px white);
+    cursor: pointer;
+  }
+
+  .arrowUpChooseCreateLanyardEnd img{
+    height: 100%;
+  }
+
+  .chooseCreateLanyardDescriptionContent button{
+    position: relative;
+    padding: calc(0.1vw + 0.1em) calc(0.8vw + 0.8em);
+    z-index: 10;
+    max-height: 50px;
+    font-size: calc(0.7vw + 0.7em);
+    font-weight: 200;
+    border-radius: 5px;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: calc(1em + 1vw);
+  }
+  .buttonColor2{
+    background-color: #E66503;
+    color: white;
+  }
+  .buttonColor3{
+    background-color: #BC9B5A;
+    color: white;
+  }
+  .buttonColor4{
+    background-color: #4B6E33;
+    color: white;
+  }
+
+
+
+
+
+
+  /**/
