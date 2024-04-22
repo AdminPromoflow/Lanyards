@@ -33,7 +33,7 @@ class Material {
         throw new Error("Network error.");
       })
       .then(data => {
-        alert(data);
+      //  alert(data);
 
         data = JSON.parse(data);
 
@@ -133,7 +133,7 @@ class Material {
         for (var i = 0; i < data["allLanyardTypes"].length; i++) {
           oneTwoEndsClass.createOneTwoEnds(data["allLanyardTypes"][i], i);
         }
-        alert(JSON.stringify(data));
+      //  alert(JSON.stringify(data));
         for (var i = 0; i < data["allWidth"].length; i++) {
 
           widthClass.createWidth(data["allWidth"][i], i);
