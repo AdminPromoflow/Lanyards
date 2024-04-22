@@ -47,7 +47,7 @@ class Price {
   // Method to calculate price per material with given amount
   calculatePricePerMaterialWithAmount(materials) {
 
-    alert(materials);
+    alert(JSON.stringify (materials));
 
       var amountSelected = priceClass.getAmountSelected();
 
