@@ -33,6 +33,7 @@ class Material {
         throw new Error("Network error.");
       })
       .then(data => {
+        alert(data);
 
         data = JSON.parse(data);
 
@@ -49,7 +50,7 @@ class Material {
 
 
         for (var i = 0; i < jsonMaterials.materials.length; i++) {
-          material.createMaterials(data["materials"][i], priceClass.calculatePricePerMaterialWithAmount(jsonMaterials["materials"][i]));
+          material.createMaterials(data["materials"][i], "0" /*priceClass.calculatePricePerMaterialWithAmount(jsonMaterials["materials"][i])*/);
         }
       })
       .catch(error => {
@@ -66,20 +67,33 @@ class Material {
   }
   updatePriceMaterial(){
     var jsonMaterials = {};
+    var materialSelected = material.getMaterialSelected();
+    var price;
+
     jsonMaterials = material.getJsonMaterials();
     const pricesDataMaterial = document.querySelectorAll(".pricesDataMaterial");
 
     for (var i = 0; i < jsonMaterials.materials.length; i++) {
-    pricesDataMaterial[i].innerHTML = "£" +priceClass.calculatePricePerMaterialWithAmount(jsonMaterials["materials"][i]) + " per unit";
+
+      price = priceClass.calculatePricePerMaterialWithAmount(jsonMaterials["materials"][i]);
+
+    pricesDataMaterial[i].innerHTML = "£" + price + " per unit";
+
+
+    if (jsonMaterials["materials"][i]["material"] == materialSelected) {
+      priceClass.setPricePerMaterialWithAmount(price);
+      priceClass.changePricePerLanyard();
+      //alert(price);
+    }
     }
   }
   searchDataMaterialSelected(material){
 
-
     const url = "../../controller/lanyard/material.php";
     const data = {
       action: "setMaterialSelected",
-      optionSelected: material
+      optionSelected: material,
+      amountSelected: priceClass.getAmountSelected()
 
     };
     this.setMaterialSelected(material);
@@ -105,7 +119,7 @@ class Material {
         throw new Error("Network error.");
       })
       .then(data => {
-
+      //  alert(data);
 
        data = JSON.parse(data);
 
@@ -113,24 +127,15 @@ class Material {
         previewMaterial.showSelectedPreviewtMaterial(data["material"]);
         material.updatePriceMaterial();
 
-
-
-        var jsonMaterials = {};
-        jsonMaterials = material.getJsonMaterials();
-        for (var i = 0; i < jsonMaterials.materials.length; i++) {
-          if (jsonMaterials.materials[i].material = data["material"]) {
-           priceClass.calculatePricePerMaterialWithAmount(jsonMaterials["materials"][i]);
-
-          }
-        }
         oneTwoEndsClass.cleanOneTwoEnds();
         widthClass.cleanWidth();
 
         for (var i = 0; i < data["allLanyardTypes"].length; i++) {
           oneTwoEndsClass.createOneTwoEnds(data["allLanyardTypes"][i], i);
         }
-
+        alert(JSON.stringify(data));
         for (var i = 0; i < data["allWidth"].length; i++) {
+
           widthClass.createWidth(data["allWidth"][i], i);
         }
 

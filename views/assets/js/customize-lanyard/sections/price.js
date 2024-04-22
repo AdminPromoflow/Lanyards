@@ -8,7 +8,6 @@ class Price {
       // Update amountLanyardsRange value to match amountLanyards value
       amountLanyardsRange.value = this.value;
       priceClass.setAmountSelected(amountLanyardsRange.value);
-
       material.updatePriceMaterial();
 
     });
@@ -38,26 +37,17 @@ class Price {
   }
 
   // Method to change price per lanyard
-  changePricePerLanyard(price) {
+  changePricePerLanyard() {
+    var totalPrice;
+    totalPrice = priceClass.getPricePerMaterialWithAmount();
     // Update the inner HTML of pricePerLanyard element to display the price with currency symbol
-    pricePerLanyard.innerHTML = "£" + price;
+    pricePerLanyard.innerHTML = "£" + totalPrice;
   }
 
   // Method to calculate price per material with given amount
   calculatePricePerMaterialWithAmount(materials) {
 
       var amountSelected = priceClass.getAmountSelected();
-      var materialSelected = material.getMaterialSelected();
-
-
-      // Verificar el formato del JSON
-      if (typeof materials.material === "string") {
-          materials =  (materials); // Segundo formato de JSON
-      } else if (typeof materials.material === "object") {
-          materials = materials; // Primer formato de JSON
-      }
-
-
 
       let index = 0;
 
@@ -76,8 +66,6 @@ class Price {
       for (let i = 0; i < materials.allAmount.length; i++) {
           if (amountSelected >= materials.allAmount[i]["min-amount"] && amountSelected <= materials.allAmount[i]["max-amount"] ) {
               price = materials.allAmount[i].price;
-              priceClass.changePricePerLanyard(price);
-          //    priceClass.setPricePerMaterialWithAmount(price);
           }
       }
 
@@ -93,17 +81,8 @@ class Price {
       if (amountSelected > materials.allAmount[materials.allAmount.length - 1]["max-amount"]) {
           price = materials.allAmount[materials.allAmount.length - 1].price;
           index = materials.allAmount.length - 1;
-          // Actualizar el precio
-          priceClass.changePricePerLanyard(price);
-        //  priceClass.setPricePerMaterialWithAmount(price);
       }
 
-
-      if (materialSelected == materials.material || materialSelected ==  materials.material.material) {
-        console.log(materialSelected + materials.material + materials.material.material + price + JSON.stringify(materials));
-        priceClass.changePricePerLanyard(price);
-        //alert(price + JSON.stringigy(materials));
-      }
 
 
       return price;

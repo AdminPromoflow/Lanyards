@@ -12,7 +12,7 @@ class Menu {
         const data = {
           action: "checkSessionLogout"
         };
-        menuClass.makeAjaxRequestCheckSessionLogout(url, data);
+      //  menuClass.makeAjaxRequestCheckSessionLogout(url, data);
       });
     }
 
@@ -20,7 +20,7 @@ class Menu {
     const data = {
       action: "checkSessionLogin"
     };
-    this.makeAjaxRequestCheckSessionLogin(url, data);
+//    this.makeAjaxRequestCheckSessionLogin(url, data);
 
     openMenuMobileButton.addEventListener("click", this.openMenuMobile.bind(this));
     closeMenuMobileButton.addEventListener("click", this.closeMenuMobile.bind(this));

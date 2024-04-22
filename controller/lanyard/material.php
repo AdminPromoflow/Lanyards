@@ -112,6 +112,7 @@ class Material {
                         $amount->setNoSides($sidePrintedSelected);
                         $amount->setNoColour($noColourSelected);
                         $allAmount =  $amount->getAllAmountByNoColour();
+                        $amount->setAmountSelected($data->amountSelected);
                         $priceSelected = $amount-> selectPrice($allAmount);
                         $amount-> setSessionAmount($priceSelected);
 
@@ -140,6 +141,7 @@ class Material {
                                           'allLanyardTypes' => $allLanyardTypes,
                                           'allWidth' => $allWidthPrice,
                                           'lanyardTypesSelected' => $lanyardTypesSelected,
+                                          //'allAmount' => $allAmount,
                                           //'allSidePrinted' => $allSidePrinted,
                                           //'sidePrintedSelected' => $sidePrintedSelected,
                                           //'allNoColours' => $allNoColours,

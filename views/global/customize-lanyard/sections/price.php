@@ -6,8 +6,8 @@
   </div>
   <div class="priceAmount">
     <h3>Amount</h3>
-    <input id="amountLanyardsRange" min="0" max="25000" type="range" name="" value="">
-    <input id="amountLanyards" type="text" name="" value="">
+    <input id="amountLanyardsRange" min="0" max="25000" type="range" name="" value="1000">
+    <input id="amountLanyards" type="text" name="" value="1000">
   </div>
 </section>
 <script src="../assets/js/customize-lanyard/sections/price.js"></script>

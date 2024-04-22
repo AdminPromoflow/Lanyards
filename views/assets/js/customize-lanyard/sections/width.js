@@ -1,5 +1,7 @@
 class Width {
   constructor(){
+    var jsonWidth = {};
+
     for (let i = 0; i < containerBoxesWidth.length; i++) {
       containerBoxesWidth[i].addEventListener("click", function(){
         widthClass.showSelectedWidth(dataWidth[i].textContent);
@@ -11,8 +13,8 @@ class Width {
   }
 
   createWidth(data, index){
+    var price = data["price"] - priceClass.getPricePerMaterialWithAmount();
 
-  //  alert(priceClass.getPricePerMaterialWithAmount());
 
     var price = (data["price"]  );
     containersBoxesWidth.innerHTML +=
@@ -62,6 +64,12 @@ class Width {
 
 
   }
+  setJsonWidth(jsonWidth) {
+    this.jsonWidth = jsonWidth; // Asigna los valores al objeto JSON
+  }
+  getJsonWidth() {
+   return this.jsonWidth; // Retorna el objeto JSON almacenado
+ }
 }
 
 // la siguiente linea se va a eliminar porque se van a crear box-width automaticos

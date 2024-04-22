@@ -4,6 +4,7 @@ class Amount {
   private $noSides;
   private $width;
   private $material;
+  private $amountSelected;
   private $noColour;
   private $minAmount;
 
@@ -46,6 +47,9 @@ class Amount {
           //  http_response_code(405); // Method Not Allowed
           //  echo json_encode(array("message" => "Method not allowed"));
         }
+    }
+    public function setAmountSelected($amountSelected){
+      $this->amountSelected = $amountSelected;
     }
 
     public function setMaterial($material){
