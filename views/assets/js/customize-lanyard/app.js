@@ -25,26 +25,9 @@ class CustomizeLanyard {
     document.addEventListener('click', this.outContainerCustomizeLanyard);
 
 
-    this.keepFixed(); // Call the function to keep the modal window fixed when the page loads
-    document.getElementById('dad-customize-lanyard').addEventListener('scroll', this.keepFixed); // Add scroll event listener to the parent container
-
+  
   }
 
-   keepFixed() {
-
-     var modalWindow = document.getElementById('customize-lanyard');
-     var scrollContainer = document.getElementById('dad-customize-lanyard');
-
-       var containerRect = scrollContainer.getBoundingClientRect(); // Obtén el rectángulo del contenedor de desplazamiento
-       var scrollY = window.scrollY || window.pageYOffset; // Obtén la posición de desplazamiento vertical de la ventana del navegador
-       var modalHeight = modalWindow.offsetHeight; // Obtén la altura de la ventana modal
-
-       // Calcula la posición superior de la ventana modal en relación con el desplazamiento
-       var newTopPosition = (window.innerHeight - modalHeight) / 2 + scrollY - containerRect.top;
-
-       // Establece la posición superior de la ventana modal
-       modalWindow.style.top = newTopPosition + 'px';
-}
 
 
 
