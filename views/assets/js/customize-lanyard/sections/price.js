@@ -48,6 +48,11 @@ class Price {
    calculatePricePerMaterialWithAmount(materials) {
       var amountSelected = priceClass.getAmountSelected(); // Supongamos que ya tienes este valor
 
+      // Si amountSelected es igual a 0, retornar un precio de 0
+      if (amountSelected === 0) {
+          return 0;
+      }
+
       // Iterar sobre cada intervalo en la lista de materiales
       for (var i = 0; i < materials.allAmount.length; i++) {
           var interval = materials.allAmount[i];
@@ -67,6 +72,7 @@ class Price {
       var lastInterval = materials.allAmount[materials.allAmount.length - 1];
       return parseFloat(lastInterval.price);
   }
+
 
 
   setPricePerMaterialWithAmount(price){
