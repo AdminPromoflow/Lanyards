@@ -27,10 +27,10 @@
     <div class="background">
 
       <!-- Container for content -->
-      <div class="container">
+      <div class="container" id="dad-customize-lanyard">
 
         <!-- Content section -->
-        <div class="content">
+        <div class="content" >
           <?php include "../../views/global/customize-lanyard/customize-lanyard.php" ?>
 
 
