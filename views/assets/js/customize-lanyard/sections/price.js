@@ -45,50 +45,29 @@ class Price {
   }
 
   // Method to calculate price per material with given amount
-  calculatePricePerMaterialWithAmount(materials) {
+   calculatePricePerMaterialWithAmount(materials) {
+      var amountSelected = priceClass.getAmountSelected(); // Supongamos que ya tienes este valor
 
-    alert(JSON.stringify (materials));
+      // Iterar sobre cada intervalo en la lista de materiales
+      for (var i = 0; i < materials.allAmount.length; i++) {
+          var interval = materials.allAmount[i];
 
-      var amountSelected = priceClass.getAmountSelected();
+          // Convertir los valores de los intervalos a números para comparar
+          var minAmount = parseInt(interval["min-amount"]);
+          var maxAmount = parseInt(interval["max-amount"]);
 
-      let index = 0;
-
-      let minAmount = materials.allAmount[0]["min-amount"];
-      let maxAmount = materials.allAmount[0]["max-amount"];
-
-      // Loop para encontrar los valores mínimos y máximos de la cantidad
-      for (let i = 1; i < materials.allAmount.length; i++) {
-          minAmount = Math.min(minAmount, materials.allAmount[i]["min-amount"]);
-          maxAmount = Math.max(maxAmount, materials.allAmount[i]["max-amount"]);
-      }
-
-      let price = 0;
-
-      // Loop para encontrar el precio basado en la cantidad seleccionada
-      for (let i = 0; i < materials.allAmount.length; i++) {
-          if (amountSelected >= materials.allAmount[i]["min-amount"] && amountSelected <= materials.allAmount[i]["max-amount"] ) {
-              price = materials.allAmount[i].price;
+          // Verificar si amountSelected está dentro de este intervalo
+          if (amountSelected >= minAmount && amountSelected <= maxAmount) {
+              // Si amountSelected está dentro de este intervalo, retornar el precio correspondiente
+              return parseFloat(interval.price);
           }
       }
 
-
-      for (let i = 0; i < materials.allAmount.length; i++) {
-          if (amountSelected >= materials.allAmount[i]["min-amount"] && amountSelected <= materials.allAmount[i]["max-amount"] ) {
-              price = materials.allAmount[i].price;
-              index = i;
-          }
-      }
-
-      // Verificar si amountSelected es mayor que el máximo del último intervalo
-      if (amountSelected > materials.allAmount[materials.allAmount.length - 1]["max-amount"]) {
-          price = materials.allAmount[materials.allAmount.length - 1].price;
-          index = materials.allAmount.length - 1;
-      }
-
-
-
-      return price;
+      // Si amountSelected es mayor que el valor máximo del último intervalo, devolver el precio correspondiente al último intervalo
+      var lastInterval = materials.allAmount[materials.allAmount.length - 1];
+      return parseFloat(lastInterval.price);
   }
+
 
   setPricePerMaterialWithAmount(price){
     priceMaterialWidthAmount = price;
