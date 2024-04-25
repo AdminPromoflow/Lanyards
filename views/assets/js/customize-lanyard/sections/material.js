@@ -33,21 +33,17 @@ class Material {
         throw new Error("Network error.");
       })
       .then(data => {
-      //  alert(data);
 
         data = JSON.parse(data);
 
         material.setJsonMaterials(data);
         containersBoxesMaterial.innerHTML = "";
 
-
-
         material.setMaterialSelected("Tubular");
         priceClass.setAmountSelected(1000);
 
         var jsonMaterials = {};
         jsonMaterials = material.getJsonMaterials();
-
 
         for (var i = 0; i < jsonMaterials.materials.length; i++) {
           material.createMaterials(data["materials"][i], "0" /*priceClass.calculatePricePerMaterialWithAmount(jsonMaterials["materials"][i])*/);
@@ -137,6 +133,8 @@ class Material {
           widthClass.createWidth(data["allWidth"][i], i);
         }
 
+        oneTwoEndsClass.setTypeLanyardSelected("one-end");
+        previewLanyardType.showSelectedPreviewtTemplate( "25mm");
         oneTwoEndsClass.showSelectedOneTwoEnds(data["lanyardTypesSelected"]);
 
       })

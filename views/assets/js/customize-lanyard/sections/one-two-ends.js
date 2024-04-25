@@ -1,19 +1,9 @@
 class OneTwoEnds {
   constructor() {
-    for (let i = 0; i < containerBoxesOneTwoEnds.length; i++) {
-      containerBoxesOneTwoEnds[i].addEventListener("click", function(){
+    this.typeLanyard = "one_end";
 
-        const url = "../../controller/lanyard/lanyard-type.php";
-        const data = {
-          action: "setTypeLanyardSelected",
-          optionSelected: dataOneTwoEnds[i].textContent
 
-        };
-        alert("hah");
-      //  oneTwoEndsClass.makeAjaxRequestSetTypeLanyardSelected(url, data);
 
-      })
-    }
   }
   // Function to make the AJAX request
   makeAjaxRequestSetTypeLanyardSelected(url, data) {
@@ -32,7 +22,7 @@ class OneTwoEnds {
         throw new Error("Network error.");
       })
       .then(data => {
-      //  alert(data);
+        alert(data);
        data = JSON.parse(data);
        oneTwoEndsClass.showSelectedOneTwoEnds(data["lanyardType"]);
        previewLanyardType.showSelectedPreviewtTemplate(data["lanyardType"]["type"], "25mm");
@@ -65,19 +55,52 @@ class OneTwoEnds {
         containerBoxesOneTwoEnds[i].style.border = "2px solid transparent";
       }
     }
-
   }
   createOneTwoEnds(data, index){
     containersBoxesOneTwoEnds.innerHTML +=
-    '<div class="container_boxes_one_two_ends">'+
+    '<div class="container_boxes_one_two_ends"  onclick="oneTwoEndsClass.searchDataTypeLanyardSelected(\'' + data + '\');">'+
       '<h3 class="price-one_two_ends">+£'+data["price"]+' per unit</h3>'+
       '<h4 class="data-one-two-ends">'+data["type"]+'</h4>'+
       '<img src="../../'+data["imgLink"]+'" alt="">'+
     '</div>'
     ;
   }
+
+  searchDataTypeLanyardSelected(dataLanyardType){
+
+
+    alert(JSON.stringify(dataLanyardType["type"])  );
+
+  //  alert(JSON.stringify(lanyardType));
+
+
+    const url = "../../controller/lanyard/material.php";
+    const data = {
+      action: "setTypeLanyardSelected",
+      optionSelected:   dataLanyardType["type"]
+    };
+  //    oneTwoEndsClass.makeAjaxRequestSetTypeLanyardSelected(url, data);
+
+    oneTwoEndsClass.setTypeLanyardSelected(dataLanyardType["type"]);
+
+    oneTwoEndsClass.showSelectedOneTwoEnds(dataLanyardType["type"]);
+
+    previewLanyardType.showSelectedPreviewtTemplate( "25mm");
+
+  //  alert(dataLanyardType["price"]);
+
+  }
   cleanOneTwoEnds(){
     containersBoxesOneTwoEnds.innerHTML = "";
+  }
+
+  getTypeLanyardSelected() {
+    return this.typeLanyard;
+  }
+
+  // Setter method for amount property
+  setTypeLanyardSelected(value) {
+    this.typeLanyard = value;
   }
 }
 

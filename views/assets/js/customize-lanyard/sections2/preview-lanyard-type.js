@@ -2,7 +2,9 @@ class PreviewLanyardType {
   constructor() {
 
   }
-  showSelectedPreviewtTemplate(typeLanyard, width){
+  showSelectedPreviewtTemplate(width){
+    var typeLanyard = oneTwoEndsClass.getTypeLanyardSelected();
+
     if (typeLanyard == "one-end") {
 
       if (width == "25mm") {
@@ -11,9 +13,7 @@ class PreviewLanyardType {
         oneSide20mm.style.display = "none";
         oneSide25mm.style.display = "flex";
         oneSide30mm.style.display = "none";
-
         twoSide25mm.style.display = "none";
-
       }
       else if (width == "10mm") {
         oneSide10mm.style.display = "flex";
@@ -21,7 +21,6 @@ class PreviewLanyardType {
         oneSide20mm.style.display = "none";
         oneSide25mm.style.display = "none";
         oneSide30mm.style.display = "none";
-
         twoSide25mm.style.display = "none";
       }
       else if (width == "15mm") {
@@ -30,7 +29,6 @@ class PreviewLanyardType {
         oneSide20mm.style.display = "none";
         oneSide25mm.style.display = "none";
         oneSide30mm.style.display = "none";
-
         twoSide25mm.style.display = "none";
       }
       else if (width == "20mm") {
@@ -39,7 +37,6 @@ class PreviewLanyardType {
         oneSide20mm.style.display = "flex";
         oneSide25mm.style.display = "none";
         oneSide30mm.style.display = "none";
-
         twoSide25mm.style.display = "none";
       }
       else if (width == "30mm") {
@@ -48,7 +45,6 @@ class PreviewLanyardType {
         oneSide20mm.style.display = "none";
         oneSide25mm.style.display = "none";
         oneSide30mm.style.display = "flex";
-
         twoSide25mm.style.display = "none";
       }
     }
