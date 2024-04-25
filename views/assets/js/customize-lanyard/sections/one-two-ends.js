@@ -10,7 +10,7 @@ class OneTwoEnds {
 
         };
         alert("hah");
-        oneTwoEndsClass.makeAjaxRequestSetTypeLanyardSelected(url, data);
+      //  oneTwoEndsClass.makeAjaxRequestSetTypeLanyardSelected(url, data);
 
       })
     }
