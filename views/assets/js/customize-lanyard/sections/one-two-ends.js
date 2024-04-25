@@ -9,6 +9,7 @@ class OneTwoEnds {
           optionSelected: dataOneTwoEnds[i].textContent
 
         };
+        alert("hah");
         oneTwoEndsClass.makeAjaxRequestSetTypeLanyardSelected(url, data);
 
       })
