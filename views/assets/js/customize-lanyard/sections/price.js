@@ -38,8 +38,9 @@ class Price {
 
   // Method to change price per lanyard
   changePricePerLanyard() {
+  //  alert(priceClass.getPricePerMaterialWithAmount() + priceClass.getPriceLanyardType());
     var totalPrice;
-    totalPrice = priceClass.getPricePerMaterialWithAmount();
+    totalPrice = priceClass.getPricePerMaterialWithAmount() +priceClass.getPriceLanyardType();
     // Update the inner HTML of pricePerLanyard element to display the price with currency symbol
     pricePerLanyard.innerHTML = "£" + totalPrice;
   }
@@ -79,7 +80,14 @@ class Price {
     priceMaterialWidthAmount = price;
   }
   getPricePerMaterialWithAmount(){
-    return priceMaterialWidthAmount;
+    return parseFloat(priceMaterialWidthAmount);
+  }
+
+  setPriceLanyardType(price){
+    priceLanyardType = price;
+  }
+  getPriceLanyardType(){
+    return parseFloat(priceLanyardType);
   }
 
 }
@@ -89,6 +97,7 @@ const amountLanyardsRange = document.getElementById("amountLanyardsRange");
 const pricePerLanyard = document.getElementById("pricePerLanyard");
 const amountLanyards = document.getElementById("amountLanyards");
 var priceMaterialWidthAmount; // Variable global para almacenar el precio
+var priceLanyardType = 0; // Variable global para almacenar el precio
 
 // Create an instance of Price class
 const priceClass = new Price();

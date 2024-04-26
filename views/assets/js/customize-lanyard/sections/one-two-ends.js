@@ -58,7 +58,7 @@ class OneTwoEnds {
   }
   createOneTwoEnds(data, index){
     containersBoxesOneTwoEnds.innerHTML +=
-    '<div class="container_boxes_one_two_ends"  onclick="oneTwoEndsClass.searchDataTypeLanyardSelected(\'' + data + '\');">'+
+    '<div class="container_boxes_one_two_ends"  onclick="oneTwoEndsClass.searchDataTypeLanyardSelected(\'' + data["type"] + '\', \'' + data["price"] + '\');">'+
       '<h3 class="price-one_two_ends">+£'+data["price"]+' per unit</h3>'+
       '<h4 class="data-one-two-ends">'+data["type"]+'</h4>'+
       '<img src="../../'+data["imgLink"]+'" alt="">'+
@@ -66,10 +66,11 @@ class OneTwoEnds {
     ;
   }
 
-  searchDataTypeLanyardSelected(dataLanyardType){
+
+  searchDataTypeLanyardSelected(typeLanyardType, priceLanyardType){
 
 
-    alert(JSON.stringify(dataLanyardType["type"])  );
+    //alert(JSON.stringify(priceLanyardType)  );
 
   //  alert(JSON.stringify(lanyardType));
 
@@ -77,13 +78,17 @@ class OneTwoEnds {
     const url = "../../controller/lanyard/material.php";
     const data = {
       action: "setTypeLanyardSelected",
-      optionSelected:   dataLanyardType["type"]
+      optionSelected:   typeLanyardType
     };
   //    oneTwoEndsClass.makeAjaxRequestSetTypeLanyardSelected(url, data);
 
-    oneTwoEndsClass.setTypeLanyardSelected(dataLanyardType["type"]);
+    oneTwoEndsClass.setTypeLanyardSelected(typeLanyardType);
 
-    oneTwoEndsClass.showSelectedOneTwoEnds(dataLanyardType["type"]);
+    oneTwoEndsClass.showSelectedOneTwoEnds(typeLanyardType);
+
+    priceClass.setPriceLanyardType(priceLanyardType);
+    priceClass.changePricePerLanyard()
+
 
     previewLanyardType.showSelectedPreviewtTemplate( "25mm");
 
