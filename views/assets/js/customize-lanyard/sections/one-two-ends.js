@@ -1,9 +1,6 @@
 class OneTwoEnds {
   constructor() {
     this.typeLanyard = "one_end";
-
-
-
   }
   // Function to make the AJAX request
   makeAjaxRequestSetTypeLanyardSelected(url, data) {
@@ -22,9 +19,9 @@ class OneTwoEnds {
         throw new Error("Network error.");
       })
       .then(data => {
-        alert(data);
        data = JSON.parse(data);
-       oneTwoEndsClass.showSelectedOneTwoEnds(data["lanyardType"]);
+
+       oneTwoEndsClass.showSelectedOneTwoEnds();
        previewLanyardType.showSelectedPreviewtTemplate(data["lanyardType"]["type"], "25mm");
 
       })
@@ -33,16 +30,15 @@ class OneTwoEnds {
       });
   }
 
-  showSelectedOneTwoEnds(data){
+  showSelectedOneTwoEnds(){
+    var typeLanyardSelected = oneTwoEndsClass.getTypeLanyardSelected();
+
+
     const dataOneTwoEnds = document.querySelectorAll(".data-one-two-ends");
     const containerBoxesOneTwoEnds = document.querySelectorAll(".container_boxes_one_two_ends");
     var index;
-  //alert(dataOneTwoEnds[0].textContent);
    for (var i = 0; i < dataOneTwoEnds.length; i++) {
-
-     if (dataOneTwoEnds[i].textContent == data) {
-       //alert(data["type"]);
-
+     if (dataOneTwoEnds[i].textContent == typeLanyardSelected) {
        index = i;
      }
    }
@@ -68,13 +64,6 @@ class OneTwoEnds {
 
 
   searchDataTypeLanyardSelected(typeLanyardType, priceLanyardType){
-
-
-    //alert(JSON.stringify(priceLanyardType)  );
-
-  //  alert(JSON.stringify(lanyardType));
-
-
     const url = "../../controller/lanyard/material.php";
     const data = {
       action: "setTypeLanyardSelected",
@@ -84,7 +73,7 @@ class OneTwoEnds {
 
     oneTwoEndsClass.setTypeLanyardSelected(typeLanyardType);
 
-    oneTwoEndsClass.showSelectedOneTwoEnds(typeLanyardType);
+    oneTwoEndsClass.showSelectedOneTwoEnds();
 
     priceClass.setPriceLanyardType(priceLanyardType);
     priceClass.changePricePerLanyard()

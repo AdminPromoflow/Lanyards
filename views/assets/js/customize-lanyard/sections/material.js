@@ -1,59 +1,84 @@
+// Define a class named Material.
 class Material {
+  // Constructor method.
   constructor() {
+    // Initialize the materialSelected property to "Tubular".
     this.materialSelected = "Tubular";
+    // Initialize an empty object to store JSON materials.
     var jsonMaterials = {};
+    // Define the URL and data object for AJAX request.
     const url = "../../controller/lanyard/material.php";
     const data = {
       action: "getMaterials"
     };
+    // Make an AJAX request to fetch all materials.
     this.makeAjaxRequestGetAllMaterials(url, data);
   }
+
+  // Setter method for the materialSelected property.
+  setMaterialSelected(value) {
+    this.materialSelected = value;
+  }
+
+  // Getter method for the materialSelected property.
   getMaterialSelected() {
     return this.materialSelected;
   }
 
-  // Setter method for amount property
-  setMaterialSelected(value) {
-    this.materialSelected = value;
+  // Setter method to set the JSON materials.
+  setJsonMaterials(jsonMaterials) {
+    this.jsonMaterials = jsonMaterials;
   }
-  // Function to make the AJAX request
+
+  // Getter method to get the JSON materials.
+  getJsonMaterials() {
+    return this.jsonMaterials;
+  }
+
+  // Function to make an AJAX request to fetch all materials.
   makeAjaxRequestGetAllMaterials(url, data) {
-    // Make the request using the Fetch API
     fetch(url,{
-      method: "POST", // HTTP POST method to send data
+      method: "POST",
       headers: {
-        "Content-Type": "application/json" // Indicate that you're sending JSON
+        "Content-Type": "application/json"
       },
-      body: JSON.stringify(data) // Convert the JSON object to a JSON string and send it.
+      body: JSON.stringify(data)
     })
       .then(response => {
         if (response.ok) {
-          return response.text(); // or response.json() if you expect a JSON response
+          return response.text();
         }
         throw new Error("Network error.");
       })
       .then(data => {
-
         data = JSON.parse(data);
-
-        material.setJsonMaterials(data);
+        // Clear the container for materials.
         containersBoxesMaterial.innerHTML = "";
-
-        material.setMaterialSelected("Tubular");
+        // Set the fetched JSON materials.
+        this.setJsonMaterials(data);
+        // Set the materialSelected property to "Tubular".
+        this.setMaterialSelected("Tubular");
+        // Set amount selected to 1000.
         priceClass.setAmountSelected(1000);
+        // Set the type of lanyard selected to "one-end".
+        oneTwoEndsClass.setTypeLanyardSelected("one-end");
+        // Set the type of lanyard selected to "one-end".
+        widthClass.setWidthSelected("25mm");
 
         var jsonMaterials = {};
         jsonMaterials = material.getJsonMaterials();
-
+        // Create materials HTML elements.
         for (var i = 0; i < jsonMaterials.materials.length; i++) {
-          material.createMaterials(data["materials"][i], "0" /*priceClass.calculatePricePerMaterialWithAmount(jsonMaterials["materials"][i])*/);
+          material.createMaterials(jsonMaterials["materials"][i], "0");
         }
       })
       .catch(error => {
         console.error("Error:", error);
       });
   }
-  createMaterials(data, price){
+
+  // Function to create materials HTML elements.
+  createMaterials(data, price) {
     containersBoxesMaterial.innerHTML +=
     '<div class="container_boxes_material"  onclick="material.searchDataMaterialSelected(\'' + data['material']  + '\');">'  +
       '<h4 class="dataMaterial">'+data['material']+'</h4>' +
@@ -61,116 +86,101 @@ class Material {
     '</div>'
     ;
   }
-  updatePriceMaterial(){
+
+  // Function to update material prices.
+  updatePriceMaterial() {
     var jsonMaterials = {};
     var materialSelected = material.getMaterialSelected();
     var price;
-
     jsonMaterials = material.getJsonMaterials();
     const pricesDataMaterial = document.querySelectorAll(".pricesDataMaterial");
-
     for (var i = 0; i < jsonMaterials.materials.length; i++) {
-
       price = priceClass.calculatePricePerMaterialWithAmount(jsonMaterials["materials"][i]);
-
-    pricesDataMaterial[i].innerHTML = "£" + price + " per unit";
-
-
-    if (jsonMaterials["materials"][i]["material"] == materialSelected) {
-      priceClass.setPricePerMaterialWithAmount(price);
-      priceClass.changePricePerLanyard();
-      //alert(price);
-    }
+      pricesDataMaterial[i].innerHTML = "£" + price + " per unit";
+      if (jsonMaterials["materials"][i]["material"] == materialSelected) {
+        priceClass.setPricePerMaterialWithAmount(price);
+        priceClass.changePricePerLanyard();
+      }
     }
   }
-  searchDataMaterialSelected(material){
 
+  // Function to search for a material.
+  searchDataMaterialSelected(material) {
     const url = "../../controller/lanyard/material.php";
     const data = {
       action: "setMaterialSelected",
       optionSelected: material,
       amountSelected: priceClass.getAmountSelected()
-
     };
+    // Set the selected material.
     this.setMaterialSelected(material);
+    // Set the amount selected.
     priceClass.setAmountSelected(priceClass.getAmountSelected());
-
+    // Make an AJAX request to set the selected material.
     this.makeAjaxRequestSetMaterialSelected(url, data);
   }
-  // Function to make the AJAX request
-  makeAjaxRequestSetMaterialSelected(url, data) {
 
-    // Make the request using the Fetch API
+  // Function to make an AJAX request to set the selected material.
+  makeAjaxRequestSetMaterialSelected(url, data) {
     fetch(url, {
-      method: "POST", // HTTP POST method to send data
+      method: "POST",
       headers: {
-        "Content-Type": "application/json" // Indicate that you're sending JSON
+        "Content-Type": "application/json"
       },
-      body: JSON.stringify(data) // Convert the JSON object to a JSON string and send it
+      body: JSON.stringify(data)
     })
       .then(response => {
         if (response.ok) {
-          return response.text(); // or response.json() if you expect a JSON response
+          return response.text();
         }
         throw new Error("Network error.");
       })
       .then(data => {
         data = JSON.parse(data);
-
+        // Show the selected material.
         material.showSelectedMaterial(data["material"]);
+        // Show the selected preview material.
         previewMaterial.showSelectedPreviewtMaterial(data["material"]);
+        // Update material prices.
         material.updatePriceMaterial();
 
+        // Clean oneTwoEnds.
         oneTwoEndsClass.cleanOneTwoEnds();
+        // Clean width.
         widthClass.cleanWidth();
-
+        // Create oneTwoEnds.
         for (var i = 0; i < data["allLanyardTypes"].length; i++) {
           oneTwoEndsClass.createOneTwoEnds(data["allLanyardTypes"][i], i);
         }
-      //  alert(JSON.stringify(data));
-        for (var i = 0; i < data["allWidth"].length; i++) {
+        oneTwoEndsClass.showSelectedOneTwoEnds();
 
+        // Create width.
+        for (var i = 0; i < data["allWidth"].length; i++) {
           widthClass.createWidth(data["allWidth"][i], i);
         }
-
-        oneTwoEndsClass.setTypeLanyardSelected("one-end");
-        previewLanyardType.showSelectedPreviewtTemplate( "25mm");
-        oneTwoEndsClass.showSelectedOneTwoEnds(data["lanyardTypesSelected"]);
-
       })
       .catch(error => {
         console.error("Error:", error);
       });
   }
 
-
+  // Function to display the selected material.
   showSelectedMaterial(data) {
-      const containerBoxesMaterial = document.querySelectorAll(".container_boxes_material");
-      const material = data["material"];
-
-      // Reiniciar el estilo de todos los contenedores
-      containerBoxesMaterial.forEach(container => {
-          container.style.border = "2px solid transparent";
-      });
-
-      // Buscar y resaltar el contenedor del material deseado
-      containerBoxesMaterial.forEach(container => {
-          const dataMaterial = container.querySelector(".dataMaterial");
-          if (dataMaterial.textContent === material) {
-              container.style.border = "2px solid white";
-          }
-      });
+    const containerBoxesMaterial = document.querySelectorAll(".container_boxes_material");
+    const material = data["material"];
+    containerBoxesMaterial.forEach(container => {
+      container.style.border = "2px solid transparent";
+    });
+    containerBoxesMaterial.forEach(container => {
+      const dataMaterial = container.querySelector(".dataMaterial");
+      if (dataMaterial.textContent === material) {
+        container.style.border = "2px solid white";
+      }
+    });
   }
-  setJsonMaterials(jsonMaterials) {
-    this.jsonMaterials = jsonMaterials; // Asigna los valores al objeto JSON
-  }
-  getJsonMaterials() {
-   return this.jsonMaterials; // Retorna el objeto JSON almacenado
- }
-
 }
 
-
-
+// Get the container for materials.
 const containersBoxesMaterial = document.getElementById("containers_boxes_material");
+// Create an instance of the Material class.
 const material = new Material();

@@ -1,5 +1,7 @@
 class Width {
   constructor(){
+    this.widthSelected = "25mm";
+
     var jsonWidth = {};
 
     for (let i = 0; i < containerBoxesWidth.length; i++) {
@@ -10,6 +12,13 @@ class Width {
 
       })
     }
+  }
+  setWidthSelected(value) {
+    this.widthSelected = value;
+  }
+
+  getWidthSelected() {
+    return this.widthSelected;
   }
 
   createWidth(data, index){
@@ -64,6 +73,7 @@ class Width {
 
 
   }
+
   setJsonWidth(jsonWidth) {
     this.jsonWidth = jsonWidth; // Asigna los valores al objeto JSON
   }
