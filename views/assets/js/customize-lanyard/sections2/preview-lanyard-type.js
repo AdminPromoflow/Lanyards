@@ -3,8 +3,8 @@ class PreviewLanyardType {
 
   }
   showSelectedPreviewtTemplate(){
-    var width = widthClass.getWidthSelected();
     var typeLanyard = oneTwoEndsClass.getTypeLanyardSelected();
+    var width = widthClass.getWidthSelected();
 
     if (typeLanyard == "one-end") {
 
