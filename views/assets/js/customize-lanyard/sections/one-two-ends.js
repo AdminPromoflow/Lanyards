@@ -1,6 +1,9 @@
 class OneTwoEnds {
   constructor() {
     this.typeLanyard = "one_end";
+
+    oneTwoEndsClass.showSelectedOneTwoEnds();
+    previewLanyardType.showSelectedPreviewtTemplate();
   }
   // Function to make the AJAX request
   makeAjaxRequestSetTypeLanyardSelected(url, data) {
