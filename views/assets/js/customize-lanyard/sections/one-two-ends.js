@@ -5,6 +5,16 @@ class OneTwoEnds {
     this.showSelectedOneTwoEnds();
     previewLanyardType.showSelectedPreviewtTemplate();
   }
+
+    getTypeLanyardSelected() {
+      alert("1");
+      return this.typeLanyard;
+    }
+
+    // Setter method for amount property
+    setTypeLanyardSelected(value) {
+      this.typeLanyard = value;
+    }
   // Function to make the AJAX request
   makeAjaxRequestSetTypeLanyardSelected(url, data) {
     // Make the request using the Fetch API
@@ -91,14 +101,6 @@ class OneTwoEnds {
     containersBoxesOneTwoEnds.innerHTML = "";
   }
 
-  getTypeLanyardSelected() {
-    return this.typeLanyard;
-  }
-
-  // Setter method for amount property
-  setTypeLanyardSelected(value) {
-    this.typeLanyard = value;
-  }
 }
 
 
