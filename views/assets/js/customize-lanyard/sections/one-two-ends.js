@@ -2,8 +2,8 @@ class OneTwoEnds {
   constructor() {
     this.typeLanyard = "one_end";
 
-    this.showSelectedOneTwoEnds();
-    previewLanyardType.showSelectedPreviewtTemplate();
+  //  this.showSelectedOneTwoEnds();
+  //  previewLanyardType.showSelectedPreviewtTemplate();
   }
 
     getTypeLanyardSelected() {
@@ -87,7 +87,7 @@ class OneTwoEnds {
     oneTwoEndsClass.showSelectedOneTwoEnds();
     priceClass.setPriceLanyardType(priceLanyardType);
     priceClass.changePricePerLanyard()
-    previewLanyardType.showSelectedPreviewtTemplate();
+  //  previewLanyardType.showSelectedPreviewtTemplate();
   }
   cleanOneTwoEnds(){
     containersBoxesOneTwoEnds.innerHTML = "";
