@@ -24,8 +24,8 @@ class OneTwoEnds {
       .then(data => {
        data = JSON.parse(data);
 
-       oneTwoEndsClass.showSelectedOneTwoEnds();
-       previewLanyardType.showSelectedPreviewtTemplate();
+    //   oneTwoEndsClass.showSelectedOneTwoEnds();
+    //   previewLanyardType.showSelectedPreviewtTemplate();
 
       })
       .catch(error => {
