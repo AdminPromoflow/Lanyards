@@ -56,9 +56,10 @@ class Material {
         containersBoxesMaterial.innerHTML = "";
         // Set the fetched JSON materials.
         this.setJsonMaterials(data);
-        // Set the materialSelected property to "Tubular".
         // Set amount selected to 1000.
         priceClass.setAmountSelected(1000);
+
+        
 
 
         var jsonMaterials = {};

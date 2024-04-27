@@ -22,7 +22,7 @@ class OneTwoEnds {
        data = JSON.parse(data);
 
        oneTwoEndsClass.showSelectedOneTwoEnds();
-       previewLanyardType.showSelectedPreviewtTemplate(data["lanyardType"]["type"], "25mm");
+       previewLanyardType.showSelectedPreviewtTemplate();
 
       })
       .catch(error => {
