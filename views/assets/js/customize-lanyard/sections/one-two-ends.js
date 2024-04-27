@@ -34,7 +34,7 @@ class OneTwoEnds {
   }
 
   showSelectedOneTwoEnds(){
-    var typeLanyardSelected = oneTwoEndsClass.getTypeLanyardSelected();
+    var typeLanyardSelected = this.getTypeLanyardSelected();
 
 
     const dataOneTwoEnds = document.querySelectorAll(".data-one-two-ends");
