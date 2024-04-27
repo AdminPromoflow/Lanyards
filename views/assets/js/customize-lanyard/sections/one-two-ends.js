@@ -7,8 +7,7 @@ class OneTwoEnds {
   }
 
     getTypeLanyardSelected() {
-      alert("1");
-      return this.typeLanyard;
+      return 1;
     }
 
     // Setter method for amount property
@@ -85,17 +84,10 @@ class OneTwoEnds {
   //    oneTwoEndsClass.makeAjaxRequestSetTypeLanyardSelected(url, data);
 
     oneTwoEndsClass.setTypeLanyardSelected(typeLanyardType);
-
     oneTwoEndsClass.showSelectedOneTwoEnds();
-
     priceClass.setPriceLanyardType(priceLanyardType);
     priceClass.changePricePerLanyard()
-
-
-    previewLanyardType.showSelectedPreviewtTemplate( "25mm");
-
-  //  alert(dataLanyardType["price"]);
-
+    previewLanyardType.showSelectedPreviewtTemplate();
   }
   cleanOneTwoEnds(){
     containersBoxesOneTwoEnds.innerHTML = "";
