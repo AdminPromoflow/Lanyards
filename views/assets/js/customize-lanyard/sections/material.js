@@ -57,13 +57,9 @@ class Material {
         // Set the fetched JSON materials.
         this.setJsonMaterials(data);
         // Set the materialSelected property to "Tubular".
-        this.setMaterialSelected("Tubular");
         // Set amount selected to 1000.
         priceClass.setAmountSelected(1000);
-        // Set the type of lanyard selected to "one-end".
-        oneTwoEndsClass.setTypeLanyardSelected("one-end");
-        // Set the type of lanyard selected to "one-end".
-        widthClass.setWidthSelected("25mm");
+
 
         var jsonMaterials = {};
         jsonMaterials = material.getJsonMaterials();

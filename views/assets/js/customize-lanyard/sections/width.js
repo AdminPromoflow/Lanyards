@@ -20,6 +20,12 @@ class Width {
   getWidthSelected() {
     return this.widthSelected;
   }
+  setJsonWidth(jsonWidth) {
+    this.jsonWidth = jsonWidth;
+  }
+  getJsonWidth() {
+   return this.jsonWidth; 
+ }
 
   createWidth(data, index){
     var price = data["price"] - priceClass.getPricePerMaterialWithAmount();
@@ -74,12 +80,7 @@ class Width {
 
   }
 
-  setJsonWidth(jsonWidth) {
-    this.jsonWidth = jsonWidth; // Asigna los valores al objeto JSON
-  }
-  getJsonWidth() {
-   return this.jsonWidth; // Retorna el objeto JSON almacenado
- }
+
 }
 
 // la siguiente linea se va a eliminar porque se van a crear box-width automaticos
