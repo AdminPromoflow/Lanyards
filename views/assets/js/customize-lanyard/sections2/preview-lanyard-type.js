@@ -3,7 +3,7 @@ class PreviewLanyardType {
 
   }
   showSelectedPreviewtTemplate(){
-    alert("2");
+    alert(oneTwoEndsClass.getTypeLanyardSelected());
 
 
     var typeLanyard = oneTwoEndsClass.getTypeLanyardSelected();
