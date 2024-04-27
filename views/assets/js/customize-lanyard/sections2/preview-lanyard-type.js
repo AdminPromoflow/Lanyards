@@ -4,12 +4,11 @@ class PreviewLanyardType {
   }
   showSelectedPreviewtTemplate(){
 
-    const metodos = Object.getOwnPropertyNames(OneTwoEnds.prototype).filter(prop => typeof OneTwoEnds.prototype[prop] === 'function');
-    alert(metodos);
+    alert(oneTwoEndsClass.getTypeLanyardSelected());
 
 
 
-    var typeLanyard = oneTwoEndsClass.getTypeLanyardSelected();
+    //var typeLanyard = oneTwoEndsClass.getTypeLanyardSelected();
     var width = widthClass.getWidthSelected();
 
     if (typeLanyard == "one-end") {
