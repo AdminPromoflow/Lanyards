@@ -7,7 +7,7 @@ class OneTwoEnds {
   }
 
     getTypeLanyardSelected() {
-      return 1;
+      return this.typeLanyard;
     }
 
     // Setter method for amount property
@@ -103,3 +103,5 @@ const containerBoxesOneTwoEnds = document.querySelectorAll(".container_boxes_one
 const containersBoxesOneTwoEnds = document.getElementById('containers_boxes_one_two_ends');
 
 const oneTwoEndsClass = new OneTwoEnds();
+
+alert("La variable oneTwoEndsClass se ha inicializado correctamente.");

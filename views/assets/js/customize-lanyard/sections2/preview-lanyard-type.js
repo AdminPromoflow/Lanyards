@@ -4,11 +4,12 @@ class PreviewLanyardType {
   }
   showSelectedPreviewtTemplate(){
 
-    alert(oneTwoEndsClass.getTypeLanyardSelected());
 
 
 
-    //var typeLanyard = oneTwoEndsClass.getTypeLanyardSelected();
+    alert("Ahora vamos a acceder a una de sus funciones");
+
+    var typeLanyard = oneTwoEndsClass.getTypeLanyardSelected();
     var width = widthClass.getWidthSelected();
 
     if (typeLanyard == "one-end") {
