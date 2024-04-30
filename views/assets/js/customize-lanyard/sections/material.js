@@ -51,6 +51,7 @@ class Material {
         throw new Error("Network error.");
       })
       .then(data => {
+        alert(data);
         data = JSON.parse(data);
         // Clear the container for materials.
         containersBoxesMaterial.innerHTML = "";
@@ -59,7 +60,7 @@ class Material {
         // Set amount selected to 1000.
         priceClass.setAmountSelected(1000);
 
-        
+
 
 
         var jsonMaterials = {};
@@ -133,23 +134,33 @@ class Material {
         throw new Error("Network error.");
       })
       .then(data => {
+        alert(data);
         data = JSON.parse(data);
+
         // Show the selected material.
         material.showSelectedMaterial(data["material"]);
+
         // Show the selected preview material.
         previewMaterial.showSelectedPreviewtMaterial(data["material"]);
+
         // Update material prices.
         material.updatePriceMaterial();
 
         // Clean oneTwoEnds.
         oneTwoEndsClass.cleanOneTwoEnds();
+
         // Clean width.
         widthClass.cleanWidth();
+
         // Create oneTwoEnds.
         for (var i = 0; i < data["allLanyardTypes"].length; i++) {
           oneTwoEndsClass.createOneTwoEnds(data["allLanyardTypes"][i], i);
         }
+        // Display the selected "one" or "two" ends.
         oneTwoEndsClass.showSelectedOneTwoEnds();
+
+        // Show the selected preview template.
+        previewLanyardType.showSelectedPreviewtTemplate();
 
         // Create width.
         for (var i = 0; i < data["allWidth"].length; i++) {

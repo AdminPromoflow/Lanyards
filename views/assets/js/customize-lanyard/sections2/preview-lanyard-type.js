@@ -1,16 +1,13 @@
 class PreviewLanyardType {
   constructor() {
+  //  this.showSelectedPreviewtTemplate();
 
   }
   showSelectedPreviewtTemplate(){
 
-
-
-
-    alert("Ahora vamos a acceder a una de sus funciones");
-
     var typeLanyard = oneTwoEndsClass.getTypeLanyardSelected();
     var width = widthClass.getWidthSelected();
+
 
     if (typeLanyard == "one-end") {
 

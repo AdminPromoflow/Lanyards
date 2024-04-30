@@ -6,9 +6,8 @@ class Width {
 
     for (let i = 0; i < containerBoxesWidth.length; i++) {
       containerBoxesWidth[i].addEventListener("click", function(){
-        widthClass.showSelectedWidth(dataWidth[i].textContent);
-
-        previewLanyardType.showSelectedPreviewtTemplate("one-end", dataWidth[i].textContent);
+      //  widthClass.showSelectedWidth(dataWidth[i].textContent);
+      //  previewLanyardType.showSelectedPreviewtTemplate("one-end", dataWidth[i].textContent);
 
       })
     }
@@ -24,7 +23,7 @@ class Width {
     this.jsonWidth = jsonWidth;
   }
   getJsonWidth() {
-   return this.jsonWidth; 
+   return this.jsonWidth;
  }
 
   createWidth(data, index){

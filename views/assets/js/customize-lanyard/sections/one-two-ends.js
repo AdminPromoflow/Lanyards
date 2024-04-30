@@ -1,9 +1,9 @@
 class OneTwoEnds {
   constructor() {
-    this.typeLanyard = "one_end";
 
+    this.setTypeLanyardSelected("one-end");
     this.showSelectedOneTwoEnds();
-    previewLanyardType.showSelectedPreviewtTemplate();
+
   }
 
     getTypeLanyardSelected() {
@@ -32,6 +32,7 @@ class OneTwoEnds {
       })
       .then(data => {
        data = JSON.parse(data);
+
 
     //   oneTwoEndsClass.showSelectedOneTwoEnds();
     //   previewLanyardType.showSelectedPreviewtTemplate();
@@ -85,6 +86,8 @@ class OneTwoEnds {
 
     oneTwoEndsClass.setTypeLanyardSelected(typeLanyardType);
     oneTwoEndsClass.showSelectedOneTwoEnds();
+    previewLanyardType.showSelectedPreviewtTemplate();
+
     priceClass.setPriceLanyardType(priceLanyardType);
     priceClass.changePricePerLanyard()
   //  previewLanyardType.showSelectedPreviewtTemplate();
@@ -103,5 +106,3 @@ const containerBoxesOneTwoEnds = document.querySelectorAll(".container_boxes_one
 const containersBoxesOneTwoEnds = document.getElementById('containers_boxes_one_two_ends');
 
 const oneTwoEndsClass = new OneTwoEnds();
-
-alert("La variable oneTwoEndsClass se ha inicializado correctamente.");

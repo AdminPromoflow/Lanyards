@@ -24,8 +24,6 @@ class CustomizeLanyard {
     this.showCurrentSection();
     document.addEventListener('click', this.outContainerCustomizeLanyard);
 
-
-  
   }
 
 
@@ -97,9 +95,11 @@ class CustomizeLanyard {
     }
     else if (sectionActive == "Lanyard type") {
       // Se hace una consulta con un ajax request,  el resultado va a ser one- two ends  y el width. Luego del resultado se envia  el width y el typeLanyard
-      previewLanyardType.showSelectedPreviewtTemplate("one-end", "25mm");
+      //previewLanyardType.showSelectedPreviewtTemplate("one-end", "25mm");
       previewMaterial.showMaterialPreview("none");
       previewLanyardType.showTypeLanyardPreview("flex");
+      previewLanyardType.showSelectedPreviewtTemplate();
+
     }
     else if (sectionActive == "Width") {
 

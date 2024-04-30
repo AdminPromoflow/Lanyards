@@ -126,6 +126,13 @@ class Material {
                         $amount->setMinAmount($amountSelected);
                         $allWidthPrice = $amount-> getAllPriceOfWidth();
 
+
+
+
+
+
+
+
                         $amount = new Amount();
                         $amount->setMaterial($data->optionSelected);
                         $amount->setWidth($widthSelected);
@@ -148,7 +155,7 @@ class Material {
                                           //'noColourSelected' => $noColourSelected,
                                           //'allAmount' => $allAmount,
                                           'amountPriceSelected' => $priceSelected
-                                        );
+                                          );
                         //,  'allWidth' => $allWidth
                         echo json_encode($response);
                         break;
