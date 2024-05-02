@@ -55,6 +55,7 @@ class Material {
 
         customizeLanyard.setJsonLanyards(data["lanyards"]);
 
+
       //  console.log(JSON.stringify(customizeLanyard.getJsonLanyards()));
 
         // Clear the container for materials.
@@ -96,6 +97,7 @@ class Material {
     var price;
     jsonMaterials = material.getJsonMaterials();
     const pricesDataMaterial = document.querySelectorAll(".pricesDataMaterial");
+
     for (var i = 0; i < jsonMaterials.materials.length; i++) {
       price = priceClass.calculatePricePerMaterialWithAmount(jsonMaterials["materials"][i]);
       pricesDataMaterial[i].innerHTML = "£" + price + " per unit";
@@ -104,6 +106,7 @@ class Material {
         priceClass.changePricePerLanyard();
       }
     }
+
   }
 
   // Function to search for a material.
@@ -119,7 +122,9 @@ class Material {
     // Set the amount selected.
     priceClass.setAmountSelected(priceClass.getAmountSelected());
     // Make an AJAX request to set the selected material.
+
     this.makeAjaxRequestSetMaterialSelected(url, data);
+
   }
 
   // Function to make an AJAX request to set the selected material.
@@ -138,7 +143,7 @@ class Material {
         throw new Error("Network error.");
       })
       .then(data => {
-        alert(data);
+      //  alert(data);
         data = JSON.parse(data);
 
         // Show the selected material.
@@ -170,6 +175,8 @@ class Material {
         for (var i = 0; i < data["allWidth"].length; i++) {
           widthClass.createWidth(data["allWidth"][i], i);
         }
+
+        widthClass.updatePriceWidth();
       })
       .catch(error => {
         console.error("Error:", error);

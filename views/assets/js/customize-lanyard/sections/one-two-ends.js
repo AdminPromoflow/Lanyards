@@ -90,7 +90,7 @@ class OneTwoEnds {
 
     priceClass.setPriceLanyardType(priceLanyardType);
     priceClass.changePricePerLanyard()
-  //  previewLanyardType.showSelectedPreviewtTemplate();
+    previewLanyardType.showSelectedPreviewtTemplate();
   }
   cleanOneTwoEnds(){
     containersBoxesOneTwoEnds.innerHTML = "";

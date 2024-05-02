@@ -3,7 +3,7 @@ class Price {
   // Constructor method.
   constructor() {
     // Initialize properties.
-    this.amountSelected = 0;
+    this.amountSelected = 1;
     this.priceMaterialWidthAmount; // Global variable to store the price.
     this.priceLanyardType = 0; // Global variable to store the price.
 
@@ -15,6 +15,8 @@ class Price {
       amountLanyardsRange.value = this.value;
       priceClass.setAmountSelected(amountLanyardsRange.value);
       material.updatePriceMaterial();
+      widthClass.updatePriceWidth();
+
     });
 
     // Event listener for input changes on amountLanyardsRange element.
@@ -25,6 +27,8 @@ class Price {
         amountLanyards.value = this.value;
         priceClass.setAmountSelected(amountLanyards.value);
         material.updatePriceMaterial();
+        widthClass.updatePriceWidth();
+
       }
     });
   }

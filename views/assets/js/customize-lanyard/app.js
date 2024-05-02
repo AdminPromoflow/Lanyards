@@ -2,6 +2,8 @@ class CustomizeLanyard {
 
   constructor() {
     this.jsonLanyards = "";
+    this.noColours = "one-colour";
+
 
 
     closeCustomizeLanyard.addEventListener("click" , function(){
@@ -125,6 +127,18 @@ class CustomizeLanyard {
     return stateVisibilityPanelCustomeLanyard ;
   }
 
+
+
+
+  //PARA PASAR A LAS RESPECTIVAS CLASES:
+
+
+  setNoColours(value) {
+    this.noColours = value;
+  }
+  getNoColours() {
+    return this.noColours;
+  }
 
 
 }

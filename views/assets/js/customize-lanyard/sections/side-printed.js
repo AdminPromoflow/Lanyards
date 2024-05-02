@@ -1,6 +1,8 @@
 
 class SidePrinted {
   constructor() {
+    this.sidePrintedSelected = "one-side";
+
     for (let i = 0; i < containerBoxesSidePrinted.length; i++) {
       containerBoxesSidePrinted[i].addEventListener("click", function(){
 
@@ -13,10 +15,16 @@ class SidePrinted {
 
         };
 
-        sidePrinted.makeAjaxRequestSetSidePrintedSelected(url, data);
+        sidePrintedClass.makeAjaxRequestSetSidePrintedSelected(url, data);
 
       })
     }
+  }
+  setSidePrintedSelected(value) {
+    this.sidePrintedSelected = value;
+  }
+  getSidePrintedSelected() {
+    return this.sidePrintedSelected;
   }
 
   // Function to make the AJAX request
@@ -79,4 +87,4 @@ class SidePrinted {
 const dataSidePrinted = document.querySelectorAll(".data-side-printed");
 const containerBoxesSidePrinted = document.querySelectorAll(".container_boxes_side_printed");
 
-const sidePrinted = new SidePrinted();
+const sidePrintedClass = new SidePrinted();

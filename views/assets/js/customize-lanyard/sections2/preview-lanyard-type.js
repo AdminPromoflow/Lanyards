@@ -4,7 +4,6 @@ class PreviewLanyardType {
 
   }
   showSelectedPreviewtTemplate(){
-
     var typeLanyard = oneTwoEndsClass.getTypeLanyardSelected();
     var width = widthClass.getWidthSelected();
 
@@ -54,9 +53,16 @@ class PreviewLanyardType {
     }
     else if (typeLanyard == "two-end") {
 
-      if (width == "25mm") {
+      if (width == "20mm") {
+
         oneSide25mm.style.display = "none";
         twoSide25mm.style.display = "flex";
+
+        oneSide10mm.style.display = "none";
+        oneSide15mm.style.display = "none";
+        oneSide20mm.style.display = "none";
+        oneSide25mm.style.display = "none";
+        oneSide30mm.style.display = "none";
       }
     }
 

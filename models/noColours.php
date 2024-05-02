@@ -4,11 +4,7 @@ class NoColours_Models {
   private $connection; // The database connection
   private $width;
   private $material;
-
-
   private $noSides;
-
-
 
   // Constructor that initializes the connection.
   function __construct($connection) {
