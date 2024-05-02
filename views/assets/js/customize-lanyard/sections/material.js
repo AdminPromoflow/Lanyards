@@ -51,8 +51,12 @@ class Material {
         throw new Error("Network error.");
       })
       .then(data => {
-        alert(data);
         data = JSON.parse(data);
+
+        customizeLanyard.setJsonLanyards(data["lanyards"]);
+
+      //  console.log(JSON.stringify(customizeLanyard.getJsonLanyards()));
+
         // Clear the container for materials.
         containersBoxesMaterial.innerHTML = "";
         // Set the fetched JSON materials.

@@ -1,6 +1,8 @@
 class CustomizeLanyard {
 
   constructor() {
+    this.jsonLanyards = "";
+
 
     closeCustomizeLanyard.addEventListener("click" , function(){
       customizeLanyard.openCustomizeLanyard(false);
@@ -24,6 +26,16 @@ class CustomizeLanyard {
     this.showCurrentSection();
     document.addEventListener('click', this.outContainerCustomizeLanyard);
 
+  }
+
+  // Setter method for the materialSelected property.
+  setJsonLanyards(value) {
+    this.jsonLanyards = value;
+  }
+
+  // Getter method for the materialSelected property.
+  getJsonLanyards() {
+    return this.jsonLanyards;
   }
 
 

@@ -23,7 +23,6 @@ class Width_Model {
   public function getAllWidthByMaterial() {
     //echo json_encode($this->material."hola");  exit;
     try {
-
         // Prepare the SQL query with placeholders
         $sql = $this->connection->getConnection()->prepare("SELECT  `Width`.`width`, `Width`.`imgLink`
           FROM `Lanyards`

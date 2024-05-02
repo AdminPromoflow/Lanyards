@@ -4,7 +4,6 @@ class Lanyards {
   private $connection; // The database connection
   private $material;
 
-
   // Constructor that initializes the connection.
   function __construct($connection) {
     $this->connection = $connection;
@@ -23,10 +22,29 @@ class Lanyards {
    * @return array An array of customer data, or an empty array if no customers are found.
    */
   public function getAllLanyardMaterials() {
-
       try {
           // Prepare the SQL query to select all customers
           $sql = $this->connection->getConnection()->prepare("SELECT DISTINCT `material`, `linkImg`, `description` FROM `Lanyards` ");
+
+          // Execute the query
+          $sql->execute();
+
+          // Fetch all customer data
+          $customers = $sql->fetchAll(PDO::FETCH_ASSOC);
+
+          return $customers;
+      } catch(PDOException $e) {
+          // Handle any exceptions and provide an error message
+          echo "Error in the query: " . $e->getMessage();
+          throw new Exception("Error in the customer retrieval query.");
+      }
+  }
+
+  public function getMaterials(){
+      try {
+          // Prepare the SQL query to select all customers
+          $sql = $this->connection->getConnection()->prepare("SELECT  `material`, `linkImg`, `description` FROM `Lanyards` ");
+
 
           // Execute the query
           $sql->execute();
