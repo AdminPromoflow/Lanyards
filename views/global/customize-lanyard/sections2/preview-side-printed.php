@@ -3,7 +3,6 @@
 
 <section id="" class="preview-lanyard-type">
 
-  <img src="../../views/assets/img/global/customize-lanyard/sections2/side-printed/25-one-end-side-printed.png" alt="">
 
 
 </section>

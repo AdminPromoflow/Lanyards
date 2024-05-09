@@ -83,3 +83,13 @@
   font-weight: 300;
   font-size: 1.1em;
 }
+.priceDataSidePrinted{
+  position: relative;
+  width: 100%;
+  margin: 0;
+  margin-top: 9px;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 0.8em;
+}

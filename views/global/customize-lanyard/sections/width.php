@@ -29,9 +29,6 @@
 
 
 </section>
-<!--<div class="container_buttons_next_preview_width">
-  <button type="button" name="button">Preview</button>
-  <button type="button" name="button">Next</button>
-</div>-->
+
 
 <script src="../../views/assets/js/customize-lanyard/sections/width.js"></script>

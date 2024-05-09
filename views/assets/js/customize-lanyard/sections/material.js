@@ -53,6 +53,7 @@ class Material {
       .then(data => {
         data = JSON.parse(data);
 
+        customizeLanyard.setJsonLanyards(data["lanyards"]);
 
 
       //  console.log(JSON.stringify(customizeLanyard.getJsonLanyards()));
@@ -66,7 +67,6 @@ class Material {
 
 
 
-        customizeLanyard.setJsonLanyards(data["lanyards"]);
 
         var jsonMaterials = {};
         jsonMaterials = material.getJsonMaterials();

@@ -6,6 +6,8 @@ class Price {
     this.amountSelected = 1;
     this.priceMaterialWidthAmount; // Global variable to store the price.
     this.priceLanyardType = 0; // Global variable to store the price.
+    this.priceWidth = 0;
+
 
     // Event listener for input changes on amountLanyards element.
     amountLanyards.addEventListener('input', function(event) {
@@ -53,6 +55,16 @@ class Price {
     return parseFloat(this.priceLanyardType);
   }
 
+  // Setter method for price per width.
+  setPriceWidth(price){
+    this.priceWidth = price;
+  }
+
+  // Getter method for price per width.
+  getPriceWidth(){
+    return parseFloat(this.priceWidth);
+  }
+
   // Getter method for amount property.
   getAmountSelected() {
     return this.amountSelected;
@@ -66,7 +78,7 @@ class Price {
   // Method to change price per lanyard.
   changePricePerLanyard() {
     // Calculate total price.
-    var totalPrice = priceClass.getPricePerMaterialWithAmount() + priceClass.getPriceLanyardType();
+    var totalPrice = priceClass.getPricePerMaterialWithAmount() + priceClass.getPriceLanyardType() + priceClass.getPriceWidth();
     // Update the inner HTML of pricePerLanyard element to display the price with currency symbol.
     pricePerLanyard.innerHTML = "£" + totalPrice.toFixed(2);
   }

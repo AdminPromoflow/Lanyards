@@ -4,13 +4,7 @@ class Width {
 
     var jsonWidth = {};
 
-    for (let i = 0; i < containerBoxesWidth.length; i++) {
-      containerBoxesWidth[i].addEventListener("click", function(){
-      //  widthClass.showSelectedWidth(dataWidth[i].textContent);
-      //  previewLanyardType.showSelectedPreviewtTemplate("one-end", dataWidth[i].textContent);
 
-      })
-    }
   }
   setWidthSelected(value) {
     this.widthSelected = value;
@@ -50,9 +44,34 @@ class Width {
 
     const priceDataWidth = document.querySelectorAll(".priceDataWidth");
 
+    for (var i = 0; i < priceDataWidth.length; i++) {
+      if (i == index) {
 
-  //  alert(priceDataWidth[index].value);
+        let text = priceDataWidth[i].innerHTML+"";
+        let number = text.match(/-?\d+\.\d+|\d+/); // Finds the first number (float or integer), which can be negative.
 
+        if (number && parseFloat(number[0]) >= 0) {
+            let result = parseFloat(number[0]).toFixed(2);
+            priceClass.setPriceWidth(result); // Displays the positive float number with two decimals.
+            priceClass.changePricePerLanyard();
+        } else {
+            console.log("The number width is negative or no numbers were found. Error: (width.js line 58)");
+        }
+
+      //  priceClass.changePricePerLanyard();
+      }
+    }
+
+
+    sidePrintedClass.cleanSidePrinted();
+
+    // Draw SidePrinted available:
+    let sidePrintedAvailable = sidePrintedClass.getDataSidePrintedAvailable();
+
+
+    for (var i = 0; i < sidePrintedAvailable.length; i++) {
+      sidePrintedClass.drawSidePrintedAvailable(sidePrintedAvailable[i], i);
+    }
 
 
 
