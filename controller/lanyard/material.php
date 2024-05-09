@@ -148,10 +148,13 @@ class Material {
                         // $allWidthPrice = $amount-> getAllPriceOfWidth();
 
                         // Prepare and send the response with material information
-                        $response = array ('material' => $infoMaterial,
+                        $response = array ('sidePrintedSelected' => $sidePrintedSelected,
+                                          'noColourSelected' => $noColourSelected,
+                                          'material' => $infoMaterial,
                                           'allLanyardTypes' => $allLanyardTypes,
                                           'allWidth' => $allWidthPrice,
                                           'lanyardTypesSelected' => $lanyardTypesSelected,
+
                                           //'allAmount' => $allAmount,
                                           //'allSidePrinted' => $allSidePrinted,
                                           //'sidePrintedSelected' => $sidePrintedSelected,

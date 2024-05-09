@@ -137,7 +137,6 @@ class Width {
                                  if (amountSelected >= minAmount && amountSelected <= maxAmount ) {
                                    priceDataWidthResult[j] = price;
 
-                                    // alert("Material: " + material + "Width: " + width + "SidePrinted: " + noSides + "noColour: " + noColour + "Min Amount: " + minAmount + ", Max Amount: " + maxAmount + ", Price: " + priceDataWidthResult[j]);
                                    }
                                    else if (amountSelected > maxAmount) {
                                      priceDataWidthResult[j] = price;
@@ -162,19 +161,18 @@ class Width {
     for (var i = 0; i < priceDataWidth.length; i++) {
       totalPriceWidth = priceDataWidthResult[i] - priceMaterialWidthAmount;
       priceDataWidth[i].innerHTML = "£" + totalPriceWidth.toFixed(2) + " per unit";
-
     }
-
   }
-
 
   cleanWidth(){
     containersBoxesWidth.innerHTML = "";
   }
 
   showSelectedWidth(){
-    var width = widthClass.getWidthSelected();
 
+    //alert(this.getWidthSelected());
+
+    var width = widthClass.getWidthSelected();
 
     const containerBoxesWidth = document.querySelectorAll(".container_boxes_width");
 
@@ -183,13 +181,16 @@ class Width {
     var index;
 
    for (var i = 0; i < dataWidth.length; i++) {
+
      if (dataWidth[i].textContent == width) {
+
        index = i;
      }
    }
 
     for (var i = 0; i < containerBoxesWidth.length; i++) {
       if (index == i) {
+
         containerBoxesWidth[i].style.border = "2px solid white";
       }
       else {
@@ -199,8 +200,6 @@ class Width {
 
 
   }
-
-
 }
 
 // la siguiente linea se va a eliminar porque se van a crear box-width automaticos

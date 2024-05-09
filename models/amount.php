@@ -61,7 +61,7 @@ class Amount_Models {
 
         // Close the database connection
         $this->connection->closeConnection();
-        
+
         return $response;
 
     } catch (PDOException $e) {
@@ -72,7 +72,16 @@ class Amount_Models {
   }
 
   public function getAllPriceOfWidth() {
+    /*
+    Tengo que hacer algo.
+    Tengo que imprimir las variables en un echo y mostrarlas al cambiar de material
+    poner un alert en materials
+    antes de llamar esta funcion poner para capturar las variables y luego un echo de material, noSides, noColour, min y max amount.
 
+    Analizar Porque las busquedas no dan resultado:
+    Creo que es porque noColour no coincide
+    Entonces poner un if que guarde el valor de price de todos los width y , miento, solo cambiar la variable de color y sidePrinted
+    */
     try {
 
         // Prepare the SQL query with placeholders
@@ -83,16 +92,13 @@ class Amount_Models {
           JOIN `noColours` ON `SidePrinted`.`idSidePrinted` = `noColours`.`idSidePrinted`
           JOIN `Amount` ON `noColours`.`idNoColour` = `Amount`.`idNoColour`
           WHERE `Lanyards`.`material` = :material AND `SidePrinted`.`noSides` = :noSides AND `noColours`.`option` = :noColours AND `Amount`.`min-amount` = :minAmount
-          ORDER BY `Amount`.`min-amount` ASC" );
+          ORDER BY `Amount`.`min-amount` ASC");
 
         // Bind the email parameter
         $sql->bindParam(':material', $this->material, PDO::PARAM_STR);
         $sql->bindParam(':noSides', $this->noSides, PDO::PARAM_STR);
         $sql->bindParam(':noColours', $this->noColour, PDO::PARAM_STR);
         $sql->bindParam(':minAmount', $this->minAmount, PDO::PARAM_STR);
-
-
-
 
         // Execute the query
         $sql->execute();

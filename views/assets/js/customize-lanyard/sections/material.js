@@ -146,6 +146,12 @@ class Material {
       //  alert(data);
         data = JSON.parse(data);
 
+        // Sets the selected print side option for the lanyard based on the data provided.
+        sidePrintedClass.setSidePrintedSelected(data["sidePrintedSelected"]);
+
+        // Assigns the number of colors selected for the lanyard customization.
+        customizeLanyard.setNoColours(data["noColourSelected"]);
+
         // Show the selected material.
         material.showSelectedMaterial(data["material"]);
 
@@ -177,6 +183,9 @@ class Material {
         }
 
         widthClass.updatePriceWidth();
+
+        widthClass.showSelectedWidth();
+
       })
       .catch(error => {
         console.error("Error:", error);
