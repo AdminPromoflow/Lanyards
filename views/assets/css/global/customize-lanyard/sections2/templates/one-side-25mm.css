@@ -1,3 +1,8 @@
+
+.twoSidePrinted{
+  display: none;
+}
+
 .one-side-25mm{
   position: relative;
   width: 90%;
@@ -6,7 +11,6 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, .1);
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,12 +18,22 @@
   display: none;
 }
 .os25-img{
-  position: absolute;
+  position: relative;
   top: 0px;
   height: 72.1%;
-  width: 50%;
+  width: 100%;
   left: 50%;
   transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+}
+.os25-img img{
+  position: relative;
+  height: 100%;
+  width: auto;
+  opacity: 1;
+  margin: 0 10px;
 
 }
 .os25-clip{
@@ -33,15 +47,7 @@
   opacity: 1;
   z-index: -1;
 }
-.os25-img img{
-  position: absolute;
-  top: -1.5%;
-  height: 100%;
-  left: 52%;
-  transform: translateX(-50%);
-  width: auto;
-  opacity: 1;
-}
+
 .container-one-side-25mm{
   position: relative;
   width: 90%;
@@ -75,10 +81,3 @@
   height: 100%;
   clip-path: polygon(88%  0%, 72% 0%,  40% 65.2%, 55% 65.2%);
 }
-
-
-
-
-
-/*  clip-path: polygon(0%  0%, 50% 0%,  30% 55%, 4% 55%);
-*/

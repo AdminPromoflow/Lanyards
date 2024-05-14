@@ -2,8 +2,6 @@
 class SidePrinted {
   constructor() {
     this.sidePrintedSelected = "one-side";
-
-
   }
 
   setSidePrintedSelected(value) {
@@ -51,21 +49,13 @@ class SidePrinted {
     var materialSelected = material.getMaterialSelected();
     var widthSelected = widthClass.getWidthSelected();
 
-
-
     let sidePrintedAvailable = [];
-
-
     // Iterating through each item in the JSON array
     for (let i = 0; i < json.length; i++) {
         // Extracting the 'materials' array from the current JSON item
         const material = json[i].materials.material;
-
         // Checking if the material matches the selected material
         if (material == materialSelected) {
-
-
-
             // Extracting the 'widths' array from the current JSON item
             const widths = json[i].materials.width;
             // Iterating through each width in the 'widths' array
@@ -74,9 +64,6 @@ class SidePrinted {
                 const width = widths[j].width;
 
                 if (width == widthSelected) {
-
-
-
 
                     // Extracting the 'sidePrinted' array from the current width object
                     const sidePrinted = widths[j].sidePrinted;
@@ -87,18 +74,11 @@ class SidePrinted {
                         const noSides = sidePrinted[k].noSides;
 
                         sidePrintedAvailable[k] = sidePrinted[k].noSides;
-
                     }
-                  }
-
+                }
             }
         }
     }
-
-
-    /*for (var i = 0; i < sidePrintedAvailable.length; i++) {
-      alert(sidePrintedAvailable[i]);
-    }*/
 
     return sidePrintedAvailable;
   }
@@ -124,26 +104,23 @@ class SidePrinted {
   }
 
   searchDataSidePrintedSelected(sidePrinted, index) {
+
     this.setSidePrintedSelected(sidePrinted);
     priceClass.setAmountSelected(priceClass.getAmountSelected());
-
-
     previewSidePrinted.showSelectedPreviewtTemplate();
 
-  //  alert(sidePrinted);
   }
 
 
   showSelectedSidePrinted(data){
+
+    alert(data);
     const containerBoxesSidePrinted = document.querySelectorAll(".container_boxes_side_printed");
 
     var index;
    for (var i = 0; i < dataSidePrinted.length; i++) {
 
-    // alert(JSON.stringify(data));
-
      if (dataSidePrinted[i].textContent == data) {
-       //alert(data["type"]);
        index = i;
      }
    }

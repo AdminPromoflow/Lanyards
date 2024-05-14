@@ -74,6 +74,19 @@ class Material {
         for (var i = 0; i < jsonMaterials.materials.length; i++) {
           material.createMaterials(jsonMaterials["materials"][i], "0");
         }
+
+
+
+
+        sidePrintedClass.cleanSidePrinted();
+
+        // Draw SidePrinted available:
+        let sidePrintedAvailable = sidePrintedClass.getDataSidePrintedAvailable();
+
+
+        for (var i = 0; i < sidePrintedAvailable.length; i++) {
+          sidePrintedClass.drawSidePrintedAvailable(sidePrintedAvailable[i], i);
+        }
       })
       .catch(error => {
         console.error("Error:", error);

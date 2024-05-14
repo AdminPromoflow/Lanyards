@@ -3,14 +3,21 @@ class PreviewSidePrinted {
 
   }
   showSelectedPreviewtTemplate(){
+
+    const twoSidePrinted = document.querySelectorAll(".twoSidePrinted");
+
     var sidePrintedSelected = sidePrintedClass.getSidePrintedSelected();
   //  previewLanyardTypeContainer.innerHTML = "";
     if (sidePrintedSelected == "one-side") {
-
-      urgentForDelete.style.display = "none";
+      for (var i = 0; i < twoSidePrinted.length; i++) {
+        twoSidePrinted[i].style.display = "none";
+      }
     }
     else if (sidePrintedSelected == "two-side") {
-      urgentForDelete.style.display = "block";
+      for (var i = 0; i < twoSidePrinted.length; i++) {
+        twoSidePrinted[i].style.display = "block";
+      }
+
     }
 
   }
@@ -44,7 +51,8 @@ class PreviewSidePrinted {
 
 const previewLanyardTypeContainer2 = document.getElementById("preview-lanyard-type-container");
 
-const urgentForDelete = document.getElementById("urgentForDelete");
+
+
 
 
 const previewSidePrinted = new PreviewSidePrinted();
