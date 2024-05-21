@@ -11,7 +11,6 @@ require_once 'clips.php';
 require_once 'amount.php';
 require_once 'extras.php';
 
-
 // Define the Material class
 class Material {
     // Public function to handle incoming HTTP requests
@@ -255,81 +254,105 @@ class Material {
 
 
 
-    private function getAllLanyardInfo(){
-        // Crear una conexión a la base de datos
+    private function getAllLanyardInfo() {
+        // Create a connection to the database
         $connection = new Database();
 
-        // Instanciar la clase Lanyards y obtener los materiales
+        // Instantiate the Lanyards class and get the materials
         $lanyards = new Lanyards($connection);
         $materialsResult = $lanyards->getMaterials();
 
-        // Inicializar el array para almacenar el JSON
+        // Initialize the array to store the JSON
         $mwJson = array();
 
-        // Iterar sobre cada material
+        // Iterate over each material
         foreach ($materialsResult as $material) {
-            // Inicializar el array para almacenar los detalles de cada material
+            // Initialize the array to store the details of each material
             $materialData = array(
                 "materials" => array(
                     "material" => $material["material"],
                     "linkImg" => $material["linkImg"],
                     "description" => $material["description"],
-                    "width" => array() // Inicializar el array para almacenar los datos de ancho
+                    "lanyardType" => array(), // Initialize the array to store lanyard type data
+                    "width" => array() // Initialize the array to store width data
                 )
             );
 
-            // Crear una nueva conexión a la base de datos
+            // Create a new connection to the database
             $connection = new Database();
 
-            // Instanciar la clase Width_Model y configurar el material actual
+            // Instantiate the LanyardType_Model class and set the current material
+            $lanyardTypeClass = new TypeLanyards_Models($connection);
+            $lanyardTypeClass->setMaterial($material["material"]);
+
+            // Get all lanyard types for the current material
+            $lanyardTypeResult = $lanyardTypeClass->getAllLanyardsTypesByMaterial();
+
+            // Iterate over each lanyard type and add it to the material data array
+            foreach ($lanyardTypeResult as $lanyardType) {
+                $lanyardTypeData = array(
+                    "type" => $lanyardType["type"],
+                    "imgLink" => $lanyardType["imgLink"],
+                    "price" => $lanyardType["price"]
+                );
+
+                // Add the lanyard type data to the material data array
+                $materialData["materials"]["lanyardType"][] = $lanyardTypeData;
+            }
+
+            // Create a new connection to the database
+            $connection = new Database();
+
+            // Instantiate the Width_Model class and set the current material
             $widthClass = new Width_Model($connection);
             $widthClass->setMaterial($material["material"]);
 
-            // Obtener todos los anchos para el material actual
+            // Get all widths for the current material
             $widthResult = $widthClass->getAllWidthByMaterial();
 
-            // Iterar sobre cada ancho y agregarlo al array de datos del material
+            // Iterate over each width and add it to the material data array
             foreach ($widthResult as $width) {
                 $widthData = array(
                     "width" => $width["width"],
                     "imgLink" => $width["imgLink"],
-                    "sidePrinted" => array() // Inicializar el array para almacenar los datos de impresión lateral
+                    "sidePrinted" => array(), // Initialize the array to store side printed data
+                    "clips" => array() // Initialize the array to store clip data
                 );
 
-                // Instanciar la clase SidePrinted_Model y configurar el material y el ancho actual
+                // Instantiate the SidePrinted_Model class and set the current material and width
                 $connection = new Database();
                 $sidePrintedClass = new SidePrinted_Model($connection);
                 $sidePrintedClass->setMaterial($material["material"]);
                 $sidePrintedClass->setWidth($width["width"]);
 
-                // Obtener los datos de impresión lateral para el material y el ancho actual
+                // Get the side printed data for the current material and width
                 $sidePrintedResult = $sidePrintedClass->getAllSidePrintedByWidth();
 
-                // Iterar sobre cada resultado de impresión lateral y agregarlo al array de datos de ancho
+                // Iterate over each side printed result and add it to the width data array
                 foreach ($sidePrintedResult as $sidePrinted) {
                     $sidePrintedData = array(
                         "noSides" => $sidePrinted["noSides"],
-                        "noColours" => array() // Inicializar el array para almacenar los datos de opciones de colores
+                        "noColours" => array() // Initialize the array to store color options data
                     );
 
-                    // Instanciar la clase NoColours_Model y configurar el material, ancho y impresión lateral actual
+                    // Instantiate the NoColours_Model class and set the current material, width, and side printed
                     $connection = new Database();
                     $noColourClass = new NoColours_Models($connection);
                     $noColourClass->setMaterial($material["material"]);
                     $noColourClass->setWidth($width["width"]);
                     $noColourClass->setNoSides($sidePrinted["noSides"]);
 
-                    // Obtener las opciones de colores para la impresión lateral actual
+                    // Get the color options for the current side printed
                     $noColourResult = $noColourClass->getAllNoColoursBySidePrinted();
 
-                    // Iterar sobre cada opción de color y agregarla al array de datos de impresión lateral
+                    // Iterate over each color option and add it to the side printed data array
                     foreach ($noColourResult as $noColour) {
                         $noColourData = array(
                             "noColour" => $noColour["option"],
-                            "amount" => array() // Inicializar el array para almacenar los datos de cantidad
+                            "amount" => array() // Initialize the array to store amount data
                         );
 
-                        // Instanciar la clase Amount_Models y configurar el material, ancho, impresión lateral y opción de color actual
+                        // Instantiate the Amount_Models class and set the current material, width, side printed, and color option
                         $connection = new Database();
                         $amountClass = new Amount_Models($connection);
                         $amountClass->setMaterial($material["material"]);
@@ -337,10 +360,10 @@ class Material {
                         $amountClass->setNoSides($sidePrinted["noSides"]);
                         $amountClass->setNoColour($noColour["option"]);
 
-                        // Obtener la cantidad para la opción de color actual
+                        // Get the amount for the current color option
                         $amountResult = $amountClass->getAllAmountByNoColour();
 
-                        // Iterar sobre cada cantidad y agregarla al array de datos de opción de color
+                        // Iterate over each amount and add it to the color option data array
                         foreach ($amountResult as $amount) {
                             $noColourData["amount"][] = array(
                                 "min-amount" => $amount["min-amount"],
@@ -349,25 +372,48 @@ class Material {
                             );
                         }
 
-                        // Agregar los datos de la opción de color al array de datos de impresión lateral
+                        // Add the color option data to the side printed data array
                         $sidePrintedData["noColours"][] = $noColourData;
                     }
 
-                    // Agregar los datos de impresión lateral al array de datos de ancho
+                    // Add the side printed data to the width data array
                     $widthData["sidePrinted"][] = $sidePrintedData;
                 }
 
-                // Agregar los datos de ancho al array de datos del material
+                // Instantiate the Clip_Model class and set the current material and width
+                $connection = new Database();
+                $clipClass = new Clips_Models($connection);
+                $clipClass->setMaterial($material["material"]);
+                $clipClass->setWidth($width["width"]);
+
+                // Get the clip data for the current material and width
+                $clipResult = $clipClass->getAllClipsByWidth();
+
+                // Iterate over each clip result and add it to the width data array
+                foreach ($clipResult as $clip) {
+                    $clipData = array(
+                        "name" => $clip["name"],
+                        "imgLink" => $clip["imgLink"],
+                        "price" => $clip["price"]
+                    );
+
+                    // Add the clip data to the width data array
+                    $widthData["clips"][] = $clipData;
+                }
+
+                // Add the width data to the material data array
                 $materialData["materials"]["width"][] = $widthData;
             }
 
-            // Agregar los datos del material al array de salida
-            $json[] = $materialData;
+            // Add the material data to the output array
+            $mwJson[] = $materialData;
         }
 
-        // Codificar el array de salida como JSON y devolverlo
-        return($json);
+        // Encode the output array as JSON and return it
+        return($mwJson);
     }
+
+
 
 }
 

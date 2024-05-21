@@ -53,10 +53,9 @@ class Material {
       .then(data => {
         data = JSON.parse(data);
 
+        console.log(JSON.stringify(data["lanyards"][2]["materials"]["material"]));
+
         customizeLanyard.setJsonLanyards(data["lanyards"]);
-
-
-      //  console.log(JSON.stringify(customizeLanyard.getJsonLanyards()));
 
         // Clear the container for materials.
         containersBoxesMaterial.innerHTML = "";
@@ -68,15 +67,14 @@ class Material {
 
 
 
+
         var jsonMaterials = {};
         jsonMaterials = material.getJsonMaterials();
+
         // Create materials HTML elements.
         for (var i = 0; i < jsonMaterials.materials.length; i++) {
-          material.createMaterials(jsonMaterials["materials"][i], "0");
+          material.createMaterials(data["lanyards"][i]["materials"]);
         }
-
-
-
 
         sidePrintedClass.cleanSidePrinted();
 
@@ -87,6 +85,21 @@ class Material {
         for (var i = 0; i < sidePrintedAvailable.length; i++) {
           sidePrintedClass.drawSidePrintedAvailable(sidePrintedAvailable[i], i);
         }
+
+
+
+        clipClass.cleanClip();
+
+        
+        let clipAvailable = clipClass.getDataClipAvailable();
+
+        for (var i = 0; i < clipAvailable.length; i++) {
+          clipClass.drawClipAvailable(clipAvailable[i], i);
+        }
+
+      //  alert(JSON.stringify(clipAvailable));
+
+
       })
       .catch(error => {
         console.error("Error:", error);
@@ -98,7 +111,7 @@ class Material {
     containersBoxesMaterial.innerHTML +=
     '<div class="container_boxes_material"  onclick="material.searchDataMaterialSelected(\'' + data['material']  + '\');">'  +
       '<h4 class="dataMaterial">'+data['material']+'</h4>' +
-      '<h3 class="pricesDataMaterial">£ '+ price +' per unit</h3>' +
+      '<h3 class="pricesDataMaterial">£0 per unit</h3>' +
     '</div>'
     ;
   }
@@ -198,6 +211,10 @@ class Material {
         widthClass.updatePriceWidth();
 
         widthClass.showSelectedWidth();
+
+
+
+
 
       })
       .catch(error => {

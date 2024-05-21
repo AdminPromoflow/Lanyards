@@ -114,7 +114,7 @@ class SidePrinted {
 
   showSelectedSidePrinted(data){
 
-    alert(data);
+    //alert(data);
     const containerBoxesSidePrinted = document.querySelectorAll(".container_boxes_side_printed");
 
     var index;

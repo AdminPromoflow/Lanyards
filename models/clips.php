@@ -17,20 +17,22 @@ class Clips_Models {
 
   // Set the user's name
   public function setWidth($width) {
-
     $this->width = $width;
-
   }
 
 
 
-  public function getAllSidePrintedByWidth() {
-    //echo json_encode($this->width."hola");  exit;
+  public function getAllClipsByWidth() {
     try {
 
         // Prepare the SQL query with placeholders
-        $sql = $this->connection->getConnection()->prepare("SELECT `SidePrinted`. `noSides`
-          FROM `Lanyards` JOIN `Width` ON `Lanyards`.`idLanyard` = `Width`.`idLanyard` JOIN `SidePrinted` ON `Width`.`idWidth` = `SidePrinted`.`idWidth` WHERE `Lanyards`.`material` = :material AND `Width`.`width` = :width ");
+        $sql = $this->connection->getConnection()->prepare("SELECT Clips.`name`, Clips.`imgLink`, Clips.`price`
+                    FROM `Lanyards`
+                    JOIN `Width` ON `Lanyards`.`idLanyard` = `Width`.`idLanyard`
+                    JOIN `Clips` ON `Width`.`idWidth` = `Clips`.`idWidth`
+                    WHERE `Width`.`width` = :width
+                    AND `Lanyards`.`material` = :material;
+                    ");
 
         // Bind the email parameter
         $sql->bindParam(':material', $this->material, PDO::PARAM_STR);

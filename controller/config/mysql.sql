@@ -48,6 +48,7 @@ DROP TABLE IF EXISTS `Orders`
 DROP TABLE IF EXISTS `Lanyards`
 ;
 
+
 /* Create Tables */
 
 CREATE TABLE `Amount`
@@ -73,8 +74,9 @@ CREATE TABLE `Artwork`
 
 CREATE TABLE `Clips`
 (
-	`idClip` INT NOT NULL,
-	`name` VARCHAR(50) NOT NULL,
+	`idClip` INT NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(50) NULL,
+	`imgLink` TEXT NOT NULL,
 	`price` FLOAT(5,2) NOT NULL,
 	`idWidth` INT NULL,
 	CONSTRAINT `PK_Clips` PRIMARY KEY (`idClip` ASC)
@@ -88,6 +90,7 @@ CREATE TABLE `Extras`
 	`group` VARCHAR(50) NOT NULL,
 	`type` VARCHAR(50) NOT NULL,
 	`price` FLOAT(5,2) NOT NULL,
+	`imgLink` TEXT NULL,
 	`idLanyard` INT NULL,
 	CONSTRAINT `PK_extras` PRIMARY KEY (`idExtras` ASC)
 )
