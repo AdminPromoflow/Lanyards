@@ -995,28 +995,29 @@ INSERT INTO `Amount` (`min-amount`, `max-amount`, `price`, `idNoColour`) SELECT 
 
 /*CLIPS*/
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'crab_hook', 'views/assets/img/global/customize-lanyard/sections/clip/crab_hook.png', '0.36', `idWidth`
+
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'crab_hook', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/crab_hook.png', 'views/assets/img/global/customize-lanyard/sections/clip/two-ends/crab_hook.png','0.36', `idWidth`
 FROM `Width`
 WHERE `width` = '10mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'crab_hook', 'views/assets/img/global/customize-lanyard/sections/clip/crab_hook.png', '0.38', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'crab_hook', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/crab_hook.png', 'views/assets/img/global/customize-lanyard/sections/clip/two-ends/crab_hook.png' ,'0.38', `idWidth`
 FROM `Width`
 WHERE `width` = '15mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'crab_hook', 'views/assets/img/global/customize-lanyard/sections/clip/crab_hook.png', '0.83', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'crab_hook', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/crab_hook.png', 'views/assets/img/global/customize-lanyard/sections/clip/two-ends/crab_hook.png' ,'0.83', `idWidth`
 FROM `Width`
 WHERE `width` = '20mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'crab_hook', 'views/assets/img/global/customize-lanyard/sections/clip/crab_hook.png', '0.86', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'crab_hook', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/crab_hook.png', 'views/assets/img/global/customize-lanyard/sections/clip/two-ends/crab_hook.png' ,'0.86', `idWidth`
 FROM `Width`
 WHERE `width` = '25mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'crab_hook', 'views/assets/img/global/customize-lanyard/sections/clip/crab_hook.png', '0.89', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'crab_hook', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/crab_hook.png', 'views/assets/img/global/customize-lanyard/sections/clip/two-ends/crab_hook.png' ,'0.89', `idWidth`
 FROM `Width`
 WHERE `width` = '30mm';
 
@@ -1030,28 +1031,28 @@ WHERE `width` = '30mm';
 
 
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'crocodile_clip', 'views/assets/img/global/customize-lanyard/sections/clip/crocodile_clip.png', '0.18', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'crocodile_clip', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/crocodile_clip.png',   ' views/assets/img/global/customize-lanyard/sections/clip/two-ends/crocodile_clip.png '    ,'0.18', `idWidth`
 FROM `Width`
 WHERE `width` = '10mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'crocodile_clip', 'views/assets/img/global/customize-lanyard/sections/clip/crocodile_clip.png', '0.20', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'crocodile_clip', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/crocodile_clip.png',  ' views/assets/img/global/customize-lanyard/sections/clip/two-ends/crocodile_clip.png '    ,'0.20', `idWidth`
 FROM `Width`
 WHERE `width` = '15mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'crocodile_clip', 'views/assets/img/global/customize-lanyard/sections/clip/crocodile_clip.png', '0.22', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'crocodile_clip', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/crocodile_clip.png',   ' views/assets/img/global/customize-lanyard/sections/clip/two-ends/crocodile_clip.png '   ,'0.22', `idWidth`
 FROM `Width`
 WHERE `width` = '20mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'crocodile_clip', 'views/assets/img/global/customize-lanyard/sections/clip/crocodile_clip.png', '0.25', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'crocodile_clip', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/crocodile_clip.png',   ' views/assets/img/global/customize-lanyard/sections/clip/two-ends/crocodile_clip.png '   ,'0.25', `idWidth`
 FROM `Width`
 WHERE `width` = '25mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'crocodile_clip', 'views/assets/img/global/customize-lanyard/sections/clip/crocodile_clip.png', '0.28', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'crocodile_clip', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/crocodile_clip.png',  ' views/assets/img/global/customize-lanyard/sections/clip/two-ends/crocodile_clip.png '    , '0.28', `idWidth`
 FROM `Width`
 WHERE `width` = '30mm';
 
@@ -1064,28 +1065,28 @@ WHERE `width` = '30mm';
 
 
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'dog_clip', 'views/assets/img/global/customize-lanyard/sections/clip/dog_clip.png', '0', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'dog_clip', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/dog_clip.png',   ' views/assets/img/global/customize-lanyard/sections/clip/two-ends/dog_clip.png   '    ,'0', `idWidth`
 FROM `Width`
 WHERE `width` = '10mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'dog_clip', 'views/assets/img/global/customize-lanyard/sections/clip/dog_clip.png', '0', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'dog_clip', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/dog_clip.png', ' views/assets/img/global/customize-lanyard/sections/clip/two-ends/dog_clip.png   '  , '0', `idWidth`
 FROM `Width`
 WHERE `width` = '15mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'dog_clip', 'views/assets/img/global/customize-lanyard/sections/clip/dog_clip.png', '0', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'dog_clip', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/dog_clip.png', ' views/assets/img/global/customize-lanyard/sections/clip/two-ends/dog_clip.png   ' , '0', `idWidth`
 FROM `Width`
 WHERE `width` = '20mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'dog_clip', 'views/assets/img/global/customize-lanyard/sections/clip/dog_clip.png', '0', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'dog_clip', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/dog_clip.png', ' views/assets/img/global/customize-lanyard/sections/clip/two-ends/dog_clip.png   ' , '0', `idWidth`
 FROM `Width`
 WHERE `width` = '25mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'dog_clip', 'views/assets/img/global/customize-lanyard/sections/clip/dog_clip.png', '0', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'dog_clip', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/dog_clip.png', ' views/assets/img/global/customize-lanyard/sections/clip/two-ends/dog_clip.png   '  ,'0', `idWidth`
 FROM `Width`
 WHERE `width` = '30mm';
 
@@ -1096,28 +1097,28 @@ WHERE `width` = '30mm';
 
 
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'metal_j_hook', 'views/assets/img/global/customize-lanyard/sections/clip/metal_j_hook.png', '0.26', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'metal_j_hook', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/metal_j_hook.png',    '  views/assets/img/global/customize-lanyard/sections/clip/two-ends/metal_j_hook.png   '     , '0.26', `idWidth`
 FROM `Width`
 WHERE `width` = '10mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'metal_j_hook', 'views/assets/img/global/customize-lanyard/sections/clip/metal_j_hook.png', '0.29', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'metal_j_hook', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/metal_j_hook.png', '  views/assets/img/global/customize-lanyard/sections/clip/two-ends/metal_j_hook.png   '     ,'0.29', `idWidth`
 FROM `Width`
 WHERE `width` = '15mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'metal_j_hook', 'views/assets/img/global/customize-lanyard/sections/clip/metal_j_hook.png', '0.29', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'metal_j_hook', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/metal_j_hook.png', '  views/assets/img/global/customize-lanyard/sections/clip/two-ends/metal_j_hook.png   '     ,'0.29', `idWidth`
 FROM `Width`
 WHERE `width` = '20mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'metal_j_hook', 'views/assets/img/global/customize-lanyard/sections/clip/metal_j_hook.png', '0.33', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'metal_j_hook', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/metal_j_hook.png', '  views/assets/img/global/customize-lanyard/sections/clip/two-ends/metal_j_hook.png   '     ,'0.33', `idWidth`
 FROM `Width`
 WHERE `width` = '25mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'metal_j_hook', 'views/assets/img/global/customize-lanyard/sections/clip/metal_j_hook.png', '0.36', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'metal_j_hook', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/metal_j_hook.png', '  views/assets/img/global/customize-lanyard/sections/clip/two-ends/metal_j_hook.png   '     ,'0.36', `idWidth`
 FROM `Width`
 WHERE `width` = '30mm';
 
@@ -1127,28 +1128,28 @@ WHERE `width` = '30mm';
 
 
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'slide_clip', 'views/assets/img/global/customize-lanyard/sections/clip/slide_clip.png', '0.45', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'slide_clip', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/slide_clip.png',    '  views/assets/img/global/customize-lanyard/sections/clip/two-ends/slide_clip.png   '    , '0.45', `idWidth`
 FROM `Width`
 WHERE `width` = '10mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'slide_clip', 'views/assets/img/global/customize-lanyard/sections/clip/slide_clip.png', '0.48', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'slide_clip', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/slide_clip.png',  '  views/assets/img/global/customize-lanyard/sections/clip/two-ends/slide_clip.png   '   ,'0.48', `idWidth`
 FROM `Width`
 WHERE `width` = '15mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'slide_clip', 'views/assets/img/global/customize-lanyard/sections/clip/slide_clip.png', '0.50', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'slide_clip', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/slide_clip.png',  '  views/assets/img/global/customize-lanyard/sections/clip/two-ends/slide_clip.png   '  , '0.50', `idWidth`
 FROM `Width`
 WHERE `width` = '20mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'slide_clip', 'views/assets/img/global/customize-lanyard/sections/clip/slide_clip.png', '0.52', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'slide_clip', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/slide_clip.png',  '  views/assets/img/global/customize-lanyard/sections/clip/two-ends/slide_clip.png   '  , '0.52', `idWidth`
 FROM `Width`
 WHERE `width` = '25mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'slide_clip', 'views/assets/img/global/customize-lanyard/sections/clip/slide_clip.png', '0.56', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'slide_clip', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/slide_clip.png',  '  views/assets/img/global/customize-lanyard/sections/clip/two-ends/slide_clip.png   '  , '0.56', `idWidth`
 FROM `Width`
 WHERE `width` = '30mm';
 
@@ -1159,32 +1160,30 @@ WHERE `width` = '30mm';
 
 
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'swvel_clip', 'views/assets/img/global/customize-lanyard/sections/clip/swvel_clip.png', '0.10', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'swvel_clip', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/swvel_clip.png',   '   views/assets/img/global/customize-lanyard/sections/clip/two-ends/swvel_clip.png  '   , '0.10', `idWidth`
 FROM `Width`
 WHERE `width` = '10mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'swvel_clip', 'views/assets/img/global/customize-lanyard/sections/clip/swvel_clip.png', '0.15', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'swvel_clip', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/swvel_clip.png', '   views/assets/img/global/customize-lanyard/sections/clip/two-ends/swvel_clip.png  '  , '0.15', `idWidth`
 FROM `Width`
 WHERE `width` = '15mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'swvel_clip', 'views/assets/img/global/customize-lanyard/sections/clip/swvel_clip.png', '0.17', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'swvel_clip', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/swvel_clip.png',  '   views/assets/img/global/customize-lanyard/sections/clip/two-ends/swvel_clip.png  '  ,'0.17', `idWidth`
 FROM `Width`
 WHERE `width` = '20mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'swvel_clip', 'views/assets/img/global/customize-lanyard/sections/clip/swvel_clip.png', '0.19', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'swvel_clip', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/swvel_clip.png', '   views/assets/img/global/customize-lanyard/sections/clip/two-ends/swvel_clip.png  '  , '0.19', `idWidth`
 FROM `Width`
 WHERE `width` = '25mm';
 
-INSERT INTO `Clips` (`name`, `imgLink`, `price`, `idWidth`)
-SELECT 'swvel_clip', 'views/assets/img/global/customize-lanyard/sections/clip/swvel_clip.png', '0.21', `idWidth`
+INSERT INTO `Clips` (`name`, `imgLinkOneEnd`, `imgLinkTwoEnd`, `price`, `idWidth`)
+SELECT 'swvel_clip', 'views/assets/img/global/customize-lanyard/sections/clip/one-end/swvel_clip.png',  '   views/assets/img/global/customize-lanyard/sections/clip/two-ends/swvel_clip.png  '  ,'0.21', `idWidth`
 FROM `Width`
 WHERE `width` = '30mm';
-
-
 
 
 

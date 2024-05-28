@@ -26,7 +26,7 @@ class Clips_Models {
     try {
 
         // Prepare the SQL query with placeholders
-        $sql = $this->connection->getConnection()->prepare("SELECT Clips.`name`, Clips.`imgLink`, Clips.`price`
+        $sql = $this->connection->getConnection()->prepare("SELECT Clips.`name`, Clips.`imgLinkOneEnd`, Clips.`imgLinkTwoEnd`, Clips.`price`
                     FROM `Lanyards`
                     JOIN `Width` ON `Lanyards`.`idLanyard` = `Width`.`idLanyard`
                     JOIN `Clips` ON `Width`.`idWidth` = `Clips`.`idWidth`

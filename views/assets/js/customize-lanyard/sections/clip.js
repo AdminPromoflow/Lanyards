@@ -26,15 +26,12 @@ class ClipClass {
 
 
 
-
-
       let clipAvailable = [];
       // Iterating through each item in the JSON array
       for (let i = 0; i < json.length; i++) {
 
           // Extracting the 'materials' array from the current JSON item
           const material = json[i].materials.material;
-
 
           // Checking if the material matches the selected material
           if (material == materialSelected) {
@@ -49,21 +46,19 @@ class ClipClass {
 
                   if (width == widthSelected) {
 
-
                       // Extracting the 'clips' array from the current width object
                       const clips = widths[j].clips;
-
-
 
                       // Iterating through each item in the 'clips' array
                       for (let k = 0; k < clips.length; k++) {
                           // Extracting the 'name', 'imgLink', and 'price' from the current clip object
                           const name = clips[k].name;
-                          const imgLink = clips[k].imgLink;
+                          const imgLinkOneEnd = clips[k].imgLinkOneEnd;
+                          const imgLinkTwoEnd = clips[k].imgLinkTwoEnd;
                           const price = clips[k].price;
 
                           // Storing the clip data in clipAvailable array
-                          clipAvailable.push({name, imgLink, price});
+                          clipAvailable.push({name, imgLinkOneEnd, imgLinkTwoEnd, price});
                       }
                   }
               }
@@ -76,13 +71,25 @@ class ClipClass {
 
 
   drawClipAvailable(data, index){
+  //  alert(JSON.stringify(data));
+  var imgClip ;
+  if (oneTwoEndsClass.getTypeLanyardSelected() == "one-end") {
+      imgClip = data["imgLinkOneEnd"];
+  }
+  else {
+    imgClip = data["imgLinkTwoEnd"];
+  }
+
     containers_boxes_clip.innerHTML +=
     '<div class="container_boxes_clip"  onclick="clipClass.searchDataClipSelected(\'' + data["name"]  + '\', \' '+ index +'  \');"  >' +
         '<h3 class="dataClip">'+data["name"]+' </h3>' +
         '<h3 class="priceDataClip">+£'+data["price"]+' per unit</h3>' +
-        '<img class="imgClip" src="../../'+data["imgLink"]+'" alt="">' +
+        '<img class="imgClip" src="../../'+imgClip+'" alt="">' +
       '</div>'
     ;
+  }
+  updateClip(){
+
   }
 
   searchDataClipSelected(data, index) {
@@ -100,16 +107,19 @@ class ClipClass {
   }
 
   var typeLanyard =  oneTwoEndsClass.getTypeLanyardSelected();
-  alert(typeLanyard);
+  //alert(typeLanyard);
 
   if (typeLanyard == "one-end") {
     for (var i = 0; i < os25_clip.length; i++) {
-      os25_clip[i].innerHTML =         '<img class="" src="../../views/assets/img/global/customize-lanyard/sections/clip/'+data+'.png" alt="">'
+      os25_clip[i].innerHTML =         '<img class="" src="../../views/assets/img/global/customize-lanyard/sections/clip/one-end/'+data+'.png" alt="">'
 ;
     }
   }
   else {
-
+    for (var i = 0; i < os25_clip.length; i++) {
+      os25_clip[i].innerHTML =         '<img class="" src="../../views/assets/img/global/customize-lanyard/sections/clip/two-ends/'+data+'.png" alt="">'
+;
+    }
   }
 
 

@@ -18,11 +18,21 @@ class MaterialHome {
           amountSelected: priceClass.getAmountSelected()
         };
 
-        material.setMaterialSelected(materialForSelect[i].textContent);
         priceClass.setAmountSelected(1000);
+
+        material.setMaterialSelected(materialForSelect[i].textContent);
+        // Show the selected material.
+        material.showSelectedMaterial();
+
+        // Show the selected preview material.
+        previewMaterial.showSelectedPreviewtMaterial(material.getMaterialSelected());
+
+        // Update material prices.
+        material.updatePriceMaterial();
+
         material.makeAjaxRequestSetMaterialSelected(url, data);
 
-        
+
 
 
 

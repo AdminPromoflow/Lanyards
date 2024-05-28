@@ -393,7 +393,8 @@ class Material {
                 foreach ($clipResult as $clip) {
                     $clipData = array(
                         "name" => $clip["name"],
-                        "imgLink" => $clip["imgLink"],
+                        "imgLinkOneEnd" => $clip["imgLinkOneEnd"],
+                        "imgLinkTwoEnd" => $clip["imgLinkTwoEnd"],
                         "price" => $clip["price"]
                     );
 

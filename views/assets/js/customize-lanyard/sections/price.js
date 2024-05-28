@@ -83,34 +83,10 @@ class Price {
     pricePerLanyard.innerHTML = "£" + totalPrice.toFixed(2);
   }
 
-  // Method to calculate price per material with given amount.
-  calculatePricePerMaterialWithAmount(materials) {
-    var amountSelected = priceClass.getAmountSelected(); // Assume you have this value.
 
-    // If amountSelected is 0, return a price of 0.
-    if (amountSelected === 0) {
-      return 0;
-    }
 
-    // Iterate over each interval in the materials list.
-    for (var i = 0; i < materials.allAmount.length; i++) {
-      var interval = materials.allAmount[i];
 
-      // Convert interval values to numbers for comparison.
-      var minAmount = parseInt(interval["min-amount"]);
-      var maxAmount = parseInt(interval["max-amount"]);
 
-      // Check if amountSelected is within this interval.
-      if (amountSelected >= minAmount && amountSelected <= maxAmount) {
-        // If amountSelected is within this interval, return the corresponding price.
-        return parseFloat(interval.price);
-      }
-    }
-
-    // If amountSelected is greater than the maximum value of the last interval, return the price corresponding to the last interval.
-    var lastInterval = materials.allAmount[materials.allAmount.length - 1];
-    return parseFloat(lastInterval.price);
-  }
 }
 
 // DOM element references.

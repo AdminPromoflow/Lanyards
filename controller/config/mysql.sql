@@ -76,7 +76,8 @@ CREATE TABLE `Clips`
 (
 	`idClip` INT NOT NULL AUTO_INCREMENT,
 	`name` VARCHAR(50) NULL,
-	`imgLink` TEXT NOT NULL,
+	`imgLinkOneEnd` TEXT NOT NULL,
+	`imgLinkTwoEnd` TEXT NOT NULL,
 	`price` FLOAT(5,2) NOT NULL,
 	`idWidth` INT NULL,
 	CONSTRAINT `PK_Clips` PRIMARY KEY (`idClip` ASC)
