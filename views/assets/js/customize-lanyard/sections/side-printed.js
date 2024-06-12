@@ -83,6 +83,99 @@ class SidePrinted {
     return sidePrintedAvailable;
   }
 
+  updatePriceWidth() {
+
+    var json = customizeLanyard.getJsonLanyards();
+    var materialSelected = material.getMaterialSelected();
+    var widthSelected = widthClass.getWidthSelected();
+    var sidePrintedSelected = sidePrintedClass.getSidePrintedSelected();
+    var noColourSelected = customizeLanyard.getNoColours();
+    var amountSelected = priceClass.getAmountSelected();
+
+
+    let priceDataSidePrintedResult = [];
+
+    // Iterating through each item in the JSON array
+    for (let i = 0; i < json.length; i++) {
+        // Extracting the 'materials' array from the current JSON item
+        const material = json[i].materials.material;
+
+        // Checking if the material matches the selected material
+        if (material == materialSelected) {
+
+            // Extracting the 'widths' array from the current JSON item
+            const widths = json[i].materials.width;
+            // Iterating through each width in the 'widths' array
+            for (let j = 0; j < widths.length; j++) {
+
+                // Extracting the 'width' value from the current width object
+                const width = widths[j].width;
+
+                if (width == widthSelected) {
+
+                    // Extracting the 'sidePrinted' array from the current width object
+                    const sidePrinted = widths[j].sidePrinted;
+
+                    // Iterating through each item in the 'sidePrinted' array
+                    for (let k = 0; k < sidePrinted.length; k++) {
+
+
+                        // Extracting the 'noSides' value from the current sidePrinted object
+                        const noSides = sidePrinted[k].noSides;
+
+                        sidePrintedSelected = (noSides == sidePrintedSelected) ? noSides : sidePrinted[0].noSides;
+
+
+                          const noColours = sidePrinted[k].noColours;
+
+                          for (let l = 0; l < noColours.length; l++) {
+                              const noColour = noColours[l].noColour;
+                              if (noColour == noColourSelected) {
+
+                                const amounts = noColours[l].amount;
+                               for (let m = 0; m < amounts.length; m++) {
+                                 const minAmount = amounts[m]['min-amount'];
+                                 const maxAmount = amounts[m]['max-amount'];
+                                 const price = amounts[m].price;
+
+
+                                 if (amountSelected >= minAmount && amountSelected <= maxAmount ) {
+                                   priceDataSidePrintedResult[j] = price;
+                                   }
+                                   else if (amountSelected > maxAmount) {
+                                     priceDataSidePrintedResult[j] = price;
+                                   }
+
+                              //     alert(JSON.stringify(priceDataSidePrintedResult));
+
+
+                               }
+                            }
+                          }
+
+                    }
+                }
+            }
+        }
+    }
+
+  //  alert("HOLA TU HOLA TU HOLA TU" + JSON.stringify(priceDataSidePrintedResult));
+
+
+    var priceMaterialWidthAmount = priceClass.getPricePerMaterialWithAmount();
+    var priceWidthWidthAmount = priceClass.getPriceWidth();
+
+    const priceDataSidePrinted = document.querySelectorAll(".priceDataSidePrinted");
+    var totalPriceWidth;
+
+    for (var i = 0; i < priceDataSidePrinted.length; i++) {
+      totalPriceWidth = priceDataSidePrintedResult[i] - priceMaterialWidthAmount - priceWidthWidthAmount;
+      priceDataSidePrinted[i].innerHTML = "£" + totalPriceWidth.toFixed(2) + " per unit";
+    }
+  }
+
+
+
   cleanSidePrinted(){
     containerBoxSidePrinted.innerHTML = "";
   }

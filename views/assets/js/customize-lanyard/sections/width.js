@@ -1,10 +1,7 @@
 class Width {
   constructor(){
-    this.widthSelected = "20mm";
-
+    this.widthSelected = "10mm";
     var jsonWidth = {};
-
-
   }
   setWidthSelected(value) {
     this.widthSelected = value;
@@ -21,7 +18,6 @@ class Width {
  }
 
   createWidth(data, index){
-
     containersBoxesWidth.innerHTML +=
         '<div class="container_boxes_width"   onclick="widthClass.searchDataWidthSelected(\'' + data['width']  + '\', \' '+ index +'  \');">'+
           '<img src="../../'+data["imgLink"]+'" alt="">'+
@@ -29,11 +25,8 @@ class Width {
           '<h3 class="priceDataWidth">+£0 per unit</h3>'+
         '</div>'
     ;
-
   }
-
   searchDataWidthSelected(width, index) {
-
     // Set the selected material.
     this.setWidthSelected(width);
     // Set the amount selected.
@@ -62,16 +55,16 @@ class Width {
       }
     }
 
-
     sidePrintedClass.cleanSidePrinted();
 
     // Draw SidePrinted available:
     let sidePrintedAvailable = sidePrintedClass.getDataSidePrintedAvailable();
 
-
     for (var i = 0; i < sidePrintedAvailable.length; i++) {
       sidePrintedClass.drawSidePrintedAvailable(sidePrintedAvailable[i], i);
     }
+
+    sidePrintedClass.updatePriceWidth();
 
 
 
@@ -92,7 +85,6 @@ class Width {
 
     let priceDataWidthResult = [];
 
-
     // Iterating through each item in the JSON array
     for (let i = 0; i < json.length; i++) {
         // Extracting the 'materials' array from the current JSON item
@@ -101,12 +93,11 @@ class Width {
         // Checking if the material matches the selected material
         if (material == materialSelected) {
 
-
-
             // Extracting the 'widths' array from the current JSON item
             const widths = json[i].materials.width;
             // Iterating through each width in the 'widths' array
             for (let j = 0; j < widths.length; j++) {
+
                 // Extracting the 'width' value from the current width object
                 const width = widths[j].width;
 
@@ -115,11 +106,17 @@ class Width {
 
                     // Iterating through each item in the 'sidePrinted' array
                     for (let k = 0; k < sidePrinted.length; k++) {
+
+
                         // Extracting the 'noSides' value from the current sidePrinted object
                         const noSides = sidePrinted[k].noSides;
 
+                        sidePrintedSelected = (noSides == sidePrintedSelected) ? noSides : sidePrinted[0].noSides;
+
+
                         // Checking if the number of sides matches the selected number of sides
                         if (noSides == sidePrintedSelected) {
+                          console.log("HOLA TU HOLA TU HOLA TU" + JSON.stringify(json));
 
                           const noColours = sidePrinted[k].noColours;
 
@@ -142,12 +139,14 @@ class Width {
                                      priceDataWidthResult[j] = price;
                                    }
 
+                              //     alert(JSON.stringify(priceDataWidthResult));
+
 
                                }
                             }
                           }
                         }
-                    }
+                  }
             }
         }
     }
@@ -183,7 +182,6 @@ class Width {
    for (var i = 0; i < dataWidth.length; i++) {
 
      if (dataWidth[i].textContent == width) {
-
        index = i;
      }
    }

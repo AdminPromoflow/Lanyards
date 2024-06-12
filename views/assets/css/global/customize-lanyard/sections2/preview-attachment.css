@@ -1,0 +1,13 @@
+.attachment{
+  display: none;
+}
+.attachmentThing{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 47%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12%;
+  display: none;
+}

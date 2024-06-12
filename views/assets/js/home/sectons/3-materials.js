@@ -32,11 +32,8 @@ class MaterialHome {
 
         material.makeAjaxRequestSetMaterialSelected(url, data);
 
-
-
-
-
         customizeLanyard.openCustomizeLanyard(true);
+
         customizeLanyard.setStateVisibilityPanelCustomeLanyard (true);
 
       })
@@ -53,8 +50,6 @@ class MaterialHome {
       //  alert("ahah");
       })
     }
-
-
     // Event listener to hide containerTextMaterials when clicking outside
     document.addEventListener('click', this.outContainerTextMaterials);
   }
@@ -75,7 +70,6 @@ class MaterialHome {
       containerTextMaterials[containerTextMaterialsOn].style.display = "none";
     }
   }
-
 }
 
 // Selecting elements from the DOM
@@ -83,14 +77,11 @@ const itemMaterial = document.querySelectorAll(".itemMaterial");
 const containerTextMaterials = document.querySelectorAll(".containerTextMaterials");
 const closeMaterial = document.querySelectorAll(".closeMaterial");
 const buttonMaterialsBox = document.querySelectorAll(".buttonMaterialsBox");
-
 const openCustomizeLanyardFromMaterials = document.querySelectorAll(".openCustomizeLanyardFromMaterials");
-
 const materialForSelect = document.querySelectorAll(".material-for-select");
-
-
-
 const documento = document.documentElement;
+
+
 var containerTextMaterialsOn = 0;
 
 // Creating an instance of the MaterialHome class

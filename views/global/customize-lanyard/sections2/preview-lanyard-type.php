@@ -117,8 +117,13 @@
       <div class="os25-right">
       </div>
       <div class="os25-img">
-        <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/25-one-end.png" alt="">
+
+        <img class="standar" src="../../views/assets/img/global/customize-lanyard/sections2/templates/25-one-end.png" alt="">
         <img class="twoSidePrinted" src="../../views/assets/img/global/customize-lanyard/sections2/templates/25-one-end.png" alt="">
+        <img class="attachment" src="../../views/assets/img/global/customize-lanyard/sections2/templates/25-one-end-attachment.png" alt="">
+      </div>
+      <div class="attachmentThing">
+        <img class="attachmentThing" src="../../views/assets/img/global/customize-lanyard/sections/attachment/quick-release-black.png" alt="">
       </div>
       <div class="os25-clip">
         <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/clips/25-one-end-clip.png" alt="">
@@ -135,8 +140,12 @@
       <div class="os25-right">
       </div>
       <div class="os25-img">
-        <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/10-one-end.png" alt="">
+        <img class="standar" src="../../views/assets/img/global/customize-lanyard/sections2/templates/10-one-end.png" alt="">
         <img class="twoSidePrinted" src="../../views/assets/img/global/customize-lanyard/sections2/templates/10-one-end.png" alt="">
+        <img class="attachment" src="../../views/assets/img/global/customize-lanyard/sections2/templates/10-one-end-attachment.png" alt="">
+      </div>
+      <div class="attachmentThing">
+        <img class="attachmentThing" src="../../views/assets/img/global/customize-lanyard/sections/attachment/quick-release-black.png" alt="">
       </div>
       <div class="os25-clip">
         <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/clips/25-one-end-clip.png" alt="">
@@ -153,8 +162,12 @@
       <div class="os25-right">
       </div>
       <div class="os25-img">
-        <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/15-one-end.png" alt="">
+        <img class="standar" src="../../views/assets/img/global/customize-lanyard/sections2/templates/15-one-end.png" alt="">
         <img class="twoSidePrinted" src="../../views/assets/img/global/customize-lanyard/sections2/templates/15-one-end.png" alt="">
+        <img class="attachment" src="../../views/assets/img/global/customize-lanyard/sections2/templates/15-one-end-attachment.png" alt="">
+      </div>
+      <div class="attachmentThing">
+        <img class="attachmentThing" src="../../views/assets/img/global/customize-lanyard/sections/attachment/quick-release-black.png" alt="">
       </div>
       <div class="os25-clip">
         <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/clips/25-one-end-clip.png" alt="">
@@ -171,8 +184,12 @@
       <div class="os25-right">
       </div>
       <div class="os25-img">
-        <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/20-one-end.png" alt="">
+        <img class="standar" src="../../views/assets/img/global/customize-lanyard/sections2/templates/20-one-end.png" alt="">
         <img class="twoSidePrinted" src="../../views/assets/img/global/customize-lanyard/sections2/templates/20-one-end.png" alt="">
+        <img class="attachment" src="../../views/assets/img/global/customize-lanyard/sections2/templates/20-one-end-attachment.png" alt="">
+      </div>
+      <div class="attachmentThing">
+        <img class="attachmentThing" src="../../views/assets/img/global/customize-lanyard/sections/attachment/quick-release-black.png" alt="">
       </div>
       <div class="os25-clip">
         <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/clips/25-one-end-clip.png" alt="">
@@ -189,8 +206,12 @@
       <div class="os25-right">
       </div>
       <div class="os25-img">
-        <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/30-one-end.png" alt="">
+        <img class="standar" src="../../views/assets/img/global/customize-lanyard/sections2/templates/30-one-end.png" alt="">
         <img class="twoSidePrinted" src="../../views/assets/img/global/customize-lanyard/sections2/templates/30-one-end.png" alt="">
+        <img class="attachment" src="../../views/assets/img/global/customize-lanyard/sections2/templates/30-one-end-attachment.png" alt="">
+      </div>
+      <div class="attachmentThing">
+        <img class="attachmentThing" src="../../views/assets/img/global/customize-lanyard/sections/attachment/quick-release-black.png" alt="">
       </div>
       <div class="os25-clip">
         <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/clips/25-one-end-clip.png" alt="">

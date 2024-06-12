@@ -1,5 +1,6 @@
 // Define a class named Material.
 class Material {
+
   // Constructor method.
   constructor() {
     // Initialize the materialSelected property to "Tubular".
@@ -37,7 +38,8 @@ class Material {
 
   // Function to make an AJAX request to fetch all materials.
   makeAjaxRequestGetAllMaterials(url, data) {
-    fetch(url,{
+    // Make a fetch request to the given URL with the specified data
+    fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -45,149 +47,172 @@ class Material {
       body: JSON.stringify(data)
     })
       .then(response => {
+        // Check if the response is okay, if so, return the response text
         if (response.ok) {
           return response.text();
         }
+        // If the response is not okay, throw an error
         throw new Error("Network error.");
       })
       .then(data => {
+        // Parse the response data as JSON
         data = JSON.parse(data);
 
-    //    console.log(JSON.stringify(data["lanyards"]));
-
+        // Set the lanyards data in the customizeLanyard object
         customizeLanyard.setJsonLanyards(data["lanyards"]);
 
-        // Clear the container for materials.
+        // Clear the container for materials
         containersBoxesMaterial.innerHTML = "";
-        // Set the fetched JSON materials.
+        // Set the fetched JSON materials
         this.setJsonMaterials(data);
-        // Set amount selected to 1000.
+        // Set the amount selected to 1000
         priceClass.setAmountSelected(1000);
 
-        // Create materials HTML elements.
+        // Iterate through the lanyards and create materials HTML elements
         for (var i = 0; i < data["lanyards"].length; i++) {
           material.createMaterials(data["lanyards"][i]["materials"]);
         }
 
+        // Clean the side printed options
         sidePrintedClass.cleanSidePrinted();
 
-        // Draw SidePrinted available:
+        // Get the available side printed options
         let sidePrintedAvailable = sidePrintedClass.getDataSidePrintedAvailable();
 
-
+        // Iterate through the available side printed options and draw them
         for (var i = 0; i < sidePrintedAvailable.length; i++) {
           sidePrintedClass.drawSidePrintedAvailable(sidePrintedAvailable[i], i);
         }
 
-
-
+        // Clean the clip options
         clipClass.cleanClip();
 
-
+        // Get the available clip options
         let clipAvailable = clipClass.getDataClipAvailable();
 
+        // Iterate through the available clip options and draw them
         for (var i = 0; i < clipAvailable.length; i++) {
           clipClass.drawClipAvailable(clipAvailable[i], i);
         }
-
       })
       .catch(error => {
+        // Log any errors to the console
         console.error("Error:", error);
       });
   }
 
   // Function to create materials HTML elements.
   createMaterials(data, price) {
+    // Append a new material box to the containersBoxesMaterial's innerHTML.
     containersBoxesMaterial.innerHTML +=
-    '<div class="container_boxes_material"  onclick="material.searchDataMaterialSelected(\'' + data['material']  + '\');">'  +
-      '<h4 class="dataMaterial">'+data['material']+'</h4>' +
-      '<h3 class="pricesDataMaterial">£0 per unit</h3>' +
-    '</div>'
-    ;
+      `<div class="container_boxes_material" onclick="material.searchDataMaterialSelected('${data['material']}');">
+        <h4 class="dataMaterial">${data['material']}</h4>
+        <h3 class="pricesDataMaterial">£0 per unit</h3>
+      </div>`;
   }
 
   // Function to update material prices.
   updatePriceMaterial() {
-
+    // Get the JSON lanyards data from the customizeLanyard object.
     var json = customizeLanyard.getJsonLanyards();
+
+    // Get the selected material from the material object.
     var materialSelected = material.getMaterialSelected();
+
+    // Get the selected width from the widthClass object.
     var widthSelected = widthClass.getWidthSelected();
+
+    // Get the selected side printed option from the sidePrintedClass object.
     var sidePrintedSelected = sidePrintedClass.getSidePrintedSelected();
+
+    // Get the number of colors selected from the customizeLanyard object.
     var noColourSelected = customizeLanyard.getNoColours();
+
+    // Get the amount selected from the priceClass object.
     var amountSelected = priceClass.getAmountSelected();
 
+    // Initialize an array to store the results for material prices.
     let priceDataMaterialResult = [];
 
-    // Iterating through each item in the JSON array
+    // Iterating through each item in the JSON array.
     for (let i = 0; i < json.length; i++) {
-        // Extracting the 'materials' array from the current JSON item
-        const material = json[i].materials.material;
+      // Extracting the 'material' from the current JSON item.
+      const material = json[i].materials.material;
 
-        // Extracting the 'widths' array from the current JSON item
-        const widths = json[i].materials.width;
-        // Iterating through each width in the 'widths' array
-        for (let j = 0; j < widths.length; j++) {
-            // Extracting the 'width' value from the current width object
-            const width = widths[j].width;
+      // Extracting the 'widths' array from the current JSON item.
+      const widths = json[i].materials.width;
 
-            // Checking if the width matches the selected width
-            if (width == widthSelected) {
-                // Extracting the 'sidePrinted' array from the current width object
-                const sidePrinted = widths[j].sidePrinted;
+      // Iterating through each width in the 'widths' array.
+      for (let j = 0; j < widths.length; j++) {
+        // Extracting the 'width' value from the current width object.
+        const width = widths[j].width;
 
-                // Iterating through each item in the 'sidePrinted' array
-                for (let k = 0; k < sidePrinted.length; k++) {
-                    // Extracting the 'noSides' value from the current sidePrinted object
-                    const noSides = sidePrinted[k].noSides;
+        // Checking if the width matches the selected width.
+        if (width == widthSelected) {
+          // Extracting the 'sidePrinted' array from the current width object.
+          const sidePrinted = widths[j].sidePrinted;
 
-                    sidePrintedSelected = (noSides == sidePrintedSelected) ? noSides : sidePrinted[0].noSides;
+          // Iterating through each item in the 'sidePrinted' array.
+          for (let k = 0; k < sidePrinted.length; k++) {
+            // Extracting the 'noSides' value from the current sidePrinted object.
+            const noSides = sidePrinted[k].noSides;
 
+            // Update the sidePrintedSelected value if it matches the noSides value.
+            sidePrintedSelected = (noSides == sidePrintedSelected) ? noSides : sidePrinted[0].noSides;
 
+            // Checking if the number of sides matches the selected number of sides.
+            if (noSides == sidePrintedSelected) {
+              // Extracting the 'noColours' array from the current sidePrinted object.
+              const noColours = sidePrinted[k].noColours;
 
-                    // Checking if the number of sides matches the selected number of sides
-                    if (noSides == sidePrintedSelected) {
+              // Iterating through each item in the 'noColours' array.
+              for (let l = 0; l < noColours.length; l++) {
+                // Extracting the 'noColour' value from the current noColours object.
+                const noColour = noColours[l].noColour;
 
-                        const noColours = sidePrinted[k].noColours;
+                // Update the noColourSelected value if it matches the noColour value.
+                noColourSelected = (noColour == noColourSelected) ? noColour : noColours[0].noColour;
 
-                        for (let l = 0; l < noColours.length; l++) {
-                            const noColour = noColours[l].noColour;
+                // Checking if the number of colors matches the selected number of colors.
+                if (noColour == noColourSelected) {
+                  // Extracting the 'amount' array from the current noColours object.
+                  const amounts = noColours[l].amount;
 
-                            noColourSelected = (noColour == noColourSelected) ? noColour : noColours[0].noColour;
+                  // Iterating through each amount in the 'amounts' array.
+                  for (let m = 0; m < amounts.length; m++) {
+                    // Extracting the 'min-amount' and 'max-amount' values from the current amount object.
+                    const minAmount = amounts[m]['min-amount'];
+                    const maxAmount = amounts[m]['max-amount'];
+                    const price = amounts[m].price;
 
-
-
-                            if (noColour == noColourSelected) {
-                                const amounts = noColours[l].amount;
-                                for (let m = 0; m < amounts.length; m++) {
-                                    const minAmount = amounts[m]['min-amount'];
-                                    const maxAmount = amounts[m]['max-amount'];
-                                    const price = amounts[m].price;
-
-                                    if (amountSelected >= minAmount && amountSelected <= maxAmount) {
-                                        priceDataMaterialResult.push({ material, width, noSides, noColour, minAmount, maxAmount, price });
-                                    }
-                                }
-                            }
-                        }
+                    // Checking if the selected amount falls within the min and max amount range.
+                    if (amountSelected >= minAmount && amountSelected <= maxAmount) {
+                      // Push the result into the priceDataMaterialResult array.
+                      priceDataMaterialResult.push({ material, width, noSides, noColour, minAmount, maxAmount, price });
                     }
-
+                  }
                 }
+              }
             }
+          }
         }
+      }
     }
 
+    // Get all elements with the class "pricesDataMaterial".
+    const pricesDataMaterial = document.querySelectorAll(".pricesDataMaterial");
 
-     const pricesDataMaterial = document.querySelectorAll(".pricesDataMaterial");
-
-   for (var i = 0; i < priceDataMaterialResult.length; i++) {
-
+    // Iterating through the priceDataMaterialResult array to update the HTML.
+    for (var i = 0; i < priceDataMaterialResult.length; i++) {
+      // Update the inner HTML of the pricesDataMaterial elements with the price per unit.
       pricesDataMaterial[i].innerHTML = "£" + priceDataMaterialResult[i]["price"] + " per unit";
+
+      // If the material matches the selected material, update the price class.
       if (json[i]["materials"]["material"] == materialSelected) {
         priceClass.setPricePerMaterialWithAmount(priceDataMaterialResult[i]["price"]);
         priceClass.changePricePerLanyard();
       }
     }
-
   }
 
   // Function to search for a material.
@@ -215,6 +240,7 @@ class Material {
 
   // Function to make an AJAX request to set the selected material.
   makeAjaxRequestSetMaterialSelected(url, data) {
+    // Make a fetch request to the given URL with the specified data
     fetch(url, {
       method: "POST",
       headers: {
@@ -223,72 +249,87 @@ class Material {
       body: JSON.stringify(data)
     })
       .then(response => {
+        // Check if the response is okay, if so, return the response text
         if (response.ok) {
           return response.text();
         }
+        // If the response is not okay, throw an error
         throw new Error("Network error.");
       })
       .then(data => {
-      //  alert(data);
+        // Parse the response data as JSON
         data = JSON.parse(data);
 
-        // Clean oneTwoEnds.
+        // Clean the oneTwoEnds options
         oneTwoEndsClass.cleanOneTwoEnds();
 
-        // Create oneTwoEnds.
+        // Iterate through the allLanyardTypes and create oneTwoEnds elements
         for (var i = 0; i < data["allLanyardTypes"].length; i++) {
           oneTwoEndsClass.createOneTwoEnds(data["allLanyardTypes"][i], i);
         }
-        // Display the selected "one" or "two" ends.
+
+        // Display the selected "one" or "two" ends
         oneTwoEndsClass.showSelectedOneTwoEnds();
 
-        // Show the selected preview template.
+        // Show the selected preview template
         previewLanyardType.showSelectedPreviewtTemplate();
 
-        // Clean width.
+        // Clean the width options
         widthClass.cleanWidth();
 
-        // Create width.
+        // Iterate through the allWidth and create width elements
         for (var i = 0; i < data["allWidth"].length; i++) {
           widthClass.createWidth(data["allWidth"][i], i);
         }
 
+        // Update the price based on the width
         widthClass.updatePriceWidth();
 
+        // Show the selected width
         widthClass.showSelectedWidth();
 
-
-        // Sets the selected print side option for the lanyard based on the data provided.
+        // Set the selected print side option based on the data provided
         sidePrintedClass.setSidePrintedSelected(data["sidePrintedSelected"]);
 
-
-        // Assigns the number of colors selected for the lanyard customization.
+        // Set the number of colors selected for the lanyard customization
         customizeLanyard.setNoColours(data["noColourSelected"]);
-
 
       })
       .catch(error => {
+        // Log any errors to the console
         console.error("Error:", error);
       });
   }
 
   // Function to display the selected material.
   showSelectedMaterial() {
+    // Get all elements with the class "container_boxes_material".
     const containerBoxesMaterial = document.querySelectorAll(".container_boxes_material");
+
+    // Get the currently selected material.
     const material = this.getMaterialSelected();
+
+    // Set the border of all material containers to transparent.
     containerBoxesMaterial.forEach(container => {
       container.style.border = "2px solid transparent";
     });
+
+    // Iterate through each material container to highlight the selected one.
     containerBoxesMaterial.forEach(container => {
+      // Get the element that contains the material name.
       const dataMaterial = container.querySelector(".dataMaterial");
+
+      // If the text content of the dataMaterial element matches the selected material, set the border to white.
       if (dataMaterial.textContent === material) {
         container.style.border = "2px solid white";
       }
     });
   }
+
 }
 
-// Get the container for materials.
+// Get the container element for materials by its ID.
 const containersBoxesMaterial = document.getElementById("containers_boxes_material");
-// Create an instance of the Material class.
+
+// Create an instance of the Material class to initialize and manage materials.
 const material = new Material();

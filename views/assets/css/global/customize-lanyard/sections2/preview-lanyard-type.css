@@ -1,6 +1,16 @@
 .preview-lanyard-type{
   position: relative;
-  height: 100%;
-  width: 100%;
+  width: 90%;
+  height: 80%;
+  padding: 15px 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0,0,0,.1);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
   display: none;
 }

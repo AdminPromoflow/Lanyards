@@ -1,7 +1,7 @@
 .preview-material-container{
   position: relative;
   width: 90%;
-  height: 80%;
+  height: 100%;
   padding: 15px 0;
   left: 50%;
   transform: translateX(-50%);

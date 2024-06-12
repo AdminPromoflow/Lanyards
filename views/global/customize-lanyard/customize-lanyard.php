@@ -15,6 +15,8 @@
       <?php include "../../views/global/customize-lanyard/sections2/preview-width.php"?>
       <?php include "../../views/global/customize-lanyard/sections2/preview-side-printed.php"?>
       <?php include "../../views/global/customize-lanyard/sections2/preview-clip.php"?>
+      <?php include "../../views/global/customize-lanyard/sections2/preview-attachment.php"?>
+
 
       <?php //include "../../views/global/customize-lanyard/sections2/preview-colour.php"?>
 
@@ -22,7 +24,6 @@
       <?php //include "../../views/global/customize-lanyard/sections2/preview-acccessories.php"?>
       <?php //include "../../views/global/customize-lanyard/sections2/preview-amount.php"?>
       <?php //include "../../views/global/customize-lanyard/sections2/preview-artwork.php"?>
-      <?php //include "../../views/global/customize-lanyard/sections2/preview-attachment.php"?>
       <?php //include "../../views/global/customize-lanyard/sections2/preview-clip.php"?>
       <?php //include "../../views/global/customize-lanyard/sections2/preview-colour.php"?>
       <?php //include "../../views/global/customize-lanyard/sections2/preview-image.php"?>
@@ -41,12 +42,13 @@
       <?php include "../../views/global/customize-lanyard/sections/width.php"?>
       <?php include "../../views/global/customize-lanyard/sections/side-printed.php"?>
       <?php include "../../views/global/customize-lanyard/sections/clip.php"?>
+      <?php include "../../views/global/customize-lanyard/sections/attachment.php"?>
+
 
       <?php // include "../../views/global/customize-lanyard/sections/colour.php"?>
       <?php //include "../../views/global/customize-lanyard/sections/accessories.php"?>
       <?php //include "../../views/global/customize-lanyard/sections/amount.php"?>
       <?php //include "../../views/global/customize-lanyard/sections/artwork.php"?>
-      <?php //include "../../views/global/customize-lanyard/sections/attachment.php"?>
       <?php //include "../../views/global/customize-lanyard/sections/colour.php"?>
       <?php //include "../../views/global/customize-lanyard/sections/image.php"?>
       <?php //include "../../views/global/customize-lanyard/sections/text.php"?>
