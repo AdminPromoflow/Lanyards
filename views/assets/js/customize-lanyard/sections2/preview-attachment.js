@@ -10,9 +10,7 @@ class AttachmentPreviewClass {
     const attachmentThing = document.querySelectorAll(".attachmentThing");
 
 
-  //  twoSidePrinted[i].style.display = "none";
-
-  if (attachmentSelected == "none") {
+  if (attachmentSelected == "None") {
     for (let i = 0; i < standar.length; i++) {
       standar[i].style.display = "block";
     }
@@ -25,7 +23,7 @@ class AttachmentPreviewClass {
     }
 
   }
-  else if (attachmentSelected == "black") {
+  else if (attachmentSelected == "Black") {
     for (let i = 0; i < standar.length; i++) {
       standar[i].style.display = "none";
     }
@@ -38,7 +36,7 @@ class AttachmentPreviewClass {
       '<img class="imgattachment" src="../../views/assets/img/global/customize-lanyard/sections/attachment/quick-release-black.png" alt="">';
     }
     }
-  else if (attachmentSelected == "coloured") {
+  else if (attachmentSelected == "Plastic colour") {
     for (let i = 0; i < standar.length; i++) {
       standar[i].style.display = "none";
     }
@@ -52,7 +50,7 @@ class AttachmentPreviewClass {
 
     }
   }
-  else if (attachmentSelected == "metal") {
+  else if (attachmentSelected == "Metal") {
     for (let i = 0; i < standar.length; i++) {
       standar[i].style.display = "none";
     }

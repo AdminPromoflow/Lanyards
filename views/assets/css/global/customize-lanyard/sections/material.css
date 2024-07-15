@@ -44,6 +44,26 @@
   overflow-x: hidden;
 }
 
+/* Estilo para la barra de desplazamiento en WebKit */
+.containers_boxes_material::-webkit-scrollbar {
+    width: 13px; /* Ancho de la barra de desplazamiento */
+}
+
+.containers_boxes_material::-webkit-scrollbar-thumb {
+    background: #091d2c; /* Color azul oscuro para la parte que se mueve */
+    border-radius: 5px; /* Radio de borde para hacerla redondeada */
+    border: 1px solid rgba(255, 255, 255, .5); /* Borde blanco para un contraste mejor */
+}
+
+.containers_boxes_material::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, .4); /* Color gris oscuro para el fondo */
+    border-radius: 10px; /* Radio de borde para hacerla redondeada */
+}
+
+.containers_boxes_material::-webkit-scrollbar-thumb:hover {
+    background: #132735; /* Color más oscuro cuando el mouse está encima */
+}
+
 .container_boxes_material{
   position: relative;
   width: 98%;

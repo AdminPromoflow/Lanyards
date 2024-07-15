@@ -5,9 +5,94 @@
   position: absolute;
   display: flex;
   align-items: center;
-  top: 47%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 12%;
   display: none;
+}
+.os-attachment-10{
+  top: 46%;
+  width: 5%;
+  left: 47.8%;
+}
+.os-attachment-15{
+  top: 47%;
+  width: 6%;
+  left: 47.5%;
+}
+.os-attachment-20{
+  top: 48.7%;
+  width: 7%;
+  left: 46.8%;
+}
+.os-attachment-25{
+  top: 47.4%;
+  width: 8.5%;
+  left: 45.5%;
+}
+.os-attachment-30{
+  top: 47.1%;
+  width: 9.8%;
+  left: 45.3%;
+}
+
+
+
+
+
+.ts-attachment-30mm-l {
+  top: 48.5%;
+  width: 9%;
+  left: 33.5%;
+}
+
+.ts-attachment-30mm-r {
+  top: 48.5%;
+  width: 9%;
+  left: 57.7%;
+}
+
+.ts-attachment-25mm-l {
+  top: 48.5%;
+  width: 8%;
+  left: 33.5%;
+}
+
+.ts-attachment-25mm-r {
+  top: 48.5%;
+  width: 8%;
+  left: 58.3%;
+}
+
+.ts-attachment-20mm-l {
+  top: 48.5%;
+  width: 7%;
+  left: 33.8%;
+}
+
+.ts-attachment-20mm-r {
+  top: 48%;
+  width: 7%;
+  left: 59.5%;
+}
+
+.ts-attachment-15mm-l {
+  top: 47%;
+  width: 6%;
+  left: 33.7%;
+}
+
+.ts-attachment-15mm-r {
+  top: 47%;
+  width: 6%;
+  left: 60.6%;
+}
+
+.ts-attachment-10mm-l {
+  top: 46%;
+  width: 5%;
+  left: 34.3%;
+}
+
+.ts-attachment-10mm-r {
+  top: 46%;
+  width: 5%;
+  left: 60.5%;
 }

@@ -1,0 +1,168 @@
+.backgroundSection{
+  position: relative;
+  width: 90%;
+  height: 65%;
+  padding: 15px 0;
+  margin: 15px 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, .1);
+
+  display: none;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.backgroundSection h2{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.9em;
+  color: white;
+  padding-left: 10px;
+  margin: 0px 0 5px 0;
+}
+.backgroundSection p{
+  position: relative;
+  text-align: left;
+  font-weight: 300;
+  font-size: 1em;
+  width: 100%;
+  color: white;
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+}
+.containers_boxes_background{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.container_boxes_background{
+  position: relative;
+  width: 98%;
+  background-color: rgba(48, 79, 112, 1);
+  padding: 5px  0;
+  margin: 5px 0;
+  cursor: pointer;
+
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+
+  border: 2px solid transparent;
+}
+.backgroundColours{
+  position: relative;
+  height: 70px;
+  width: 70px;
+  border: 2px solid black;
+  margin: 5px;
+}/*
+.backgroundFullColours{
+  position: relative;
+  height: 70px;
+  width: 70px;
+  border: 2px solid black;
+}
+.backgroundFullColours input{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}*/
+.container_boxes_background h4{
+  position: relative;
+  color: white;
+  margin: 8px 12px;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+.container_boxes_background h3{
+  position: relative;
+  color: #97A7BB;
+  font-weight: 300;
+  font-size: 0.8em;
+  margin: 8px 12px;
+}
+
+.pantoneColours{
+  position: relative;
+  width: 106px;
+  padding: 4px 0;
+  margin: 4px;
+  border: 3px solid transparent;
+  background: orange;
+  transition: .4s;
+  box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+}
+.pantoneColours:hover{
+  border: 2px solid rgba(0,0,0,.5);
+}
+.pantoneColours:active{
+  border: 2px solid rgba(0,0,0,1);
+}
+.pantoneColours h3{
+  position: relative;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+/* Estilo para la barra de desplazamiento en WebKit */
+.containers_boxes_background::-webkit-scrollbar {
+    width: 13px; /* Ancho de la barra de desplazamiento */
+}
+
+.containers_boxes_background::-webkit-scrollbar-thumb {
+    background: #091d2c; /* Color azul oscuro para la parte que se mueve */
+    border-radius: 5px; /* Radio de borde para hacerla redondeada */
+    border: 1px solid rgba(255, 255, 255, .5); /* Borde blanco para un contraste mejor */
+}
+
+.containers_boxes_background::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, .4); /* Color gris oscuro para el fondo */
+    border-radius: 10px; /* Radio de borde para hacerla redondeada */
+}
+
+.containers_boxes_background::-webkit-scrollbar-thumb:hover {
+    background: #132735; /* Color más oscuro cuando el mouse está encima */
+}
+.select-colour-second-option{
+  position: relative;
+  height: 35px;
+  width: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.opacity-background-option-first-option{
+  position: absolute;
+  width: 295px;
+  height: 160px;
+  top: 87px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, .45);
+  z-index: 3;
+}
+.opacity-background-option-second-option{
+  position: absolute;
+  width: 295px;
+  height: 45px;
+  top: 310px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, .15);
+  z-index: 3;
+}
+
+
+/**/

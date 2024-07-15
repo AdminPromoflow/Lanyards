@@ -46,18 +46,38 @@
   overflow-y: scroll;
   overflow-x: hidden;
 }
+/* Style for the scrollbar in WebKit browsers */
+.containers_boxes_clip::-webkit-scrollbar {
+    width: 13px; /* Width of the scrollbar */
+}
+
+.containers_boxes_clip::-webkit-scrollbar-thumb {
+    background: #091d2c; /* Dark blue color for the draggable part */
+    border-radius: 5px; /* Rounded corners for the draggable part */
+    border: 1px solid rgba(255, 255, 255, .5); /* Semi-transparent white border for better contrast */
+}
+
+.containers_boxes_clip::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, .4); /* Light grey background color */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+.containers_boxes_clip::-webkit-scrollbar-thumb:hover {
+    background: #132735; /* Darker color when hovering over the scrollbar */
+}
 .container_boxes_clip{
   position: relative;
-  width: 20%;
-  padding: 5px;
-  margin: 5px;
-  cursor: pointer;
+  width: 98%;
+  height: 50px;
   background-color: rgba(48, 79, 112, 1);
+  padding: 5px 10px;
+  margin: 5px 0;
+  cursor: pointer;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
-  flex-wrap: wrap;
+  align-items: center;
 
   border: 2px solid transparent;
 }
@@ -69,35 +89,25 @@
 }
 .container_boxes_clip img{
   position: relative;
-  width: 80%;
+  height: 120%;
+  margin: 0 5px;
+  width: auto;
+  transform: rotate(-90deg);
+}
+.container_boxes_clip h3{
+  position: relative;
+  margin: 0;
+  width: 35%;
+  text-align: left;
+  color: white;
+  font-weight: 300;
+  font-size: 1em;
 }
 .container_boxes_clip h4{
   position: relative;
-  width: 100%;
   margin: 0;
-  margin-top: 9px;
-  text-align: center;
+  text-align: right;
   color: white;
   font-weight: 300;
-  font-size: 1.1em;
-}
-.priceDataClip{
-  position: relative;
-  width: 100%;
-  margin: 0;
-  margin-top: 9px;
-  text-align: center;
-  color: white;
-  font-weight: 300;
-  font-size: 0.7em;
-}
-.dataClip{
-  position: relative;
-  width: 100%;
-  margin: 0;
-  margin-top: 9px;
-  text-align: center;
-  color: white;
-  font-weight: 300;
-  font-size: 0.6em;
+  font-size: 0.8em;
 }

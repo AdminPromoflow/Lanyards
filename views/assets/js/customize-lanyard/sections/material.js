@@ -216,16 +216,36 @@ class Material {
   }
 
   // Function to search for a material.
-  searchDataMaterialSelected(material) {
+  searchDataMaterialSelected(materialSelected) {
+
+    // Capture all elements with the class 'pricesDataMaterial'
+    const pricesDataMaterialElements = document.querySelectorAll('.pricesDataMaterial');
+    let dataMaterialElements = document.querySelectorAll('.dataMaterial');
+
+    for (let i = 0; i < dataMaterialElements.length; i++) {
+      let material = dataMaterialElements[i].innerText;
+      if (material == materialSelected) {
+        let number = pricesDataMaterialElements[i].innerText;;
+        let price = number.match(/\d+(\.\d+)?/)[0];
+
+
+         priceClass.setPricePerMaterialWithAmount(price);
+         priceClass.changePricePerLanyard();
+
+      }
+    }
+
+
+
     const url = "../../controller/lanyard/material.php";
     const data = {
       action: "setMaterialSelected",
-      optionSelected: material,
+      optionSelected: materialSelected,
       amountSelected: priceClass.getAmountSelected()
     };
 
     // Set the selected material.
-    this.setMaterialSelected(material);
+    this.setMaterialSelected(materialSelected);
 
     // Show the selected material.
     this.showSelectedMaterial();
@@ -235,7 +255,6 @@ class Material {
 
     // Make an AJAX request to set the selected material.
     this.makeAjaxRequestSetMaterialSelected(url, data);
-
   }
 
   // Function to make an AJAX request to set the selected material.
@@ -293,6 +312,32 @@ class Material {
 
         // Set the number of colors selected for the lanyard customization
         customizeLanyard.setNoColours(data["noColourSelected"]);
+
+
+        colourClass.createColour();
+        previewColourClass.showSelectedPreviewtColour();
+        previewColourClass.showColourPreview("none");
+
+
+
+
+        var sidePrintedSelected = sidePrintedClass.getSidePrintedSelected();
+
+        if (sidePrintedSelected == "one-side") {
+          colourClass.setColourSelected("one-colour");
+
+        }
+
+        else if (sidePrintedSelected == "two-side") {
+          colourClass.setColourSelected("full-colour");
+
+        }
+
+
+        colourClass.showSelectedColour();
+
+
+
 
       })
       .catch(error => {

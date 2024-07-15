@@ -4,9 +4,7 @@ class CustomizeLanyard {
     this.jsonLanyards = "";
     this.noColours = "one-colour";
 
-
-
-    closeCustomizeLanyard.addEventListener("click" , function(){
+      closeCustomizeLanyard.addEventListener("click" , function(){
       customizeLanyard.openCustomizeLanyard(false);
 
     })
@@ -39,9 +37,6 @@ class CustomizeLanyard {
   getJsonLanyards() {
     return this.jsonLanyards;
   }
-
-
-
 
   outContainerCustomizeLanyard(event) {
 
@@ -92,31 +87,50 @@ class CustomizeLanyard {
   openCustomizeLanyard(action){
     if (action) {
       customizeLanyardPanel.style.display = "block";
-
     }
     else {
       customizeLanyardPanel.style.display = "none";
-
     }
   }
 
   changePreviewNextSection(sectionActive){
-
     if (sectionActive == "Material") {
-  //    alert("me dirijo a materiales");
       previewMaterial.showMaterialPreview("flex");
       previewLanyardType.showTypeLanyardPreview("none");
     }
     else if (sectionActive == "Lanyard type") {
-      // Se hace una consulta con un ajax request,  el resultado va a ser one- two ends  y el width. Luego del resultado se envia  el width y el typeLanyard
-      //previewLanyardType.showSelectedPreviewtTemplate("one-end", "25mm");
       previewMaterial.showMaterialPreview("none");
       previewLanyardType.showTypeLanyardPreview("flex");
       previewLanyardType.showSelectedPreviewtTemplate();
+    }
+    else if (sectionActive == "Attachment") {
+
+      previewLanyardType.showTypeLanyardPreview("flex");
+      previewLanyardType.showSelectedPreviewtTemplate();
+      previewColourClass.showColourPreview("none");
+      previewArtworkManualClass.showArtworkManualPreview("none");
+      
+    }
+
+    else if (sectionActive == "Colour Quantity") {
+
+      previewArtworkManualClass.showArtworkManualPreview("none");
+      previewColourClass.showColourPreview("flex");
+      previewLanyardType.showTypeLanyardPreview("none");
 
     }
-    else if (sectionActive == "Width") {
 
+    else if (sectionActive == "Artwork - Manual") {
+
+      previewColourClass.showColourPreview("none");
+      previewArtworkManualClass.showArtworkManualPreview("flex");
+      previewLanyardType.showTypeLanyardPreview("none");
+
+    }
+
+    else if (sectionActive == "Background") {
+      previewArtworkManualClass.showArtworkManualPreview("none");
+      previewLanyardType.showTypeLanyardPreview("flex");
     }
   }
 

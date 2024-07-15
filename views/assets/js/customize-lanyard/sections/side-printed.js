@@ -40,8 +40,6 @@ class SidePrinted {
 
 
 
-    this.showSelectedSidePrinted(data['optionSelected']);
-
   }
 
   getDataSidePrintedAvailable(){
@@ -83,96 +81,90 @@ class SidePrinted {
     return sidePrintedAvailable;
   }
 
-  updatePriceWidth() {
+  updatePriceSidePrinted() {
+      var json = customizeLanyard.getJsonLanyards();
+      var materialSelected = material.getMaterialSelected();
+      var widthSelected = widthClass.getWidthSelected();
+      var noColourSelected = customizeLanyard.getNoColours();
+      var amountSelected = priceClass.getAmountSelected();
 
-    var json = customizeLanyard.getJsonLanyards();
-    var materialSelected = material.getMaterialSelected();
-    var widthSelected = widthClass.getWidthSelected();
-    var sidePrintedSelected = sidePrintedClass.getSidePrintedSelected();
-    var noColourSelected = customizeLanyard.getNoColours();
-    var amountSelected = priceClass.getAmountSelected();
+      let priceDataSidePrintedResult = [];
 
+      // Iterate through the JSON data
+      for (let i = 0; i < json.length; i++) {
+          let material = json[i].materials.material;
 
-    let priceDataSidePrintedResult = [];
+          // Check if the selected material matches the current material in the loop
+          if (materialSelected == material) {
 
-    // Iterating through each item in the JSON array
-    for (let i = 0; i < json.length; i++) {
-        // Extracting the 'materials' array from the current JSON item
-        const material = json[i].materials.material;
+              // Iterate through the widths of the current material
+              for (let j = 0; j < json[i].materials.width.length; j++) {
+                  let width = json[i].materials.width[j].width;
 
-        // Checking if the material matches the selected material
-        if (material == materialSelected) {
+                  // Check if the selected width matches the current width in the loop
+                  if (widthSelected == width) {
+                      // Iterate through the side printed options of the current width
+                      for (let k = 0; k < json[i].materials.width[j].sidePrinted.length; k++) {
+                          let sidePrinted = json[i].materials.width[j].sidePrinted[k].noSides;
 
-            // Extracting the 'widths' array from the current JSON item
-            const widths = json[i].materials.width;
-            // Iterating through each width in the 'widths' array
-            for (let j = 0; j < widths.length; j++) {
+                          // Iterate through the color options of the current side printed
+                          for (let l = 0; l < json[i].materials.width[j].sidePrinted[k].noColours.length; l++) {
+                              let noColour = json[i].materials.width[j].sidePrinted[k].noColours[l].noColour;
+                              let equalsNoColour = false;
 
-                // Extracting the 'width' value from the current width object
-                const width = widths[j].width;
+                              // Check if the selected color matches the current color in the loop
+                              if (noColourSelected == noColour) {
+                                  equalsNoColour = true;
+                              } else {
+                                  noColourSelected = json[i].materials.width[j].sidePrinted[k].noColours[0].noColour;
+                                  if (noColourSelected == noColour) {
+                                      equalsNoColour = true;
+                                  }
+                              }
 
-                if (width == widthSelected) {
+                              // If the color matches, proceed to check the amount ranges
+                              if (equalsNoColour) {
+                                  let maxAmountExceeded = true; // Flag to check if amountSelected exceeds max-amount
 
-                    // Extracting the 'sidePrinted' array from the current width object
-                    const sidePrinted = widths[j].sidePrinted;
+                                  // Iterate through the amount ranges of the current color
+                                  for (let m = 0; m < json[i].materials.width[j].sidePrinted[k].noColours[l].amount.length; m++) {
+                                      let amount = json[i].materials.width[j].sidePrinted[k].noColours[l].amount[m];
 
-                    // Iterating through each item in the 'sidePrinted' array
-                    for (let k = 0; k < sidePrinted.length; k++) {
+                                      // Check if the selected amount falls within the current amount range
+                                      if (amountSelected >= amount['min-amount'] && amountSelected <= amount['max-amount']) {
+                                          priceDataSidePrintedResult.push(amount.price);
+                                          maxAmountExceeded = false; // Reset flag as amountSelected is within range
+                                          break; // Exit the loop once we have found the matching range
+                                      }
+                                  }
 
-
-                        // Extracting the 'noSides' value from the current sidePrinted object
-                        const noSides = sidePrinted[k].noSides;
-
-                        sidePrintedSelected = (noSides == sidePrintedSelected) ? noSides : sidePrinted[0].noSides;
-
-
-                          const noColours = sidePrinted[k].noColours;
-
-                          for (let l = 0; l < noColours.length; l++) {
-                              const noColour = noColours[l].noColour;
-                              if (noColour == noColourSelected) {
-
-                                const amounts = noColours[l].amount;
-                               for (let m = 0; m < amounts.length; m++) {
-                                 const minAmount = amounts[m]['min-amount'];
-                                 const maxAmount = amounts[m]['max-amount'];
-                                 const price = amounts[m].price;
-
-
-                                 if (amountSelected >= minAmount && amountSelected <= maxAmount ) {
-                                   priceDataSidePrintedResult[j] = price;
-                                   }
-                                   else if (amountSelected > maxAmount) {
-                                     priceDataSidePrintedResult[j] = price;
-                                   }
-
-                              //     alert(JSON.stringify(priceDataSidePrintedResult));
-
-
-                               }
-                            }
+                                  // If amountSelected exceeds max-amount, log the price of the highest range
+                                  if (maxAmountExceeded) {
+                                      let highestAmount = json[i].materials.width[j].sidePrinted[k].noColours[l].amount.slice(-1)[0];
+                                      priceDataSidePrintedResult.push(highestAmount.price);
+                                  }
+                              }
                           }
-
-                    }
-                }
-            }
-        }
-    }
-
-  //  alert("HOLA TU HOLA TU HOLA TU" + JSON.stringify(priceDataSidePrintedResult));
+                      }
+                  }
+              }
+          }
+      }
 
 
-    var priceMaterialWidthAmount = priceClass.getPricePerMaterialWithAmount();
-    var priceWidthWidthAmount = priceClass.getPriceWidth();
 
     const priceDataSidePrinted = document.querySelectorAll(".priceDataSidePrinted");
     var totalPriceWidth;
 
     for (var i = 0; i < priceDataSidePrinted.length; i++) {
-      totalPriceWidth = priceDataSidePrintedResult[i] - priceMaterialWidthAmount - priceWidthWidthAmount;
+      totalPriceWidth = priceDataSidePrintedResult[i] - priceDataSidePrintedResult[0];
       priceDataSidePrinted[i].innerHTML = "£" + totalPriceWidth.toFixed(2) + " per unit";
     }
+
+
   }
+
+
 
 
 
@@ -190,7 +182,7 @@ class SidePrinted {
     containerBoxSidePrinted.innerHTML +=
     '<div class="container_boxes_side_printed" onclick="sidePrintedClass.searchDataSidePrintedSelected(\'' + data  + '\', \' '+ index +'  \');">' +
         '<h3 class="priceDataSidePrinted">+£0 per unit</h3>' +
-        '<h4 class="data-side-printed">'+ data+'</h4>' +
+        '<h4 class="data_side_printed">'+ data+'</h4>' +
         '<img src="../../'+ imgLink +'" alt="">' +
       '</div>'
     ;
@@ -198,40 +190,78 @@ class SidePrinted {
 
   searchDataSidePrintedSelected(sidePrinted, index) {
 
+    const priceDataSidePrinted = document.querySelectorAll(".priceDataSidePrinted");
+
+
+    for (var i = 0; i < priceDataSidePrinted.length; i++) {
+      if (i == index) {
+
+        let text = priceDataSidePrinted[i].innerHTML+"";
+        let number = +text.match(/-?\d+\.\d+|\d+/); // Finds the first number (float or integer), which can be negative.
+
+      //  alert(number);
+        if (number >= 0) {
+        //  alert("hi, I just enter in if");
+            let result = number.toFixed(2);
+            priceClass.setPriceSidePrinted(result); // Displays the positive float number with two decimals.
+            priceClass.changePricePerLanyard();
+        } else {
+          //alert("hi, I just enter in else too");
+          console.log("The number sidePrinted is negative or no numbers were found. Error: (width.js line 58)");
+        }
+      }
+    }
+
+
+
     this.setSidePrintedSelected(sidePrinted);
+    this.showSelectedSidePrinted();
+    this.updatePriceSidePrinted();
+
     priceClass.setAmountSelected(priceClass.getAmountSelected());
     previewSidePrinted.showSelectedPreviewtTemplate();
 
   }
 
 
-  showSelectedSidePrinted(data){
+  showSelectedSidePrinted() {
+    // Get the selected side printed value
+    var data = sidePrintedClass.getSidePrintedSelected();
 
-    //alert(data);
+    // Select all elements with the class "container_boxes_side_printed"
     const containerBoxesSidePrinted = document.querySelectorAll(".container_boxes_side_printed");
+    // Select all elements with the class "data_side_printed"
+    const dataSidePrinted = document.querySelectorAll(".data_side_printed");
 
-    var index;
-   for (var i = 0; i < dataSidePrinted.length; i++) {
-
-     if (dataSidePrinted[i].textContent == data) {
-       index = i;
-     }
-   }
-
-    for (var i = 0; i < containerBoxesSidePrinted.length; i++) {
-      if (index == i) {
-        containerBoxesSidePrinted[i].style.border = "2px solid white";
-      }
-      else {
-        containerBoxesSidePrinted[i].style.border = "2px solid transparent";
+    // Initialize index variable to -1
+    var index = -1;
+    // Iterate through all elements in dataSidePrinted
+    for (var i = 0; i < dataSidePrinted.length; i++) {
+      // If the text content of the current element matches the selected data
+      if (dataSidePrinted[i].textContent == data) {
+        // Set the index to the current position
+        index = i;
+        // Exit the loop once the matching element is found
+        break;
       }
     }
 
+    // Iterate through all elements in containerBoxesSidePrinted
+    for (var i = 0; i < containerBoxesSidePrinted.length; i++) {
+      // If the current index matches the found index
+      if (index == i) {
+        // Set the border of the matching element to "2px solid white"
+        containerBoxesSidePrinted[i].style.border = "2px solid white";
+      } else {
+        // Set the border of non-matching elements to "2px solid transparent"
+        containerBoxesSidePrinted[i].style.border = "2px solid transparent";
+      }
+    }
   }
+
 }
 
 
-const dataSidePrinted = document.querySelectorAll(".data-side-printed");
 const containerBoxSidePrinted = document.getElementById("containers_boxes_side_printed");
 
 

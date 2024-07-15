@@ -1,0 +1,144 @@
+.preview-artwork-manual-container {
+  position: relative;
+  width: 90%;
+  height: 80%;
+  padding: 15px 0;
+
+  background-color: rgba(0, 0, 0, .12);
+  box-shadow: 0px 0px 2px black;
+
+  display: none;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.preview-artwork-manual-container h2{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.preview-artwork-container{
+  display: none;
+}
+
+.preview-artwork-manual-boxes  {
+  position: relative;
+  width: 100%;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.preview-artwork-boxes  {
+  position: relative;
+  width: 100%;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 9px;
+}
+.artwork-boxes h3 {
+  position: relative;
+  text-align: center;
+  width: 10%;
+  background-color: blue;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, .7);
+  font-size: 1.2em;
+  font-weight: 300;
+
+  background: transparent!important;
+  text-shadow: 1px 1px 2px black;
+}
+.artwork-boxes  img{
+  filter: drop-shadow(1px 1px 2px black);
+}
+.artwork-manual-boxes{
+  position: relative;
+  margin: 8px ;
+}
+
+
+.artwork-manual-boxes h1{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 1.9em !important;
+}
+.artwork-manual-boxes h3{
+  position: relative;
+  margin: 0;
+  min-width: 150px;
+  padding: 0;
+  background: transparent!important;
+  font-weight: 200;
+  text-shadow: 1px 1px 2px black;
+
+}
+.preview-artwork-boxes h3{
+  min-width: 270px !important;
+  text-align: justify;
+
+}
+.artwork-manual-boxes img{
+  filter: drop-shadow(1px 1px 2px black);
+}
+
+.preview-artwork-manual-boxes h3 {
+  position: relative;
+  text-align: center;
+  width: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, .7);
+  font-size: 1.2em;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, .1);
+}
+.preview-artwork-manual-boxes-img{
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+.artwork-boxes{
+  position: relative;
+  width: 70% !important;
+}
+
+.preview-artwork-manual {
+  position: relative;
+  height: 80px;
+  width: 100px;
+  border-radius: 10px;
+  border: 3px solid black;
+  background: rgba(255, 255, 255, .7);
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+}
+
+
+
+.description-preview-artwork-manual {
+  position: relative;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.description-preview-artwork-manual p {
+  position: relative;
+  text-align: justify;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, .7);
+  font-size: 1.15em;
+}

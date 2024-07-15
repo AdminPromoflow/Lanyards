@@ -1,12 +1,16 @@
 // Define a class named Price.
 class Price {
   // Constructor method.
-  constructor() {
+  constructor(){
     // Initialize properties.
     this.amountSelected = 1;
     this.priceMaterialWidthAmount; // Global variable to store the price.
     this.priceLanyardType = 0; // Global variable to store the price.
     this.priceWidth = 0;
+    this.priceSidePrinted = 0;
+    this.priceClip = 0;
+    this.priceAttachment = 0;
+    this.priceColour = 0;
 
 
     // Event listener for input changes on amountLanyards element.
@@ -65,6 +69,46 @@ class Price {
     return parseFloat(this.priceWidth);
   }
 
+  // Setter method for price per width.
+  setPriceSidePrinted(price){
+    this.priceSidePrinted = price;
+  }
+
+  // Getter method for price per width.
+  getPriceSidePrinted(){
+    return parseFloat(this.priceSidePrinted);
+  }
+
+  // Setter method for price per clip.
+  setPriceClip(price){
+    this.priceClip = price;
+  }
+
+  // Getter method for price per width.
+  getPriceClip(){
+    return parseFloat(this.priceClip);
+  }
+
+  // Setter method for price per attachment.
+  setPriceAttachment(price){
+    this.priceAttachment = price;
+  }
+
+  // Getter method for price per attachment.
+  getPriceAttachment(){
+    return parseFloat(this.priceAttachment);
+  }
+
+  // Setter method for price per colour.
+  setPriceColour(price){
+    this.priceColour = price;
+  }
+
+  // Getter method for price per colour.
+  getPriceColour(){
+    return parseFloat(this.priceColour);
+  }
+
   // Getter method for amount property.
   getAmountSelected() {
     return this.amountSelected;
@@ -75,10 +119,15 @@ class Price {
     this.amountSelected = value;
   }
 
+
+
   // Method to change price per lanyard.
   changePricePerLanyard() {
     // Calculate total price.
-    var totalPrice = priceClass.getPricePerMaterialWithAmount() + priceClass.getPriceLanyardType() + priceClass.getPriceWidth();
+    var totalPrice = priceClass.getPricePerMaterialWithAmount() +
+     priceClass.getPriceLanyardType() + priceClass.getPriceWidth()
+     +  priceClass.getPriceSidePrinted() + priceClass.getPriceClip()
+     + priceClass.getPriceAttachment() + priceClass.getPriceColour();
     // Update the inner HTML of pricePerLanyard element to display the price with currency symbol.
     pricePerLanyard.innerHTML = "£" + totalPrice.toFixed(2);
   }

@@ -1,0 +1,52 @@
+
+
+.one-end-normal-back-30mm{
+  position: absolute;
+  top: 0.8%;
+  left: 50%;
+  transform: translateX(-50%) perspective(1vw) rotateX(18deg);
+  height: 3.6%;
+  width: 26.7%;
+  background-color: white;
+  border: 1px solid black;
+  z-index: 1;
+}
+
+.one-end-normal-left-30mm{
+  position: absolute;
+  height: 66.3%;
+  width: 6.6%;
+  top: 4.8%;
+  left: 39.7%;
+  background-color: white;
+  border: 1px solid black;
+  transform:  skewX(7.4deg) perspective(7.4vw);
+}
+
+.one-end-normal-right-30mm{
+  position: absolute;
+  height: 66.3%;
+  width: 6.6%;
+  top: 4.8%;
+  left: 53.1%;
+  background-color: white;
+  border: 1px solid black;
+  transform:  skewX(-7.4deg) perspective(7.4vw);
+}
+
+.back-clip-one-end-30mm{
+  position: absolute;
+  height: 4.3%;
+  width: 8%;
+  top: 0.8%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 130;
+}
+.back-clip-one-end-30mm img{
+  position: absolute;
+  top: 0px;
+  height: 103%;
+  z-index: 131;
+  filter: drop-shadow(0px 0px 1px black);
+}

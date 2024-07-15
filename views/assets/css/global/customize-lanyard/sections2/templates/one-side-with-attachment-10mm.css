@@ -1,0 +1,70 @@
+.one-end-width-attachment-back-10mm{
+  position: absolute;
+  top: 0.8%;
+  left: 50%;
+  transform: translateX(-50%) perspective(1vw) rotateX(18deg);
+  height: 1.8%;
+  width: 26.9%;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.one-end-back-clip-width-attachment-10mm{
+  position: absolute;
+  height: 2.3%;
+  width: 4%;
+  top: 0.8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.one-end-back-clip-width-attachment-10mm img{
+  position: absolute;
+  top: 0px;
+  height: 103%;
+  filter: drop-shadow(0px 0px 1px black);
+}
+
+.one-end-width-attachment-center-10mm{
+  position: absolute;
+  height: 23.2%;
+  width: 2.8%;
+  top: 47.8%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 1px solid black;
+  z-index: 1;
+}
+/*This is the attachment thing*/
+.one-end-attachment-width-attachment-10mm{
+  z-index: 2;
+}
+
+.one-end-width-attachment-left-10mm{
+  position: absolute;
+  height: 44.3%;
+  width: 2.8%;
+  top: 3.1%;
+  left: 41.6%;
+  background-color: white;
+  border: 1px solid black;
+  transform:  skewX(11.3deg) perspective(11.3vw);
+}
+
+.one-end-width-attachment-right-10mm{
+  position: absolute;
+  height: 44.3%;
+  width: 2.8%;
+  top: 3.1%;
+  left: 54.8%;
+  background-color: white;
+  border: 1px solid black;
+  transform:  skewX(-11.3deg) perspective(11.3vw);
+}
+
+
+
+.one-end-clip-width-attachment-10mm{
+  z-index: 10;
+}

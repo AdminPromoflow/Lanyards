@@ -44,6 +44,27 @@ body{
   position: relative;
   width: 100%;
 }
+/* Estilo para la barra de desplazamiento en WebKit */
+.container::-webkit-scrollbar {
+    width: 18px; /* Ancho de la barra de desplazamiento */
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #091d2c; /* Color azul oscuro para la parte que se mueve */
+    border-radius: 5px; /* Radio de borde para hacerla redondeada */
+    border: 1px solid rgba(255, 255, 255, .4); /* Borde blanco para un contraste mejor */
+}
+
+.container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, .5); /* Color gris oscuro para el fondo */
+    border-radius: 10px; /* Radio de borde para hacerla redondeada */
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background: #132735; /* Color más oscuro cuando el mouse está encima */
+}
+
+
 .bgLanyards{
   background-image: url("../../img/home/2-choose-create-lanyard/bg.png"); /* The image used */
   background-position: center; /* Center the image */
@@ -52,6 +73,8 @@ body{
 
   background-attachment: fixed;
 }
+
+
 h1{
   position: relative;
   text-align: center;

@@ -31,7 +31,8 @@ class Clips_Models {
                     JOIN `Width` ON `Lanyards`.`idLanyard` = `Width`.`idLanyard`
                     JOIN `Clips` ON `Width`.`idWidth` = `Clips`.`idWidth`
                     WHERE `Width`.`width` = :width
-                    AND `Lanyards`.`material` = :material;
+                    AND `Lanyards`.`material` = :material
+                    ORDER BY Clips.`price` ASC;
                     ");
 
         // Bind the email parameter

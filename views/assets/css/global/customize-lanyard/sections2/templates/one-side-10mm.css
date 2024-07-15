@@ -1,0 +1,76 @@
+
+.os-normal-back-10mm{
+  position: absolute;
+  top: 0.8%;
+  left: 50%;
+  transform: translateX(-50%) perspective(1vw) rotateX(18deg);
+  height: 1.8%;
+  width: 26.9%;
+  background-color: white;
+  border: 1px solid black;
+  z-index: 1;
+}
+
+.os-normal-left-10mm{
+  position: absolute;
+  height: 68.3%;
+  width: 2.8%;
+  top: 2.8%;
+  left: 41.6%;
+  background-color: white;
+  border: 1px solid black;
+  transform:  skewX(7.5deg) perspective(7.5vw);
+}
+
+.os-normal-right-10mm{
+  position: absolute;
+  height: 68.3%;
+  width: 2.8%;
+  top: 2.8%;
+  left: 54.8%;
+  background-color: white;
+  border: 1px solid black;
+  transform:  skewX(-7.5deg) perspective(7.5vw);
+}
+.back-clip-os-10mm{
+  position: absolute;
+  height: 2.3%;
+  width: 4%;
+  top: 0.8%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 130;
+}
+.back-clip-os-10mm img{
+  position: absolute;
+  top: 0px;
+  height: 103%;
+  z-index: 131;
+  filter: drop-shadow(0px 0px 1px black);
+}
+
+/*-----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

@@ -1,0 +1,76 @@
+
+.os-normal-back-15mm{
+  position: absolute;
+  top: 0.8%;
+  left: 50%;
+  transform: translateX(-50%) perspective(1vw) rotateX(18deg);
+  height: 2.1%;
+  width: 26.9%;
+  background-color: white;
+  border: 1px solid black;
+  z-index: 1;
+}
+
+.os-normal-left-15mm{
+  position: absolute;
+  height: 67.8%;
+  width: 3.6%;
+  top: 3.3%;
+  left: 41.3%;
+  background-color: white;
+  border: 1px solid black;
+  transform:  skewX(7.4deg) perspective(7.4vw);
+}
+
+.os-normal-right-15mm{
+  position: absolute;
+  height: 67.8%;
+  width: 3.4%;
+  top: 3.3%;
+  left: 54.6%;
+  background-color: white;
+  border: 1px solid black;
+  transform:  skewX(-7.4deg) perspective(7.4vw);
+}
+.back-clip-os-15mm{
+  position: absolute;
+  height: 2.3%;
+  width: 4%;
+  top: 0.8%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 130;
+}
+.back-clip-os-15mm img{
+  position: absolute;
+  top: 0px;
+  height: 103%;
+  z-index: 131;
+  filter: drop-shadow(0px 0px 1px black);
+}
+
+/*-----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

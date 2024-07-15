@@ -83,8 +83,8 @@ class ClipClass {
     containers_boxes_clip.innerHTML +=
     '<div class="container_boxes_clip"  onclick="clipClass.searchDataClipSelected(\'' + data["name"]  + '\', \' '+ index +'  \');"  >' +
         '<h3 class="dataClip">'+data["name"]+' </h3>' +
-        '<h3 class="priceDataClip">+£'+data["price"]+' per unit</h3>' +
         '<img class="imgClip" src="../../'+imgClip+'" alt="">' +
+        '<h4 class="priceDataClip">+£'+data["price"]+' per unit</h4>' +
       '</div>'
     ;
   }
@@ -93,71 +93,86 @@ class ClipClass {
   }
 
   searchDataClipSelected(data, index) {
-  //  alert(JSON.stringify(data));
     clipClass.setClipSelected(data);
-    clipClass.showSelectedClip(data);
+    clipClass.showSelectedClip();
+    clipClass.getPriceClipSelected(index);
     priceClass.setAmountSelected(priceClass.getAmountSelected());
-  //  previewSidePrinted.showSelectedPreviewtTemplate();
-
-  for (var i = 0; i < os25_clip.length; i++) {
-    os25_clip[i].innerHTML = "";
-  }
-  for (var i = 0; i < ts25_clip.length; i++) {
-    ts25_clip[i].innerHTML = "";
+    previewClip.showPreviewSelectedClip(data);
   }
 
-  var typeLanyard =  oneTwoEndsClass.getTypeLanyardSelected();
-  //alert(typeLanyard);
+  getPriceClipSelected(index){
+    const priceDataClip = document.querySelectorAll(".priceDataClip");
 
-  if (typeLanyard == "one-end") {
-    for (var i = 0; i < os25_clip.length; i++) {
-      os25_clip[i].innerHTML =         '<img class="" src="../../views/assets/img/global/customize-lanyard/sections/clip/one-end/'+data+'.png" alt="">'
-;
-    }
-  }
-  else {
-    for (var i = 0; i < os25_clip.length; i++) {
-      os25_clip[i].innerHTML =         '<img class="" src="../../views/assets/img/global/customize-lanyard/sections/clip/two-ends/'+data+'.png" alt="">'
-;
-    }
-  }
+    for (var i = 0; i < priceDataClip.length; i++) {
+      if (i == index) {
 
+        let text = priceDataClip[i].innerHTML+"";
+        let number = +text.match(/-?\d+\.\d+|\d+/); // Finds the first number (float or integer), which can be negative.
 
-  }
+        if (number >= 0) {
 
-  showSelectedClip(data){
-    const container_boxes_clip = document.querySelectorAll(".container_boxes_clip");
-    const dataClip = document.querySelectorAll(".dataClip");
-    const clip = data;
+         let lanyardType = oneTwoEndsClass.getTypeLanyardSelected() + "";
 
-    var index;
-   for (var i = 0; i < dataClip.length; i++) {
+            let result = number.toFixed(2);
 
-     if (dataClip[i].textContent == clip) {
-    //   alert(data + dataClip[i].textContent);
-
-       index = i;
-     }
-   }
-
-    for (var i = 0; i < container_boxes_clip.length; i++) {
-      if (index == i) {
-        container_boxes_clip[i].style.border = "2px solid white";
-      }
-      else {
-        container_boxes_clip[i].style.border = "2px solid transparent";
+            if (lanyardType == "two-end") {
+              result = result * 2;
+            }
+            priceClass.setPriceClip(result); // Displays the positive float number with two decimals.
+            priceClass.changePricePerLanyard();
+        } else {
+          console.log("The number clip is negative or no numbers were found. Error: (clip.js line 58)");
+        }
       }
     }
-
   }
 
 
+
+  showSelectedClip() {
+      // Get the selected clip and convert it to a string
+      var data = clipClass.getClipSelected() + "";
+      // Select all elements with the class "container_boxes_clip"
+      const container_boxes_clip = document.querySelectorAll(".container_boxes_clip");
+      // Select all elements with the class "dataClip"
+      const dataClip = document.querySelectorAll(".dataClip");
+
+      // Initialize index to -1 to handle cases where no match is found
+      var index = -1;
+      var dataHTMLclip;
+
+      // Iterate through all dataClip elements
+      for (var i = 0; i < dataClip.length; i++) {
+          // Get the text content of dataClip[i]
+          dataHTMLclip = dataClip[i].textContent;
+
+          // Remove all whitespace from the text content
+          dataHTMLclip = dataHTMLclip.replace(/\s+/g, '');
+
+          // Compare the text content without spaces to the selected data
+          if (dataHTMLclip == data) {
+              // If a match is found, update the index and break the loop
+              index = i;
+              break;
+          }
+      }
+
+      // Iterate through all container_boxes_clip elements
+      for (let i = 0; i < container_boxes_clip.length; i++) {
+          // If the index matches, set a white border
+          if (index == i) {
+              container_boxes_clip[i].style.border = "2px solid white";
+          } else {
+              // If the index does not match, set a transparent border
+              container_boxes_clip[i].style.border = "2px solid transparent";
+          }
+      }
+  }
 }
 
 const containers_boxes_clip = document.getElementById("containers_boxes_clip");
 
-const os25_clip = document.querySelectorAll(".os25-clip");
-const ts25_clip = document.querySelectorAll(".ts25-clip");
+
 
 
 

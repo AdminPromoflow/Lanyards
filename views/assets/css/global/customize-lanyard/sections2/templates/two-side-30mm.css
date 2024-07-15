@@ -1,0 +1,50 @@
+
+
+.two-ends-back-30mm{
+  position: absolute;
+  top: 0.8%;
+  left: 50%;
+  transform: translateX(-50%) perspective(1vw) rotateX(18deg);
+  height: 3.9%;
+  width: 24.7%;
+  background-color: white;
+  border: 1px solid black;
+  z-index: 1;
+}
+
+.two-ends-left-30mm{
+  position: absolute;
+  height: 65.8%;
+  width: 6.3%;
+  top: 5.2%;
+  left: 34.5%;
+  background-color: white;
+  border: 1px solid black;
+  z-index: 1;
+
+}
+.two-ends-right-30mm{
+  position: absolute;
+  height: 65.8%;
+  width: 6.3%;
+  top: 5.2%;
+  left: 58.5%;
+  background-color: white;
+  border: 1px solid black;
+}
+.two-ends-back-clip-30mm{
+  position: absolute;
+  height: 4.9%;
+  width: 7.4%;
+  top: 0.8%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 130;
+}
+.two-ends-back-clip-30mm img{
+  position: absolute;
+  top: 0px;
+  height: 103%;
+  z-index: 131;
+  filter: drop-shadow(0px 0px 1px black);
+}

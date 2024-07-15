@@ -6,11 +6,17 @@
   left: 50%;
   transform: translateX(-50%);
 
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  display: none;
+
+}
+.twoSidePrinted{
+  top: 3%;
+  left: 10%;
+  opacity: .3;
+  transform: rotateY(180deg);
 }
 .os25-img{
   position: relative;
@@ -31,21 +37,42 @@
 }
 .os25-clip{
   position: absolute;
-  top: 68.7%;
   background-color: rgba(0,0,0,.0);
-  height: auto;
-  left: 50%;
   transform: translateX(-50%);
-  width: 13%;
+  height: auto;
   opacity: 1;
   z-index: -1;
 }
+.os25-clip-10mm{
+  top: 70%;
+  left: 49.5%;
+  width: 7%;
+}
+.os25-clip-15mm{
+  top: 70.5%;
+  left: 50.2%;
+  width: 7.5%;
+}
+.os25-clip-20mm{
+  top: 71%;
+  left: 50.3%;
+  width: 8%;
+}
+.os25-clip-25mm{
+  top: 69.8%;
+  left: 49.5%;
+  width: 8.5%;
+}
+.os25-clip-30mm{
+  top: 70.7%;
+  left: 50.5%;
+  width: 9.3%;
+}
 
 .container-one-side-25mm{
-  position: relative;
+  position: absolute;
   width: 90%;
   height: 100%;
-
 }
 .os25-neck{
   position: absolute;
@@ -73,4 +100,75 @@
   width: 40%;
   height: 100%;
   clip-path: polygon(88%  0%, 72% 0%,  40% 65.2%, 55% 65.2%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.one-end-normal-back-25mm{
+  position: absolute;
+  top: 0.8%;
+  left: 50%;
+  transform: translateX(-50%) perspective(1vw) rotateX(18deg);
+  height: 3.1%;
+  width: 26.7%;
+  background-color: white;
+  border: 1px solid black;
+  z-index: 1;
+}
+
+.one-end-normal-left-25mm{
+  position: absolute;
+  height: 66.8%;
+  width: 5.6%;
+  top: 4.3%;
+  left: 40.2%;
+  background-color: white;
+  border: 1px solid black;
+  transform:  skewX(7.4deg) perspective(7.4vw);
+}
+
+.one-end-normal-right-25mm{
+  position: absolute;
+  height: 66.8%;
+  width: 5.4%;
+  top: 4.3%;
+  left: 53.6%;
+  background-color: white;
+  border: 1px solid black;
+  transform:  skewX(-7.4deg) perspective(7.4vw);
+}
+
+.back-clip-one-end-25mm{
+  position: absolute;
+  height: 3.8%;
+  width: 7%;
+  top: 0.8%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 130;
+}
+.back-clip-one-end-25mm img{
+  position: absolute;
+  top: 0px;
+  height: 103%;
+  z-index: 131;
+  filter: drop-shadow(0px 0px 1px black);
 }
