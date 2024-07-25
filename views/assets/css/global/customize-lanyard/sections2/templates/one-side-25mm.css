@@ -143,6 +143,7 @@
   background-color: white;
   border: 1px solid black;
   transform:  skewX(7.4deg) perspective(7.4vw);
+  overflow: hidden;
 }
 
 .one-end-normal-right-25mm{
@@ -154,6 +155,7 @@
   background-color: white;
   border: 1px solid black;
   transform:  skewX(-7.4deg) perspective(7.4vw);
+  overflow: hidden;
 }
 
 .back-clip-one-end-25mm{

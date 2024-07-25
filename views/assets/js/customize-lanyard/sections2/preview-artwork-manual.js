@@ -1,6 +1,10 @@
 class PreviewArtworkManualClass {
   constructor() {
+    var openBackgroundColour = document.getElementById("open-background-colour");
 
+    openBackgroundColour.addEventListener("click", function(){
+      customizeLanyard.openBackgroundColour();
+    });
   }
   showArtworkManualPreview(action){
     previewArtworkManualContainer.style.display = action;
@@ -10,15 +14,7 @@ class PreviewArtworkManualClass {
     var artworkManual = colourClass.getColourSelected();
     var description;
 
-    if (artworkManual == "one-colour") {
-        description = " Professional lanyard with a background color and one additional color, perfect for events, conferences, and daily use.";
-    }
-    else if (artworkManual == "two-colour") {
-      description = "Stylish lanyard with a background color and two additional colors for a vibrant, dynamic look, perfect for brand visibility and events.";
-    }
-    else if (artworkManual == "full-colour") {
-      description = "Vibrant full-colour lanyard featuring multiple hues for a bold and eye-catching design. Great for promotional events, showcasing logos, and ensuring maximum visibility with a creative, colourful touch.";
-    }
+
 
 
     previewColourContainer.innerHTML = "";

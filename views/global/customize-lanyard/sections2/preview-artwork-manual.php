@@ -5,11 +5,11 @@
     <div class="preview-manual-boxes">
       <h2>Manual</h2>
 
-      <div class="preview-artwork-manual-boxes">
+      <div id="open-background-colour" class="preview-artwork-manual-boxes">
 
         <div class="artwork-manual-boxes">
           <h1>1.</h1>
-        </div> 
+        </div>
         <div class="artwork-manual-boxes">
           <h3>Choose the lanyard background color</h3>
         </div>
@@ -24,10 +24,10 @@
           <h1>2.</h1>
         </div>
         <div class="artwork-manual-boxes">
-          <h3>Upload the lanyard logo</h3>
+          <h3>Add text to the lanyard</h3>
         </div>
         <div class="artwork-manual-boxes">
-          <img src="../../views/assets/img/global/customize-lanyard/sections2/preview-artwork-manual/logo.png" alt="">
+          <img src="../../views/assets/img/global/customize-lanyard/sections2/preview-artwork-manual/text.png" alt="">
         </div>
       </div>
 
@@ -38,10 +38,10 @@
           <h1>3.</h1>
         </div>
         <div class="artwork-manual-boxes">
-          <h3>Add text to the lanyard</h3>
+          <h3>Upload the lanyard logo</h3>
         </div>
         <div class="artwork-manual-boxes">
-          <img src="../../views/assets/img/global/customize-lanyard/sections2/preview-artwork-manual/text.png" alt="">
+          <img src="../../views/assets/img/global/customize-lanyard/sections2/preview-artwork-manual/logo.png" alt="">
         </div>
       </div>
 

@@ -1,0 +1,228 @@
+.draw-os-normal-left-10mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(90deg);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-left-10mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+.draw-os-normal-right-10mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: rotate(-90deg) translate(-10%);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-right-10mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.draw-os-normal-left-15mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(90deg);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-left-15mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+.draw-os-normal-right-15mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: rotate(-90deg) translate(-10%);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-right-15mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+
+
+
+.draw-os-normal-left-20mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(90deg);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-left-20mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+.draw-os-normal-right-20mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: rotate(-90deg) translate(-10%);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-right-20mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+
+
+
+
+
+
+
+
+.draw-os-normal-left-25mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(90deg);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-left-25mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+.draw-os-normal-right-25mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: rotate(-90deg) translate(-10%);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-right-25mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+
+
+
+
+
+
+.draw-os-normal-left-30mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(90deg);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-left-30mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+.draw-os-normal-right-30mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: rotate(-90deg) translate(-10%);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-right-30mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}

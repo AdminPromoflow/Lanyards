@@ -98,6 +98,7 @@ class Material {
       .catch(error => {
         // Log any errors to the console
         console.error("Error:", error);
+        location.reload();
       });
   }
 

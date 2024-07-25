@@ -1,6 +1,7 @@
 .colour{
   position: relative;
   width: 90%;
+  min-height: 330px;
   height: 65%;
   padding: 15px 0;
   margin: 15px 0;

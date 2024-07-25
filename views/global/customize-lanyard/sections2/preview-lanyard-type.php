@@ -27,29 +27,32 @@
 <section id="preview-lanyard-type-container" class="preview-lanyard-type">
   <div id="one-side-10mm" class="one-side-25mm">
      <div class="container-one-side-25mm">
+
        <div class="draw-lanyard">
 
 
          <div class="draw-lanyard-normal standar">
            <div class="os-normal-back-10mm blackgroundColour">
-
            </div>
            <div class="back-clip-os-10mm blackgroundColour">
              <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
            </div>
            <div class="os-normal-left-10mm blackgroundColour">
-
+             <div class="draw-os-normal-left-10mm text-container">
+               
+             </div>
            </div>
            <div class="os-normal-right-10mm blackgroundColour">
+             <div class="draw-os-normal-right-10mm text-container">
 
+
+
+             </div>
            </div>
            <div class="os25-clip img-clip os25-clip-10mm">
              <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/clips/25-one-end-clip.png" alt="">
            </div>
          </div>
-
-
-
 
 
          <div  class="draw-lanyard-width-attachment attachment">
@@ -111,10 +114,16 @@
              <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
            </div>
            <div class="os-normal-left-15mm blackgroundColour">
+             <div class="draw-os-normal-left-15mm text-container">
 
+
+             </div>
            </div>
            <div class="os-normal-right-15mm blackgroundColour">
+             <div class="draw-os-normal-right-15mm text-container">
 
+
+             </div>
            </div>
 
          </div>
@@ -185,10 +194,16 @@
              <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
            </div>
            <div class="one-end-normal-left-20mm blackgroundColour">
+             <div class="draw-os-normal-left-20mm text-container">
 
+
+             </div>
            </div>
            <div class="one-end-normal-right-20mm blackgroundColour">
+             <div class="draw-os-normal-right-20mm text-container">
 
+
+             </div>
            </div>
 
          </div>
@@ -259,10 +274,16 @@
              <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
            </div>
            <div class="one-end-normal-left-25mm blackgroundColour">
+             <div class="draw-os-normal-left-25mm text-container">
 
+
+             </div>
            </div>
            <div class="one-end-normal-right-25mm blackgroundColour">
+             <div class="draw-os-normal-right-25mm text-container">
 
+
+             </div>
            </div>
 
          </div>
@@ -337,10 +358,16 @@
              <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
            </div>
            <div class="one-end-normal-left-30mm blackgroundColour">
+             <div class="draw-os-normal-left-30mm text-container">
 
+
+             </div>
            </div>
            <div class="one-end-normal-right-30mm blackgroundColour">
+             <div class="draw-os-normal-right-30mm text-container">
 
+
+             </div>
            </div>
 
          </div>

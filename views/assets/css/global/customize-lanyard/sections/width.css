@@ -3,6 +3,7 @@
     position: relative;
     width: 90%;
     height: 65%;
+    min-height: 330px;
     padding: 15px 0;
     margin: 15px 0;
     left: 50%;

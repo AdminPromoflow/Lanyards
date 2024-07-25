@@ -20,6 +20,7 @@
   background-color: white;
   border: 1px solid black;
   transform:  skewX(7.4deg) perspective(7.4vw);
+  overflow: hidden;
 }
 
 .os-normal-right-15mm{
@@ -31,6 +32,7 @@
   background-color: white;
   border: 1px solid black;
   transform:  skewX(-7.4deg) perspective(7.4vw);
+  overflow: hidden;
 }
 .back-clip-os-15mm{
   position: absolute;
