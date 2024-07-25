@@ -2,26 +2,34 @@ class PreviewTextClass {
   constructor() {
     this.textContent = "";
     this.colourText = "#000000";
-
+    this.fontFamily = "Arial, sans-serif";
 
   }
   repeatText(repeat) {
       const textContainer = document.querySelectorAll(".text-container");
 
       if (repeat) {
-
+        alert(previewTextClass.getFontFamily());
           textContainer.forEach(container => {
               container.innerHTML = "";
           });
 
           for (let i = 0; i < 30; i++) {
               textContainer.forEach(container => {
-                  container.innerHTML += "<h3 class='textContent'>"+previewTextClass.getTextContent()+"</h3>";
+                //  container.innerHTML += "<h3 class='textContent'>"+previewTextClass.getTextContent()+"</h3>";
+                  container.innerHTML += "<h3 class='textContent' style='color:" + previewTextClass.getTextColour() + " ; '>" + previewTextClass.getTextContent() + "</h3>";
+
               });
           }
       } else {
+        alert(previewTextClass.getFontFamily());
+
           textContainer.forEach(container => {
-              container.innerHTML = "<h3 class='textContent'>"+previewTextClass.getTextContent()+"</h3>";
+            container.innerHTML = "";
+
+                //  container.innerHTML = "<h3 class='textContent'>"+previewTextClass.getTextContent()+"</h3>";
+                container.innerHTML += "<h3 class='textContent' style='color:" + previewTextClass.getTextColour() + " ; '>" + previewTextClass.getTextContent() + "</h3>";
+
           });
       }
   }
@@ -38,7 +46,7 @@ class PreviewTextClass {
   }
 
   changeColour(colour){
-    previewTextClass.setTextContent(colour)
+    previewTextClass.setTextColour(colour);
     const textContent = document.querySelectorAll(".textContent");
 
     for (var i = 0; i < textContent.length; i++) {
