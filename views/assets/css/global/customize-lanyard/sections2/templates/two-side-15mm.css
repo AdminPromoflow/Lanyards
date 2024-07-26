@@ -19,6 +19,7 @@
   left: 34.5%;
   background-color: white;
   border: 1px solid black;
+  overflow: hidden;
 }
 .two-ends-right-15mm{
   position: absolute;
@@ -28,6 +29,7 @@
   left: 61.5%;
   background-color: white;
   border: 1px solid black;
+  overflow: hidden;
 }
 .two-ends-back-clip-15mm{
   position: absolute;

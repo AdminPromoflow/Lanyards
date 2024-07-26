@@ -35,6 +35,7 @@
   background-color: white;
   border: 1px solid black;
   z-index: 1;
+  overflow: hidden;
 }
 
 /*This is the attachment thing*/
@@ -51,8 +52,8 @@
   background-color: white;
   border: 1px solid black;
   transform:  skewX(11.5deg) perspective(11.5vw);
+  overflow: hidden;
 }
-
 .one-end-width-attachment-right-20mm{
   position: absolute;
   height: 43.1%;
@@ -62,6 +63,7 @@
   background-color: white;
   border: 1px solid black;
   transform:  skewX(-11.5deg) perspective(11.5vw);
+  overflow: hidden;
 }
 
 

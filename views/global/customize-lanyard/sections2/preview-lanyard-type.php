@@ -39,7 +39,7 @@
            </div>
            <div class="os-normal-left-10mm blackgroundColour">
              <div class="draw-os-normal-left-10mm text-container">
-               
+
              </div>
            </div>
            <div class="os-normal-right-10mm blackgroundColour">
@@ -65,15 +65,24 @@
            </div>
 
            <div class="one-end-width-attachment-center-10mm blackgroundColour">
+             <div class="draw-os-normal-width-attachment-center-10mm text-container">
+
+             </div>
            </div>
 
            <div class="one-end-attachment-width-attachment-10mm blackgroundColour attachmentThing os-attachment-10">
            </div>
 
            <div class="one-end-width-attachment-left-10mm blackgroundColour">
+             <div class="draw-os-normal-width-attachment-left-10mm text-container">
+
+             </div>
            </div>
 
            <div class="one-end-width-attachment-right-10mm blackgroundColour">
+             <div class="draw-os-normal-width-attachment-right-10mm text-container">
+
+             </div>
            </div>
 
            <div class="one-end-clip-width-attachment-10mm os25-clip img-clip os25-clip-10mm">
@@ -139,15 +148,24 @@
            </div>
 
            <div class="one-end-width-attachment-center-15mm blackgroundColour">
+             <div class="draw-os-normal-width-attachment-center-15mm text-container">
+
+             </div>
            </div>
 
            <div class="one-end-attachment-width-attachment-15mm blackgroundColour attachmentThing os-attachment-15">
            </div>
 
            <div class="one-end-width-attachment-left-15mm blackgroundColour">
+             <div class="draw-os-normal-width-attachment-left-15mm text-container">
+
+             </div>
            </div>
 
            <div class="one-end-width-attachment-right-15mm blackgroundColour">
+             <div class="draw-os-normal-width-attachment-right-15mm text-container">
+
+             </div>
            </div>
 
            <div class="one-end-clip-width-attachment-15mm os25-clip img-clip os25-clip-15mm">
@@ -220,15 +238,24 @@
            </div>
 
            <div class="one-end-width-attachment-center-20mm blackgroundColour">
+             <div class="draw-os-normal-width-attachment-center-20mm text-container">
+
+             </div>
            </div>
 
            <div class="one-end-attachment-width-attachment-20mm blackgroundColour attachmentThing os-attachment-20">
            </div>
 
            <div class="one-end-width-attachment-left-20mm blackgroundColour">
+             <div class="draw-os-normal-width-attachment-left-20mm text-container">
+
+             </div>
            </div>
 
            <div class="one-end-width-attachment-right-20mm blackgroundColour">
+             <div class="draw-os-normal-width-attachment-right-20mm text-container">
+
+             </div>
            </div>
 
            <div class="one-end-clip-width-attachment-20mm os25-clip img-clip os25-clip-20mm">
@@ -300,15 +327,24 @@
            </div>
 
            <div class="one-end-width-attachment-center-25mm blackgroundColour">
+             <div class="draw-os-normal-width-attachment-center-25mm text-container">
+
+             </div>
            </div>
 
            <div class="one-end-attachment-width-attachment-25mm attachmentThing os-attachment-25">
            </div>
 
            <div class="one-end-width-attachment-left-25mm blackgroundColour">
+             <div class="draw-os-normal-width-attachment-left-25mm text-container">
+
+             </div>
            </div>
 
            <div class="one-end-width-attachment-right-25mm blackgroundColour">
+             <div class="draw-os-normal-width-attachment-right-25mm text-container">
+
+             </div>
            </div>
 
            <div class="one-end-clip-width-attachment-25mm os25-clip img-clip os25-clip-25mm">
@@ -385,15 +421,24 @@
            </div>
 
            <div class="one-end-width-attachment-center-30mm blackgroundColour">
+             <div class="draw-os-normal-width-attachment-center-30mm text-container">
+
+             </div>
            </div>
 
            <div class="one-end-attachment-width-attachment-30mm blackgroundColour attachmentThing os-attachment-30">
            </div>
 
            <div class="one-end-width-attachment-left-30mm blackgroundColour">
+             <div class="draw-os-normal-width-attachment-left-30mm text-container">
+
+             </div>
            </div>
 
            <div class="one-end-width-attachment-right-30mm blackgroundColour">
+             <div class="draw-os-normal-width-attachment-right-30mm text-container">
+
+             </div>
            </div>
 
            <div class="one-end-clip-width-attachment-30mm os25-clip img-clip os25-clip-30mm">
@@ -440,9 +485,21 @@
         </div>
 
         <div class="two-ends-left-30mm blackgroundColour">
+          <div class="draw-ts-normal-left-30mm text-container">
+
+
+
+
+          </div>
         </div>
 
         <div class="two-ends-right-30mm blackgroundColour">
+          <div class="draw-ts-normal-right-30mm text-container">
+
+            
+
+
+          </div>
         </div>
 
       </div>
@@ -498,9 +555,21 @@
         </div>
 
         <div class="two-ends-left-25mm blackgroundColour">
+          <div class="draw-ts-normal-left-25mm text-container">
+
+
+
+
+          </div>
         </div>
 
         <div class="two-ends-right-25mm blackgroundColour">
+          <div class="draw-ts-normal-right-25mm text-container">
+
+
+
+
+          </div>
         </div>
 
       </div>
@@ -553,10 +622,20 @@
         </div>
 
         <div class="two-ends-left-20mm blackgroundColour">
+          <div class="draw-ts-normal-left-20mm text-container">
 
+
+
+
+          </div>
         </div>
         <div class="two-ends-right-20mm blackgroundColour">
+          <div class="draw-ts-normal-right-20mm text-container">
 
+
+
+
+          </div>
         </div>
       </div>
 
@@ -610,10 +689,20 @@
         </div>
 
         <div class="two-ends-left-15mm blackgroundColour">
+          <div class="draw-ts-normal-left-15mm text-container">
 
+
+
+
+          </div>
         </div>
         <div class="two-ends-right-15mm blackgroundColour">
+          <div class="draw-ts-normal-right-15mm text-container">
 
+
+
+
+          </div>
         </div>
 
       </div>
@@ -666,10 +755,21 @@
         </div>
 
         <div class="ts-two-ends-left-10mm blackgroundColour">
+          <div class="draw-ts-normal-left-10mm text-container">
 
+
+
+
+          </div>
         </div>
         <div class="ts-two-ends-right-10mm blackgroundColour">
+          <div class="draw-ts-normal-right-10mm text-container">
 
+
+
+
+
+          </div>
         </div>
       </div>
 

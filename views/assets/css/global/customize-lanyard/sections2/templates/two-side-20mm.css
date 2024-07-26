@@ -20,7 +20,7 @@
   background-color: white;
   border: 1px solid black;
   z-index: 1;
-
+  overflow: hidden;
 }
 .two-ends-right-20mm{
   position: absolute;
@@ -30,6 +30,7 @@
   left: 60.6%;
   background-color: white;
   border: 1px solid black;
+  overflow: hidden;
 }
 .two-ends-back-clip-20mm{
   position: absolute;

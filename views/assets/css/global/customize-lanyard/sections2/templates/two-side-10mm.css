@@ -33,6 +33,7 @@
   left: 34.7%;
   background-color: white;
   border: 1px solid black;
+  overflow: hidden;
 }
 .ts-two-ends-right-10mm{
   position: absolute;
@@ -42,4 +43,8 @@
   left: 61.9%;
   background-color: white;
   border: 1px solid black;
+  overflow: hidden;
+}
+.draw-ts-normal-left-10mm {
+
 }

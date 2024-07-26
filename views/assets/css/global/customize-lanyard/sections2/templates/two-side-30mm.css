@@ -21,7 +21,7 @@
   background-color: white;
   border: 1px solid black;
   z-index: 1;
-
+  overflow: hidden;
 }
 .two-ends-right-30mm{
   position: absolute;
@@ -31,6 +31,7 @@
   left: 58.5%;
   background-color: white;
   border: 1px solid black;
+  overflow: hidden;
 }
 .two-ends-back-clip-30mm{
   position: absolute;

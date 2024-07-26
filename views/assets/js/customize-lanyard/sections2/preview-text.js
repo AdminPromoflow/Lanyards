@@ -9,7 +9,7 @@ class PreviewTextClass {
       const textContainer = document.querySelectorAll(".text-container");
 
       if (repeat) {
-        alert(previewTextClass.getFontFamily());
+
           textContainer.forEach(container => {
               container.innerHTML = "";
           });
@@ -22,7 +22,7 @@ class PreviewTextClass {
               });
           }
       } else {
-        alert(previewTextClass.getFontFamily());
+
 
           textContainer.forEach(container => {
             container.innerHTML = "";

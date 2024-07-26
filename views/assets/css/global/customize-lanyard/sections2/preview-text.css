@@ -226,3 +226,559 @@
   margin: 0px 5px;
   font-size: 0.6em;
 }
+
+
+
+
+
+
+
+
+
+
+.draw-ts-normal-left-10mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(90deg);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.draw-ts-normal-left-10mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+.draw-ts-normal-right-10mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: rotate(-90deg) translate(-10%);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.draw-ts-normal-right-10mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+
+
+
+
+
+
+.draw-ts-normal-left-15mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(90deg);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.draw-ts-normal-left-15mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+.draw-ts-normal-right-15mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: rotate(-90deg) translate(-10%);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.draw-ts-normal-right-15mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+
+
+
+
+
+
+.draw-ts-normal-left-20mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(90deg);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.draw-ts-normal-left-20mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+.draw-ts-normal-right-20mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: rotate(-90deg) translate(-10%);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.draw-ts-normal-right-20mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+
+
+
+
+
+
+
+.draw-ts-normal-left-25mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(90deg);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.draw-ts-normal-left-25mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+.draw-ts-normal-right-25mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: rotate(-90deg) translate(-10%);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.draw-ts-normal-right-25mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+
+
+
+
+
+
+
+.draw-ts-normal-left-30mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(90deg);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.draw-ts-normal-left-30mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+.draw-ts-normal-right-30mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: rotate(-90deg) translate(-10%);
+  width: 80%;
+  padding: 1px;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.draw-ts-normal-right-30mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+
+
+
+
+
+
+
+.draw-os-normal-width-attachment-left-10mm  {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(90deg);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-width-attachment-left-10mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+.draw-os-normal-width-attachment-right-10mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: rotate(-90deg) translate(-10%);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-width-attachment-right-10mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+.draw-os-normal-width-attachment-center-10mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: rotate(-90deg) translate(-10%);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-width-attachment-center-10mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+
+
+
+
+
+.draw-os-normal-width-attachment-left-15mm  {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(90deg);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-width-attachment-left-15mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+.draw-os-normal-width-attachment-right-15mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: rotate(-90deg) translate(-10%);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-width-attachment-right-15mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+.draw-os-normal-width-attachment-center-15mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: rotate(-90deg) translate(-10%);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-width-attachment-center-15mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+
+
+
+
+
+
+
+.draw-os-normal-width-attachment-left-20mm  {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(90deg);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-width-attachment-left-20mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+.draw-os-normal-width-attachment-right-20mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: rotate(-90deg) translate(-10%);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-width-attachment-right-20mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+.draw-os-normal-width-attachment-center-20mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: rotate(-90deg) translate(-10%);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-width-attachment-center-20mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+
+
+
+
+
+
+.draw-os-normal-width-attachment-left-25mm  {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(90deg);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-width-attachment-left-25mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+.draw-os-normal-width-attachment-right-25mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: rotate(-90deg) translate(-10%);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-width-attachment-right-25mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+.draw-os-normal-width-attachment-center-25mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: rotate(-90deg) translate(-10%);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-width-attachment-center-25mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+
+
+
+
+
+
+.draw-os-normal-width-attachment-left-30mm  {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(90deg);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-width-attachment-left-30mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+.draw-os-normal-width-attachment-right-30mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: rotate(-90deg) translate(-10%);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-width-attachment-right-30mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}
+.draw-os-normal-width-attachment-center-30mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  transform: rotate(-90deg) translate(-10%);
+  width: 80%;
+  padding: 1px;
+
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.draw-os-normal-width-attachment-center-30mm h3{
+  position: relative;
+  padding: 0px;
+  margin: 0px 5px;
+  font-size: 0.6em;
+}

@@ -35,6 +35,7 @@
   background-color: white;
   border: 1px solid black;
   z-index: 1;
+  overflow: hidden;
 }
 /*This is the attachment thing*/
 .one-end-attachment-width-attachment-10mm{
@@ -50,6 +51,7 @@
   background-color: white;
   border: 1px solid black;
   transform:  skewX(11.3deg) perspective(11.3vw);
+  overflow: hidden;
 }
 
 .one-end-width-attachment-right-10mm{
@@ -61,6 +63,7 @@
   background-color: white;
   border: 1px solid black;
   transform:  skewX(-11.3deg) perspective(11.3vw);
+  overflow: hidden;
 }
 
 
