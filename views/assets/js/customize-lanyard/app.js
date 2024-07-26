@@ -105,6 +105,12 @@ class CustomizeLanyard {
    else if (this.currentSectionOpen == 10) {
      this.openText();
    }
+   else if (this.currentSectionOpen == 11) {
+     this.openArtWorkManual();
+   }
+   else if (this.currentSectionOpen == 12) {
+     this.openImage();
+   }
   }
 
   // Métodos adicionales según sea necesario
@@ -183,6 +189,11 @@ class CustomizeLanyard {
     previewLanyardType.showTypeLanyardPreview("flex");
     previewArtworkManualClass.showArtworkManualPreview("none");
 
+  }
+  openImage(){
+    customizeLanyard.showCurrentSection(10);
+    previewLanyardType.showTypeLanyardPreview("flex");
+    previewArtworkManualClass.showArtworkManualPreview("none");
   }
 
   setStateVisibilityPanelCustomeLanyard(value) {

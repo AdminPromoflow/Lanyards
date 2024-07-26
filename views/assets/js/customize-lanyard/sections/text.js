@@ -3,9 +3,11 @@ class TextClass {
     const repeatTextBox = document.querySelectorAll(".repeat-text-box");
     const colourTextSelect = document.getElementById("colour-text-select");
     const colourTextSelectContainer = document.getElementById("colour-text-select-container");
-    var repeatTextBoxSelected;
+    var repeatTextBoxSelected = 1;
     colourTextSelectContainer.style.display = "none";
 
+    repeatTextBox[repeatTextBoxSelected].style.border = "2px solid white";
+    previewTextClass.repeatText(true);
 
     for (let i = 0; i < repeatTextBox.length; i++) {
       repeatTextBox[i].addEventListener("click", function(){

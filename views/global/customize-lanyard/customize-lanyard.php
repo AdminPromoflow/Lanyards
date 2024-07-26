@@ -27,7 +27,7 @@
       <?php //include "../../views/global/customize-lanyard/sections2/preview-acccessories.php"?>
       <?php //include "../../views/global/customize-lanyard/sections2/preview-amount.php"?>
       <?php //include "../../views/global/customize-lanyard/sections2/preview-artwork.php"?>
-      <?php //include "../../views/global/customize-lanyard/sections2/preview-image.php"?>
+      <?php include "../../views/global/customize-lanyard/sections2/preview-image.php"?>
 
     </div>
 
@@ -52,7 +52,7 @@
       <?php //include "../../views/global/customize-lanyard/sections/accessories.php"?>
       <?php //include "../../views/global/customize-lanyard/sections/amount.php"?>
       <?php //include "../../views/global/customize-lanyard/sections/artwork.php"?>
-      <?php //include "../../views/global/customize-lanyard/sections/image.php"?>
+      <?php include "../../views/global/customize-lanyard/sections/image.php"?>
 
       <div class="container_buttons_next_preview">
         <button id="preview" type="button" name="button">Preview</button>

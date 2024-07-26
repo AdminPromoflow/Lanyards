@@ -1,0 +1,341 @@
+.image{
+  position: relative;
+  width: 90%;
+  height: 65%;
+  min-height: 330px;
+  padding: 15px 0;
+  margin: 15px 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, .1);
+
+  display: none;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.image h2{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.9em;
+  color: white;
+  margin: 0px 0px 5px 0;
+}
+.containers-boxes-image{
+  position: relative;
+  width: 100%;
+  height: calc(100% - 39px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/* Estilo para la barra de desplazamiento en WebKit */
+.containers-boxes-image::-webkit-scrollbar {
+    width: 13px; /* Ancho de la barra de desplazamiento */
+}
+.containers-boxes-image::-webkit-scrollbar-thumb {
+    background: #091d2c; /* Color azul oscuro para la parte que se mueve */
+    border-radius: 5px; /* Radio de borde para hacerla redondeada */
+    border: 1px solid rgba(255, 255, 255, .5); /* Borde blanco para un contraste mejor */
+    cursor: pointer; /* Cambia el cursor a un puntero */
+}
+.containers-boxes-image::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, .4); /* Color gris oscuro para el fondo */
+    border-radius: 10px; /* Radio de borde para hacerla redondeada */
+}
+.containers-boxes-image::-webkit-scrollbar-thumb:hover {
+    background: #132735; /* Color más oscuro cuando el mouse está encima */
+}
+.containers-image1{
+  position: relative;
+  padding: 5px 0;
+  width: 100%;
+}
+.item-image{
+  position: relative;
+  min-height: 60px;
+  width: 91%;
+  background-color: rgba(48, 79, 112, 1);
+  box-shadow: -1px 1px 2px black;
+  margin: 8px 4px;
+  padding: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.item-image p{
+  position: relative;
+  color: rgba(255, 255, 255, .8);
+  font-size: 1.09em;
+  text-align: center;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+.item-image label {
+  margin: 10px 0px;
+  padding: 4px 0px;
+  min-width: 50%;
+  padding-left: 1px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(34, 54, 85,1);
+  font-size: 0.4;
+  text-align: center;
+  font-weight: 300;
+  transition: border 0.4s;
+  box-shadow: 1px 1px 2px black;
+}
+
+
+.containr-repeat-image{
+  position: relative;
+  padding: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.repeat-image-box{
+  position: relative;
+  min-width: 40px;
+  padding: 3px;
+  margin: 0 5px;
+  border-radius: 5px;
+  background-color: rgba(34, 54, 85,1);
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px black;
+}
+.repeat-image-box h3{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 200;
+  color: rgba(255, 255, 255, .8);
+}
+.containr-styling-image, .containr-size-image, .containr-space-between-image, .container-position-image{
+  position: relative;
+  padding: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.styling-image-box, .size-image-box, .space-between-image-box, .position-image-box{
+  position: relative;
+  width: 20px;
+  padding: 5px 7px;
+  margin: 0 5px;
+  border-radius: 5px;
+  background-color: rgba(34, 54, 85,1);
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px black;
+  border: 2px solid transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .4s;
+}
+.styling-image-box img, .size-image-box img, .space-between-image-box img, .position-image-box img{
+  position: relative;
+  height: 70%;
+}
+.size-image-box:active, .space-between-image-box:active, .position-image-box:active{
+  border: 2px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.colour-image-select{
+  position: relative;
+  padding: 4px 0;
+  width: 207px;
+  margin: 5px;
+  background-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+
+}
+.colour-image-select h3{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  text-shadow: 1px 1px 0px white;
+}
+.colour-image-select-container{
+  position: absolute;
+  top: 63px;
+
+  height: 150px;
+  width: 207px;
+  margin: 5px;
+  background-color: rgba(34, 54, 85,1);
+  z-index: 3;
+  display: block;
+  border-radius: 5px;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+
+/* Estilo para la barra de desplazamiento en WebKit */
+.colour-image-select-container::-webkit-scrollbar {
+    width: 13px; /* Ancho de la barra de desplazamiento */
+}
+
+.colour-image-select-container::-webkit-scrollbar-thumb {
+    background: #091d2c; /* Color azul oscuro para la parte que se mueve */
+    border-radius: 5px; /* Radio de borde para hacerla redondeada */
+    border: 1px solid rgba(255, 255, 255, .5); /* Borde blanco para un contraste mejor */
+    cursor: pointer; /* Cambia el cursor a un puntero */
+}
+.colour-image-select-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, .4); /* Color gris oscuro para el fondo */
+    border-radius: 10px; /* Radio de borde para hacerla redondeada */
+}
+.colour-image-select-container::-webkit-scrollbar-thumb:hover {
+    background: #132735; /* Color más oscuro cuando el mouse está encima */
+}
+
+
+
+.colour-image-select-boxes{
+  position: relative;
+  padding: 5px 0;
+  width: 95%;
+  background-color: blue;
+  margin: 3px 0 3px 5px;
+  cursor: pointer;
+}
+.colour-image-select-boxes h3{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 1px 1px 1px black;
+}
+
+
+
+
+
+
+
+
+
+
+.type-image-select{
+  position: relative;
+  padding: 2px 0;
+  width: 207px;
+  margin: 5px;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.type-image-select h3{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  text-shadow: 1px 1px 0px white;
+}
+
+.type-image-select-container{
+  position: absolute;
+  top: 63px;
+
+  height: 150px;
+  width: 207px;
+  margin: 5px;
+  background-color: rgba(34, 54, 85,1);
+  z-index: 3;
+  display: block;
+  border-radius: 5px;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* Estilo para la barra de desplazamiento en WebKit */
+.type-image-select-container::-webkit-scrollbar {
+    width: 13px; /* Ancho de la barra de desplazamiento */
+}
+
+.type-image-select-container::-webkit-scrollbar-thumb {
+    background: #091d2c; /* Color azul oscuro para la parte que se mueve */
+    border-radius: 5px; /* Radio de borde para hacerla redondeada */
+    border: 1px solid rgba(255, 255, 255, .5); /* Borde blanco para un contraste mejor */
+    cursor: pointer; /* Cambia el cursor a un puntero */
+}
+.type-image-select-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, .4); /* Color gris oscuro para el fondo */
+    border-radius: 10px; /* Radio de borde para hacerla redondeada */
+}
+.type-image-select-container::-webkit-scrollbar-thumb:hover {
+    background: #132735; /* Color más oscuro cuando el mouse está encima */
+}
+
+.type-image-select-boxes{
+  position: relative;
+  padding: 5px 0;
+  width: 95%;
+  background-color: rgba(255, 255, 255, .9);
+  border: 1px solid black;
+  margin: 3px 0 3px 5px;
+  cursor: pointer;
+}
+.type-image-select-boxes h3{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 1px 1px 1px black;
+}
+
+
+
+
+
+
+
+
+/**/
