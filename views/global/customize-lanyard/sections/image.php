@@ -9,52 +9,6 @@
         <label for="imageUpload">Upload</label>
       </div>
       <div class="item-image">
-        <p>Do you want to repeat image?</p>
-        <div class="containr-repeat-image">
-          <div class="repeat-image-box">
-            <h3>Yes</h3>
-          </div>
-          <div class="repeat-image-box">
-            <h3>No</h3>
-          </div>
-        </div>
-      </div>
-      <div class="item-image">
-        <p>Select the Pantone reference below.</p>
-        <div class="colour-image-select" id="colour-image-select">
-          <h3>Black</h3>
-        </div>
-        <div class="colour-image-select-container" id="colour-image-select-container">
-        </div>
-      </div>
-      <div  class="item-image">
-        <p>Click to choose a font style:</p>
-        <div class="type-image-select" id="type-image-select">
-          <h3>Arial</h3>
-        </div>
-        <div class="type-image-select-container" id="type-image-select-container">
-
-
-        </div>
-      </div>
-      <div class="item-image">
-        <p>Choose the image styling</p>
-
-        <div class="containr-styling-image">
-
-          <div class="styling-image-box">
-            <img src="../../views/assets/img/global/customize-lanyard/sections/image/Bold.png" alt="">
-          </div>
-          <div class="styling-image-box">
-            <img src="../../views/assets/img/global/customize-lanyard/sections/image/Italic.png" alt="">
-          </div>
-          <div class="styling-image-box">
-            <img src="../../views/assets/img/global/customize-lanyard/sections/image/Underline.png" alt="">
-          </div>
-
-        </div>
-      </div>
-      <div class="item-image">
         <p>Adjust the image size</p>
 
         <div class="containr-size-image">
@@ -84,7 +38,7 @@
 
         </div>
       </div>
-<!--      <div class="item-image">
+     <div class="item-image">
         <p>Adjust the image position</p>
 
         <div class="container-position-image">
@@ -106,9 +60,11 @@
           </div>
 
         </div>
-      </div>-->
+      </div>
 
     </div>
   </div>
 </section>
-<script src="../../views/assets/js/customize-lanyard/sections/image.js" type="image/javascript"></script>
+<script src="../../views/assets/js/customize-lanyard/sections/image.js" type="text/javascript">
+
+</script>

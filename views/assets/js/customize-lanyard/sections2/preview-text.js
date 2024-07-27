@@ -17,7 +17,8 @@ class PreviewTextClass {
           for (let i = 0; i < 30; i++) {
               textContainer.forEach(container => {
                 //  container.innerHTML += "<h3 class='textContent'>"+previewTextClass.getTextContent()+"</h3>";
-                  container.innerHTML += "<h3 class='textContent' style='color:" + previewTextClass.getTextColour() + " ; '>" + previewTextClass.getTextContent() + "</h3>";
+                  container.innerHTML += "<h3 class='textContent' style='color:" + previewTextClass.getTextColour() + " ; '>" + previewTextClass.getTextContent() + "</h3>" +
+                  "<img class='imageContent' src='../../views/assets/img/global/customize-lanyard/sections/image/empty-space.png' alt=''>" ;
 
               });
           }
@@ -28,7 +29,8 @@ class PreviewTextClass {
             container.innerHTML = "";
 
                 //  container.innerHTML = "<h3 class='textContent'>"+previewTextClass.getTextContent()+"</h3>";
-                container.innerHTML += "<h3 class='textContent' style='color:" + previewTextClass.getTextColour() + " ; '>" + previewTextClass.getTextContent() + "</h3>";
+                container.innerHTML += "<h3 class='textContent' style='color:" + previewTextClass.getTextColour() + " ; '>" + previewTextClass.getTextContent() + "</h3>" +
+                "<img class='imageContent' src='../../views/assets/img/global/customize-lanyard/sections/image/empty-space.png' alt=''>" ;
 
           });
       }

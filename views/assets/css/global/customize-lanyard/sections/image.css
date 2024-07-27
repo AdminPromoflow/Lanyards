@@ -330,7 +330,11 @@
   color: rgba(255, 255, 255, 1);
   text-shadow: 1px 1px 1px black;
 }
-
+.imageContent{
+  background-color: red;
+  height: 15px;
+  width: 15px;
+}
 
 
 

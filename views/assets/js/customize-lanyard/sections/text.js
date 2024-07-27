@@ -3,7 +3,7 @@ class TextClass {
     const repeatTextBox = document.querySelectorAll(".repeat-text-box");
     const colourTextSelect = document.getElementById("colour-text-select");
     const colourTextSelectContainer = document.getElementById("colour-text-select-container");
-    var repeatTextBoxSelected = 1;
+    var repeatTextBoxSelected = 0;
     colourTextSelectContainer.style.display = "none";
 
     repeatTextBox[repeatTextBoxSelected].style.border = "2px solid white";
@@ -94,9 +94,10 @@ class TextClass {
         '<div class="colour-text-select-boxes" style="background-color:' + pantoneColors[i].html + ';" ' +
         'onclick="textClass.handleClickText(\'' + pantoneColors[i].pantone + '\', \'' + pantoneColors[i].html + '\')">' +
         '<h3 class="name-colour-text-selected">' + pantoneColors[i].pantone + '</h3>' +
+      //  '<img src="../../views/assets/img/global/customize-lanyard/sections/image/top.png" alt="">' +
+
         '</div>';
     }
-
 
     const typeTextSelect = document.getElementById("type-text-select");
     const typeTextSelectContainer = document.getElementById("type-text-select-container");
@@ -258,7 +259,6 @@ class TextClass {
       previewTextClass.changeFontFamily(fontFamily);
   }
 }
-
 
 
 
