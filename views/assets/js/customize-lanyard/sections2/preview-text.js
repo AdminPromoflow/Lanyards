@@ -18,7 +18,7 @@ class PreviewTextClass {
               textContainer.forEach(container => {
                 //  container.innerHTML += "<h3 class='textContent'>"+previewTextClass.getTextContent()+"</h3>";
                   container.innerHTML += "<h3 class='textContent' style='color:" + previewTextClass.getTextColour() + " ; '>" + previewTextClass.getTextContent() + "</h3>" +
-                  "<img class='imageContent' src='../../views/assets/img/global/customize-lanyard/sections/image/empty-space.png' alt=''>" ;
+                  "<div class='imageContent2'></div>" ;
 
               });
           }
@@ -30,7 +30,7 @@ class PreviewTextClass {
 
                 //  container.innerHTML = "<h3 class='textContent'>"+previewTextClass.getTextContent()+"</h3>";
                 container.innerHTML += "<h3 class='textContent' style='color:" + previewTextClass.getTextColour() + " ; '>" + previewTextClass.getTextContent() + "</h3>" +
-                "<img class='imageContent' src='../../views/assets/img/global/customize-lanyard/sections/image/empty-space.png' alt=''>" ;
+                "<div class='imageContent2'></div>" ;
 
           });
       }

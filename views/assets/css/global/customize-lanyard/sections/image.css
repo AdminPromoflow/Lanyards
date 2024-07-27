@@ -330,10 +330,16 @@
   color: rgba(255, 255, 255, 1);
   text-shadow: 1px 1px 1px black;
 }
-.imageContent{
-  background-color: red;
+.imageContent2{
+  position: relative;
+  background-color: blue;
   height: 15px;
   width: 15px;
+}
+.imageContent2 img{
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 
