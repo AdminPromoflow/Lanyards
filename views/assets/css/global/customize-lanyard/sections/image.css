@@ -330,16 +330,17 @@
   color: rgba(255, 255, 255, 1);
   text-shadow: 1px 1px 1px black;
 }
-.imageContent2{
+.imageContent{
   position: relative;
-  background-color: blue;
-  height: 15px;
-  width: 15px;
-}
-.imageContent2 img{
-  position: relative;
-  height: 100%;
-  width: 100%;
+  background-color: black;
+  padding: 2px 3px;
+  transform: rotate(90deg);
+
+  background-image: url("../../../../../../views/assets/img/global/customize-lanyard/sections/image/bigger.png"); /* The image used */
+  background-position: center;
+  background-size:contain;
+  background-repeat: no-repeat;
+
 }
 
 

@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="../../views/assets/css/global/customize-lanyard/sections2/templates/one-side-with-attachment-25mm.css">
 <link rel="stylesheet" href="../../views/assets/css/global/customize-lanyard/sections2/templates/one-side-with-attachment-30mm.css">
 
-
+ 
 
 
 <link rel="stylesheet" href="../../views/assets/css/global/customize-lanyard/sections2/preview-lanyard-type.css">
@@ -496,7 +496,7 @@
         <div class="two-ends-right-30mm blackgroundColour">
           <div class="draw-ts-normal-right-30mm text-container">
 
-            
+
 
 
           </div>

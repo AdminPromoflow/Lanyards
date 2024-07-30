@@ -18,7 +18,8 @@ class PreviewTextClass {
               textContainer.forEach(container => {
                 //  container.innerHTML += "<h3 class='textContent'>"+previewTextClass.getTextContent()+"</h3>";
                   container.innerHTML += "<h3 class='textContent' style='color:" + previewTextClass.getTextColour() + " ; '>" + previewTextClass.getTextContent() + "</h3>" +
-                  "<div class='imageContent2'></div>" ;
+                  "<div class='imageContent'>" +
+                  "  </div>" ;
 
               });
           }
@@ -30,7 +31,7 @@ class PreviewTextClass {
 
                 //  container.innerHTML = "<h3 class='textContent'>"+previewTextClass.getTextContent()+"</h3>";
                 container.innerHTML += "<h3 class='textContent' style='color:" + previewTextClass.getTextColour() + " ; '>" + previewTextClass.getTextContent() + "</h3>" +
-                "<div class='imageContent2'></div>" ;
+                "<div class='imageContent'></div>" ;
 
           });
       }
