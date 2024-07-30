@@ -332,7 +332,6 @@
 }
 .imageContent{
   position: relative;
-  background-color: black;
   padding: 2px 3px;
   transform: rotate(90deg);
 

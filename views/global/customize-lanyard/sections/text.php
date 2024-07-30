@@ -16,9 +16,9 @@
           <div class="repeat-text-box">
             <h3>No</h3>
           </div>
-        </div>
+        </div> 
       </div>
-      <div class="item-text"> 
+      <div class="item-text">
         <p>Select the Pantone reference below.</p>
         <div class="colour-text-select" id="colour-text-select">
           <h3>Black</h3>

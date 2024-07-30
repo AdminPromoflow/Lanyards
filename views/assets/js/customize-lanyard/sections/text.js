@@ -16,7 +16,6 @@ class TextClass {
 
          repeatTextBoxSelected = i;
 
-
          for (var j = 0; j < repeatTextBox.length; j++) {
            repeatTextBox[j].style.border = "2px solid transparent";
          }
@@ -116,8 +115,6 @@ class TextClass {
             typeTextSelectContainer.style.display = "none";
         }
     });
-
-
 
     const fontStyles = [
         { fontName: "Arial", fontFamily: "Arial, sans-serif" },

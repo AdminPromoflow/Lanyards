@@ -10,7 +10,7 @@
   background-color: rgba(0, 0, 0, .1);
 
   display: none;
-  justify-content: center;
+  justify-content: center; 
   align-items: flex-end;
   flex-direction: column;
 }
@@ -20,7 +20,7 @@
   width: 100%;
   font-weight: 400;
   font-size: 1.9em;
-  color: white; 
+  color: white;
   margin: 0px 0px 5px 0;
 }
 .containers-boxes-text{

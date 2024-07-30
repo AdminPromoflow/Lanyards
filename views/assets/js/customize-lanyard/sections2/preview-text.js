@@ -17,7 +17,7 @@ class PreviewTextClass {
           for (let i = 0; i < 30; i++) {
               textContainer.forEach(container => {
                 //  container.innerHTML += "<h3 class='textContent'>"+previewTextClass.getTextContent()+"</h3>";
-                  container.innerHTML += "<h3 class='textContent' style='color:" + previewTextClass.getTextColour() + " ; '>" + previewTextClass.getTextContent() + "</h3>" +
+                   container.innerHTML += "<h3 class='textContent' style='color:" + previewTextClass.getTextColour() + " ; '>" + previewTextClass.getTextContent() + "</h3>" +
                   "<div class='imageContent'>" +
                   "  </div>" ;
 
