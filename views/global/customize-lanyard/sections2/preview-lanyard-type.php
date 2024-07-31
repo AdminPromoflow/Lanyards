@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="../../views/assets/css/global/customize-lanyard/sections2/templates/one-side-with-attachment-25mm.css">
 <link rel="stylesheet" href="../../views/assets/css/global/customize-lanyard/sections2/templates/one-side-with-attachment-30mm.css">
 
- 
+
 
 
 <link rel="stylesheet" href="../../views/assets/css/global/customize-lanyard/sections2/preview-lanyard-type.css">
@@ -38,12 +38,12 @@
              <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
            </div>
            <div class="os-normal-left-10mm blackgroundColour">
-             <div class="draw-os-normal-left-10mm text-container">
+             <div class="draw-os-normal-left-10mm text-container draw-os-10mm">
 
              </div>
            </div>
            <div class="os-normal-right-10mm blackgroundColour">
-             <div class="draw-os-normal-right-10mm text-container">
+             <div class="draw-os-normal-right-10mm text-container draw-os-10mm">
 
 
 
@@ -123,13 +123,13 @@
              <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
            </div>
            <div class="os-normal-left-15mm blackgroundColour">
-             <div class="draw-os-normal-left-15mm text-container">
+             <div class="draw-os-normal-left-15mm text-container draw-os-15mm">
 
 
              </div>
            </div>
            <div class="os-normal-right-15mm blackgroundColour">
-             <div class="draw-os-normal-right-15mm text-container">
+             <div class="draw-os-normal-right-15mm text-container draw-os-15mm">
 
 
              </div>
@@ -148,7 +148,7 @@
            </div>
 
            <div class="one-end-width-attachment-center-15mm blackgroundColour">
-             <div class="draw-os-normal-width-attachment-center-15mm text-container">
+             <div class="draw-os-normal-width-attachment-center-15mm text-container ">
 
              </div>
            </div>
@@ -212,13 +212,13 @@
              <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
            </div>
            <div class="one-end-normal-left-20mm blackgroundColour">
-             <div class="draw-os-normal-left-20mm text-container">
+             <div class="draw-os-normal-left-20mm text-container draw-os-20mm">
 
 
              </div>
            </div>
            <div class="one-end-normal-right-20mm blackgroundColour">
-             <div class="draw-os-normal-right-20mm text-container">
+             <div class="draw-os-normal-right-20mm text-container draw-os-20mm">
 
 
              </div>
@@ -301,13 +301,13 @@
              <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
            </div>
            <div class="one-end-normal-left-25mm blackgroundColour">
-             <div class="draw-os-normal-left-25mm text-container">
+             <div class="draw-os-normal-left-25mm text-container draw-os-25mm">
 
 
              </div>
            </div>
            <div class="one-end-normal-right-25mm blackgroundColour">
-             <div class="draw-os-normal-right-25mm text-container">
+             <div class="draw-os-normal-right-25mm text-container draw-os-25mm">
 
 
              </div>
@@ -394,13 +394,13 @@
              <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
            </div>
            <div class="one-end-normal-left-30mm blackgroundColour">
-             <div class="draw-os-normal-left-30mm text-container">
+             <div class="draw-os-normal-left-30mm text-container draw-os-30mm">
 
 
              </div>
            </div>
            <div class="one-end-normal-right-30mm blackgroundColour">
-             <div class="draw-os-normal-right-30mm text-container">
+             <div class="draw-os-normal-right-30mm text-container draw-os-30mm">
 
 
              </div>
@@ -485,7 +485,7 @@
         </div>
 
         <div class="two-ends-left-30mm blackgroundColour">
-          <div class="draw-ts-normal-left-30mm text-container">
+          <div class="draw-ts-normal-left-30mm text-container draw-ts-30mm">
 
 
 
@@ -494,7 +494,7 @@
         </div>
 
         <div class="two-ends-right-30mm blackgroundColour">
-          <div class="draw-ts-normal-right-30mm text-container">
+          <div class="draw-ts-normal-right-30mm text-container draw-ts-30mm">
 
 
 
@@ -555,7 +555,7 @@
         </div>
 
         <div class="two-ends-left-25mm blackgroundColour">
-          <div class="draw-ts-normal-left-25mm text-container">
+          <div class="draw-ts-normal-left-25mm text-container draw-ts-25mm">
 
 
 
@@ -564,7 +564,7 @@
         </div>
 
         <div class="two-ends-right-25mm blackgroundColour">
-          <div class="draw-ts-normal-right-25mm text-container">
+          <div class="draw-ts-normal-right-25mm text-container draw-ts-25mm" >
 
 
 
@@ -622,7 +622,7 @@
         </div>
 
         <div class="two-ends-left-20mm blackgroundColour">
-          <div class="draw-ts-normal-left-20mm text-container">
+          <div class="draw-ts-normal-left-20mm text-container draw-ts-20mm">
 
 
 
@@ -630,7 +630,7 @@
           </div>
         </div>
         <div class="two-ends-right-20mm blackgroundColour">
-          <div class="draw-ts-normal-right-20mm text-container">
+          <div class="draw-ts-normal-right-20mm text-container draw-ts-20mm">
 
 
 
@@ -689,7 +689,7 @@
         </div>
 
         <div class="two-ends-left-15mm blackgroundColour">
-          <div class="draw-ts-normal-left-15mm text-container">
+          <div class="draw-ts-normal-left-15mm text-container draw-ts-15mm">
 
 
 
@@ -697,7 +697,7 @@
           </div>
         </div>
         <div class="two-ends-right-15mm blackgroundColour">
-          <div class="draw-ts-normal-right-15mm text-container">
+          <div class="draw-ts-normal-right-15mm text-container draw-ts-15mm">
 
 
 
@@ -755,7 +755,7 @@
         </div>
 
         <div class="ts-two-ends-left-10mm blackgroundColour">
-          <div class="draw-ts-normal-left-10mm text-container">
+          <div class="draw-ts-normal-left-10mm text-container draw-ts-10mm">
 
 
 
@@ -763,7 +763,7 @@
           </div>
         </div>
         <div class="ts-two-ends-right-10mm blackgroundColour">
-          <div class="draw-ts-normal-right-10mm text-container">
+          <div class="draw-ts-normal-right-10mm text-container draw-ts-10mm">
 
 
 

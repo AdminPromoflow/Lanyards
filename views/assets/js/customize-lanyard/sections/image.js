@@ -18,7 +18,7 @@ class ImageClass {
                     alert(imageContainers.length); // Muestra la URL en un alert
                     for (var i = 0; i < imageContainers.length; i++) {
                       imageContainers[i].style.backgroundImage = 'url("'+imgSrc+'")';
-
+ 
                     }
                     // Establece la URL como src de una imagen
 

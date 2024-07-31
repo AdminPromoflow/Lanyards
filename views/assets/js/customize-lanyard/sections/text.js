@@ -23,7 +23,7 @@ class TextClass {
 
          if (h3Element == "Yes") {
            previewTextClass.repeatText(true);
-         }
+         } 
          else {
            previewTextClass.repeatText(false);
          }
