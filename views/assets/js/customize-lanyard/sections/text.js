@@ -6,6 +6,16 @@ class TextClass {
     var repeatTextBoxSelected = 0;
     colourTextSelectContainer.style.display = "none";
 
+    this.contentText = "";
+    this.repeatText = false;
+    this.colourText = "#000000";
+    this.fontSizeText = "16px";
+    this.boldText = false;
+    this.italicText = false;
+    this.underlineText = false;
+    this.sizeText = "medium";
+    this.spacingBetweenText = "normal";
+
     repeatTextBox[repeatTextBoxSelected].style.border = "2px solid white";
     previewTextClass.repeatText(true);
 
@@ -23,7 +33,7 @@ class TextClass {
 
          if (h3Element == "Yes") {
            previewTextClass.repeatText(true);
-         } 
+         }
          else {
            previewTextClass.repeatText(false);
          }
@@ -231,6 +241,87 @@ class TextClass {
         }
       })
     }
+  }
+
+  // Content text
+  getContentText() {
+    return this.contentText;
+  }
+
+  setContentText(value) {
+    this.contentText = value;
+  }
+
+  // Repeat text
+  getRepeatText() {
+    return this.repeatText;
+  }
+
+  setRepeatText(value) {
+    this.repeatText = value;
+  }
+
+  // Colour text
+  getColourText() {
+    return this.colourText;
+  }
+
+  setColourText(value) {
+    this.colourText = value;
+  }
+
+  // Font size text
+  getFontSizeText() {
+    return this.fontSizeText;
+  }
+
+  setFontSizeText(value) {
+    this.fontSizeText = value;
+  }
+
+  // Bold text
+  getBoldText() {
+    return this.boldText;
+  }
+
+  setBoldText(value) {
+    this.boldText = value;
+  }
+
+  // Italic text
+  getItalicText() {
+    return this.italicText;
+  }
+
+  setItalicText(value) {
+    this.italicText = value;
+  }
+
+  // Underline text
+  getUnderlineText() {
+    return this.underlineText;
+  }
+
+  setUnderlineText(value) {
+    this.underlineText = value;
+  }
+
+  // Size text
+  getSizeText() {
+    return this.sizeText;
+  }
+
+  setSizeText(value) {
+    this.sizeText = value;
+  }
+
+  // Spacing between text
+  getSpacingBetweenText() {
+    return this.spacingBetweenText;
+  }
+
+  setSpacingBetweenText(value) {
+    this.spacingBetweenText = value;
   }
 
   handleClickText(name, colour){

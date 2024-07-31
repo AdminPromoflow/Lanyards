@@ -4,6 +4,11 @@ class ImageClass {
 
         const imageContainers = document.querySelectorAll('.imageContent');
 
+         this.linkImage = "";
+         this.sizeImage = "medium";
+         this.spacingBetweenImage = "normal";
+         this.rotationImage = "0deg";
+
         // Add an event listener to the input file element
         imageInput.addEventListener('change', function(event){
 
@@ -18,7 +23,7 @@ class ImageClass {
                     alert(imageContainers.length); // Muestra la URL en un alert
                     for (var i = 0; i < imageContainers.length; i++) {
                       imageContainers[i].style.backgroundImage = 'url("'+imgSrc+'")';
- 
+
                     }
                     // Establece la URL como src de una imagen
 
@@ -33,6 +38,45 @@ class ImageClass {
 
         });
     }
+
+        
+        // Link image
+     getLinkImage() {
+       return this.linkImage;
+     }
+
+     setLinkImage(value) {
+       this.linkImage = value;
+     }
+
+     // Size image
+     getSizeImage() {
+       return this.sizeImage;
+     }
+
+     setSizeImage(value) {
+       this.sizeImage = value;
+     }
+
+     // Spacing between image
+     getSpacingBetweenImage() {
+       return this.spacingBetweenImage;
+     }
+
+     setSpacingBetweenImage(value) {
+       this.spacingBetweenImage = value;
+     }
+
+     // Rotation image
+     getRotationImage() {
+       return this.rotationImage;
+     }
+
+     setRotationImage(value) {
+       this.rotationImage = value;
+     }
+
+
 }
 
 // Create an instance of ImageClass

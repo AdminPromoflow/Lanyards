@@ -65,7 +65,7 @@
            </div>
 
            <div class="one-end-width-attachment-center-10mm blackgroundColour">
-             <div class="draw-os-normal-width-attachment-center-10mm text-container">
+             <div class="draw-os-normal-width-attachment-center-10mm text-container draw-os-wa-10mm">
 
              </div>
            </div>
@@ -74,13 +74,13 @@
            </div>
 
            <div class="one-end-width-attachment-left-10mm blackgroundColour">
-             <div class="draw-os-normal-width-attachment-left-10mm text-container">
+             <div class="draw-os-normal-width-attachment-left-10mm text-container draw-os-wa-10mm">
 
              </div>
            </div>
 
            <div class="one-end-width-attachment-right-10mm blackgroundColour">
-             <div class="draw-os-normal-width-attachment-right-10mm text-container">
+             <div class="draw-os-normal-width-attachment-right-10mm text-container draw-os-wa-10mm">
 
              </div>
            </div>
@@ -148,7 +148,7 @@
            </div>
 
            <div class="one-end-width-attachment-center-15mm blackgroundColour">
-             <div class="draw-os-normal-width-attachment-center-15mm text-container ">
+             <div class="draw-os-normal-width-attachment-center-15mm text-container draw-os-wa-15mm ">
 
              </div>
            </div>
@@ -157,13 +157,13 @@
            </div>
 
            <div class="one-end-width-attachment-left-15mm blackgroundColour">
-             <div class="draw-os-normal-width-attachment-left-15mm text-container">
+             <div class="draw-os-normal-width-attachment-left-15mm text-container draw-os-wa-15mm">
 
              </div>
            </div>
 
            <div class="one-end-width-attachment-right-15mm blackgroundColour">
-             <div class="draw-os-normal-width-attachment-right-15mm text-container">
+             <div class="draw-os-normal-width-attachment-right-15mm text-container draw-os-wa-15mm">
 
              </div>
            </div>
@@ -238,7 +238,7 @@
            </div>
 
            <div class="one-end-width-attachment-center-20mm blackgroundColour">
-             <div class="draw-os-normal-width-attachment-center-20mm text-container">
+             <div class="draw-os-normal-width-attachment-center-20mm text-container draw-os-wa-20mm">
 
              </div>
            </div>
@@ -247,13 +247,13 @@
            </div>
 
            <div class="one-end-width-attachment-left-20mm blackgroundColour">
-             <div class="draw-os-normal-width-attachment-left-20mm text-container">
+             <div class="draw-os-normal-width-attachment-left-20mm text-container draw-os-wa-20mm">
 
              </div>
            </div>
 
            <div class="one-end-width-attachment-right-20mm blackgroundColour">
-             <div class="draw-os-normal-width-attachment-right-20mm text-container">
+             <div class="draw-os-normal-width-attachment-right-20mm text-container draw-os-wa-20mm">
 
              </div>
            </div>
@@ -327,7 +327,7 @@
            </div>
 
            <div class="one-end-width-attachment-center-25mm blackgroundColour">
-             <div class="draw-os-normal-width-attachment-center-25mm text-container">
+             <div class="draw-os-normal-width-attachment-center-25mm text-container draw-os-wa-25mm">
 
              </div>
            </div>
@@ -336,13 +336,13 @@
            </div>
 
            <div class="one-end-width-attachment-left-25mm blackgroundColour">
-             <div class="draw-os-normal-width-attachment-left-25mm text-container">
+             <div class="draw-os-normal-width-attachment-left-25mm text-container draw-os-wa-25mm">
 
              </div>
            </div>
 
            <div class="one-end-width-attachment-right-25mm blackgroundColour">
-             <div class="draw-os-normal-width-attachment-right-25mm text-container">
+             <div class="draw-os-normal-width-attachment-right-25mm text-container draw-os-wa-25mm">
 
              </div>
            </div>
@@ -421,7 +421,7 @@
            </div>
 
            <div class="one-end-width-attachment-center-30mm blackgroundColour">
-             <div class="draw-os-normal-width-attachment-center-30mm text-container">
+             <div class="draw-os-normal-width-attachment-center-30mm text-container draw-os-wa-30mm">
 
              </div>
            </div>
@@ -430,13 +430,13 @@
            </div>
 
            <div class="one-end-width-attachment-left-30mm blackgroundColour">
-             <div class="draw-os-normal-width-attachment-left-30mm text-container">
+             <div class="draw-os-normal-width-attachment-left-30mm text-container draw-os-wa-30mm">
 
              </div>
            </div>
 
            <div class="one-end-width-attachment-right-30mm blackgroundColour">
-             <div class="draw-os-normal-width-attachment-right-30mm text-container">
+             <div class="draw-os-normal-width-attachment-right-30mm text-container draw-os-wa-30mm">
 
              </div>
            </div>

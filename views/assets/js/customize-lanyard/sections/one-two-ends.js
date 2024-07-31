@@ -6,6 +6,7 @@ class OneTwoEnds {
 
   }
 
+
     getTypeLanyardSelected() {
       return this.typeLanyard;
     }
