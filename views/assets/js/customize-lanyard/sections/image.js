@@ -11,7 +11,7 @@ class ImageClass {
 
         // Add an event listener to the input file element
         imageInput.addEventListener('change', function(event){
-
+        //  const imageContainers = customizeLanyard.getLanyardsActive();
 
           const file = event.target.files[0]; // Captura el archivo seleccionado
 
@@ -39,7 +39,7 @@ class ImageClass {
         });
     }
 
-        
+
         // Link image
      getLinkImage() {
        return this.linkImage;

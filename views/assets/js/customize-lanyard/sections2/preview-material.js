@@ -4,7 +4,7 @@ class PreviewMaterial {
   }
   showSelectedPreviewtMaterial(data){
 
-    
+
     var json = customizeLanyard.getJsonLanyards();
     var materialSelected = data;
 
@@ -20,7 +20,7 @@ class PreviewMaterial {
          description = json[i]["materials"]["description"];
       }
     }
-
+ 
 
     previewMaterialContainer.innerHTML = "";
 

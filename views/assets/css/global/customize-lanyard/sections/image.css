@@ -9,7 +9,7 @@
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, .1);
 
-  display: none; 
+  display: none;
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
@@ -335,7 +335,6 @@
   padding: 2px 3px;
   transform: rotate(90deg);
 
-  background-image: url("../../../../../../views/assets/img/global/customize-lanyard/sections/image/bigger.png"); /* The image used */
   background-position: center;
   background-size:contain;
   background-repeat: no-repeat;

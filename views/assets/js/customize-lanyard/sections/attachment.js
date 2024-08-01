@@ -55,6 +55,7 @@ class AttachmentClass {
 
   setAttachmentSelected(value) {
   this.attachmentSelected = value;
+//  alert(value);
   }
 
   getAttachmentSelected() {

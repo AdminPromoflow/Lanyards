@@ -8,61 +8,85 @@ class CustomizeLanyard {
     this.initializeEventListeners();
     this.showCurrentSection(this.currentSectionOpen);
     this.changePreviewNextSection();
-    this.getLanyardsActive();
+  //  this.getLanyardsActive();
   }
   getLanyardsActive(){
-
-          // Seleccionar todos los elementos con la clase "draw-os-10mm"
-      const drawOs10mmElements = document.querySelectorAll('.draw-os-10mm');
-
-      // Seleccionar todos los elementos con la clase "draw-os-15mm"
-      const drawOs15mmElements = document.querySelectorAll('.draw-os-15mm');
-
-      // Seleccionar todos los elementos con la clase "draw-os-20mm"
-      const drawOs20mmElements = document.querySelectorAll('.draw-os-20mm');
-
-      // Seleccionar todos los elementos con la clase "draw-os-25mm"
-      const drawOs25mmElements = document.querySelectorAll('.draw-os-25mm');
-
-      // Seleccionar todos los elementos con la clase "draw-os-30mm"
-      const drawOs30mmElements = document.querySelectorAll('.draw-os-30mm');
-
-      // Seleccionar todos los elementos con la clase "draw-ts-30mm"
-      const drawTs30mmElements = document.querySelectorAll('.draw-ts-30mm');
-
-      // Seleccionar todos los elementos con la clase "draw-ts-25mm"
-      const drawTs25mmElements = document.querySelectorAll('.draw-ts-25mm');
-
-      // Seleccionar todos los elementos con la clase "draw-ts-20mm"
-      const drawTs20mmElements = document.querySelectorAll('.draw-ts-20mm');
-
-      // Seleccionar todos los elementos con la clase "draw-ts-15mm"
-      const drawTs15mmElements = document.querySelectorAll('.draw-ts-15mm');
-
-      // Seleccionar todos los elementos con la clase "draw-ts-10mm"
-      const drawTs10mmElements = document.querySelectorAll('.draw-ts-10mm');
-
-      // Seleccionar todos los elementos con la clase "draw-os-wa-10mm"
-      const drawOsWa10mmElements = document.querySelectorAll('.draw-os-wa-10mm');
-
-      // Seleccionar todos los elementos con la clase "draw-os-wa-15mm"
-      const drawOsWa15mmElements = document.querySelectorAll('.draw-os-wa-15mm');
-
-      // Seleccionar todos los elementos con la clase "draw-os-wa-20mm"
-      const drawOsWa20mmElements = document.querySelectorAll('.draw-os-wa-20mm');
-
-      // Seleccionar todos los elementos con la clase "draw-os-wa-25mm"
-      const drawOsWa25mmElements = document.querySelectorAll('.draw-os-wa-25mm');
-
-      // Seleccionar todos los elementos con la clase "draw-os-wa-30mm"
-      const drawOsWa30mmElements = document.querySelectorAll('.draw-os-wa-30mm');
-
+    var lanyardActive;
 
     var lanyardType = oneTwoEndsClass.getTypeLanyardSelected();
     var width = widthClass.getWidthSelected();
     var attachment = attachmentClass.getAttachmentSelected();
 
-    alert(lanyardType + width + attachment);
+    if (lanyardType == 'one-end' && width == '10mm' && attachment == 'none') {
+      lanyardActive = document.querySelectorAll('.draw-os-10mm');
+      //alert("hola");
+    }
+
+    else if (lanyardType == 'one-end' && width == '15mm' && attachment == 'none') {
+      lanyardActive = document.querySelectorAll('.draw-os-15mm');
+      //alert("hola");
+    }
+    else if (lanyardType == 'one-end' && width == '20mm' && attachment == 'none') {
+      lanyardActive = document.querySelectorAll('.draw-os-20mm');
+      //alert("hola");
+    }
+    else if (lanyardType == 'one-end' && width == '25mm' && attachment == 'none') {
+      lanyardActive = document.querySelectorAll('.draw-os-25mm');
+      //alert("hola");
+    }
+    else if (lanyardType == 'one-end' && width == '30mm' && attachment == 'none') {
+      lanyardActive = document.querySelectorAll('.draw-os-30mm');
+      //alert("hola");
+    }
+
+
+
+    else if (lanyardType == 'two-end' && width == '10mm') {
+      lanyardActive = document.querySelectorAll('.draw-ts-10mm');
+      //alert("hola");
+    }
+    else if (lanyardType == 'two-end' && width == '15mm') {
+      lanyardActive = document.querySelectorAll('.draw-ts-15mm');
+      //alert("hola");
+    }
+    else if (lanyardType == 'two-end' && width == '20mm') {
+      lanyardActive = document.querySelectorAll('.draw-ts-20mm');
+      //alert("hola");
+    }
+    else if (lanyardType == 'two-end' && width == '25mm') {
+      lanyardActive = document.querySelectorAll('.draw-ts-25mm');
+      //alert("hola");
+    }
+    else if (lanyardType == 'two-end' && width == '30mm') {
+      lanyardActive = document.querySelectorAll('.draw-ts-30mm');
+      //alert("hola");
+    }
+
+
+    else if (lanyardType == 'one-end' && width == '10mm' && attachment != 'none') {
+     lanyardActive = document.querySelectorAll('.draw-os-wa-10mm');
+      //alert("hola");
+    }
+
+    else if (lanyardType == 'one-end' && width == '15mm' && attachment != 'none') {
+      lanyardActive = document.querySelectorAll('.draw-os-wa-15mm');
+      //alert("hola");
+    }
+    else if (lanyardType == 'one-end' && width == '20mm' && attachment != 'none') {
+      lanyardActive = document.querySelectorAll('.draw-os-wa-20mm');
+      //alert("hola");
+    }
+    else if (lanyardType == 'one-end' && width == '25mm' && attachment != 'none') {
+      lanyardActive = document.querySelectorAll('.draw-os-wa-25mm');
+      //alert("hola");
+    }
+    else if (lanyardType == 'one-end' && width == '30mm' && attachment != 'none') {
+      lanyardActive = document.querySelectorAll('.draw-os-wa-30mm');
+      //alert("hola");
+    }
+
+    return lanyardActive;
+  //  alert(lanyardType + width + attachment);
   }
 
 

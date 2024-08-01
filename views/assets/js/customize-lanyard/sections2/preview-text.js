@@ -6,7 +6,84 @@ class PreviewTextClass {
 
   }
   repeatText(repeat) {
-      const textContainer = document.querySelectorAll(".text-container");
+    //  const textContainer = document.querySelectorAll(".text-container");
+    var textContainer;
+
+      var lanyardType = oneTwoEndsClass.getTypeLanyardSelected();
+      var width = widthClass.getWidthSelected();
+      var attachment = attachmentClass.getAttachmentSelected();
+
+      if (lanyardType == 'one-end' && width == '10mm' && attachment == 'none') {
+      textContainer = document.querySelectorAll('.draw-os-10mm');
+      //alert("hola");
+      }
+
+      else if (lanyardType == 'one-end' && width == '15mm' && attachment == 'none') {
+      textContainer = document.querySelectorAll('.draw-os-15mm');
+      //alert("hola");
+      }
+      else if (lanyardType == 'one-end' && width == '20mm' && attachment == 'none') {
+      textContainer = document.querySelectorAll('.draw-os-20mm');
+      //alert("hola");
+      }
+      else if (lanyardType == 'one-end' && width == '25mm' && attachment == 'none') {
+      textContainer = document.querySelectorAll('.draw-os-25mm');
+      //alert("hola");
+      }
+      else if (lanyardType == 'one-end' && width == '30mm' && attachment == 'none') {
+      textContainer = document.querySelectorAll('.draw-os-30mm');
+      //alert("hola");
+      }
+
+
+
+      else if (lanyardType == 'two-end' && width == '10mm') {
+      textContainer = document.querySelectorAll('.draw-ts-10mm');
+      //alert("hola");
+      }
+      else if (lanyardType == 'two-end' && width == '15mm') {
+      textContainer = document.querySelectorAll('.draw-ts-15mm');
+      //alert("hola");
+      }
+      else if (lanyardType == 'two-end' && width == '20mm') {
+      textContainer = document.querySelectorAll('.draw-ts-20mm');
+      //alert("hola");
+      }
+      else if (lanyardType == 'two-end' && width == '25mm') {
+      textContainer = document.querySelectorAll('.draw-ts-25mm');
+      //alert("hola");
+      }
+      else if (lanyardType == 'two-end' && width == '30mm') {
+      textContainer = document.querySelectorAll('.draw-ts-30mm');
+      //alert("hola");
+      }
+
+
+      else if (lanyardType == 'one-end' && width == '10mm' && attachment != 'none') {
+      textContainer = document.querySelectorAll('.draw-os-wa-10mm');
+      //alert("hola");
+      }
+
+      else if (lanyardType == 'one-end' && width == '15mm' && attachment != 'none') {
+      textContainer = document.querySelectorAll('.draw-os-wa-15mm');
+      //alert("hola");
+      }
+      else if (lanyardType == 'one-end' && width == '20mm' && attachment != 'none') {
+      textContainer = document.querySelectorAll('.draw-os-wa-20mm');
+      //alert("hola");
+      }
+      else if (lanyardType == 'one-end' && width == '25mm' && attachment != 'none') {
+      textContainer = document.querySelectorAll('.draw-os-wa-25mm');
+      //alert("hola");
+      }
+      else if (lanyardType == 'one-end' && width == '30mm' && attachment != 'none') {
+      textContainer = document.querySelectorAll('.draw-os-wa-30mm');
+      //alert("hola");
+      }
+
+
+
+    //  const textContainer = customizeLanyard.getLanyardsActive();
 
       if (repeat) {
 
