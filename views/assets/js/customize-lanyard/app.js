@@ -11,7 +11,7 @@ class CustomizeLanyard {
   //  this.getLanyardsActive();
   }
   getLanyardsActive(){
-    var lanyardActive;
+    var lanyardActive; 
 
     var lanyardType = oneTwoEndsClass.getTypeLanyardSelected();
     var width = widthClass.getWidthSelected();

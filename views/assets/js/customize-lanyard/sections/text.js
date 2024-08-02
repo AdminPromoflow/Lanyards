@@ -243,6 +243,7 @@ class TextClass {
     }
   }
 
+
   // Content text
   getContentText() {
     return this.contentText;

@@ -37,6 +37,48 @@ class ImageClass {
 
 
         });
+        const sizeImageBox = document.querySelectorAll(".size-image-box");
+
+        for (let i = 0; i < sizeImageBox.length; i++) {
+          sizeImageBox[i].addEventListener("click", function(){
+
+            if (i==0) {
+              previewImageClass.changeImageSize(false);
+            }
+            else {
+              previewImageClass.changeImageSize(true);
+
+            }
+          })
+        }
+        const spaceBetweenImageBox = document.querySelectorAll(".space-between-image-box");
+
+        for (let i = 0; i < spaceBetweenImageBox.length; i++) {
+         spaceBetweenImageBox[i].addEventListener("click", function(){
+
+            if (i==0) {
+              previewImageClass.changeSpaceBetweenImage(false);
+            }
+            else {
+              previewImageClass.changeSpaceBetweenImage(true);
+
+            }
+          })
+        }
+        const rotationImageBox = document.querySelectorAll(".rotation-image-box");
+
+        for (let i = 0; i < rotationImageBox.length; i++) {
+         rotationImageBox[i].addEventListener("click", function(){
+          //alert("hiii");
+            if (i==0) {
+              previewImageClass.changeRotationImage(false);
+            }
+            else {
+              previewImageClass.changeRotationImage(true);
+
+            }
+          })
+        }
     }
 
 

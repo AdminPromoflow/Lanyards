@@ -38,25 +38,17 @@
 
         </div>
       </div>
-     <div class="item-image">
-        <p>Adjust the image position</p>
+      <div class="item-image">
+        <p>Adjust the rotation of the image.</p>
 
-        <div class="container-position-image">
+        <div class="containr-rotation-image">
 
-          <div class="position-image-box">
-            <img src="../../views/assets/img/global/customize-lanyard/sections/image/left.png" alt="">
+          <div class="rotation-image-box">
+            <img src="../../views/assets/img/global/customize-lanyard/sections/image/rotation-left.png" alt="">
           </div>
 
-          <div class="position-image-box">
-            <img src="../../views/assets/img/global/customize-lanyard/sections/image/top.png" alt="">
-          </div>
-
-          <div class="position-image-box">
-            <img src="../../views/assets/img/global/customize-lanyard/sections/image/right.png" alt="">
-          </div>
-
-          <div class="position-image-box">
-            <img src="../../views/assets/img/global/customize-lanyard/sections/image/bottom.png" alt="">
+          <div class="rotation-image-box">
+            <img src="../../views/assets/img/global/customize-lanyard/sections/image/rotation-rigth.png" alt="">
           </div>
 
         </div>
