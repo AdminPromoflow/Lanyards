@@ -5,7 +5,7 @@ class PreviewTextClass {
     this.fontFamily = "Arial, sans-serif";
 
   }
-  repeatText(repeat) {
+  repeatText(repeat) { 
     //  const textContainer = document.querySelectorAll(".text-container");
     var textContainer;
 
@@ -16,7 +16,7 @@ class PreviewTextClass {
       if (lanyardType == 'one-end' && width == '10mm' && attachment == 'none') {
       textContainer = document.querySelectorAll('.draw-os-10mm');
       //alert("hola");
-      } 
+      }
 
       else if (lanyardType == 'one-end' && width == '15mm' && attachment == 'none') {
       textContainer = document.querySelectorAll('.draw-os-15mm');

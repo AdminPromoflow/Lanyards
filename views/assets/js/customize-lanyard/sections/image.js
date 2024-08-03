@@ -20,7 +20,6 @@ class ImageClass {
 
                 reader.onload = function(e) {
                     const imgSrc = e.target.result; // Obtiene la URL del archivo leído
-                    alert(imageContainers.length); // Muestra la URL en un alert
                     for (var i = 0; i < imageContainers.length; i++) {
                       imageContainers[i].style.backgroundImage = 'url("'+imgSrc+'")';
 

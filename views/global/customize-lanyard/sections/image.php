@@ -11,7 +11,7 @@
       <div class="item-image">
         <p>Adjust the image size</p>
 
-        <div class="containr-size-image">
+        <div class="containr-size-image"> 
 
           <div class="size-image-box">
             <img src="../../views/assets/img/global/customize-lanyard/sections/image/smaller.png" alt="">
