@@ -11,7 +11,7 @@ class CustomizeLanyard {
   //  this.getLanyardsActive();
   }
   getLanyardsActive(){
-    var lanyardActive; 
+    var lanyardActive;
 
     var lanyardType = oneTwoEndsClass.getTypeLanyardSelected();
     var width = widthClass.getWidthSelected();
@@ -177,19 +177,52 @@ class CustomizeLanyard {
      this.openArtWorkManual();
    }
    else if (this.currentSectionOpen == 8) {
-     customizeLanyard.openBackgroundColour();
+     if (artworkManualClass.getArtworkManual() == "manual"){
+       customizeLanyard.openBackgroundColour();
+    }
+    else {
+      artworkClass.showHideArtwork(true);
+      artworkManualClass.showHideArtworkManual(false);
+      previewArtworkManualClass.showArtworkManualPreview("none");
+      artworkPreviewClass.showHidePreviewArtwork(true);
+    }
    }
    else if (this.currentSectionOpen == 9) {
-     this.openArtWorkManual();
+     if (artworkManualClass.getArtworkManual() == "manual"){
+       this.openArtWorkManual();
+    }
+    else {
+      alert("Seleccionaste Artwork")
+    }
    }
    else if (this.currentSectionOpen == 10) {
-     this.openText();
+
+     if (artworkManualClass.getArtworkManual() == "manual"){
+       this.openText();
+
+    }
+    else {
+      alert("Seleccionaste Artwork")
+    }
    }
    else if (this.currentSectionOpen == 11) {
-     this.openArtWorkManual();
+     if (artworkManualClass.getArtworkManual() == "manual"){
+       this.openArtWorkManual();
+
+    }
+    else {
+      alert("Seleccionaste Artwork")
+    }
+
    }
    else if (this.currentSectionOpen == 12) {
-     this.openImage();
+     if (artworkManualClass.getArtworkManual() == "manual"){
+       this.openImage();
+
+    }
+    else {
+      alert("Seleccionaste Artwork")
+    }
    }
   }
 
@@ -258,7 +291,7 @@ class CustomizeLanyard {
     previewArtworkManualClass.showArtworkManualPreview("none");
     previewLanyardType.showTypeLanyardPreview("flex");
 
-  /*  const next = document.getElementById("next");
+  /*const next = document.getElementById("next");
     const preview = document.getElementById("preview");
     preview.style.display = "block";
     next.style.display = "block";*/

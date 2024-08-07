@@ -1,0 +1,15 @@
+.previewArtwork{
+  position: relative;
+  height:100%;
+  width: 100%;
+  display: none;
+
+}
+.container-previewArtwork{
+  position: relative;
+  height:100%;
+  width: 100%;
+  background-color: blue;
+  index: 5;
+  overflow-y: scroll;
+}

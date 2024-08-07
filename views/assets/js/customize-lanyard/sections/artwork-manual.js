@@ -11,14 +11,19 @@ class ArtworkManualClass {
         if (i == 0) {
           containerBoxesArtworkManual[0].style.border = "2px solid white";
           containerBoxesArtworkManual[1].style.border = "2px solid transparent";
-          previewArtworkManualClass.showManualArtworkSeleted("manual");
+          artworkManualClass.setArtworkManual("manual");
+          previewArtworkManualClass.showManualArtworkSeleted();
+
+
 
         }
         else if (i == 1) {
           containerBoxesArtworkManual[1].style.border = "2px solid white";
           containerBoxesArtworkManual[0].style.border = "2px solid transparent";
 
-          previewArtworkManualClass.showManualArtworkSeleted("artwork");
+          artworkManualClass.setArtworkManual("artwork");
+          previewArtworkManualClass.showManualArtworkSeleted();
+
         }
       });
     }
@@ -94,7 +99,14 @@ class ArtworkManualClass {
   showSelectedArtworkManual(index) {
 
   }
-
+  showHideArtworkManual(active){
+    if (active) {
+      artworkManual.style.display = "flex";
+    }
+    else {
+      artworkManual.style.display = "none";
+    }
+  }
 
 
 
@@ -112,4 +124,5 @@ class ArtworkManualClass {
 const containerBoxesArtworkManual = document.querySelectorAll(".container_boxes_artwork-manual");
 
 const containersBoxesArtworkManual = document.getElementById("containers_boxes_artwork-manual");
+const artworkManual = document.getElementById("artworkManual");
 const artworkManualClass = new ArtworkManualClass();

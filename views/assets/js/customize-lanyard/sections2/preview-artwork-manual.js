@@ -31,7 +31,8 @@ class PreviewArtworkManualClass {
     ;
   }
 
-  showManualArtworkSeleted(action){
+  showManualArtworkSeleted(){
+    const action = artworkManualClass.getArtworkManual();
     if (action == "artwork") {
       previewArtworkContainer.style.display = "flex";
       previewManualContainer.style.display = "none";
