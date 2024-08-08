@@ -1,0 +1,117 @@
+.artworkSection{
+  position: relative;
+  width: 90%;
+  min-height: 330px;
+  height: 70%;
+  padding: 15px 0;
+  margin: 15px 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, .1);
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: none;
+
+}
+.artworkSection h2{
+  position: relative;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.9em;
+  color: white;
+  padding-left: 10px;
+  margin: 0px 0 5px 0;
+}
+.artworkSection p{
+  position: relative;
+  text-align: left;
+  font-weight: 300;
+  font-size: 1em;
+  color: white;
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+}
+.containers_boxes_artwork{
+  position: relative;
+  width: 100%;
+  height: 70%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/* Style for the scrollbar in WebKit browsers */
+.containers_boxes_artwork::-webkit-scrollbar {
+    width: 13px; /* Width of the scrollbar */
+}
+
+.containers_boxes_artwork::-webkit-scrollbar-thumb {
+    background: #091d2c; /* Dark blue color for the draggable part */
+    border-radius: 5px; /* Rounded corners for the draggable part */
+    border: 1px solid rgba(255, 255, 255, .5); /* Semi-transparent white border for better contrast */
+}
+
+.containers_boxes_artwork::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, .4); /* Light grey background color */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+.containers_boxes_artwork::-webkit-scrollbar-thumb:hover {
+    background: #132735; /* Darker color when hovering over the scrollbar */
+}
+.container_boxes_artwork{
+  position: relative;
+  width: 98%;
+  height: 50px;
+  background-color: rgba(48, 79, 112, 1);
+  padding: 5px 10px 12px 10px;
+  margin: 5px 0;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  border: 2px solid transparent;
+}
+.container_boxes_artwork p{
+  font-size: 0.8em;
+}
+.container_boxes_artwork:nth-child(1){
+  border: 2px solid white;
+}
+.container_boxes_artwork:active{
+  border: 2px solid white;
+}
+.container_boxes_artwork img{
+  position: relative;
+  height: 30%;
+  margin: 0 5px;
+  width: 95%;
+}
+.container_boxes_artwork h3{
+  position: relative;
+  margin: 0;
+  width: 35%;
+  text-align: left;
+  color: white;
+  font-weight: 300;
+  font-size: 1em;
+}
+.container_boxes_artwork h4{
+  position: relative;
+  margin: 0;
+  text-align: right;
+  color: white;
+  font-weight: 300;
+  font-size: 0.8em;
+}

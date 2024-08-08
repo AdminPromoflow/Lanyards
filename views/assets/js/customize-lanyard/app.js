@@ -184,7 +184,7 @@ class CustomizeLanyard {
       artworkClass.showHideArtwork(true);
       artworkManualClass.showHideArtworkManual(false);
       previewArtworkManualClass.showArtworkManualPreview("none");
-      artworkPreviewClass.showHidePreviewArtwork(true);
+      previewLanyardType.showTypeLanyardPreview("flex");
     }
    }
    else if (this.currentSectionOpen == 9) {
