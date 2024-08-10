@@ -7,32 +7,29 @@
 
   <div id="containers_boxes_artwork" class="containers_boxes_artwork">
 
-    <div class="container_boxes_artwork" onclick="artworkClass.searchDataArtworkSelected('None', 0, 0)">
+    <div class="container_boxes_artwork">
       <p>Click to add artwork to the front left side.</p>
-      <img class="imgartwork" src="../../views/assets/img/global/customize-lanyard/sections/artwork/quick-release-black.png" alt="">
-    </div>
+      <input type="file" class="input_image_artwork" style="display:none;">
+      <div class="image_artwork_rigth_section"></div>
+      </div>
 
-    <div class="container_boxes_artwork" onclick="artworkClass.searchDataArtworkSelected('Black', 1, 0.6)">
-      <p>Click to add artwork to the front left side.</p>
-      <img class="imgartwork" src="../../views/assets/img/global/customize-lanyard/sections/artwork/quick-release-black.png" alt="">
-    </div>
+    <div class="container_boxes_artwork">
+      <p> Click to add artwork to the front right side.</p>
+      <input type="file" class="input_image_artwork" style="display:none;">
+      <div class="image_artwork_rigth_section"></div>
+      </div>
 
-    <div class="container_boxes_artwork" onclick="artworkClass.searchDataArtworkSelected('Metal', 2, 0.2)">
-      <p>Click to add artwork to the front left side.</p>
-      <img class="imgartwork" src="../../views/assets/img/global/customize-lanyard/sections/artwork/quick-release-metal.png" alt="">
-    </div>
+    <div class="container_boxes_artwork">
+      <p>Click to add artwork to the back left side.</p>
+      <input type="file" class="input_image_artwork" style="display:none;">
+      <div class="image_artwork_rigth_section"></div>
+      </div>
 
-    <div class="container_boxes_artwork" onclick="artworkClass.searchDataArtworkSelected('Plastic colour', 3, 0.65)">
-      <p>Click to add artwork to the front left side.</p>
-      <img class="imgartwork" src="../../views/assets/img/global/customize-lanyard/sections/artwork/quick-release-plastics-colour.png" alt="">
-    </div>
-
-    <div class="container_boxes_artwork" onclick="artworkClass.searchDataArtworkSelected('Plastic colour', 3, 0.65)">
-      <p>Click to add artwork to the front left side.</p>
-      <img class="imgartwork" src="../../views/assets/img/global/customize-lanyard/sections/artwork/quick-release-plastics-colour.png" alt="">
-    </div>
-
-
+    <div class="container_boxes_artwork">
+      <p>Click to add artwork to the back right side.</p>
+      <input type="file" class="input_image_artwork" style="display:none;">
+      <div class="image_artwork_rigth_section"></div>
+      </div>
 
   </div>
 
