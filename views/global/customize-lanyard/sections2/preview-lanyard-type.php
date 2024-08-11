@@ -32,17 +32,15 @@
 
 
          <div class="draw-lanyard-normal standar">
-           <div class="os-normal-back-10mm blackgroundColour">
+           <div class="back-clip-os-10mm backgroundColour">
+            
            </div>
-           <div class="back-clip-os-10mm blackgroundColour">
-             <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
-           </div>
-           <div class="os-normal-left-10mm blackgroundColour">
+           <div class="os-normal-left-10mm backgroundColour">
              <div class="draw-os-normal-left-10mm text-container draw-os-10mm">
 
              </div>
            </div>
-           <div class="os-normal-right-10mm blackgroundColour">
+           <div class="os-normal-right-10mm backgroundColour">
              <div class="draw-os-normal-right-10mm text-container draw-os-10mm">
 
 
@@ -57,29 +55,25 @@
 
          <div  class="draw-lanyard-width-attachment attachment">
 
-           <div class="one-end-width-attachment-back-10mm blackgroundColour">
-           </div>
-
            <div class="one-end-back-clip-width-attachment-10mm">
-             <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
+
            </div>
 
-           <div class="one-end-width-attachment-center-10mm blackgroundColour">
+           <div class="one-end-width-attachment-center-10mm backgroundColour">
              <div class="draw-os-normal-width-attachment-center-10mm text-container draw-os-wa-10mm">
 
              </div>
            </div>
 
-           <div class="one-end-attachment-width-attachment-10mm blackgroundColour attachmentThing os-attachment-10">
+           <div class="one-end-attachment-width-attachment-10mm backgroundColour attachmentThing os-attachment-10">
            </div>
 
-           <div class="one-end-width-attachment-left-10mm blackgroundColour">
+           <div class="one-end-width-attachment-left-10mm backgroundColour">
              <div class="draw-os-normal-width-attachment-left-10mm text-container draw-os-wa-10mm">
-
              </div>
            </div>
 
-           <div class="one-end-width-attachment-right-10mm blackgroundColour">
+           <div class="one-end-width-attachment-right-10mm backgroundColour">
              <div class="draw-os-normal-width-attachment-right-10mm text-container draw-os-wa-10mm">
 
              </div>
@@ -116,19 +110,17 @@
 
 
          <div class="draw-lanyard-normal standar">
-           <div class="os-normal-back-15mm blackgroundColour">
+
+           <div class="back-clip-os-15mm">
 
            </div>
-           <div class="back-clip-os-15mm">
-             <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
-           </div>
-           <div class="os-normal-left-15mm blackgroundColour">
+           <div class="os-normal-left-15mm backgroundColour">
              <div class="draw-os-normal-left-15mm text-container draw-os-15mm">
 
 
              </div>
            </div>
-           <div class="os-normal-right-15mm blackgroundColour">
+           <div class="os-normal-right-15mm backgroundColour">
              <div class="draw-os-normal-right-15mm text-container draw-os-15mm">
 
 
@@ -140,29 +132,26 @@
 
          <div  class="draw-lanyard-width-attachment attachment">
 
-           <div class="one-end-width-attachment-back-15mm blackgroundColour">
-           </div>
-
            <div class="one-end-back-clip-width-attachment-15mm">
-             <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
+
            </div>
 
-           <div class="one-end-width-attachment-center-15mm blackgroundColour">
+           <div class="one-end-width-attachment-center-15mm backgroundColour">
              <div class="draw-os-normal-width-attachment-center-15mm text-container draw-os-wa-15mm ">
 
              </div>
            </div>
 
-           <div class="one-end-attachment-width-attachment-15mm blackgroundColour attachmentThing os-attachment-15">
+           <div class="one-end-attachment-width-attachment-15mm backgroundColour attachmentThing os-attachment-15">
            </div>
 
-           <div class="one-end-width-attachment-left-15mm blackgroundColour">
+           <div class="one-end-width-attachment-left-15mm backgroundColour">
              <div class="draw-os-normal-width-attachment-left-15mm text-container draw-os-wa-15mm">
 
              </div>
            </div>
 
-           <div class="one-end-width-attachment-right-15mm blackgroundColour">
+           <div class="one-end-width-attachment-right-15mm backgroundColour">
              <div class="draw-os-normal-width-attachment-right-15mm text-container draw-os-wa-15mm">
 
              </div>
@@ -205,19 +194,16 @@
 
 
          <div class="draw-lanyard-normal standar">
-           <div class="one-end-normal-back-20mm blackgroundColour">
+           <div class="back-clip-one-end-20mm backgroundColour">
 
            </div>
-           <div class="back-clip-one-end-20mm blackgroundColour">
-             <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
-           </div>
-           <div class="one-end-normal-left-20mm blackgroundColour">
+           <div class="one-end-normal-left-20mm backgroundColour">
              <div class="draw-os-normal-left-20mm text-container draw-os-20mm">
 
 
              </div>
            </div>
-           <div class="one-end-normal-right-20mm blackgroundColour">
+           <div class="one-end-normal-right-20mm backgroundColour">
              <div class="draw-os-normal-right-20mm text-container draw-os-20mm">
 
 
@@ -230,29 +216,26 @@
 
          <div  class="draw-lanyard-width-attachment attachment">
 
-           <div class="one-end-width-attachment-back-20mm blackgroundColour">
-           </div>
-
            <div class="one-end-back-clip-width-attachment-20mm">
-             <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
+
            </div>
 
-           <div class="one-end-width-attachment-center-20mm blackgroundColour">
+           <div class="one-end-width-attachment-center-20mm backgroundColour">
              <div class="draw-os-normal-width-attachment-center-20mm text-container draw-os-wa-20mm">
 
              </div>
            </div>
 
-           <div class="one-end-attachment-width-attachment-20mm blackgroundColour attachmentThing os-attachment-20">
+           <div class="one-end-attachment-width-attachment-20mm backgroundColour attachmentThing os-attachment-20">
            </div>
 
-           <div class="one-end-width-attachment-left-20mm blackgroundColour">
+           <div class="one-end-width-attachment-left-20mm backgroundColour">
              <div class="draw-os-normal-width-attachment-left-20mm text-container draw-os-wa-20mm">
 
              </div>
            </div>
 
-           <div class="one-end-width-attachment-right-20mm blackgroundColour">
+           <div class="one-end-width-attachment-right-20mm backgroundColour">
              <div class="draw-os-normal-width-attachment-right-20mm text-container draw-os-wa-20mm">
 
              </div>
@@ -294,19 +277,16 @@
 
 
          <div class="draw-lanyard-normal standar">
-           <div class="one-end-normal-back-25mm blackgroundColour">
+           <div class="back-clip-one-end-25mm">
 
            </div>
-           <div class="back-clip-one-end-25mm">
-             <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
-           </div>
-           <div class="one-end-normal-left-25mm blackgroundColour">
+           <div class="one-end-normal-left-25mm backgroundColour">
              <div class="draw-os-normal-left-25mm text-container draw-os-25mm">
 
 
              </div>
            </div>
-           <div class="one-end-normal-right-25mm blackgroundColour">
+           <div class="one-end-normal-right-25mm backgroundColour">
              <div class="draw-os-normal-right-25mm text-container draw-os-25mm">
 
 
@@ -319,14 +299,11 @@
 
          <div  class="draw-lanyard-width-attachment attachment">
 
-           <div class="one-end-width-attachment-back-25mm blackgroundColour">
-           </div>
-
            <div class="one-end-back-clip-width-attachment-25mm">
-             <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
+
            </div>
 
-           <div class="one-end-width-attachment-center-25mm blackgroundColour">
+           <div class="one-end-width-attachment-center-25mm backgroundColour">
              <div class="draw-os-normal-width-attachment-center-25mm text-container draw-os-wa-25mm">
 
              </div>
@@ -335,13 +312,13 @@
            <div class="one-end-attachment-width-attachment-25mm attachmentThing os-attachment-25">
            </div>
 
-           <div class="one-end-width-attachment-left-25mm blackgroundColour">
+           <div class="one-end-width-attachment-left-25mm backgroundColour">
              <div class="draw-os-normal-width-attachment-left-25mm text-container draw-os-wa-25mm">
 
              </div>
            </div>
 
-           <div class="one-end-width-attachment-right-25mm blackgroundColour">
+           <div class="one-end-width-attachment-right-25mm backgroundColour">
              <div class="draw-os-normal-width-attachment-right-25mm text-container draw-os-wa-25mm">
 
              </div>
@@ -387,19 +364,16 @@
 
 
          <div class="draw-lanyard-normal standar">
-           <div class="one-end-normal-back-30mm blackgroundColour">
+           <div class="back-clip-one-end-30mm">
 
            </div>
-           <div class="back-clip-one-end-30mm">
-             <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
-           </div>
-           <div class="one-end-normal-left-30mm blackgroundColour">
+           <div class="one-end-normal-left-30mm backgroundColour">
              <div class="draw-os-normal-left-30mm text-container draw-os-30mm">
 
 
              </div>
            </div>
-           <div class="one-end-normal-right-30mm blackgroundColour">
+           <div class="one-end-normal-right-30mm backgroundColour">
              <div class="draw-os-normal-right-30mm text-container draw-os-30mm">
 
 
@@ -413,29 +387,26 @@
 
          <div  class="draw-lanyard-width-attachment attachment">
 
-           <div class="one-end-width-attachment-back-30mm blackgroundColour">
-           </div>
-
            <div class="one-end-back-clip-width-attachment-30mm">
-             <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
+
            </div>
 
-           <div class="one-end-width-attachment-center-30mm blackgroundColour">
+           <div class="one-end-width-attachment-center-30mm backgroundColour">
              <div class="draw-os-normal-width-attachment-center-30mm text-container draw-os-wa-30mm">
 
              </div>
            </div>
 
-           <div class="one-end-attachment-width-attachment-30mm blackgroundColour attachmentThing os-attachment-30">
+           <div class="one-end-attachment-width-attachment-30mm backgroundColour attachmentThing os-attachment-30">
            </div>
 
-           <div class="one-end-width-attachment-left-30mm blackgroundColour">
+           <div class="one-end-width-attachment-left-30mm backgroundColour">
              <div class="draw-os-normal-width-attachment-left-30mm text-container draw-os-wa-30mm">
 
              </div>
            </div>
 
-           <div class="one-end-width-attachment-right-30mm blackgroundColour">
+           <div class="one-end-width-attachment-right-30mm backgroundColour">
              <div class="draw-os-normal-width-attachment-right-30mm text-container draw-os-wa-30mm">
 
              </div>
@@ -477,23 +448,17 @@
     <div class="container-one-side-25mm">
       <div class="draw-lanyard-two-ends">
 
-        <div class="two-ends-back-30mm blackgroundColour">
-        </div>
-
         <div class="two-ends-back-clip-30mm">
-          <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
+
         </div>
 
-        <div class="two-ends-left-30mm blackgroundColour">
+        <div class="two-ends-left-30mm backgroundColour">
           <div class="draw-ts-normal-left-30mm text-container draw-ts-30mm">
-
-
-
 
           </div>
         </div>
 
-        <div class="two-ends-right-30mm blackgroundColour">
+        <div class="two-ends-right-30mm backgroundColour">
           <div class="draw-ts-normal-right-30mm text-container draw-ts-30mm">
 
 
@@ -544,17 +509,12 @@
   <div id="two-side-25mm" class="two-side-25mm">
     <div class="container-one-side-25mm">
 
-
       <div class="draw-lanyard-two-ends">
-
-        <div class="two-ends-back-25mm blackgroundColour">
-        </div>
-
         <div class="two-ends-back-clip-25mm">
-          <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
+
         </div>
 
-        <div class="two-ends-left-25mm blackgroundColour">
+        <div class="two-ends-left-25mm backgroundColour">
           <div class="draw-ts-normal-left-25mm text-container draw-ts-25mm">
 
 
@@ -563,7 +523,7 @@
           </div>
         </div>
 
-        <div class="two-ends-right-25mm blackgroundColour">
+        <div class="two-ends-right-25mm backgroundColour">
           <div class="draw-ts-normal-right-25mm text-container draw-ts-25mm" >
 
 
@@ -614,14 +574,11 @@
     <div class="container-one-side-25mm">
 
       <div class="draw-lanyard-two-ends">
-        <div class="two-ends-back-20mm blackgroundColour">
-
-        </div>
         <div class="two-ends-back-clip-20mm">
-          <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
+
         </div>
 
-        <div class="two-ends-left-20mm blackgroundColour">
+        <div class="two-ends-left-20mm backgroundColour">
           <div class="draw-ts-normal-left-20mm text-container draw-ts-20mm">
 
 
@@ -629,7 +586,7 @@
 
           </div>
         </div>
-        <div class="two-ends-right-20mm blackgroundColour">
+        <div class="two-ends-right-20mm backgroundColour">
           <div class="draw-ts-normal-right-20mm text-container draw-ts-20mm">
 
 
@@ -681,14 +638,12 @@
 
 
       <div class="draw-lanyard-two-ends">
-        <div class="two-ends-back-15mm blackgroundColour">
 
-        </div>
         <div class="two-ends-back-clip-15mm">
-          <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
+
         </div>
 
-        <div class="two-ends-left-15mm blackgroundColour">
+        <div class="two-ends-left-15mm backgroundColour">
           <div class="draw-ts-normal-left-15mm text-container draw-ts-15mm">
 
 
@@ -696,7 +651,7 @@
 
           </div>
         </div>
-        <div class="two-ends-right-15mm blackgroundColour">
+        <div class="two-ends-right-15mm backgroundColour">
           <div class="draw-ts-normal-right-15mm text-container draw-ts-15mm">
 
 
@@ -747,14 +702,11 @@
     <div class="container-one-side-25mm">
 
       <div class="draw-lanyard-two-ends">
-        <div class="ts-two-ends-back-10mm blackgroundColour">
-
-        </div>
         <div class="back-clip-ts-10mm">
-          <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
+
         </div>
 
-        <div class="ts-two-ends-left-10mm blackgroundColour">
+        <div class="ts-two-ends-left-10mm backgroundColour">
           <div class="draw-ts-normal-left-10mm text-container draw-ts-10mm">
 
 
@@ -762,7 +714,7 @@
 
           </div>
         </div>
-        <div class="ts-two-ends-right-10mm blackgroundColour">
+        <div class="ts-two-ends-right-10mm backgroundColour">
           <div class="draw-ts-normal-right-10mm text-container draw-ts-10mm">
 
 

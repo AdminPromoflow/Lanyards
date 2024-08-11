@@ -27,9 +27,10 @@ class Width {
     ;
   }
   searchDataWidthSelected(width, index) {
+
     // Set the selected material.
     this.setWidthSelected(width);
-
+    artworkClass.changeWidthRightPanel();
 
     previewLanyardType.showSelectedPreviewtTemplate();
 
