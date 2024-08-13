@@ -15,7 +15,7 @@ class Artwork {
             reader.onload = function(e) {
                 var img = new Image();
                 img.src = e.target.result;
-
+ 
                 img.onload = function() {
                     // Validar dimensiones mínimas de la imagen
                     if (img.width >= 1287 && img.height >= 54) {

@@ -11,6 +11,36 @@
       <p>Click to add artwork to the front left side.</p>
       <input type="file" class="input_image_artwork" style="display:none;">
       <div class="image_artwork_rigth_section"></div>
+      <div class="move_artwork_rigth_section">
+        <div class="move_artwork_rigth_section_icons">
+
+        </div>
+        <div class="move_artwork_rigth_section_icons">
+
+        </div>
+        <div class="move_artwork_rigth_section_icons">
+
+        </div>
+        <div class="move_artwork_rigth_section_icons">
+
+        </div>
+      </div>
+      <div class="rotate_artwork_rigth_section">
+        <div class="rotate_artwork_rigth_section_icons">
+
+        </div>
+        <div class="rotate_artwork_rigth_section_icons">
+
+        </div>
+      </div>
+      <div class="scale_artwork_rigth_section">
+        <div class="scale_artwork_rigth_section_icons">
+
+        </div>
+        <div class="scale_artwork_rigth_section_icons">
+
+        </div>
+      </div>
       </div>
 
     <div class="container_boxes_artwork">

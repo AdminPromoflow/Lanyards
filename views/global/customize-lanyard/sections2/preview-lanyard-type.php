@@ -32,8 +32,9 @@
 
 
          <div class="draw-lanyard-normal standar">
-           <div class="back-clip-os-10mm backgroundColour">
-            
+           <div class="back-clip-os-10mm ">
+            <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
+            <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
            </div>
            <div class="os-normal-left-10mm backgroundColour">
              <div class="draw-os-normal-left-10mm text-container draw-os-10mm">
@@ -112,7 +113,8 @@
          <div class="draw-lanyard-normal standar">
 
            <div class="back-clip-os-15mm">
-
+             <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
+             <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
            </div>
            <div class="os-normal-left-15mm backgroundColour">
              <div class="draw-os-normal-left-15mm text-container draw-os-15mm">
@@ -194,8 +196,9 @@
 
 
          <div class="draw-lanyard-normal standar">
-           <div class="back-clip-one-end-20mm backgroundColour">
-
+           <div class="back-clip-one-end-20mm">
+             <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
+             <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
            </div>
            <div class="one-end-normal-left-20mm backgroundColour">
              <div class="draw-os-normal-left-20mm text-container draw-os-20mm">
@@ -278,7 +281,8 @@
 
          <div class="draw-lanyard-normal standar">
            <div class="back-clip-one-end-25mm">
-
+             <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
+             <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
            </div>
            <div class="one-end-normal-left-25mm backgroundColour">
              <div class="draw-os-normal-left-25mm text-container draw-os-25mm">
@@ -365,7 +369,8 @@
 
          <div class="draw-lanyard-normal standar">
            <div class="back-clip-one-end-30mm">
-
+             <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
+             <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
            </div>
            <div class="one-end-normal-left-30mm backgroundColour">
              <div class="draw-os-normal-left-30mm text-container draw-os-30mm">
@@ -449,7 +454,8 @@
       <div class="draw-lanyard-two-ends">
 
         <div class="two-ends-back-clip-30mm">
-
+          <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
+          <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
         </div>
 
         <div class="two-ends-left-30mm backgroundColour">
@@ -511,7 +517,8 @@
 
       <div class="draw-lanyard-two-ends">
         <div class="two-ends-back-clip-25mm">
-
+          <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
+          <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
         </div>
 
         <div class="two-ends-left-25mm backgroundColour">
@@ -575,7 +582,8 @@
 
       <div class="draw-lanyard-two-ends">
         <div class="two-ends-back-clip-20mm">
-
+          <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
+          <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
         </div>
 
         <div class="two-ends-left-20mm backgroundColour">
@@ -640,7 +648,8 @@
       <div class="draw-lanyard-two-ends">
 
         <div class="two-ends-back-clip-15mm">
-
+          <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
+          <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
         </div>
 
         <div class="two-ends-left-15mm backgroundColour">
@@ -703,7 +712,8 @@
 
       <div class="draw-lanyard-two-ends">
         <div class="back-clip-ts-10mm">
-
+          <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
+          <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/back-clip.png" alt="">
         </div>
 
         <div class="ts-two-ends-left-10mm backgroundColour">

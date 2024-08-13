@@ -43,9 +43,18 @@
   transform: translateX(-50%);
   z-index: 130;
 }
-.back-clip-os-15mm img{
+.back-clip-os-15mm img:nth-child(1){
   position: absolute;
-  top: 0px;
+  top: 1px;
+  left: -36px;
+  height: 103%;
+  z-index: 131;
+  filter: drop-shadow(0px 0px 1px black);
+}
+.back-clip-os-15mm img:nth-child(2){
+  position: absolute;
+  top: 1px;
+  left: 36px;
   height: 103%;
   z-index: 131;
   filter: drop-shadow(0px 0px 1px black);
