@@ -70,7 +70,6 @@
 .container_boxes_artwork{
   position: relative;
   width: 98%;
-  height: 100px;
   background-color: rgba(48, 79, 112, 1);
   padding: 5px 10px 12px 10px;
   margin: 5px 0;
@@ -83,6 +82,7 @@
 
   border: 2px solid transparent;
 }
+
 .container_boxes_artwork p{
   font-size: 0.8em;
 }
@@ -125,10 +125,8 @@
 .move_artwork_rigth_section{
   position: relative;
   background-color: red;
-  margin: 1px 0px;
+  margin: 5px;
   padding: 1px;
-  width: 195px;
-  height: 15px;
   border: 1px solid white;
 
   display: flex;
@@ -138,19 +136,24 @@
 .move_artwork_rigth_section_icons{
   position: relative;
   background-color: brown;
-  top: 0px;
-  margin: 2px 5px;
-  width: 40px;
-  height: 10px;
+  margin: 5px;
+  padding: 3px;
   border: 1px solid white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.move_artwork_rigth_section_icons img{
+  position: relative;
+  height: 15px;
+  width: 15px;
 }
 .rotate_artwork_rigth_section{
   position: relative;
   background-color: yellow;
-  margin: 1px 0px;
+  margin: 5px;
   padding: 1px;
-  width: 195px;
-  height: 15px;
   border: 1px solid white;
 
   display: flex;
@@ -160,19 +163,24 @@
 .rotate_artwork_rigth_section_icons{
   position: relative;
   background-color: green;
-  top: 0px;
-  margin: 2px 5px;
-  width: 40px;
-  height: 10px;
+  margin: 5px;
+  padding: 3px;
   border: 1px solid white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rotate_artwork_rigth_section_icons img{
+  position: relative;
+  height: 15px;
+  width: 15px;
 }
 .scale_artwork_rigth_section{
   position: relative;
   background-color: blue;
-  margin: 1px 0px;
-  padding: 1px;
-  width: 195px;
-  height: 20px;
+  margin: 5px;
+  padding: 5px;
   border: 1px solid white;
 
   display: flex;
@@ -182,9 +190,16 @@
 .scale_artwork_rigth_section_icons{
   position: relative;
   background-color: black;
-  top: 0px;
-  margin: 2px 5px;
-  width: 40px;
-  height: 10px;
+  margin: 5px;
+  padding: 3px;
   border: 1px solid white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scale_artwork_rigth_section_icons img{
+  position: relative;
+  height: 15px;
+  width: 15px;
 }

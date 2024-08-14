@@ -13,32 +13,32 @@
       <div class="image_artwork_rigth_section"></div>
       <div class="move_artwork_rigth_section">
         <div class="move_artwork_rigth_section_icons">
-
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/left.png" alt="">
         </div>
         <div class="move_artwork_rigth_section_icons">
-
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/right.png" alt="">
         </div>
         <div class="move_artwork_rigth_section_icons">
-
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/top.png" alt="">
         </div>
         <div class="move_artwork_rigth_section_icons">
-
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/bottom.png" alt="">
         </div>
       </div>
       <div class="rotate_artwork_rigth_section">
         <div class="rotate_artwork_rigth_section_icons">
-
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/rotation-left.png" alt="">
         </div>
         <div class="rotate_artwork_rigth_section_icons">
-
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/rotation-rigth.png" alt="">
         </div>
       </div>
       <div class="scale_artwork_rigth_section">
         <div class="scale_artwork_rigth_section_icons">
-
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/bigger.png" alt="">
         </div>
         <div class="scale_artwork_rigth_section_icons">
-
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/smaller.png" alt="">
         </div>
       </div>
       </div>
@@ -47,18 +47,108 @@
       <p> Click to add artwork to the front right side.</p>
       <input type="file" class="input_image_artwork" style="display:none;">
       <div class="image_artwork_rigth_section"></div>
+      <div class="move_artwork_rigth_section">
+        <div class="move_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/left.png" alt="">
+        </div>
+        <div class="move_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/right.png" alt="">
+        </div>
+        <div class="move_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/top.png" alt="">
+        </div>
+        <div class="move_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/bottom.png" alt="">
+        </div>
+      </div>
+      <div class="rotate_artwork_rigth_section">
+        <div class="rotate_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/rotation-left.png" alt="">
+        </div>
+        <div class="rotate_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/rotation-rigth.png" alt="">
+        </div>
+      </div>
+      <div class="scale_artwork_rigth_section">
+        <div class="scale_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/bigger.png" alt="">
+        </div>
+        <div class="scale_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/smaller.png" alt="">
+        </div>
+      </div>
       </div>
 
     <div class="container_boxes_artwork">
       <p>Click to add artwork to the back left side.</p>
       <input type="file" class="input_image_artwork" style="display:none;">
       <div class="image_artwork_rigth_section"></div>
+      <div class="move_artwork_rigth_section">
+        <div class="move_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/left.png" alt="">
+        </div>
+        <div class="move_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/right.png" alt="">
+        </div>
+        <div class="move_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/top.png" alt="">
+        </div>
+        <div class="move_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/bottom.png" alt="">
+        </div>
+      </div>
+      <div class="rotate_artwork_rigth_section">
+        <div class="rotate_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/rotation-left.png" alt="">
+        </div>
+        <div class="rotate_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/rotation-rigth.png" alt="">
+        </div>
+      </div>
+      <div class="scale_artwork_rigth_section">
+        <div class="scale_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/bigger.png" alt="">
+        </div>
+        <div class="scale_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/smaller.png" alt="">
+        </div>
+      </div>
       </div>
 
     <div class="container_boxes_artwork">
       <p>Click to add artwork to the back right side.</p>
       <input type="file" class="input_image_artwork" style="display:none;">
       <div class="image_artwork_rigth_section"></div>
+      <div class="move_artwork_rigth_section">
+        <div class="move_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/left.png" alt="">
+        </div>
+        <div class="move_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/right.png" alt="">
+        </div>
+        <div class="move_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/top.png" alt="">
+        </div>
+        <div class="move_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/bottom.png" alt="">
+        </div>
+      </div>
+      <div class="rotate_artwork_rigth_section">
+        <div class="rotate_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/rotation-left.png" alt="">
+        </div>
+        <div class="rotate_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/rotation-rigth.png" alt="">
+        </div>
+      </div>
+      <div class="scale_artwork_rigth_section">
+        <div class="scale_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/bigger.png" alt="">
+        </div>
+        <div class="scale_artwork_rigth_section_icons">
+          <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/smaller.png" alt="">
+        </div>
+      </div>
       </div>
 
   </div>
