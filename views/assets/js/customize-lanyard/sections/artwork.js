@@ -2,13 +2,14 @@ class Artwork {
   constructor() {
     for (let i = 0; i < clickUploadArtwork.length; i++) {
       clickUploadArtwork[i].addEventListener("click", function (){
-        inputImageArtwork[i].click();
+      //  inputImageArtwork[i].click();
+        alert(i);
       })
     }
     for (let i = 0; i < inputImageArtwork.length; i++) {
     inputImageArtwork[i].addEventListener('change', function(event) {
         console.log('Evento change disparado');
-
+        alert(i);
         var file = event.target.files[0]; // Captura el archivo seleccionado
         console.log('Archivo seleccionado:', file);
 
@@ -21,12 +22,16 @@ class Artwork {
                 img.src = e.target.result;
 
                 img.onload = function() {
+
                 //  alert(img.src);
                     console.log('Dimensiones de la imagen:', img.width, img.height);
                     // Validar dimensiones mínimas de la imagen
                     if (img.width >= 1287 && img.height >= 54) {
+
                         // Si las dimensiones son correctas o mayores, establecer la imagen como fondo
-                        imageArtworkRigthSection[i].style.backgroundImage = 'url("' + "https://img.freepik.com/fotos-premium/imagen-fondo_910766-187.jpg" + '")';
+
+                        imageArtworkRigthSection[i].style.backgroundImage = 'url("' + img.src + '")';
+
                         artworkPreviewClass.uploadArtwork(img.src);
                     } else {
                         alert('La imagen debe tener al menos 1287px de ancho y 54px de alto.');

@@ -11,7 +11,7 @@ class ArtworkPreviewClass {
     }
   }
   uploadArtwork(image){
-    alert(image);
+  
     for (var i = 0; i < drawArtworkOsNormal10mm.length; i++) {
       drawArtworkOsNormal10mm[i].style.backgroundImage = 'url("' + image + '")';
 

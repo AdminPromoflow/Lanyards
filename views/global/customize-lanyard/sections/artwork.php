@@ -8,9 +8,9 @@
   <div id="containers_boxes_artwork" class="containers_boxes_artwork">
 
     <div class="container_boxes_artwork">
-      <p class="click_upload_artwork">Click to add artwork to the front left side.</p>
+      <p class="">Click to add artwork to the front left side.</p>
       <input type="file" class="input_image_artwork" style="display:none;">
-      <div class="image_artwork_rigth_section click_upload_artwork"></div>
+      <div class="image_artwork_rigth_section"></div>
       <div class="move_artwork_rigth_section">
         <p>Move artwork</p>
         <div class="move_artwork_rigth_section_icons">
