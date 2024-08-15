@@ -38,14 +38,17 @@
            </div>
            <div class="os-normal-left-10mm backgroundColour">
              <div class="draw-os-normal-left-10mm text-container draw-os-10mm">
-
+             </div>
+             <div class="draw-artwork-os-normal-10mm">
+               <img src="https://live.staticflickr.com/8258/8683827826_7345599262_b.jpg" alt="">
              </div>
            </div>
            <div class="os-normal-right-10mm backgroundColour">
              <div class="draw-os-normal-right-10mm text-container draw-os-10mm">
 
-
-
+             </div>
+             <div class="draw-artwork-os-normal-10mm">
+               <img src="https://live.staticflickr.com/8258/8683827826_7345599262_b.jpg" alt="">
              </div>
            </div>
            <div class="os25-clip img-clip os25-clip-10mm">

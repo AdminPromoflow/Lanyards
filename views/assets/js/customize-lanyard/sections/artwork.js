@@ -1,26 +1,33 @@
 class Artwork {
   constructor() {
-    for (let i = 0; i < containerBoxesArtwork.length; i++) {
-      containerBoxesArtwork[i].addEventListener("click", function (){
+    for (let i = 0; i < clickUploadArtwork.length; i++) {
+      clickUploadArtwork[i].addEventListener("click", function (){
         inputImageArtwork[i].click();
       })
     }
     for (let i = 0; i < inputImageArtwork.length; i++) {
     inputImageArtwork[i].addEventListener('change', function(event) {
+        console.log('Evento change disparado');
+
         var file = event.target.files[0]; // Captura el archivo seleccionado
+        console.log('Archivo seleccionado:', file);
 
         if (file && file.type.startsWith('image/')) { // Verifica que sea una imagen
             var reader = new FileReader();
 
             reader.onload = function(e) {
+                console.log('Archivo leído:', e.target.result);
                 var img = new Image();
                 img.src = e.target.result;
- 
+
                 img.onload = function() {
+                //  alert(img.src);
+                    console.log('Dimensiones de la imagen:', img.width, img.height);
                     // Validar dimensiones mínimas de la imagen
                     if (img.width >= 1287 && img.height >= 54) {
                         // Si las dimensiones son correctas o mayores, establecer la imagen como fondo
-                        imageArtworkRigthSection[i].style.backgroundImage = 'url("' + img.src + '")';
+                        imageArtworkRigthSection[i].style.backgroundImage = 'url("' + "https://img.freepik.com/fotos-premium/imagen-fondo_910766-187.jpg" + '")';
+                        artworkPreviewClass.uploadArtwork(img.src);
                     } else {
                         alert('La imagen debe tener al menos 1287px de ancho y 54px de alto.');
                     }
@@ -33,6 +40,7 @@ class Artwork {
         }
     });
 }
+
   this.changeWidthRightPanel();
 
   }
@@ -86,4 +94,5 @@ const imageArtworkRigthSection = document.querySelectorAll(".image_artwork_rigth
 const inputImageArtwork = document.querySelectorAll(".input_image_artwork");
 const containerBoxesArtwork = document.querySelectorAll(".container_boxes_artwork");
 const artworkPHPClass = document.getElementById("artworkPHPClass");
+const clickUploadArtwork = document.querySelectorAll(".click_upload_artwork");
 const artworkClass = new Artwork();

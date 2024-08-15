@@ -13,3 +13,23 @@
   index: 5;
   overflow-y: scroll;
 }
+.draw-artwork-os-normal-10mm {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  transform: rotate(90deg);
+  width: 95%;
+  padding: 1px;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  z-index: 300;
+  background-color: red;
+}
+.draw-artwork-os-normal-10mm img{
+  height: 100%;
+  width: 100%;
+  transform: rotate(90deg);
+}

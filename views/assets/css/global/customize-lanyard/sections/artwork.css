@@ -76,8 +76,9 @@
   cursor: pointer;
 
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
 
   border: 2px solid transparent;
@@ -120,25 +121,27 @@
   width: 195px;
   height: 15px;
   margin: 2px 0px;
+  margin-top: 9px;
   border: 1px solid white;
 }
 .move_artwork_rigth_section{
   position: relative;
-  background-color: red;
   margin: 5px;
   padding: 1px;
-  border: 1px solid white;
+  width: 195px;
+  border: 1px solid transparent;
 
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .move_artwork_rigth_section_icons{
   position: relative;
-  background-color: brown;
   margin: 5px;
-  padding: 3px;
-  border: 1px solid white;
+  padding: 4px 5px;
+  background: rgb(27, 53, 95);
+  border: 1px solid transparent;
 
   display: flex;
   align-items: center;
@@ -151,21 +154,22 @@
 }
 .rotate_artwork_rigth_section{
   position: relative;
-  background-color: yellow;
   margin: 5px;
   padding: 1px;
-  border: 1px solid white;
+  width: 97.5px;
+  border: 1px solid transparent;
 
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .rotate_artwork_rigth_section_icons{
   position: relative;
-  background-color: green;
   margin: 5px;
-  padding: 3px;
-  border: 1px solid white;
+  padding: 4px 5px;
+  background: rgb(27, 53, 95);
+  border: 1px solid transparent;
 
   display: flex;
   align-items: center;
@@ -178,21 +182,22 @@
 }
 .scale_artwork_rigth_section{
   position: relative;
-  background-color: blue;
   margin: 5px;
   padding: 5px;
-  border: 1px solid white;
+  width: 97.5px;
+  border: 1px solid transparent;
 
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .scale_artwork_rigth_section_icons{
   position: relative;
-  background-color: black;
   margin: 5px;
-  padding: 3px;
-  border: 1px solid white;
+  padding: 4px 5px;
+  background: rgb(27, 53, 95);
+  border: 1px solid transparent;
 
   display: flex;
   align-items: center;
@@ -202,4 +207,31 @@
   position: relative;
   height: 15px;
   width: 15px;
+}
+.move_artwork_rigth_section_icons:hover, .rotate_artwork_rigth_section_icons:hover, .scale_artwork_rigth_section_icons:hover{
+  border: 1px solid white;
+}
+/*.move_artwork_rigth_section:hover, .rotate_artwork_rigth_section:hover, .scale_artwork_rigth_section:hover{
+  border: 1px solid white;
+}*/
+.move_artwork_rigth_section p{
+  position: relative;
+  color: white;
+  font-size: 0.8em;
+  width: 90%;
+  text-align: center;
+}
+.rotate_artwork_rigth_section p{
+  position: relative;
+  color: white;
+  font-size: 0.8em;
+  width: 90%;
+  text-align: center;
+}
+.scale_artwork_rigth_section p{
+  position: relative;
+  color: white;
+  font-size: 0.8em;
+  width: 90%;
+  text-align: center;
 }
