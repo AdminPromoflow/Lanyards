@@ -152,6 +152,8 @@ class CustomizeLanyard {
   }
 
   changePreviewNextSection() {
+    //alert(this.currentSectionOpen);
+
    if (this.currentSectionOpen == 0) {//Material
      this.openMaterial();
    }
@@ -176,54 +178,48 @@ class CustomizeLanyard {
    else if (this.currentSectionOpen == 7) {//Artwork - Manual
      this.openArtWorkManual();
    }
+
    else if (this.currentSectionOpen == 8) {
      if (artworkManualClass.getArtworkManual() == "manual"){
        customizeLanyard.openBackgroundColour();
     }
     else {
+        this.openArtwork();
       artworkClass.showHideArtwork(true);
       artworkManualClass.showHideArtworkManual(false);
       previewArtworkManualClass.showArtworkManualPreview("none");
       previewLanyardType.showTypeLanyardPreview("flex");
     }
    }
+
    else if (this.currentSectionOpen == 9) {
+
      if (artworkManualClass.getArtworkManual() == "manual"){
-       this.openArtWorkManual();
+       //this.openArtWorkManual();
+       //artworkManualClass.containerBoxesArtworkManual()
+        this.openText();
+      //  artworkManualClass.containerBoxesArtworkManual();
+
     }
     else {
-      alert("Seleccionaste Artwork")
+
+
     }
    }
+
    else if (this.currentSectionOpen == 10) {
 
      if (artworkManualClass.getArtworkManual() == "manual"){
-       this.openText();
-
+       //this.openText();
+    this.openImage();
+  //  artworkManualClass.containerBoxesArtworkManual();
     }
     else {
-      alert("Seleccionaste Artwork")
+      //alert("Seleccionaste Artwork")
     }
    }
-   else if (this.currentSectionOpen == 11) {
-     if (artworkManualClass.getArtworkManual() == "manual"){
-       this.openArtWorkManual();
 
-    }
-    else {
-      alert("Seleccionaste Artwork")
-    }
 
-   }
-   else if (this.currentSectionOpen == 12) {
-     if (artworkManualClass.getArtworkManual() == "manual"){
-       this.openImage();
-
-    }
-    else {
-      alert("Seleccionaste Artwork")
-    }
-   }
   }
 
   // Métodos adicionales según sea necesario
@@ -281,7 +277,7 @@ class CustomizeLanyard {
      previewArtworkManualClass.showArtworkManualPreview("flex");
      previewLanyardType.showTypeLanyardPreview("none");
      customizeLanyard.showCurrentSection(7);
-
+     this.showNext(true);
    }
 
   openBackgroundColour() {
@@ -301,12 +297,23 @@ class CustomizeLanyard {
     customizeLanyard.showCurrentSection(9);
     previewLanyardType.showTypeLanyardPreview("flex");
     previewArtworkManualClass.showArtworkManualPreview("none");
-
+    this.showNext(true);
   }
   openImage(){
-    customizeLanyard.showCurrentSection(10);
+    customizeLanyard.showCurrentSection(11);
     previewLanyardType.showTypeLanyardPreview("flex");
     previewArtworkManualClass.showArtworkManualPreview("none");
+    this.showNext(false);
+  //customizeLanyard
+  }
+  openArtwork(){
+    customizeLanyard.showCurrentSection(10);
+
+    //alert("hola2");
+    previewArtworkManualClass.showArtworkManualPreview("none");
+    previewLanyardType.showTypeLanyardPreview("flex");
+    this.showNext(false);
+
   }
 
   setStateVisibilityPanelCustomeLanyard(value) {
@@ -323,6 +330,14 @@ class CustomizeLanyard {
 
   getNoColours() {
     return this.noColours;
+  }
+  showNext(active){
+      if (active) {
+          next.style.display = "block";
+      }
+      else {
+      next.style.display = "none";
+      }
   }
 }
 

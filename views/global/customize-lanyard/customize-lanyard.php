@@ -27,7 +27,7 @@
 
       <?php //include "../../views/global/customize-lanyard/sections2/preview-acccessories.php"?>
       <?php //include "../../views/global/customize-lanyard/sections2/preview-amount.php"?>
-      <?php include "../../views/global/customize-lanyard/sections2/preview-artwork.php"?>
+      <?php  include "../../views/global/customize-lanyard/sections2/preview-artwork.php"?>
       <?php include "../../views/global/customize-lanyard/sections2/preview-image.php"?>
 
     </div>

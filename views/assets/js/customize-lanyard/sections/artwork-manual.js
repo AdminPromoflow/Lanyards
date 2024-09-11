@@ -107,7 +107,18 @@ class ArtworkManualClass {
       artworkManual.style.display = "none";
     }
   }
+    containerBoxesArtworkManual(){
+      var artworkManualActive = artworkManualClass.getArtworkManual();
+      if (artworkManualActive == "manual") {
+      containerBoxesArtworkManual[0].style.display = "none";
+      containerBoxesArtworkManual[1].style.display = "block";
+      }
+      else {
+        containerBoxesArtworkManual[1].style.display = "none";
+        containerBoxesArtworkManual[0].style.display = "block";
+      }
 
+    }
 
 
 

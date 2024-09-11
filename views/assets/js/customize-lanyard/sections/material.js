@@ -61,6 +61,9 @@ class Material {
         // Set the lanyards data in the customizeLanyard object
         customizeLanyard.setJsonLanyards(data["lanyards"]);
 
+        /*setTimeout(() => {
+          alert("Segunda línea de código");
+      }, 2000);*/ 
         // Clear the container for materials
         containersBoxesMaterial.innerHTML = "";
         // Set the fetched JSON materials

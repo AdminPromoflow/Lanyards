@@ -22,18 +22,13 @@ class ImageClass {
                     const imgSrc = e.target.result; // Obtiene la URL del archivo leído
                     for (var i = 0; i < imageContainers.length; i++) {
                       imageContainers[i].style.backgroundImage = 'url("'+imgSrc+'")';
-
                     }
-                    // Establece la URL como src de una imagen
-
                 };
 
                 reader.readAsDataURL(file); // Lee el contenido del archivo como una URL
             } else {
                 alert('Por favor, selecciona un archivo de imagen.');
             }
-
-
 
         });
         const sizeImageBox = document.querySelectorAll(".size-image-box");
