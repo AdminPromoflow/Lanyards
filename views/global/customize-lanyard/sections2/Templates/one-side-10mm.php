@@ -45,7 +45,7 @@
   </div>
 
   <!-- Container for two-sided printed lanyard -->
-  <div class="container-one-side-25mm twoSidePrinted">
+  <!--<div class="container-one-side-25mm twoSidePrinted">
     <div class="os25-img">
       <img class="standar" src="../../views/assets/img/global/customize-lanyard/sections2/templates/10-one-end.png" alt="">
       <img class="attachment" src="../../views/assets/img/global/customize-lanyard/sections2/templates/10-one-end-attachment.png" alt="">
@@ -58,3 +58,4 @@
     </div>
   </div>
 </div>
+-->
