@@ -39,6 +39,20 @@
   <?php include "../../views/global/customize-lanyard/sections2/Templates/two-side-20mm.php" ?>
   <?php include "../../views/global/customize-lanyard/sections2/Templates/two-side-15mm.php" ?>
   <?php include "../../views/global/customize-lanyard/sections2/Templates/two-side-10mm.php" ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </section>
 
 <script src="../../views/assets/js/customize-lanyard/sections2/preview-lanyard-type.js" charset="utf-8"></script>

@@ -189,6 +189,7 @@ class SidePrinted {
   }
 
   searchDataSidePrintedSelected(sidePrinted, index) {
+    //alert(sidePrinted);
 
     const priceDataSidePrinted = document.querySelectorAll(".priceDataSidePrinted");
 
@@ -201,10 +202,15 @@ class SidePrinted {
 
       //  alert(number);
         if (number >= 0) {
+
         //  alert("hi, I just enter in if");
             let result = number.toFixed(2);
             priceClass.setPriceSidePrinted(result); // Displays the positive float number with two decimals.
             priceClass.changePricePerLanyard();
+            artworkClass.hideShowOneOrTwoSidesPrinted();
+            artworkPreviewClass.hideShowOneOrTwoSidesPrinted()
+
+
         } else {
           //alert("hi, I just enter in else too");
           console.log("The number sidePrinted is negative or no numbers were found. Error: (width.js line 58)");

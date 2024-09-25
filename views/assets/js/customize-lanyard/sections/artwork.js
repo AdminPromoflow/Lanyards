@@ -2,14 +2,21 @@ class Artwork {
   constructor() {
     for (let i = 0; i < clickUploadArtwork.length; i++) {
       clickUploadArtwork[i].addEventListener("click", function (){
-      //  inputImageArtwork[i].click();
-        alert(i);
+        inputImageArtwork[i].click();
+      //  alert(i);
+      })
+    }
+    for (let i = 0; i < containerBoxesArtwork.length; i++) {
+      containerBoxesArtwork[i].addEventListener("click", function () {
+        artworkClass.borderWhite(i);
+        artworkPreviewClass.borderWhite(i);
       })
     }
     for (let i = 0; i < inputImageArtwork.length; i++) {
     inputImageArtwork[i].addEventListener('change', function(event) {
-        console.log('Evento change disparado');
-        alert(i);
+      //alert("hola");
+        //console.log('Evento change disparado');
+        //alert(i);
         var file = event.target.files[0]; // Captura el archivo seleccionado
         console.log('Archivo seleccionado:', file);
 
@@ -32,7 +39,7 @@ class Artwork {
 
                         imageArtworkRigthSection[i].style.backgroundImage = 'url("' + img.src + '")';
 
-                        artworkPreviewClass.uploadArtwork(img.src);
+                        artworkPreviewClass.uploadArtwork(img.src, i);
                     } else {
                         alert('La imagen debe tener al menos 1287px de ancho y 54px de alto.');
                     }
@@ -92,7 +99,26 @@ class Artwork {
 
     }
   }
+  borderWhite(active){
+    for (var i = 0; i < containerBoxesArtwork.length; i++) {
+      containerBoxesArtwork[i].style.border ="2px solid transparent";
+    }
+    containerBoxesArtwork[active].style.border ="2px solid white";
+  }
+ hideShowOneOrTwoSidesPrinted(){
 
+   var sidePrintedDisplay;
+   if (sidePrintedClass.getSidePrintedSelected() == "one-side") {
+      sidePrintedDisplay = "block";
+   }
+   else {
+     sidePrintedDisplay = "none";
+   }
+
+   for (var i = 0; i < artworkBackSide.length; i++) {
+     artworkBackSide[i].style.display = sidePrintedDisplay;
+   }
+ }
 
 }
 const imageArtworkRigthSection = document.querySelectorAll(".image_artwork_rigth_section");
@@ -100,4 +126,6 @@ const inputImageArtwork = document.querySelectorAll(".input_image_artwork");
 const containerBoxesArtwork = document.querySelectorAll(".container_boxes_artwork");
 const artworkPHPClass = document.getElementById("artworkPHPClass");
 const clickUploadArtwork = document.querySelectorAll(".click_upload_artwork");
+const artworkBackSide = document.querySelectorAll(".artworkBackSide");
+
 const artworkClass = new Artwork();

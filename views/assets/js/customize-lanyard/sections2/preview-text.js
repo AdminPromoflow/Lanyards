@@ -5,7 +5,7 @@ class PreviewTextClass {
     this.fontFamily = "Arial, sans-serif";
 
   }
-  repeatText(repeat) { 
+  repeatText(repeat) {
     //  const textContainer = document.querySelectorAll(".text-container");
     var textContainer;
 
@@ -110,7 +110,7 @@ class PreviewTextClass {
                 container.innerHTML += "<h3 class='textContent' style='color:" + previewTextClass.getTextColour() + " ; '>" + previewTextClass.getTextContent() + "</h3>" +
                 "<div class='imageContent'></div>" ;
 
-          });
+          });   
       }
   }
 

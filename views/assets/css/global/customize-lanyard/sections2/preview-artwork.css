@@ -3,33 +3,81 @@
   height:100%;
   width: 100%;
   display: none;
-
 }
 .container-previewArtwork{
   position: relative;
   height:100%;
   width: 100%;
-  background-color: blue;
+  background-color: rgba(0, 0, 0, .12);
   index: 5;
-  overflow-y: scroll;
 }
-.draw-artwork-os-normal-10mm {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  transform: rotate(90deg);
-  width: 95%;
-  padding: 1px;
-
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  z-index: 300;
-  background-color: red;
-}
-.draw-artwork-os-normal-10mm img{
-  height: 100%;
+.box-previewArtwork{
+  position: relative;
   width: 100%;
-  transform: rotate(90deg);
+  height: 100px;
+  margin: 5px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
+.lanyard-artwork{
+  position: relative;
+  width: 290px;
+  height: 8px;
+  border: 1px solid white;
+}
+.box-previewArtwork h2{
+  position: relative;
+  margin: 0;
+  text-align: left;
+  color: rgba(255, 255, 255, .7);
+  font-size: 1.2em;
+  text-shadow: 2px 2px 0px rgba(0,0,0,.5);
+  font-weight: 300;
+}
+
+
+.measures-previewArtwork-long{
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 290px;
+  height: 5%;
+  border-top: 1px dashed white;
+  border-right: 1px dashed white;
+  border-left: 1px dashed white;
+}
+  .measures-previewArtwork-long h4{
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding:  0.5px;
+    color: rgba(24, 41, 66, 1);
+    font-size: 0.95em;
+    font-weight: 900;
+  }
+  .measures-previewArtwork-width{
+    position: absolute;
+    top: 65%;
+    left: 96%;
+    width: 1.6%;
+    height: 20px;
+    border-top: 1px dashed white;
+    border-right: 1px dashed white;
+    border-bottom: 1px dashed white;
+  }
+ .measures-previewArtwork-width h4{
+   position: absolute;
+   top: 80%;
+   left: 50%;
+   transform: translateX(-83%);
+   margin: 0;
+   padding:  0.5px;
+   color: rgba(24, 41, 66, 1);
+   font-size: 0.95em;
+   font-weight: 900;
+ }

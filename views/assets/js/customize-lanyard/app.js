@@ -177,6 +177,7 @@ class CustomizeLanyard {
    }
    else if (this.currentSectionOpen == 7) {//Artwork - Manual
      this.openArtWorkManual();
+     //artworkPreviewClass.showHidePreviewArtwork(false);
    }
 
    else if (this.currentSectionOpen == 8) {
@@ -186,9 +187,11 @@ class CustomizeLanyard {
     else {
         this.openArtwork();
       artworkClass.showHideArtwork(true);
-      artworkManualClass.showHideArtworkManual(false);
-      previewArtworkManualClass.showArtworkManualPreview("none");
-      previewLanyardType.showTypeLanyardPreview("flex");
+
+
+      //previewLanyardType.showTypeLanyardPreview("flex");
+      artworkPreviewClass.showHidePreviewArtwork(true);
+
     }
    }
 
@@ -203,7 +206,7 @@ class CustomizeLanyard {
     }
     else {
 
-
+      this.openArtworkFinal();
     }
    }
 
@@ -307,11 +310,19 @@ class CustomizeLanyard {
   //customizeLanyard
   }
   openArtwork(){
-    customizeLanyard.showCurrentSection(10);
+    customizeLanyard.showCurrentSection(12);
 
     //alert("hola2");
     previewArtworkManualClass.showArtworkManualPreview("none");
-    previewLanyardType.showTypeLanyardPreview("flex");
+    previewArtworkManualClass.showArtworkManualPreview("none");
+
+  }
+  openArtworkFinal(){
+    customizeLanyard.showCurrentSection(9);
+
+    //alert("hola2");
+    previewArtworkManualClass.showArtworkManualPreview("none");
+      previewLanyardType.showTypeLanyardPreview("flex");
     this.showNext(false);
 
   }

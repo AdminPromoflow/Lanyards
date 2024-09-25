@@ -7,11 +7,11 @@
 
   <div id="containers_boxes_artwork" class="containers_boxes_artwork">
 
-    <div class="container_boxes_artwork">
-      <p class="">Click to add artwork to the front left side.</p>
+    <div class="container_boxes_artwork artworkFrontSide">
+      <p class="click_upload_artwork">Click to add artwork to the front left side.</p>
       <input type="file" class="input_image_artwork" style="display:none;">
       <div class="image_artwork_rigth_section"></div>
-      <div class="move_artwork_rigth_section">
+<!--      <div class="move_artwork_rigth_section">
         <p>Move artwork</p>
         <div class="move_artwork_rigth_section_icons">
           <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/left.png" alt="">
@@ -43,14 +43,14 @@
         <div class="scale_artwork_rigth_section_icons">
           <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/smaller.png" alt="">
         </div>
-      </div>
+      </div>   -->
       </div>
 
-    <div class="container_boxes_artwork">
-      <p> Click to add artwork to the front right side.</p>
+    <div class="container_boxes_artwork artworkFrontSide">
+      <p class="click_upload_artwork"> Click to add artwork to the front right side.</p>
       <input type="file" class="input_image_artwork" style="display:none;">
       <div class="image_artwork_rigth_section"></div>
-      <div class="move_artwork_rigth_section">
+<!--      <div class="move_artwork_rigth_section">
         <p>Move artwork</p>
         <div class="move_artwork_rigth_section_icons">
           <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/left.png" alt="">
@@ -82,14 +82,14 @@
         <div class="scale_artwork_rigth_section_icons">
           <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/smaller.png" alt="">
         </div>
-      </div>
+      </div>   -->
       </div>
 
-    <div class="container_boxes_artwork">
-      <p>Click to add artwork to the back left side.</p>
+    <div class="container_boxes_artwork artworkBackSide">
+      <p class="click_upload_artwork">Click to add artwork to the back left side.</p>
       <input type="file" class="input_image_artwork" style="display:none;">
       <div class="image_artwork_rigth_section"></div>
-      <div class="move_artwork_rigth_section">
+<!--      <div class="move_artwork_rigth_section">
         <p>Move artwork</p>
         <div class="move_artwork_rigth_section_icons">
           <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/left.png" alt="">
@@ -121,14 +121,14 @@
         <div class="scale_artwork_rigth_section_icons">
           <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/smaller.png" alt="">
         </div>
-      </div>
+      </div>-->
       </div>
 
-    <div class="container_boxes_artwork">
-      <p>Click to add artwork to the back right side.</p>
+    <div class="container_boxes_artwork artworkBackSide">
+      <p class="click_upload_artwork">Click to add artwork to the back right side.</p>
       <input type="file" class="input_image_artwork" style="display:none;">
       <div class="image_artwork_rigth_section"></div>
-      <div class="move_artwork_rigth_section">
+<!--      <div class="move_artwork_rigth_section">
         <p>Move artwork</p>
         <div class="move_artwork_rigth_section_icons">
           <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/left.png" alt="">
@@ -161,7 +161,7 @@
           <img src="../../views/assets/img/global/customize-lanyard/sections/artwork/smaller.png" alt="">
         </div>
       </div>
-      </div>
+    </div>    -->
 
   </div>
 

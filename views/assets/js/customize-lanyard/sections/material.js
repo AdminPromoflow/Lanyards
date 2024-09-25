@@ -55,15 +55,14 @@ class Material {
         throw new Error("Network error.");
       })
       .then(data => {
+        //alert(data);
+
         // Parse the response data as JSON
         data = JSON.parse(data);
 
         // Set the lanyards data in the customizeLanyard object
         customizeLanyard.setJsonLanyards(data["lanyards"]);
 
-        /*setTimeout(() => {
-          alert("Segunda línea de código");
-      }, 2000);*/ 
         // Clear the container for materials
         containersBoxesMaterial.innerHTML = "";
         // Set the fetched JSON materials

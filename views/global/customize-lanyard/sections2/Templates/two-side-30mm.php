@@ -49,30 +49,23 @@
 
   <!-- Container for two-sided printed lanyard -->
   <div class="container-one-side-25mm twoSidePrinted">
-    <div class="ts25-img">
-      <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/30-two-ends.png" alt="">
-    </div>
 
-    <!-- Left side attachment for two-sided printed lanyard -->
-    <div class="attachmentThing ts-attachment-30mm-l">
-      <img src="../../views/assets/img/global/customize-lanyard/sections/attachment/quick-release-black.png" alt="">
-    </div>
+      <!-- Back clip section for the two-sided 30mm lanyard -->
+      <div class="two-ends-back-clip-30mm">
+        <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/clip-neck-1.png" alt="">
+        <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/clip-neck-2.png" alt="">
+      </div>
 
-    <!-- Right side attachment for two-sided printed lanyard -->
-    <div class="attachmentThing ts-attachment-30mm-r">
-      <img src="../../views/assets/img/global/customize-lanyard/sections/attachment/quick-release-black.png" alt="">
-    </div>
+      <!-- Left side of the lanyard with background color -->
+      <div class="two-ends-left-30mm backgroundColour">
+        <div class="draw-ts-normal-left-30mm text-container draw-ts-30mm"></div>
+      </div>
 
-    <!-- Left side clip for two-sided printed lanyard -->
-    <div class="ts25-clip img-clip ts-clip-30mm-l">
-      <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/clips/25-one-end-clip.png" alt="">
-    </div>
-
-    <!-- Right side clip for two-sided printed lanyard -->
-    <div class="ts25-clip img-clip ts-clip-30mm-r">
-      <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/clips/25-one-end-clip.png" alt="">
-    </div>
-
+      <!-- Right side of the lanyard with background color -->
+      <div class="two-ends-right-30mm backgroundColour">
+        <div class="draw-ts-normal-right-30mm text-container draw-ts-30mm"></div>
+      </div>
+  
   </div>
 
 </div>

@@ -10,7 +10,7 @@ class TextClass {
     this.repeatText = false;
     this.colourText = "#000000";
     this.fontSizeText = "16px";
-    this.boldText = false; 
+    this.boldText = false;
     this.italicText = false;
     this.underlineText = false;
     this.sizeText = "medium";
@@ -46,7 +46,6 @@ class TextClass {
       }
       else {
         colourTextSelectContainer.style.display = "block";
-
       }
     })
 

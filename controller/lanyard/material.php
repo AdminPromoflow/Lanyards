@@ -29,10 +29,13 @@ class Material {
                 // Switch case to handle different actions based on the request
                 switch ($action) {
                     case "getMaterials":
+
                         // Handle the retrieval of materials
                         $materials = $this->getMaterials($data);
+
                         $allAmount = array();
                         $i = 0;
+
                         foreach ($materials as $key) {
 
                           $width = new Width();
@@ -243,10 +246,11 @@ class Material {
 
     // Private function to handle the retrieval of all materials
     private function getMaterials($data){
+
         $connection = new Database(); // Create a new database connection
 
         $lanyards = new Lanyards($connection); // Instantiate the Lanyards model
-
+        //echo json_encode($data);exit;
         $response = $lanyards->getAllLanyardMaterials(); // Retrieve all lanyard materials
 
         return($response); // Send the response with all materials

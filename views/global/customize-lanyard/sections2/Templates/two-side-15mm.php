@@ -49,30 +49,22 @@
 
   <!-- Container for two-sided printed lanyard -->
   <div class="container-one-side-25mm twoSidePrinted">
-    <div class="ts25-img">
-      <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/templates/15-two-ends.png" alt="">
+
+    <!-- Back clip section for the two-sided 15mm lanyard -->
+    <div class="two-ends-back-clip-15mm">
+      <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/clip-neck-1.png" alt="">
+      <img src="../../views/assets/img/global/customize-lanyard/sections2/templates/clip-neck-2.png" alt="">
     </div>
 
-    <!-- Left side attachment for two-sided printed lanyard -->
-    <div class="attachmentThing ts-attachment-15mm-l">
-      <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/clips/25-one-end-clip.png" alt="">
+    <!-- Left side of the lanyard with background color -->
+    <div class="two-ends-left-15mm backgroundColour">
+      <div class="draw-ts-normal-left-15mm text-container draw-ts-15mm"></div>
     </div>
 
-    <!-- Right side attachment for two-sided printed lanyard -->
-    <div class="attachmentThing ts-attachment-15mm-r">
-      <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/clips/25-one-end-clip.png" alt="">
+    <!-- Right side of the lanyard with background color -->
+    <div class="two-ends-right-15mm backgroundColour">
+      <div class="draw-ts-normal-right-15mm text-container draw-ts-15mm"></div>
     </div>
-
-    <!-- Left side clip for two-sided printed lanyard -->
-    <div class="ts25-clip img-clip ts-clip-15mm-l">
-      <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/clips/25-one-end-clip.png" alt="">
-    </div>
-
-    <!-- Right side clip for two-sided printed lanyard -->
-    <div class="ts25-clip img-clip ts-clip-15mm-r">
-      <img class="" src="../../views/assets/img/global/customize-lanyard/sections2/clips/25-one-end-clip.png" alt="">
-    </div>
-
   </div>
 
 </div>
