@@ -186,12 +186,6 @@ class CustomizeLanyard {
     }
     else {
         this.openArtwork();
-      artworkClass.showHideArtwork(true);
-
-
-      //previewLanyardType.showTypeLanyardPreview("flex");
-      artworkPreviewClass.showHidePreviewArtwork(true);
-
     }
    }
 
@@ -279,6 +273,7 @@ class CustomizeLanyard {
      previewColourClass.showColourPreview("none");
      previewArtworkManualClass.showArtworkManualPreview("flex");
      previewLanyardType.showTypeLanyardPreview("none");
+     artworkPreviewClass.showHidePreviewArtwork(false);
      customizeLanyard.showCurrentSection(7);
      this.showNext(true);
    }
@@ -310,18 +305,22 @@ class CustomizeLanyard {
   //customizeLanyard
   }
   openArtwork(){
-    customizeLanyard.showCurrentSection(12);
+    artworkClass.showHideArtwork(true);
+    artworkPreviewClass.showHidePreviewArtwork(true);
+    customizeLanyard.showCurrentSection(10);
 
     //alert("hola2");
+    previewLanyardType.showTypeLanyardPreview("none");
     previewArtworkManualClass.showArtworkManualPreview("none");
-    previewArtworkManualClass.showArtworkManualPreview("none");
-
+    this.showNext(true);
   }
   openArtworkFinal(){
-    customizeLanyard.showCurrentSection(9);
+    customizeLanyard.showCurrentSection(12);
+    //previewLanyardType.showTypeLanyardPreview("flex");
 
     //alert("hola2");
-    previewArtworkManualClass.showArtworkManualPreview("none");
+    //previewArtworkManualClass.showArtworkManualPreview("none");
+    artworkPreviewClass.showHidePreviewArtwork(false);
       previewLanyardType.showTypeLanyardPreview("flex");
     this.showNext(false);
 

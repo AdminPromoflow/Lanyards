@@ -62,13 +62,64 @@
 }
 /*-----------------------------------------*/
 
+.artwork-os-normal-left-10mm{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.artwork-os-normal-right-10mm{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.artwork-os-normal-right-10mm img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ajusta la imagen para cubrir todo el contenedor */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.artwork-os-normal-left-10mm img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ajusta la imagen para cubrir todo el contenedor */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 
 
 
 
 
-
+.artwork-os-normal-left-10mm-tp{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.artwork-os-normal-right-10mm-tp{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.artwork-os-normal-right-10mm-tp img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ajusta la imagen para cubrir todo el contenedor */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.artwork-os-normal-left-10mm-tp img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ajusta la imagen para cubrir todo el contenedor */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 
 

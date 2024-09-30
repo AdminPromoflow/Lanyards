@@ -33,13 +33,16 @@ class Artwork {
                 //  alert(img.src);
                     console.log('Dimensiones de la imagen:', img.width, img.height);
                     // Validar dimensiones mínimas de la imagen
-                    if (img.width >= 1287 && img.height >= 54) {
+                    //if (img.width >= 1287 && img.height >= 54) {
+                      if (img.width >= 12 && img.height >= 4) {
 
                         // Si las dimensiones son correctas o mayores, establecer la imagen como fondo
 
                         imageArtworkRigthSection[i].style.backgroundImage = 'url("' + img.src + '")';
 
                         artworkPreviewClass.uploadArtwork(img.src, i);
+
+                      artworkPreviewClassFinal.assignArtworkToLanyard(img.src, i);
                     } else {
                         alert('La imagen debe tener al menos 1287px de ancho y 54px de alto.');
                     }
@@ -109,7 +112,7 @@ class Artwork {
 
    var sidePrintedDisplay;
    if (sidePrintedClass.getSidePrintedSelected() == "one-side") {
-      sidePrintedDisplay = "block";
+      sidePrintedDisplay = "flex";
    }
    else {
      sidePrintedDisplay = "none";

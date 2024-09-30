@@ -19,11 +19,15 @@
         <!-- Left side of the lanyard with background color -->
         <div class="os-normal-left-15mm backgroundColour">
           <div class="draw-os-normal-left-15mm text-container draw-os-15mm"></div>
+          <div class="artwork-os-normal-left-15mm" id="artwork-os-normal-left-15mm">
+          </div>
         </div>
 
         <!-- Right side of the lanyard with background color -->
         <div class="os-normal-right-15mm backgroundColour">
           <div class="draw-os-normal-right-15mm text-container draw-os-15mm"></div>
+          <div class="artwork-os-normal-right-15mm" id="artwork-os-normal-right-15mm">
+          </div>
         </div>
         <!-- Container for two-sided printed lanyard -->
         <div class="container-one-side-25mm twoSidePrinted standar">
@@ -36,11 +40,15 @@
           <!-- Left side of the lanyard with background color -->
           <div class="os-normal-left-15mm backgroundColour">
             <div class="draw-os-normal-left-15mm text-container draw-os-15mm"></div>
+            <div class="artwork-os-normal-left-15mm-tp" id="artwork-os-normal-left-15mm-tp">
+            </div>
           </div>
 
           <!-- Right side of the lanyard with background color -->
           <div class="os-normal-right-15mm backgroundColour">
             <div class="draw-os-normal-right-15mm text-container draw-os-15mm"></div>
+            <div class="artwork-os-normal-right-15mm-tp" id="artwork-os-normal-right-15mm-tp">
+            </div>
           </div>
 
         </div>
