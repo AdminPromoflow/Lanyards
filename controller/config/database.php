@@ -1,5 +1,4 @@
 <?php
-echo "hello";exit;
 
 class Database {
   // Database connection parameters
@@ -11,6 +10,8 @@ class Database {
 
   // Constructor to establish a database connection
    public function __construct() {
+     echo "hello2";exit;
+
         try {
             // Create a PDO connection
             $this->connection = new PDO("mysql:host=$this->servername;dbname=$this->dbname", $this->username, $this->password);
