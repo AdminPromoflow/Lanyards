@@ -45,5 +45,5 @@ class Security {
 require_once '../../models/users.php';
 
 require_once '../../config/database.php';
-echo "hello";exit;
+
 ?>
