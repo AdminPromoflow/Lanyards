@@ -1,7 +1,10 @@
 <section id="login" class="login">
   <div id="containerLogin"  class="containerLogin">
     <div class="headLogin">
-      <h1>Login</h1>
+      <div class="headLoginContaner">
+          <h1>Login</h1>
+      </div>
+
       <img id="closeLogin" src="../assets/img/global/login/close.png" alt="">
     </div>
     <div class="bodyLogin">

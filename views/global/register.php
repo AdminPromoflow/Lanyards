@@ -1,7 +1,9 @@
 <section id="register" class="register">
   <div id="containerRegister" class="containerRegister">
     <div class="headRegister">
-      <h1>Register</h1>
+      <div class="headRegisterContainer">
+        <h1>Register</h1>
+      </div>
       <img id="closeRegister" src="../assets/img/global/register/close.png" alt="">
     </div>
     <div class="bodyRegister">

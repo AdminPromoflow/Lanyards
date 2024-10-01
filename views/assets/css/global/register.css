@@ -33,12 +33,19 @@
   border-top-right-radius: 5px;
   box-shadow: 0px 0px  5px black;
 }
-.headRegister h1{
+.headRegisterContainer{
   position: relative;
+  width: 100%;
+  height: 100%;
+}
+.headRegisterContainer h1{
+  position: absolute;
+  left: 50%;
+  padding: 5px;
   margin: 0px;
   text-align: center;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
   font-size: 2em;
   font-weight: 600;
   color: rgba(255 , 255 , 255 , .8);

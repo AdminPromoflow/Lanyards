@@ -152,7 +152,8 @@ class Register {
         throw new Error("Network error.");
       })
       .then(data => {
-        data = JSON.parse(data);
+        alert(data);
+       data = JSON.parse(data);
 
         if (data["message"] == 1) {
           alert('Successful registration. We welcome you to our community');
