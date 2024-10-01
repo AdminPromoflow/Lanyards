@@ -1,7 +1,7 @@
 <?php
-echo "hello3";exit;
 
 class Database {
+  echo "hello3";exit;
 
   // Database connection parameters
   private $servername = 'localhost';
