@@ -1,6 +1,8 @@
 <?php
 
 class Database {
+  echo "hello2";exit;
+
   // Database connection parameters
   private $servername = 'localhost';
   private $dbname = "u273173398_Lanyards";//u273173398_Lanyards Lanyards
@@ -10,7 +12,6 @@ class Database {
 
   // Constructor to establish a database connection
    public function __construct() {
-     echo "hello2";exit;
 
         try {
             // Create a PDO connection
