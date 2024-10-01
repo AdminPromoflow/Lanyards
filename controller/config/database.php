@@ -1,5 +1,5 @@
 <?php
-echo "hello2";exit;
+echo "hello3";exit;
 
 class Database {
 
