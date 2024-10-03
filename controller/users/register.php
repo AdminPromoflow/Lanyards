@@ -110,11 +110,11 @@ require_once '../../models/users.php';
 require_once '../../controller/users/send-emails.php';
 
 require_once '../../controller/config/database.php';
-echo "Hola";exit;
 
 
 require_once '../../controller/config/security.php';
 
+echo "Hola";exit;
 
 // Create an instance of the ApiHandler class and handle the request
 $apiHandler = new ApiHandler();
