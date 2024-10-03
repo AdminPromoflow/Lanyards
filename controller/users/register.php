@@ -104,7 +104,7 @@ class ApiHandler {
     }
 }
 // Include required files
-echo "Hola";
+echo "Hola";exit;
 
 require_once '../../models/users.php';
 
