@@ -7,7 +7,6 @@ class ApiHandler {
             // Get the raw JSON data from the request body
             $rawData = file_get_contents("php://input");
             $data = json_decode($rawData);
-            echo "Hola";exit;
 
 
             // Check if JSON data is valid and contains an "action" field
@@ -18,6 +17,8 @@ class ApiHandler {
                 // Perform actions based on the request
                 switch ($action) {
                     case "register":
+                    echo "Hola";exit;
+
                         $this->handleRegistration($data);
                         break;
 
