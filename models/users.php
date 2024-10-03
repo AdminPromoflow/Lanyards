@@ -40,10 +40,10 @@ class Users {
 
       // Bind the email parameter
       $sql->bindParam(':email', $this->email, PDO::PARAM_STR);
-      echo "Hola2";exit;
 
       // Execute the query
       $sql->execute();
+      echo "Hola2";exit;
 
       // Fetch the user count
       $userCount = $sql->fetch(PDO::FETCH_ASSOC);
