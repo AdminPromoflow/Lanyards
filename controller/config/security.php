@@ -43,8 +43,8 @@ class Security {
 }
 
 require_once '../../models/users.php';
-echo "buenas"; exit;
 
 require_once '../../controller/config/database.php';
+echo "buenas3"; exit;
 
 ?>
