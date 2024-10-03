@@ -108,10 +108,10 @@ require_once '../../models/users.php';
 
 require_once '../../controller/users/send-emails.php';
 require_once '../config/database.php';
+
+echo "string3";exit;
+
 require_once '../config/security.php';
-
-echo "string2";exit;
-
 
 
 
