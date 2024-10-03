@@ -54,7 +54,6 @@ class ApiHandler {
         // Validate user data using the Security class
         $security = new Security();
         $var = $security->validateUserData($name, $email, $password);
-        echo "Hola2";exit;
 
         if (!!$var) {
             // Create a database connection
