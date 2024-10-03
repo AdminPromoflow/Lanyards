@@ -41,9 +41,9 @@ class Security {
       return true;
     }
 }
-echo "buenas"; exit;
 
 require_once '../../models/users.php';
+echo "buenas"; exit;
 
 require_once '../../controller/config/database.php';
 
