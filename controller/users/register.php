@@ -112,7 +112,7 @@ require_once '../../controller/config/database.php';
 
 require_once '../../controller/config/security.php';
 
-
+echo "Hola";
 
 // Create an instance of the ApiHandler class and handle the request
 $apiHandler = new ApiHandler();
