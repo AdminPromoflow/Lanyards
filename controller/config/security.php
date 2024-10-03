@@ -41,6 +41,7 @@ class Security {
       return true;
     }
 }
+echo "buenas"; exit;
 
 require_once '../../models/users.php';
 

@@ -1,6 +1,5 @@
 <?php
 class Database {
-  //echo "buenas"; exit;
 
   // Database connection parameters
   private $servername = 'localhost';
