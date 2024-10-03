@@ -34,9 +34,9 @@ class Security {
       $connection = new Database();
       $user = new Users($connection);
       $user->setEmail($email);
-      echo "Hola2";exit;
 
       $var = $user->checkIfUserExistsByEmail()['COUNT(*)'];
+      echo "Hola2";exit;
 
       if ($var == "0") {
         return false;
