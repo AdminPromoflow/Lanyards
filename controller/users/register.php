@@ -7,6 +7,8 @@ class ApiHandler {
             // Get the raw JSON data from the request body
             $rawData = file_get_contents("php://input");
             $data = json_decode($rawData);
+            echo "Hola";exit;
+
 
             // Check if JSON data is valid and contains an "action" field
             if ($data !== null && isset($data->action)) {
@@ -114,7 +116,6 @@ require_once '../../controller/config/database.php';
 
 require_once '../../controller/config/security.php';
 
-echo "Hola";exit;
 
 // Create an instance of the ApiHandler class and handle the request
 $apiHandler = new ApiHandler();
