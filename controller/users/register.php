@@ -105,10 +105,11 @@ class ApiHandler {
 }
 // Include required files
 require_once '../../models/users.php';
-echo "string";exit;
-require_once '../config/security.php';
 
 require_once '../../controller/users/send-emails.php';
+echo "string";exit;
+
+require_once '../config/security.php';
 
 require_once '../config/database.php';
 
