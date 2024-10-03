@@ -16,7 +16,6 @@ class Security {
         if (self::usernameExistsInDatabase($email)) {
             return false;
         }
-        echo "Hola2";exit;
 
         // Escape data before storing it in the database
 
@@ -31,6 +30,8 @@ class Security {
     }
 
     private static function usernameExistsInDatabase($email) {
+      echo "Hola2";exit;
+
       $connection = new Database();
       $user = new Users($connection);
       $user->setEmail($email);
