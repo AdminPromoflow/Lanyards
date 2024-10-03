@@ -11,12 +11,12 @@ class Security {
        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             return $email;
         }
-        echo "Hola2";exit;
 
         // Check if the username already exists in the database
         if (self::usernameExistsInDatabase($email)) {
             return false;
         }
+        echo "Hola2";exit;
 
         // Escape data before storing it in the database
 
