@@ -1,8 +1,7 @@
 <?php
 
 class Database {
-//  echo "hello4";exit;
-
+echo "buenas"; exit;
   // Database connection parameters
   private $servername = 'localhost';
   private $dbname = "u273173398_Lanyards";//u273173398_Lanyards Lanyards
