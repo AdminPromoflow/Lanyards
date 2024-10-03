@@ -37,10 +37,10 @@ class Users {
     try {
       // Prepare the SQL query with placeholders
       $sql = $this->connection->getConnection()->prepare("SELECT COUNT(*) FROM `Users` WHERE `emailUser` = :email");
-      echo "Hola2";exit;
 
       // Bind the email parameter
       $sql->bindParam(':email', $this->email, PDO::PARAM_STR);
+      echo "Hola2";exit;
 
       // Execute the query
       $sql->execute();
