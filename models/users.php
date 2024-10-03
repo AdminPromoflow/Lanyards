@@ -36,7 +36,7 @@ class Users {
   public function checkIfUserExistsByEmail() {
     try {
       // Prepare the SQL query with placeholders
-      $sql = $this->connection->getConnection()->prepare("SELECT COUNT(*) FROM `Users` WHERE `emailUser` = :email");
+      $sql = $this->connection->getConnection()->prepare("SELECT COUNT(*) FROM `Users` WHERE `email` = :email");
 
       // Bind the email parameter
       $sql->bindParam(':email', $this->email, PDO::PARAM_STR);
