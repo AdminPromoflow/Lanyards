@@ -17,9 +17,10 @@ class ApiHandler {
                 // Perform actions based on the request
                 switch ($action) {
                     case "register":
-                    echo "Hola";exit;
 
                         $this->handleRegistration($data);
+                        echo "Hola2";exit;
+
                         break;
 
                     case "login":
