@@ -30,11 +30,12 @@ class Security {
     }
 
     private static function usernameExistsInDatabase($email) {
-      echo "Hola2";exit;
 
       $connection = new Database();
       $user = new Users($connection);
       $user->setEmail($email);
+      echo "Hola2";exit;
+
       $var = $user->checkIfUserExistsByEmail()['COUNT(*)'];
 
       if ($var == "0") {
