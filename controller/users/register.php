@@ -104,10 +104,13 @@ class ApiHandler {
     }
 }
 // Include required files
-require_once '../config/database.php';
 require_once '../config/security.php';
 require_once '../../models/users.php';
 require_once '../../controller/users/send-emails.php';
+echo "string";exit;
+
+require_once '../config/database.php';
+
 
 // Create an instance of the ApiHandler class and handle the request
 $apiHandler = new ApiHandler();
