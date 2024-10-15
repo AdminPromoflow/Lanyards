@@ -18,6 +18,10 @@ class ApiHandlerLogin {
                     case "login":
                         $this->handleLogin($data);
                         break;
+                    case "logout":
+                        $this->handleLogout($data);
+                        break;
+
 
                     default:
                         // Unknown action
@@ -55,7 +59,6 @@ class ApiHandlerLogin {
           // Create the user in the database
           $storedHash = $user->getPasswordUserByEmail();
 
-
           if (password_verify($password, $storedHash)) {
               $response = array("message" => true);
               session_start();
@@ -66,6 +69,11 @@ class ApiHandlerLogin {
               echo json_encode($response);
           }
     }
+
+        handleLogout($data){
+          echo "Logan";
+        }
+    break;
 }
 
 // Include required files

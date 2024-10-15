@@ -1,0 +1,127 @@
+
+/* Register*/
+
+.register2{
+  position: relative;
+  width: 90%;
+  height: 100%;
+  min-height: 330px;
+  padding: 15px 0;
+  margin: 15px 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, .1);
+
+  display: none;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.register2 h2{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.9em;
+  color: white;
+  padding-left: 10px;
+  margin: 0px 0 5px 0;
+}
+.register2 p{
+  position: relative;
+  text-align: center;
+  font-weight: 300;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%;
+  color: white;
+  margin: 10px 0;
+  padding: 0;
+  padding-left: 5px;
+}
+.containers_boxes_register2{
+  position: relative;
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+}
+.containers_boxes_register2 label{
+  position: relative;
+  color: white;
+  margin: 8px 12px;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+.containers_boxes_register2 input{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 10px 0;
+  padding: 5px;
+  background: rgba(255, 255, 255, .3);
+  border-radius: 5px;
+  color: white;
+}
+.containers_boxes_register2 button{
+  position: relative;
+  padding: 4px 12px;
+  height: 42px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  font-size: 1.1em;
+  font-weight: 200 !important;
+  border-radius: 5px;
+  color: black;
+  background-color: #B3C7BF;
+  cursor: pointer;
+}
+
+/*
+.containers_boxes_register2::-webkit-scrollbar {
+    width: 13px;
+}
+
+.containers_boxes_register2::-webkit-scrollbar-thumb {
+    background: #091d2c;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, .5);
+}
+
+.containers_boxes_register2::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, .4);
+    border-radius: 10px;
+}
+
+.containers_boxes_register2::-webkit-scrollbar-thumb:hover {
+    background: #132735;
+}*/
+
+.container_boxes_register2{
+  position: relative;
+  width: 98%;
+  background-color: rgba(48, 79, 112, 1);
+  padding: 5px  0;
+  margin: 5px 0;
+  cursor: pointer;
+
+  display: flex;
+  justify-content:space-between;
+  flex-direction: row;
+
+  border: 2px solid transparent;
+}
+.container_boxes_register2 h4{
+  position: relative;
+  color: white;
+  margin: 8px 12px;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+.container_boxes_register2 h3{
+  position: relative;
+  color: #97A7BB;
+  font-weight: 300;
+  font-size: 0.8em;
+  margin: 8px 12px;
+}

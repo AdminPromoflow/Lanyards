@@ -10,6 +10,9 @@ class CustomizeLanyard {
     this.changePreviewNextSection();
   //  this.getLanyardsActive();
   }
+  example(){
+    alert("Entramos");
+  }
   getLanyardsActive(){
     var lanyardActive;
 
@@ -212,11 +215,33 @@ class CustomizeLanyard {
   //  artworkManualClass.containerBoxesArtworkManual();
     }
     else {
-      //alert("Seleccionaste Artwork")
+      this.openLogin();
+
     }
    }
 
+   else if (this.currentSectionOpen == 11) {
 
+     if (artworkManualClass.getArtworkManual() == "manual"){
+       //this.openText();
+    this.openArtworkFinal();
+  //  artworkManualClass.containerBoxesArtworkManual();
+    }
+    else {
+      //alert("Seleccionaste Artwork")
+    }
+   }
+   else if (this.currentSectionOpen == 12) {
+
+     if (artworkManualClass.getArtworkManual() == "manual"){
+       //this.openText();
+    this.openLogin();
+  //  artworkManualClass.containerBoxesArtworkManual();
+    }
+    else {
+      //alert("Seleccionaste Artwork")
+    }
+   }
   }
 
   // Métodos adicionales según sea necesario
@@ -239,20 +264,15 @@ class CustomizeLanyard {
 
      const preview = document.getElementById("preview");
      preview.style.display = "block";
-
-
    }
    openWidth(){
      customizeLanyard.showCurrentSection(this.currentSectionOpen);
-
    }
    openSidePrinted(){
      customizeLanyard.showCurrentSection(this.currentSectionOpen);
-
    }
    openClips(){
      customizeLanyard.showCurrentSection(this.currentSectionOpen);
-
    }
    openAttachment(){
      previewLanyardType.showTypeLanyardPreview("flex");
@@ -260,14 +280,12 @@ class CustomizeLanyard {
      previewColourClass.showColourPreview("none");
      previewArtworkManualClass.showArtworkManualPreview("none");
      customizeLanyard.showCurrentSection(this.currentSectionOpen);
-
    }
    openColourQuantity(){
      previewArtworkManualClass.showArtworkManualPreview("none");
      previewColourClass.showColourPreview("flex");
      previewLanyardType.showTypeLanyardPreview("none");
      customizeLanyard.showCurrentSection(this.currentSectionOpen);
-
    }
    openArtWorkManual(){
      previewColourClass.showColourPreview("none");
@@ -279,17 +297,9 @@ class CustomizeLanyard {
    }
 
   openBackgroundColour() {
-    //this.currentSectionOpen = 8;
     customizeLanyard.showCurrentSection(8);
-
     previewArtworkManualClass.showArtworkManualPreview("none");
     previewLanyardType.showTypeLanyardPreview("flex");
-
-  /*const next = document.getElementById("next");
-    const preview = document.getElementById("preview");
-    preview.style.display = "block";
-    next.style.display = "block";*/
-
   }
   openText(){
     customizeLanyard.showCurrentSection(9);
@@ -301,7 +311,7 @@ class CustomizeLanyard {
     customizeLanyard.showCurrentSection(11);
     previewLanyardType.showTypeLanyardPreview("flex");
     previewArtworkManualClass.showArtworkManualPreview("none");
-    this.showNext(false);
+    this.showNext(true);
   //customizeLanyard
   }
   openArtwork(){
@@ -314,18 +324,23 @@ class CustomizeLanyard {
     previewArtworkManualClass.showArtworkManualPreview("none");
     this.showNext(true);
   }
+
   openArtworkFinal(){
     customizeLanyard.showCurrentSection(12);
-    //previewLanyardType.showTypeLanyardPreview("flex");
-
-    //alert("hola2");
-    //previewArtworkManualClass.showArtworkManualPreview("none");
     artworkPreviewClass.showHidePreviewArtwork(false);
-      previewLanyardType.showTypeLanyardPreview("flex");
-    this.showNext(false);
+    previewLanyardType.showTypeLanyardPreview("flex");
+    classPreviewLogin.showLoginPreview("none");
+    this.showNext(true);
 
   }
+  openLogin(){
+    customizeLanyard.showCurrentSection(13);
 
+    classPreviewLogin.showLoginPreview("flex");
+    previewLanyardType.showTypeLanyardPreview("none");
+    this.showNext(false);
+  //  this.showPreview(false);
+  }
   setStateVisibilityPanelCustomeLanyard(value) {
     stateVisibilityPanelCustomeLanyard = value;
   }
@@ -347,6 +362,14 @@ class CustomizeLanyard {
       }
       else {
       next.style.display = "none";
+      }
+  }
+  showPreview(active){
+      if (active) {
+          preview.style.display = "block";
+      }
+      else {
+          preview.style.display = "none";
       }
   }
 }

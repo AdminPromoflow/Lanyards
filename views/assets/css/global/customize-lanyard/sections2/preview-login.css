@@ -1,0 +1,64 @@
+.preview-login-container{
+  position: relative;
+  width: 90%;
+  height: 80%;
+  padding: 15px 0;
+
+  background-color: rgba(0, 0, 0, .12);
+  box-shadow: 0px 0px 2px black;
+
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.preview-login-container h3{
+  position: relative;
+  text-align: center;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, .7);
+  font-size: 1.8em;
+  font-weight: 400;
+  text-shadow: 2px 2px 0 black;
+  background-color: rgba(0, 0, 0, .1);
+}
+.img-preview-login{
+  position: relative;
+  height: 30%;
+  width: 100%;
+}
+.img-preview-login img{
+  width: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.description-preview-login{
+  position: relative;
+  width: 100%;
+  overflow-y: scroll;
+}
+.description-preview-login p{
+  position: relative;
+  text-align: justify;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, .7);
+  font-size: 1.2em;
+  text-shadow: 2px 2px 0px rgba(0,0,0,.5);
+  font-weight: 300;
+}
+.preview-login-container-image{
+  position: relative;
+  height: 100%;
+
+}
+.preview-login-container-image img{
+  position: relative;
+  width: 70%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

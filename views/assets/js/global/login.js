@@ -20,7 +20,7 @@ class Login {
       // Hide the register form with a sliding animation
       registerClass.hideRegister(0);
     });
- 
+
 
     // Event listener to open the register form from the login screen
     loginButton.addEventListener("click", function () {
@@ -59,6 +59,7 @@ class Login {
         throw new Error("Network error.");
       })
       .then(data => {
+        alert(data);
         data = JSON.parse(data);
 
         if (data["message"]) {

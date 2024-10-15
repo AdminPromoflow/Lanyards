@@ -166,7 +166,7 @@ class Register {
           registerClass.hideRegister(0);
         }
         else if  (data["message"] == 0) {
-          alert('No successful registration. The user already exists');
+        //  alert('No successful registration. The user already exists');
         }
         else {
           alert('An error has occurred. Please try again');

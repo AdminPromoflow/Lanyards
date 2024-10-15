@@ -26,10 +26,12 @@ class Material {
     return this.materialSelected;
   }
 
+
   // Setter method to set the JSON materials.
-  setJsonMaterials(jsonMaterials) {
-    this.jsonMaterials = jsonMaterials;
-  }
+ setJsonMaterials(jsonMaterials) {
+   this.jsonMaterials = jsonMaterials;
+ }
+
 
   // Getter method to get the JSON materials.
   getJsonMaterials() {
@@ -58,15 +60,16 @@ class Material {
         //alert(data);
 
         // Parse the response data as JSON
-        data = JSON.parse(data);
 
-        // Set the lanyards data in the customizeLanyard object
+        data = JSON.parse(data);
+    
         customizeLanyard.setJsonLanyards(data["lanyards"]);
 
         // Clear the container for materials
         containersBoxesMaterial.innerHTML = "";
+
         // Set the fetched JSON materials
-        this.setJsonMaterials(data);
+        material.setJsonMaterials(data);
         // Set the amount selected to 1000
         priceClass.setAmountSelected(1000);
 
@@ -96,6 +99,7 @@ class Material {
         for (var i = 0; i < clipAvailable.length; i++) {
           clipClass.drawClipAvailable(clipAvailable[i], i);
         }
+        this.selecteMaterial();
       })
       .catch(error => {
         // Log any errors to the console
@@ -103,6 +107,20 @@ class Material {
       //  location.reload();
       });
   }
+    setJsonLanyards(data){
+      if (typeof customizeLanyard !== 'undefined' && customizeLanyard !== null) {
+        alert('La clase está instanciada');
+      } else {
+        alert('La clase NO está instanciada');
+      }
+
+      alert("moto");
+      customizeLanyard.setJsonLanyards(data["lanyards"]);
+
+    }
+      selecteMaterial(){
+        alert("perro");
+      }
 
   // Function to create materials HTML elements.
   createMaterials(data, price) {
