@@ -7,7 +7,7 @@ class Material {
     this.materialSelected = "Tubular";
     // Initialize an empty object to store JSON materials.
     var jsonMaterials = {};
-    
+
   }
 
   // Setter method for the materialSelected property.
@@ -51,49 +51,10 @@ class Material {
         throw new Error("Network error.");
       })
       .then(data => {
-        //alert(data);
-
-        // Parse the response data as JSON
-
         data = JSON.parse(data);
-
-        customizeLanyard.setJsonLanyards(data["lanyards"]);
-
-        // Clear the container for materials
-        containersBoxesMaterial.innerHTML = "";
-
-        // Set the fetched JSON materials
-        material.setJsonMaterials(data);
-        // Set the amount selected to 1000
-        priceClass.setAmountSelected(1000);
-
-        // Iterate through the lanyards and create materials HTML elements
-        for (var i = 0; i < data["lanyards"].length; i++) {
-          material.createMaterials(data["lanyards"][i]["materials"]);
-        }
-
-        // Clean the side printed options
-        sidePrintedClass.cleanSidePrinted();
-
-        // Get the available side printed options
-        let sidePrintedAvailable = sidePrintedClass.getDataSidePrintedAvailable();
-
-        // Iterate through the available side printed options and draw them
-        for (var i = 0; i < sidePrintedAvailable.length; i++) {
-          sidePrintedClass.drawSidePrintedAvailable(sidePrintedAvailable[i], i);
-        }
-
-        // Clean the clip options
-        clipClass.cleanClip();
-
-        // Get the available clip options
-        let clipAvailable = clipClass.getDataClipAvailable();
-
-        // Iterate through the available clip options and draw them
-        for (var i = 0; i < clipAvailable.length; i++) {
-          clipClass.drawClipAvailable(clipAvailable[i], i);
-        }
-        this.selecteMaterial();
+        this.selecteMaterial(data);
+      //  sidePrintedClass.selectSidePrinted();
+      //  clipClass.selectClip();
       })
       .catch(error => {
         // Log any errors to the console
@@ -101,19 +62,17 @@ class Material {
       //  location.reload();
       });
   }
-    setJsonLanyards(data){
-      if (typeof customizeLanyard !== 'undefined' && customizeLanyard !== null) {
-        alert('La clase está instanciada');
-      } else {
-        alert('La clase NO está instanciada');
-      }
 
-      alert("moto");
-      customizeLanyard.setJsonLanyards(data["lanyards"]);
-
-    }
-      selecteMaterial(){
-        alert("perro");
+      selecteMaterial(data){
+        customizeLanyard.setJsonLanyards(data["lanyards"]);
+        // Clear the container for materials
+        containersBoxesMaterial.innerHTML = "";
+        // Set the fetched JSON materials
+        material.setJsonMaterials(data);
+        // Iterate through the lanyards and create materials HTML elements
+        for (var i = 0; i < data["lanyards"].length; i++) {
+          material.createMaterials(data["lanyards"][i]["materials"]);
+        }
       }
 
   // Function to create materials HTML elements.

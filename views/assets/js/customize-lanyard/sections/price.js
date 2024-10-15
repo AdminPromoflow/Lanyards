@@ -12,6 +12,11 @@ class Price {
     this.priceAttachment = 0;
     this.priceColour = 0;
 
+    this.amountSelected = 900;
+    amountLanyardsRange.value = 900;
+    amountLanyards.value = 900;
+
+
 
     // Event listener for input changes on amountLanyards element.
     amountLanyards.addEventListener('input', function(event) {

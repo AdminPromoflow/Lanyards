@@ -10,6 +10,18 @@ class SidePrinted {
   getSidePrintedSelected() {
     return this.sidePrintedSelected;
   }
+  selectSidePrinted(){
+    // Clean the side printed options
+    this.cleanSidePrinted();
+
+    // Get the available side printed options
+    let sidePrintedAvailable = this.getDataSidePrintedAvailable();
+
+    // Iterate through the available side printed options and draw them
+    for (var i = 0; i < sidePrintedAvailable.length; i++) {
+      this.drawSidePrintedAvailable(sidePrintedAvailable[i], i);
+    }
+  }
 
   // Function to make the AJAX request
   makeAjaxRequestSetSidePrintedSelected(url, data) {
