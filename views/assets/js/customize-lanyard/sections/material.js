@@ -7,13 +7,7 @@ class Material {
     this.materialSelected = "Tubular";
     // Initialize an empty object to store JSON materials.
     var jsonMaterials = {};
-    // Define the URL and data object for AJAX request.
-    const url = "../../controller/lanyard/material.php";
-    const data = {
-      action: "getMaterials"
-    };
-    // Make an AJAX request to fetch all materials.
-    this.makeAjaxRequestGetAllMaterials(url, data);
+    
   }
 
   // Setter method for the materialSelected property.
@@ -62,7 +56,7 @@ class Material {
         // Parse the response data as JSON
 
         data = JSON.parse(data);
-    
+
         customizeLanyard.setJsonLanyards(data["lanyards"]);
 
         // Clear the container for materials
