@@ -1,6 +1,6 @@
 class OneTwoEnds {
   constructor() {
-
+    this.jsonLanyardType;
     this.setTypeLanyardSelected("one-end");
     this.showSelectedOneTwoEnds();
 
@@ -14,6 +14,27 @@ class OneTwoEnds {
     // Setter method for amount property
     setTypeLanyardSelected(value) {
       this.typeLanyard = value;
+    }
+    setJsonLanyardType(data){
+      this.jsonLanyardType = data;
+    }
+    getJsonLanyardType(){
+      return this.jsonLanyardType;
+    }
+    selectOneTwoEnds(){
+      // Show the selected preview template
+      //this.showSelectedPreviewtTemplate();
+      var data = this.getJsonLanyardType();
+      // Clean the oneTwoEnds options
+      this.cleanOneTwoEnds();
+
+      // Iterate through the allLanyardTypes and create oneTwoEnds elements
+      for (var i = 0; i < data.length; i++) {
+        this.createOneTwoEnds(data[i], i);
+      }
+
+      // Display the selected "one" or "two" ends
+      this.showSelectedOneTwoEnds();
     }
   // Function to make the AJAX request
   makeAjaxRequestSetTypeLanyardSelected(url, data) {

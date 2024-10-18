@@ -52,9 +52,12 @@ class Material {
       })
       .then(data => {
         data = JSON.parse(data);
-        this.selecteMaterial(data);
-      //  sidePrintedClass.selectSidePrinted();
-      //  clipClass.selectClip();
+        customizeLanyard.setJsonLanyards(data["lanyards"]);
+
+        this.selecteMaterial();
+        //clipClass.selectClip();
+        //sidePrintedClass.selectSidePrinted();
+
       })
       .catch(error => {
         // Log any errors to the console
@@ -64,14 +67,14 @@ class Material {
   }
 
       selecteMaterial(data){
-        customizeLanyard.setJsonLanyards(data["lanyards"]);
+        var data = customizeLanyard.getJsonLanyards();
         // Clear the container for materials
         containersBoxesMaterial.innerHTML = "";
         // Set the fetched JSON materials
-        material.setJsonMaterials(data);
+        //material.setJsonMaterials(data);
         // Iterate through the lanyards and create materials HTML elements
-        for (var i = 0; i < data["lanyards"].length; i++) {
-          material.createMaterials(data["lanyards"][i]["materials"]);
+        for (var i = 0; i < data.length; i++) {
+          material.createMaterials(data[i]["materials"]);
         }
       }
 
@@ -100,7 +103,7 @@ class Material {
     var sidePrintedSelected = sidePrintedClass.getSidePrintedSelected();
 
     // Get the number of colors selected from the customizeLanyard object.
-    var noColourSelected = customizeLanyard.getNoColours();
+    var noColourSelected = colourClass.getColourSelected();
 
     // Get the amount selected from the priceClass object.
     var amountSelected = priceClass.getAmountSelected();
@@ -253,67 +256,32 @@ class Material {
         // Parse the response data as JSON
         data = JSON.parse(data);
 
-        // Clean the oneTwoEnds options
-        oneTwoEndsClass.cleanOneTwoEnds();
-
-        // Iterate through the allLanyardTypes and create oneTwoEnds elements
-        for (var i = 0; i < data["allLanyardTypes"].length; i++) {
-          oneTwoEndsClass.createOneTwoEnds(data["allLanyardTypes"][i], i);
-        }
-
-        // Display the selected "one" or "two" ends
-        oneTwoEndsClass.showSelectedOneTwoEnds();
-
-        // Show the selected preview template
+        oneTwoEndsClass.setJsonLanyardType(data["allLanyardTypes"]);
+        oneTwoEndsClass.selectOneTwoEnds();
         previewLanyardType.showSelectedPreviewtTemplate();
 
-        // Clean the width options
-        widthClass.cleanWidth();
 
-        // Iterate through the allWidth and create width elements
-        for (var i = 0; i < data["allWidth"].length; i++) {
-          widthClass.createWidth(data["allWidth"][i], i);
-        }
+        widthClass.setJsonWidth(data["allWidth"]);
+        widthClass.selectWidth();
 
-        // Update the price based on the width
-        widthClass.updatePriceWidth();
 
-        // Show the selected width
-        widthClass.showSelectedWidth();
-
-        // Set the selected print side option based on the data provided
         sidePrintedClass.setSidePrintedSelected(data["sidePrintedSelected"]);
-
-        // Set the number of colors selected for the lanyard customization
-        customizeLanyard.setNoColours(data["noColourSelected"]);
+        sidePrintedClass.selectSidePrinted();
 
 
+        clipClass.selectClip();
+
+
+        // Attachment
+
+        colourClass.setColourSelected(data["noColourSelected"]);
         colourClass.createColour();
+        colourClass.showSelectedColour();
+
         previewColourClass.showSelectedPreviewtColour();
         previewColourClass.showColourPreview("none");
 
-
-
-
-        var sidePrintedSelected = sidePrintedClass.getSidePrintedSelected();
-
-        if (sidePrintedSelected == "one-side") {
-          colourClass.setColourSelected("one-colour");
-
-        }
-
-        else if (sidePrintedSelected == "two-side") {
-          colourClass.setColourSelected("full-colour");
-
-        }
-
-
-        colourClass.showSelectedColour();
-
-
-
-
-      })
+  })
       .catch(error => {
         // Log any errors to the console
         console.error("Error:", error);

@@ -18,6 +18,7 @@ class Width {
  }
 
   createWidth(data, index){
+
     containersBoxesWidth.innerHTML +=
         '<div class="container_boxes_width"   onclick="widthClass.searchDataWidthSelected(\'' + data['width']  + '\', \' '+ index +'  \');">'+
           '<img src="../../'+data["imgLink"]+'" alt="">'+
@@ -26,6 +27,25 @@ class Width {
         '</div>'
     ;
   }
+
+  selectWidth(){
+    var data = this.getJsonWidth();
+    // Clean the width options
+    widthClass.cleanWidth();
+
+    // Iterate through the allWidth and create width elements
+    for (var i = 0; i < data.length; i++) {
+      widthClass.createWidth(data[i], i);
+    }
+
+    // Update the price based on the width
+    widthClass.updatePriceWidth();
+
+    // Show the selected width
+    widthClass.showSelectedWidth();
+
+  }
+
   searchDataWidthSelected(width, index) {
 
     // Set the selected material.
@@ -79,7 +99,7 @@ class Width {
     // Get the selected values for material, side printed, color, and amount
     var materialSelected = material.getMaterialSelected();
     var sidePrintedSelected = sidePrintedClass.getSidePrintedSelected();
-    var noColourSelected = customizeLanyard.getNoColours();
+    var noColourSelected = colourClass.getColourSelected();
     var amountSelected = priceClass.getAmountSelected();
 
     let priceDataWidthResult = [];

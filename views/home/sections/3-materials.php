@@ -1,5 +1,5 @@
 <section class="materials">
-  <h1>2. Get Selected on your lanyard by selecting the material you desire!</h1>
+  <h1>Choose your lanyard material bellow</h1>
 
 
   <div class="containerMaterials">

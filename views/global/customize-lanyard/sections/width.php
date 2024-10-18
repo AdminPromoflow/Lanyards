@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="../../views/assets/css/global/customize-lanyard/sections/width.css">
+
 <section class="width section">
   <h2 class="name-section-customize-lanyard">Width</h2>
   <br>
@@ -26,8 +27,6 @@
       <img src="../../views/assets/img/global/customize-lanyard/sections/width/one-end/one-end-30mm.png" alt="">
     </div>-->
   </div>
-
-
 </section>
 
 

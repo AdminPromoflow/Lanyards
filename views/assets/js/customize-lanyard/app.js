@@ -249,6 +249,17 @@ class CustomizeLanyard {
       //alert("Seleccionaste Artwork")
     }
    }
+   else if (this.currentSectionOpen == 13) {
+
+     if (artworkManualClass.getArtworkManual() == "manual"){
+       //this.openText();
+    this.openProvidedInformation();
+  //  artworkManualClass.containerBoxesArtworkManual();
+    }
+    else {
+      //alert("Seleccionaste Artwork")
+    }
+   }
   }
 
   // Métodos adicionales según sea necesario
@@ -345,8 +356,14 @@ class CustomizeLanyard {
 
     classPreviewLogin.showLoginPreview("flex");
     previewLanyardType.showTypeLanyardPreview("none");
-    this.showNext(false);
+  //  this.showNext(false);
   //  this.showPreview(false);
+  }
+  openProvidedInformation(){
+    customizeLanyard.showCurrentSection(14);
+
+  //  classPreviewLogin.showLoginPreview("none");
+    //previewLanyardType.showTypeLanyardPreview("none");
   }
   setStateVisibilityPanelCustomeLanyard(value) {
     stateVisibilityPanelCustomeLanyard = value;
@@ -356,13 +373,7 @@ class CustomizeLanyard {
     return stateVisibilityPanelCustomeLanyard;
   }
 
-  setNoColours(value) {
-    this.noColours = value;
-  }
-
-  getNoColours() {
-    return this.noColours;
-  }
+  
   showNext(active){
       if (active) {
           next.style.display = "block";

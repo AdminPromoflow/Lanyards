@@ -58,6 +58,7 @@
       <?php include "../../views/global/customize-lanyard/sections/image.php"?>
       <?php include "../../views/global/customize-lanyard/sections/artwork-final.php" ?>
       <?php include "../../views/global/customize-lanyard/sections/login.php" ?>
+      <?php include "../../views/global/customize-lanyard/sections/provided_information.php" ?>
 
 
       <div class="container_buttons_next_preview">

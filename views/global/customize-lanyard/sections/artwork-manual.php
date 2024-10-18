@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../../views/assets/css/global/customize-lanyard/sections/artwork-manual.css">
-<section class="artwork-manual section active" id="artworkManual">
+<section class="artwork-manual section" id="artworkManual">
   <h2 class="name-section-customize-lanyard">Artwork - Manual</h2>
   <br>
   <p>Select the type of printed on the lanyard</p>
