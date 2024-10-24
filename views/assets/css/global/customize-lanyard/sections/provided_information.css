@@ -123,3 +123,27 @@
   font-size: 0.8em;
   margin: 8px 12px;
 }
+
+
+
+
+#map {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 500px;
+   width: 90%;
+ }
+#search-box { width: 80%; padding: 10px; margin-top: 10px; }
+#result-list {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  padding: 0;
+  margin-top: 0px;
+  background: white;
+  width: 90%;
+}
+#result-list li { cursor: pointer; padding: 5px; border:21px solid #ccc; margin-bottom: 5px; }
+#result-list li:hover { background-color: rgba(0,0,0,.2); }

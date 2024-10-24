@@ -30,8 +30,8 @@
       <?php include "../../views/global/customize-lanyard/sections2/preview-image.php"?>
       <?php include "../../views/global/customize-lanyard/sections2/preview-artwork-final.php" ?>
       <?php include "../../views/global/customize-lanyard/sections2/preview-login.php" ?>
-
-
+      <?php include "../../views/global/customize-lanyard/sections2/preview-provided_information.php" ?>
+      
     </div>
 
     <div id="options-customize-lanyard" class="options-customize-lanyard">

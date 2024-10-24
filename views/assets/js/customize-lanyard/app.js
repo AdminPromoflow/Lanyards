@@ -17,9 +17,7 @@ class CustomizeLanyard {
   // Make an AJAX request to fetch all materials.
   material.makeAjaxRequestGetAllMaterials(url, data);
   }
-  example(){
-    alert("Entramos");
-  }
+
   getLanyardsActive(){
     var lanyardActive;
 
@@ -360,7 +358,10 @@ class CustomizeLanyard {
   //  this.showPreview(false);
   }
   openProvidedInformation(){
+    classPreviewLogin.showLoginPreview("none");
     customizeLanyard.showCurrentSection(14);
+    previewProvidedInformation.showProvidedInformationPreview('flex');
+
 
   //  classPreviewLogin.showLoginPreview("none");
     //previewLanyardType.showTypeLanyardPreview("none");
@@ -373,7 +374,7 @@ class CustomizeLanyard {
     return stateVisibilityPanelCustomeLanyard;
   }
 
-  
+
   showNext(active){
       if (active) {
           next.style.display = "block";
