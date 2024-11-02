@@ -7,11 +7,21 @@
   <p>Please add or update the information you have provided.</p>
   <br>
   <div id="containers_boxes_provided_information" class="containers_boxes_provided_information">
+    <label for="search-box">Delivery address</label>
     <input id="search-box" type="text" placeholder="Search an address">
     <ul id="result-list"></ul>
-
-
-
+    <br><br>
+    <label for="">Postcode</label>
+    <br>
+     <input id="postcode" type="text" name="" value="">
+     <br><br>
+     <label for="country">Country</label>
+     <br>
+      <input id="country" type="text" name="" value="">
+      <br><br>
+      <label for="region">Region</label>
+      <br>
+       <input id="region" type="text" name="" value="">
 
   </div>
 </section>

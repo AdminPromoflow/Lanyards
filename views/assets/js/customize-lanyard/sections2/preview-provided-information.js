@@ -4,7 +4,7 @@ class PreviewProvidedInformation {
   showProvidedInformationPreview(action){
     const previewProvidedInformationContainer = document.getElementById("preview-provided-information-container");
 
-    alert('ahah');
+     
     previewProvidedInformationContainer.style.display = action;
   }
 }

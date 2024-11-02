@@ -2,6 +2,9 @@
   <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
   <section  class="preview-provided-information-container" id="preview-provided-information-container">
+    <h2>Location</h2>
+    <br>
+
     <div id="map"></div>
 
   </section>

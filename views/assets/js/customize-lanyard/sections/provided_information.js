@@ -1,15 +1,25 @@
 class ProvidedInformation {
   constructor() {
     mapboxgl.accessToken = 'pk.eyJ1IjoiaWFuc291dGhlcm4iLCJhIjoiY20ybWowdnRlMHBmcjJqcTljaDdhYXV6diJ9.UK4tRTqDkO6yYffa-LIyWw';  // Reemplaza con tu token de Mapbox
+    const postcodeHTML = document.getElementById('postcode');
+    const countryHTML = document.getElementById('country');
+    const regionHTML = document.getElementById('region');
+
+
+
 
     const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
-        center: [ -4.041201572157277 , 50.39614566225547], 
+        center: [ -4.041201572157277 , 50.39614566225547],
         zoom: 12
     });
 
     let marker;  // Variable para almacenar el marcador
+    let postcode ='';
+    let country = '';   // Variable to store the country
+    let region = '';    // Variable to store the state/region
+
 
     const searchBox = document.getElementById('search-box');
     const resultList = document.getElementById('result-list');
@@ -48,6 +58,13 @@ class ProvidedInformation {
                                 essential: true  // Esto asegura que la animación ocurra
                             });
 
+                            postcode = feature.context.find(c => c.id.startsWith('postcode'))?.text || 'No disponible';
+                            country = feature.context.find(c => c.id.startsWith('country'))?.text || 'Not available';
+                            region = feature.context.find(c => c.id.startsWith('region'))?.text || 'Not available';
+
+                            postcodeHTML.value = postcode;
+                            countryHTML.value = country;
+                            regionHTML.value = region;
                             // Ocultar la lista de resultados después de seleccionar uno
                             resultList.innerHTML = '';
                         });

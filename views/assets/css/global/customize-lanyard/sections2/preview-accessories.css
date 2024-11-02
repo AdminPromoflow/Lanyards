@@ -1,0 +1,17 @@
+.previewAccessories{
+  display: block;
+}
+.accessories_clear_plastic_closed_face{
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25%;
+  height: auto;
+  display: none;
+}
+.accessories_clear_plastic_closed_face img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}

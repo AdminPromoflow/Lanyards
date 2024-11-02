@@ -75,7 +75,6 @@
   cursor: pointer;
 }
 
-/*
 .containers_boxes_provided_information::-webkit-scrollbar {
     width: 13px;
 }
@@ -93,7 +92,7 @@
 
 .containers_boxes_provided_information::-webkit-scrollbar-thumb:hover {
     background: #132735;
-}*/
+}
 
 .container_boxes_provided_information{
   position: relative;
@@ -133,6 +132,7 @@
   transform: translateX(-50%);
   height: 500px;
    width: 90%;
+   border-radius: 10px;
  }
 #search-box { width: 80%; padding: 10px; margin-top: 10px; }
 #result-list {

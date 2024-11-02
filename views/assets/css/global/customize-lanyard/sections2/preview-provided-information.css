@@ -24,6 +24,12 @@
   text-shadow: 2px 2px 0 black;
   background-color: rgba(0, 0, 0, .1);
 }
+.preview-provided-information-container h2{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
 .img-preview-provided-information{
   position: relative;
   height: 30%;
