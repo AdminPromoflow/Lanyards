@@ -93,12 +93,11 @@
   height: 85%;
   margin: 0 5px;
   width: auto;
-
 }
 .container_boxes_accessories h3{
   position: relative;
   margin: 0;
-  width: 35%;
+  width: 80%;
   text-align: left;
   color: white;
   font-weight: 300;
@@ -112,7 +111,34 @@
   font-weight: 300;
   font-size: 0.8em;
 }
+.arrow_accessories{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 15px;
+  right: 15%;
+}
+.arrow_accessories img:hover{
+  filter: drop-shadow(2px 2px 3px black);
 
+}
+.arrow_accessories img:active{
+  filter: drop-shadow(1px 1px 2px black);
+
+}
+
+.arrow_accessories   img{
+  position: relative;
+  height: 100%;
+  width: 100;
+
+  filter: drop-shadow(1px 1px 2px black);
+  transition: 1.4s;
+}
+.hideArrowAccessories{
+  visibility: hidden;
+}
 .subcontainers_boxes_accessories{
   position: relative;
   width: 100%;
@@ -134,7 +160,7 @@
   cursor: pointer;
   margin: 3px 0px;
 
-  background: rgb(49,77,115);
+  background: rgb(72,102,138);
 
   display: flex;
   justify-content: space-between;
@@ -169,4 +195,16 @@
   color: white;
   font-weight: 300;
   font-size: 0.8em;
+}
+
+
+
+
+
+
+.plastic_wallet_small img{
+  height: 80%;
+}
+.plastic_wallet_medium img{
+  height: 90%;
 }

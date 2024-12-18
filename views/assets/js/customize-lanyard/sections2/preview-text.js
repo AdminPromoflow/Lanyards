@@ -5,7 +5,8 @@ class PreviewTextClass {
     this.fontFamily = "Arial, sans-serif";
 
   }
-  repeatText(repeat) {
+  repeatText() {
+    
     //  const textContainer = document.querySelectorAll(".text-container");
     var textContainer;
 
@@ -85,13 +86,13 @@ class PreviewTextClass {
 
     //  const textContainer = customizeLanyard.getLanyardsActive();
 
-      if (repeat) {
+
 
           textContainer.forEach(container => {
               container.innerHTML = "";
           });
 
-          for (let i = 0; i < 30; i++) {
+          for (let i = 0; i < textClass.getRepeatText(); i++) {
               textContainer.forEach(container => {
                 //  container.innerHTML += "<h3 class='textContent'>"+previewTextClass.getTextContent()+"</h3>";
                    container.innerHTML += "<h3 class='textContent' style='color:" + previewTextClass.getTextColour() + " ; '>" + previewTextClass.getTextContent() + "</h3>" +
@@ -100,18 +101,7 @@ class PreviewTextClass {
 
               });
           }
-      } else {
 
-
-          textContainer.forEach(container => {
-            container.innerHTML = "";
-
-                //  container.innerHTML = "<h3 class='textContent'>"+previewTextClass.getTextContent()+"</h3>";
-                container.innerHTML += "<h3 class='textContent' style='color:" + previewTextClass.getTextColour() + " ; '>" + previewTextClass.getTextContent() + "</h3>" +
-                "<div class='imageContent'></div>" ;
-
-          });   
-      }
   }
 
   addModifyText(value){

@@ -50,7 +50,6 @@ class Width {
 
     // Set the selected material.
     this.setWidthSelected(width);
-    artworkClass.changeWidthRightPanel();
 
     //artworkPreviewClass.changeAllSettingsWidth();
 
@@ -89,6 +88,7 @@ class Width {
     }
 
     sidePrintedClass.updatePriceSidePrinted();
+  //  artworkClass.changeWidthRightPanel();
 
   }
 

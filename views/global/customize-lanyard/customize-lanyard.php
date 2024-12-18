@@ -26,12 +26,12 @@
       <?php include "../../views/global/customize-lanyard/sections2/preview-text.php"?>
 
 
-      <?php //include "../../views/global/customize-lanyard/sections2/preview-amount.php"?>
       <?php include "../../views/global/customize-lanyard/sections2/preview-artwork.php"?>
       <?php include "../../views/global/customize-lanyard/sections2/preview-image.php"?>
       <?php include "../../views/global/customize-lanyard/sections2/preview-artwork-final.php" ?>
       <?php include "../../views/global/customize-lanyard/sections2/preview-login.php" ?>
       <?php include "../../views/global/customize-lanyard/sections2/preview-provided_information.php" ?>
+      <?php include "../../views/global/customize-lanyard/sections2/preview-checkout.php" ?>
 
     </div>
 
@@ -61,6 +61,9 @@
       <?php include "../../views/global/customize-lanyard/sections/artwork-final.php" ?>
       <?php include "../../views/global/customize-lanyard/sections/login.php" ?>
       <?php include "../../views/global/customize-lanyard/sections/provided_information.php" ?>
+      <?php include "../../views/global/customize-lanyard/sections/checkout.php" ?>
+
+
 
 
       <div class="container_buttons_next_preview">

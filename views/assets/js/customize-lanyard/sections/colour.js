@@ -7,9 +7,9 @@ class ColourClass {
   setColourSelected(value) {
       this.colourSelected = value;
   }
-  
+
   // Getter method for the colourSelected property
-  getColourSelected() {
+  getColourSelected() {  
       return this.colourSelected;
   }
   createColour(){

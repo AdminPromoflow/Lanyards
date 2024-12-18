@@ -15,7 +15,7 @@
   flex-direction: column;
 }
 .text h2{
-  position: relative; 
+  position: relative;
   text-align: center;
   width: 100%;
   font-weight: 400;
@@ -108,7 +108,8 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  font-weight: 200;
+  font-weight: 500;
+  font-size: 1em;
   color: rgba(255, 255, 255, .8);
 }
 .containr-styling-text, .containr-size-text, .containr-space-between-text, .container-position-text{

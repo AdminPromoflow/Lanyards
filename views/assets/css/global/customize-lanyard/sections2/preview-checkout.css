@@ -1,0 +1,120 @@
+.preview-checkout-container {
+  position: relative;
+  width: 90%;
+  height: 80%;
+  padding: 15px 0;
+
+  background-color: rgba(0, 0, 0, .12);
+  box-shadow: 0px 0px 2px black;
+
+  display: none;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.preview_checkout{
+  position: relative;
+  width: 98%;
+  height: 50px;
+  background-color: rgba(48, 79, 112, 1);
+  padding: 5px 10px;
+  margin: 5px 0;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+  border: 2px solid transparent;
+}
+.preview_checkout:nth-child(1){
+  border: 2px solid white;
+}
+.preview_checkout:active{
+  border: 2px solid white;
+}
+.preview_checkout img{
+  position: relative;
+  height: 85%;
+  margin: 0 5px;
+  width: auto;
+}
+.preview_checkout h3{
+  position: relative;
+  margin: 0;
+  width: 80%;
+  text-align: left;
+  color: white;
+  font-weight: 300;
+  font-size: 1em;
+}
+.preview_checkout h4{
+  position: relative;
+  margin: 0;
+  text-align: right;
+  color: white;
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+
+
+.subcontainers_boxes_preview_checkout{
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+
+.subcontainer_boxes_preview_checkout{
+  position: relative;
+  width: 98%;
+  height: 50px;
+
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 3px 0px;
+
+  background: rgb(72,102,138);
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+  border: 1px solid transparent;
+}
+
+
+
+
+.subcontainers_boxes_preview_checkout img{
+  position: relative;
+  height: 100%;
+  margin: 0 5px;
+  width: auto;
+}
+.subcontainers_boxes_preview_checkout h3{
+  position: relative;
+  margin: 0;
+  width: 35%;
+  text-align: left;
+  color: white;
+  font-weight: 300;
+  font-size: 1em;
+}
+.subcontainers_boxes_preview_checkout h4{
+  position: relative;
+  margin: 0;
+  text-align: right;
+  color: white;
+  font-weight: 300;
+  font-size: 0.8em;
+}

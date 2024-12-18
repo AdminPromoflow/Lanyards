@@ -97,7 +97,7 @@ class SidePrinted {
       var json = customizeLanyard.getJsonLanyards();
       var materialSelected = material.getMaterialSelected();
       var widthSelected = widthClass.getWidthSelected();
-      var noColourSelected = customizeLanyard.getNoColours();
+      var noColourSelected = colourClass.getColourSelected();
       var amountSelected = priceClass.getAmountSelected();
 
       let priceDataSidePrintedResult = [];
@@ -219,7 +219,7 @@ class SidePrinted {
             let result = number.toFixed(2);
             priceClass.setPriceSidePrinted(result); // Displays the positive float number with two decimals.
             priceClass.changePricePerLanyard();
-            artworkClass.hideShowOneOrTwoSidesPrinted();
+            //artworkClass.hideShowOneOrTwoSidesPrinted();
             artworkPreviewClass.hideShowOneOrTwoSidesPrinted()
 
 

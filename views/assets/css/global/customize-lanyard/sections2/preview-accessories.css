@@ -6,7 +6,6 @@
   top: 77%;
   left: 50%;
   transform: translateX(-50%);
-  width: 25%;
   height: auto;
   display: none;
 }
@@ -14,4 +13,21 @@
   position: relative;
   height: 100%;
   width: 100%;
+}
+.small_accessory{
+  width: 21%;
+
+}
+.medium_accessory{
+  width: 23%;
+
+}
+.big_accessory{
+  width: 25%;
+}
+.small_accessory_other{
+  width: 10%;
+}
+.medium_accessory_other{
+  width: 20%;
 }

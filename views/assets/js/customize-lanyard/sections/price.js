@@ -11,10 +11,11 @@ class Price {
     this.priceClip = 0;
     this.priceAttachment = 0;
     this.priceColour = 0;
+    this.priceAccessory = 0;
 
-    this.amountSelected = 900;
-    amountLanyardsRange.value = 900;
-    amountLanyards.value = 900;
+    this.amountSelected = 1000;
+    amountLanyardsRange.value = 1000;
+    amountLanyards.value = 1000;
 
 
 
@@ -124,7 +125,15 @@ class Price {
     this.amountSelected = value;
   }
 
+  // Setter method for price per accessory.
+  setPriceAccessory(price){
+    this.priceAccessory = price;
+  }
 
+  // Getter method for price per accessory.
+  getPriceAccessory(){
+    return parseFloat(this.priceAccessory);
+  }
 
   // Method to change price per lanyard.
   changePricePerLanyard() {
@@ -132,7 +141,8 @@ class Price {
     var totalPrice = priceClass.getPricePerMaterialWithAmount() +
      priceClass.getPriceLanyardType() + priceClass.getPriceWidth()
      +  priceClass.getPriceSidePrinted() + priceClass.getPriceClip()
-     + priceClass.getPriceAttachment() + priceClass.getPriceColour();
+     + priceClass.getPriceAttachment() + priceClass.getPriceColour()
+     + priceClass.getPriceAccessory();
     // Update the inner HTML of pricePerLanyard element to display the price with currency symbol.
     pricePerLanyard.innerHTML = "£" + totalPrice.toFixed(2);
   }

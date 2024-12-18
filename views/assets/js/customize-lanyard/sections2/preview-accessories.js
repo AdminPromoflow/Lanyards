@@ -8,10 +8,18 @@ class PreviewAccessoriesClass {
   }
 
   showAccessoryOnThePreviewPanel(index){
+
     for (var i = 0; i < accessories_clear_plastic_closed_face.length; i++) {
       accessories_clear_plastic_closed_face[i].style.display = "none";
     }
-    accessories_clear_plastic_closed_face[index].style.display = "block";
+    if (index == null) {
+
+    }
+    else {
+      accessories_clear_plastic_closed_face[index].style.display = "block";
+
+    }
+
   }
 
 }

@@ -117,7 +117,6 @@ class Artwork {
    else {
      sidePrintedDisplay = "none";
    }
-
    for (var i = 0; i < artworkBackSide.length; i++) {
      artworkBackSide[i].style.display = sidePrintedDisplay;
    }

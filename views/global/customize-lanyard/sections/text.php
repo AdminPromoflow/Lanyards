@@ -8,15 +8,15 @@
         <input id="textInput" type="text" name="" value="">
       </div>
       <div class="item-text">
-        <p>Do you want to repeat text?</p>
+        <p id="label-repeat-text">Repeat text 1 times</p>
         <div class="containr-repeat-text">
           <div class="repeat-text-box">
-            <h3>Yes</h3>
+          <h3>-</h3>
           </div>
           <div class="repeat-text-box">
-            <h3>No</h3>
+            <h3>+</h3>
           </div>
-        </div> 
+        </div>
       </div>
       <div class="item-text">
         <p>Select the Pantone reference below.</p>

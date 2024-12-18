@@ -8,6 +8,7 @@ class TextClass {
 
     this.contentText = "";
     this.repeatText = false;
+    this.repeatText = 1;
     this.colourText = "#000000";
     this.fontSizeText = "16px";
     this.boldText = false;
@@ -16,27 +17,36 @@ class TextClass {
     this.sizeText = "medium";
     this.spacingBetweenText = "normal";
 
-    repeatTextBox[repeatTextBoxSelected].style.border = "2px solid white";
-    previewTextClass.repeatText(true);
+    const labelRepeatText = document.getElementById("label-repeat-text");
+
+    labelRepeatText.textContent = "Repeat text " +  this.getRepeatText() + "times";
+
+    //repeatTextBox[repeatTextBoxSelected].style.border = "2px solid white";
+    //previewTextClass.repeatText(true);
 
     for (let i = 0; i < repeatTextBox.length; i++) {
       repeatTextBox[i].addEventListener("click", function(){
-
          const h3Element = repeatTextBox[i].querySelector('h3').innerHTML+"";
 
          repeatTextBoxSelected = i;
 
-         for (var j = 0; j < repeatTextBox.length; j++) {
+         /*for (var j = 0; j < repeatTextBox.length; j++) {
            repeatTextBox[j].style.border = "2px solid transparent";
          }
          repeatTextBox[repeatTextBoxSelected].style.border = "2px solid white";
-
-         if (h3Element == "Yes") {
-           previewTextClass.repeatText(true);
+          */
+         if (h3Element == "+") {
+           textClass.setRepeatText(textClass.getRepeatText() + 1);
+           previewTextClass.repeatText();
          }
          else {
-           previewTextClass.repeatText(false);
+           textClass.setRepeatText(textClass.getRepeatText() - 1);
+
+           previewTextClass.repeatText();
          }
+        // alert(textClass.getRepeatText());
+
+        labelRepeatText.textContent = "Repeat text " +  textClass.getRepeatText() + "times";
       })
     }
 
@@ -323,7 +333,12 @@ class TextClass {
   setSpacingBetweenText(value) {
     this.spacingBetweenText = value;
   }
-
+  setRepeatText(value){
+    this.repeatText = value;
+  }
+  getRepeatText(){
+     return this.repeatText ;
+  }
   handleClickText(name, colour){
 
       previewTextClass.changeColour(colour);

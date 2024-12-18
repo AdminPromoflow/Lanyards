@@ -47,8 +47,6 @@ class CustomizeLanyard {
       //alert("hola");
     }
 
-
-
     else if (lanyardType == 'two-end' && width == '10mm') {
       lanyardActive = document.querySelectorAll('.draw-ts-10mm');
       //alert("hola");
@@ -69,8 +67,6 @@ class CustomizeLanyard {
       lanyardActive = document.querySelectorAll('.draw-ts-30mm');
       //alert("hola");
     }
-
-
     else if (lanyardType == 'one-end' && width == '10mm' && attachment != 'none') {
      lanyardActive = document.querySelectorAll('.draw-os-wa-10mm');
       //alert("hola");
@@ -261,10 +257,22 @@ class CustomizeLanyard {
       //alert("Seleccionaste Artwork")
     }
    }
+   else if (this.currentSectionOpen == 15) {
+
+     if (artworkManualClass.getArtworkManual() == "manual"){
+       //this.openText();
+    this.openCheckout();
+  //  artworkManualClass.containerBoxesArtworkManual();
+    }
+    else {
+      //alert("Seleccionaste Artwork")
+    }
+   }
   }
 
   // Métodos adicionales según sea necesario
    openMaterial(){
+     previewAccessoriesClass.showAccessoriesPreview("none");
 
      previewMaterial.showMaterialPreview("flex");
      previewLanyardType.showTypeLanyardPreview("none");
@@ -275,6 +283,8 @@ class CustomizeLanyard {
      preview.style.display = "none";
    }
    openLanyardType(){
+     previewAccessoriesClass.showAccessoriesPreview("flex");
+
      previewMaterial.showMaterialPreview("none");
      previewLanyardType.showTypeLanyardPreview("flex");
      previewLanyardType.showSelectedPreviewtTemplate();
@@ -298,10 +308,15 @@ class CustomizeLanyard {
      previewLanyardType.showSelectedPreviewtTemplate();
      previewColourClass.showColourPreview("none");
      previewAccessoriesClass.showAccessoriesPreview("none");
+     previewAccessoriesClass.showAccessoriesPreview("flex");
+
      customizeLanyard.showCurrentSection(this.currentSectionOpen);
    }
    openAccessories(){
      this.showCurrentSection(this.currentSectionOpen);
+     previewLanyardType.showTypeLanyardPreview("flex");
+     previewColourClass.showColourPreview("none");
+
      previewAccessoriesClass.showAccessoriesPreview("flex");
    }
    openColourQuantity(){
@@ -312,15 +327,14 @@ class CustomizeLanyard {
      customizeLanyard.showCurrentSection(this.currentSectionOpen);
    }
    openArtWorkManual(){
+     previewAccessoriesClass.showAccessoriesPreview("none");
+
      previewColourClass.showColourPreview("none");
      previewArtworkManualClass.showArtworkManualPreview("flex");
      previewLanyardType.showTypeLanyardPreview("none");
      artworkPreviewClass.showHidePreviewArtwork(false);
-
-
      customizeLanyard.showCurrentSection(this.currentSectionOpen);
    }
-
   openBackgroundColour() {
     previewAccessoriesClass.showAccessoriesPreview("flex");
 
@@ -348,28 +362,36 @@ class CustomizeLanyard {
   }
 
   openArtworkFinal(){
+    previewAccessoriesClass.showAccessoriesPreview("flex");
     artworkPreviewClass.showHidePreviewArtwork(false);
     previewLanyardType.showTypeLanyardPreview("flex");
     classPreviewLogin.showLoginPreview("none");
     customizeLanyard.showCurrentSection(this.currentSectionOpen);
+    classRegister.openRegister(false);
   }
 
   openLogin(){
     previewAccessoriesClass.showAccessoriesPreview("none");
-
     classPreviewLogin.showLoginPreview("flex");
     previewLanyardType.showTypeLanyardPreview("none");
     previewProvidedInformation.showProvidedInformationPreview('none');
     customizeLanyard.showCurrentSection(this.currentSectionOpen);
-    this.showNext(true);
-  //  this.showPreview(false);
   }
 
   openProvidedInformation(){
     classPreviewLogin.showLoginPreview("none");
+    previewCheckout.showPreviewCheckout("none");
     previewProvidedInformation.showProvidedInformationPreview('flex');
     customizeLanyard.showCurrentSection(this.currentSectionOpen);
+    this.showNext(true);
+  }
+  openCheckout(){
     this.showNext(false);
+    previewLanyardType.showTypeLanyardPreview("none");
+    previewProvidedInformation.showProvidedInformationPreview('none');
+    customizeLanyard.showCurrentSection(this.currentSectionOpen);
+    previewCheckout.showPreviewCheckout("flex");
+
   }
   setStateVisibilityPanelCustomeLanyard(value) {
     stateVisibilityPanelCustomeLanyard = value;
