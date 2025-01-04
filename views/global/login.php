@@ -19,6 +19,7 @@
           <img src="../../views/assets/img/global/login/google-icon.png" alt="">
         </div>
         <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+        <h3>Tan raro</h3>
         </fb:login-button>
         <div id="loginWithFacebook1" class="footerLoginOptions">
           <img src="../../views/assets/img/global/login/facebook-icon.png" alt="">
