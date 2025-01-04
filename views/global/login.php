@@ -18,9 +18,16 @@
         <div id="loginWithGoogle1" class="footerLoginOptions">
           <img src="../../views/assets/img/global/login/google-icon.png" alt="">
         </div>
-        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-        <h3>Tan raro</h3>
-        </fb:login-button>
+        <!-- The JS SDK Login Button -->
+
+      <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+      </fb:login-button>
+
+      <div id="status">
+      </div>
+
+      <!-- Load the JS SDK asynchronously -->
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
         <div id="loginWithFacebook1" class="footerLoginOptions">
           <img src="../../views/assets/img/global/login/facebook-icon.png" alt="">
         </div>
@@ -55,10 +62,10 @@
 
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '{app-id}',
+      appId      : '615665997605768',
       cookie     : true,                     // Enable cookies to allow the server to access the session.
       xfbml      : true,                     // Parse social plugins on this webpage.
-      version    : '{api-version}'           // Use this Graph API version for this call.
+      version    : 'v6.0'           // Use this Graph API version for this call.
     });
 
 
