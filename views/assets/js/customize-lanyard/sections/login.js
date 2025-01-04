@@ -25,6 +25,16 @@ class Classlogin2 {
         loginClass.makeAjaxRequestLogin(url, data);
       }
     });
+
+    loginWithGoogle2.addEventListener("click", function(){
+    })
+
+    loginWithFacebook2.addEventListener("click", function(){
+    })
+
+    loginWithApple2.addEventListener("click", function(){
+    })
+
   }
 
   // Method to show or hide the login form
@@ -64,6 +74,11 @@ class Classlogin2 {
 
 // DOM elements for login and registration forms
 const login2 = document.getElementById("login2");
+
+const loginWithGoogle2 = document.getElementById("loginWithGoogle2");
+const loginWithFacebook2 = document.getElementById("loginWithFacebook2");
+const loginWithApple2 = document.getElementById("loginWithApple2");
+
 const enterLogin2 = document.getElementById("enterLogin2");
 const login2Password = document.getElementById("login2Password");
 const login2Email = document.getElementById("login2Email");

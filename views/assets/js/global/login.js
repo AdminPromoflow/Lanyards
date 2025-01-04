@@ -1,6 +1,17 @@
 // Define a class called "Login"
 class Login {
   constructor() {
+
+
+    // Define the URL and the JSON data you want to send
+    const url = "../../controller/users/login-google.php";
+    const data = {
+      action: "loginGoogleSecondPart"      };
+
+    // Make the AJAX request
+    this.makeAjaxRequestLoginWithGoogleSecondPart(url, data);
+
+
     // Event listener to close the login form
     closeLogin.addEventListener("click", function () {
       // Call the closeLogin method of the Login class
@@ -12,6 +23,25 @@ class Login {
       // Hide the register form with a sliding animation
       registerClass.hideRegister(700);
     });
+
+
+    loginWithGoogle1.addEventListener("click", function(){
+
+      // Define the URL and the JSON data you want to send
+      const url = "../../controller/users/login-google.php";
+      const data = {
+        action: "loginGoogle"      };
+
+      // Make the AJAX request
+      loginClass.makeAjaxRequestLoginWithGoogle(url, data);
+    })
+
+    loginWithFacebook1.addEventListener("click", function(){
+    })
+
+    loginWithApple1.addEventListener("click", function(){
+    })
+
 
     // Event listener to open the login form from the register screen
     openLoginFromRegister.addEventListener("click", function () {
@@ -40,6 +70,57 @@ class Login {
       }
     });
   }
+
+
+  // Function to make the AJAX request
+  makeAjaxRequestLoginWithGoogle(url, data) {
+      // Construct the URL with query parameters
+      const queryParams = new URLSearchParams(data).toString();
+      const fullUrl = `${url}?${queryParams}`; // Append the query parameters to the URL
+
+      // Make the request using the Fetch API
+      fetch(fullUrl, {
+        method: "GET" // HTTP GET method to send data in the URL
+      })
+        .then(response => {
+          if (response.ok) {
+            return response.text(); // or response.json() if you expect a JSON response
+          }
+          throw new Error("Network error.");
+        })
+        .then(data => {
+          //alert(data);
+          window.location.href = data;
+        })
+        .catch(error => {
+          console.error("Error:", error);
+        });
+  }
+  makeAjaxRequestLoginWithGoogleSecondPart(url, data) {
+      // Construct the URL with query parameters
+      const queryParams = new URLSearchParams(data).toString();
+      const fullUrl = `${url}?${queryParams}`; // Append the query parameters to the URL
+
+      // Make the request using the Fetch API
+      fetch(fullUrl, {
+        method: "GET" // HTTP GET method to send data in the URL
+      })
+        .then(response => {
+          if (response.ok) {
+            return response.text(); // or response.json() if you expect a JSON response
+          }
+          throw new Error("Network error.");
+        })
+        .then(data => {
+          alert(data);
+        })
+        .catch(error => {
+          console.error("Error:", error);
+        });
+  }
+
+
+
 
 
   // Function to make the AJAX request
@@ -162,9 +243,14 @@ class Login {
     login.style.zIndex = "13";
     }, time);
   }
+
 }
 
 // Get DOM elements
+const loginWithGoogle1 = document.getElementById("loginWithGoogle1");
+const loginWithFacebook1 = document.getElementById("loginWithFacebook1");
+const loginWithApple1 = document.getElementById("loginWithApple1");
+
 const openLoginFromRegister = document.getElementById("openLoginFromRegister");
 const login = document.getElementById("login");
 const closeLogin = document.getElementById("closeLogin"); // Button to close the login form

@@ -67,24 +67,27 @@
 .headRegister img:active{
   filter: drop-shadow(1px 1px 1px black)  brightness(.8);
 }
-
 .bodyRegister{
   position: absolute;
   top: 80px;
   width: 100%;
-  height: 210px;
-  padding-top: 10px;
+  height: 190px;
 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: rgba(0,0,0,0);
 }
 .bodyRegister label{
+  position: relative;
+  text-align: center;
   color: white;
-  margin-bottom: 3px;
-  font-size: 1em;
+  margin-top: 25px;
+  margin-bottom: 5px;
 
+  font-size: 1.1em;
+  font-weight: 300;
 }
 .bodyRegister input{
   margin-bottom: 6px;
@@ -93,30 +96,45 @@
   font-size: 1em;
   background: rgba(255 , 255 , 255 , .8);
 }
-
-.footerRegister{
-  position: absolute;
-  top: 300px;
-  width: 100%;
-  height: 100px;
-
-  display: flex;
-  justify-content:flex-start;
-  align-items: center;
-  flex-direction: column;
-}
-.footerRegister button{
-  padding: 8px 20px;
+.bodyRegister button{
+  padding: 4px 14px;
   z-index: 10;
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-weight: 200;
   border-radius: 5px;
   color: black;
   background-color: #B3C7BF;
   cursor: pointer;
+  margin-top: 10px;
+}
+.bodyRegister input::placeholder{
+  position: relative;
+  text-align: center;
+  padding: 3px 10px;;
+  font-size: 0.97em;
+  color: rgba(0 , 0 , 0 , .5);
+}
+.footerRegister{
+  position: absolute;
+  top: 270px;
+  width: 100%;
+  height: 130px;
+
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: rgba(0,0,0,.06);
 }
 .fontWeightButtonRegister{
   font-weight: 500;
+}
+.footerRegister h3{
+  color: white;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  font-weight: 300;
 }
 .footerRegister h4{
   margin: 5px;

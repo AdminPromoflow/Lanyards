@@ -41,39 +41,81 @@
   width: 100%;
   height: 90%;
   overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0,0,0,0);
 }
 .containers_boxes_login2 label{
   position: relative;
+  text-align: center;
   color: white;
-  margin: 8px 12px;
-  font-weight: 300;
+  margin-bottom: 10px;
   font-size: 1.1em;
+  font-weight: 300;
 }
 .containers_boxes_login2 input{
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 10px 0;
-  padding: 5px;
-  background: rgba(255, 255, 255, .3);
+  margin-bottom: 15px;
   border-radius: 5px;
+  padding: 3px 10px;;
+  font-size: 1em;
+  background: rgba(255 , 255 , 255 , .8);
+}
+.containers_boxes_login2 h3{
   color: white;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  font-weight: 300;
 }
 .containers_boxes_login2 button{
-  position: relative;
-  padding: 4px 12px;
-  height: 42px;
-  left: 50%;
-  transform: translateX(-50%);
+  padding: 4px 14px;
   z-index: 10;
   font-size: 1.1em;
-  font-weight: 200 !important;
+  font-weight: 200;
   border-radius: 5px;
   color: black;
   background-color: #B3C7BF;
   cursor: pointer;
+  margin-top: 10px;
+}
+.containers_boxes_login2 input::placeholder{
+  position: relative;
+  text-align: center;
+  padding: 3px 10px;;
+  font-size: 0.97em;
+  color: rgba(0 , 0 , 0 , .5);
 }
 
+.login2OptionsContainer{
+  position: relative;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: row;
+}
+.login2Options{
+  position: relative;
+  height: 35px;
+  width: 35px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.login2Options img{
+  position: relative;
+  height: 100%;
+  width: auto;
+  filter: drop-shadow(1px 1px 1px black);
+  transition: filter .4s;
+}
+.login2Options img:hover{
+  filter: drop-shadow(3px 3px 1px black);
+}
+.login2Options img:active{
+  filter: drop-shadow(1px 1px 1px black);
+}
 /*
 .containers_boxes_login2::-webkit-scrollbar {
     width: 13px;

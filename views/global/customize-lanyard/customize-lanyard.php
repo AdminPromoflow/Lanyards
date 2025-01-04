@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="../assets/css/global/customize-lanyard/style.css">
 
-
 <section id="customize-lanyard" class="customize-lanyard">
   <?php //include "../../views/global/customize-lanyard/customize-lanyard.php" ?>
 

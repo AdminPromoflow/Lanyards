@@ -1,7 +1,10 @@
 <?php
+echo ("hi9");exit;
+
 class ApiHandlerLogin {
     // Function to handle incoming requests
     public function handleRequest() {
+      echo json_encode("entramos");exit;
         // Check if a POST request was received
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Get the raw JSON data from the request body
@@ -21,8 +24,6 @@ class ApiHandlerLogin {
                     case "logout":
                         $this->handleLogout($data);
                         break;
-
-
                     default:
                         // Unknown action
                         http_response_code(400); // Bad Request
@@ -70,12 +71,12 @@ class ApiHandlerLogin {
           }
     }
 
-        handleLogout($data){
+    private function handleLogout($data){
           echo "Logan";
-        }
+    }
+
     break;
 }
-
 // Include required files
 require_once '../config/database.php';
 require_once '../../models/users.php';

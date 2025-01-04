@@ -12,7 +12,6 @@
   height: 400px;
   max-height: 90vh;
   overflow-y: scroll;
-
   background: rgba(30,54,81,.7);
   background: linear-gradient(180deg, rgba(30,54,81,.98) 57%, rgba(47,67,90,.98) 100%);
   box-shadow: 0px 0px  29px #1B2737,  -0px -0px  29px #1B2737;
@@ -73,54 +72,98 @@
   position: absolute;
   top: 80px;
   width: 100%;
-  height: 210px;
-  padding-top: 10px;
+  height: 190px;
 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: rgba(0,0,0,0);
 }
 .bodyLogin label{
+  position: relative;
+  text-align: center;
   color: white;
-  margin-bottom: 5px;
-  font-size: 1em;
-
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  font-weight: 300;
 }
 .bodyLogin input{
-  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 15px;
   border-radius: 5px;
   padding: 3px 10px;;
   font-size: 1em;
   background: rgba(255 , 255 , 255 , .8);
 }
-
-.footerLogin{
-  position: absolute;
-  top: 290px;
-  width: 100%;
-  height: 110px;
-
-  display: flex;
-  justify-content:flex-start;
-  align-items: center;
-  flex-direction: column;
-}
-.footerLogin button{
-  padding: 8px 20px;
+.bodyLogin button{
+  padding: 4px 14px;
   z-index: 10;
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-weight: 200;
   border-radius: 5px;
   color: black;
   background-color: #B3C7BF;
   cursor: pointer;
+  margin-top: 10px;
 }
-.fontWeightButtonLogin{
-  font-weight: 500;
+.bodyLogin input::placeholder{
+  position: relative;
+  text-align: center;
+  padding: 3px 10px;;
+  font-size: 0.97em;
+  color: rgba(0 , 0 , 0 , .5);
+}
+
+.footerLogin{
+  position: absolute;
+  top: 270px;
+  width: 100%;
+  height: 130px;
+
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: rgba(0,0,0,.06);
+}
+.footerLogin h3{
+  color: white;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+.footerLoginOptionsContainer{
+  position: relative;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: row;
+}
+.footerLoginOptions{
+  position: relative;
+  height: 35px;
+  width: 35px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.footerLoginOptions img{
+  position: relative;
+  height: 100%;
+  width: auto;
+  filter: drop-shadow(1px 1px 1px black);
+  transition: filter .4s;
+}
+.footerLoginOptions img:hover{
+  filter: drop-shadow(3px 3px 1px black);
+}
+.footerLoginOptions img:active{
+  filter: drop-shadow(1px 1px 1px black);
 }
 .footerLogin h4{
   margin: 10px;
+  margin-bottom: 30px;
   color: rgba(255 , 255 , 255 , .9);
   border-bottom: 1px solid transparent;
 

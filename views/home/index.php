@@ -20,6 +20,8 @@
 
   <link rel="stylesheet" href="../assets/css/global/login.css">
   <link rel="stylesheet" href="../assets/css/global/register.css">
+
+
 </head>
 <body>
   <section>

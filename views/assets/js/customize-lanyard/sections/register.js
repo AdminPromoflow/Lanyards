@@ -29,6 +29,16 @@ class ClassRegister {
         registerClass.makeAjaxRequestRegister(url, data);
       }
     });
+
+
+    registerWithGoogle2.addEventListener("click", function(){
+    })
+
+    registerWithFacebook2.addEventListener("click", function(){
+    })
+
+    registerWithApple2.addEventListener("click", function(){
+    })
   }
 
   // Function to show or hide the register panel based on the action parameter.
@@ -92,6 +102,12 @@ class ClassRegister {
 
 // Get the DOM elements related to registration and login.
 const register2 = document.getElementById("register2");
+
+const registerWithGoogle2 = document.getElementById("registerWithGoogle2");
+const registerWithFacebook2 = document.getElementById("registerWithFacebook2");
+const registerWithApple2 = document.getElementById("registerWithApple2");
+
+
 const openLogin2 = document.getElementById("openLogin2");
 const enterRegister2 = document.getElementById("enterRegister2");
 const register2Name = document.getElementById("register2Name");
