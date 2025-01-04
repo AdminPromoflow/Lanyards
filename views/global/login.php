@@ -15,9 +15,11 @@
     <div class="footerLogin">
       <h3>or login with:</h3>
       <div class="footerLoginOptionsContainer">
-        <div id="loginWithGoogle1" class="footerLoginOptions" onlogin="checkLoginState();">
+        <div id="loginWithGoogle1" class="footerLoginOptions">
           <img src="../../views/assets/img/global/login/google-icon.png" alt="">
         </div>
+        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+        </fb:login-button>
         <div id="loginWithFacebook1" class="footerLoginOptions">
           <img src="../../views/assets/img/global/login/facebook-icon.png" alt="">
         </div>
